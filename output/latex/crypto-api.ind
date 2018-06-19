@@ -1,0 +1,181 @@
+\begin{theindex}
+\def\bigletter#1{{\Large\sffamily#1}\nopagebreak\vspace{1mm}}
+
+  \bigletter A
+  \item ablkcipher\_alg (C type), \hyperpage{21}
+  \item ablkcipher\_request\_alloc (C function), \hyperpage{33}
+  \item ablkcipher\_request\_free (C function), \hyperpage{33}
+  \item ablkcipher\_request\_set\_callback (C function), \hyperpage{33}
+  \item ablkcipher\_request\_set\_crypt (C function), \hyperpage{34}
+  \item ablkcipher\_request\_set\_tfm (C function), \hyperpage{33}
+  \item aead\_alg (C type), \hyperpage{39}
+  \item aead\_request (C type), \hyperpage{39}
+  \item aead\_request\_alloc (C function), \hyperpage{43}
+  \item aead\_request\_free (C function), \hyperpage{43}
+  \item aead\_request\_set\_ad (C function), \hyperpage{44}
+  \item aead\_request\_set\_callback (C function), \hyperpage{43}
+  \item aead\_request\_set\_crypt (C function), \hyperpage{43}
+  \item aead\_request\_set\_tfm (C function), \hyperpage{42}
+  \item ahash\_alg (C type), \hyperpage{45}
+  \item ahash\_request\_alloc (C function), \hyperpage{50}
+  \item ahash\_request\_free (C function), \hyperpage{50}
+  \item ahash\_request\_set\_callback (C function), \hyperpage{50}
+  \item ahash\_request\_set\_crypt (C function), \hyperpage{51}
+  \item ahash\_request\_set\_tfm (C function), \hyperpage{50}
+  \item akcipher\_alg (C type), \hyperpage{57}
+  \item akcipher\_request (C type), \hyperpage{57}
+  \item akcipher\_request\_alloc (C function), \hyperpage{60}
+  \item akcipher\_request\_free (C function), \hyperpage{60}
+  \item akcipher\_request\_set\_callback (C function), \hyperpage{60}
+  \item akcipher\_request\_set\_crypt (C function), \hyperpage{61}
+
+  \indexspace
+  \bigletter B
+  \item blkcipher\_alg (C type), \hyperpage{22}
+
+  \indexspace
+  \bigletter C
+  \item cipher\_alg (C type), \hyperpage{22}
+  \item crypto\_ablkcipher\_blocksize (C function), \hyperpage{31}
+  \item crypto\_ablkcipher\_decrypt (C function), \hyperpage{32}
+  \item crypto\_ablkcipher\_encrypt (C function), \hyperpage{32}
+  \item crypto\_ablkcipher\_ivsize (C function), \hyperpage{31}
+  \item crypto\_ablkcipher\_reqsize (C function), \hyperpage{33}
+  \item crypto\_ablkcipher\_reqtfm (C function), \hyperpage{32}
+  \item crypto\_ablkcipher\_setkey (C function), \hyperpage{32}
+  \item crypto\_aead\_authsize (C function), \hyperpage{41}
+  \item crypto\_aead\_blocksize (C function), \hyperpage{41}
+  \item crypto\_aead\_decrypt (C function), \hyperpage{42}
+  \item crypto\_aead\_encrypt (C function), \hyperpage{42}
+  \item crypto\_aead\_ivsize (C function), \hyperpage{40}
+  \item crypto\_aead\_reqsize (C function), \hyperpage{42}
+  \item crypto\_aead\_setauthsize (C function), \hyperpage{41}
+  \item crypto\_aead\_setkey (C function), \hyperpage{41}
+  \item crypto\_ahash\_digest (C function), \hyperpage{48}
+  \item crypto\_ahash\_digestsize (C function), \hyperpage{47}
+  \item crypto\_ahash\_export (C function), \hyperpage{49}
+  \item crypto\_ahash\_final (C function), \hyperpage{48}
+  \item crypto\_ahash\_finup (C function), \hyperpage{48}
+  \item crypto\_ahash\_import (C function), \hyperpage{49}
+  \item crypto\_ahash\_init (C function), \hyperpage{49}
+  \item crypto\_ahash\_reqsize (C function), \hyperpage{48}
+  \item crypto\_ahash\_reqtfm (C function), \hyperpage{47}
+  \item crypto\_ahash\_setkey (C function), \hyperpage{48}
+  \item crypto\_ahash\_statesize (C function), \hyperpage{47}
+  \item crypto\_akcipher\_decrypt (C function), \hyperpage{59}
+  \item crypto\_akcipher\_encrypt (C function), \hyperpage{59}
+  \item crypto\_akcipher\_maxsize (C function), \hyperpage{58}
+  \item crypto\_akcipher\_set\_priv\_key (C function), \hyperpage{60}
+  \item crypto\_akcipher\_set\_pub\_key (C function), \hyperpage{59}
+  \item crypto\_akcipher\_sign (C function), \hyperpage{59}
+  \item crypto\_akcipher\_verify (C function), \hyperpage{59}
+  \item crypto\_alg (C type), \hyperpage{23}
+  \item crypto\_alloc\_aead (C function), \hyperpage{40}
+  \item crypto\_alloc\_ahash (C function), \hyperpage{46}
+  \item crypto\_alloc\_akcipher (C function), \hyperpage{58}
+  \item crypto\_alloc\_blkcipher (C function), \hyperpage{35}
+  \item crypto\_alloc\_cipher (C function), \hyperpage{29}
+  \item crypto\_alloc\_kpp (C function), \hyperpage{62}
+  \item crypto\_alloc\_rng (C function), \hyperpage{55}
+  \item crypto\_alloc\_shash (C function), \hyperpage{51}
+  \item crypto\_alloc\_skcipher (C function), \hyperpage{25}
+  \item crypto\_blkcipher\_blocksize (C function), \hyperpage{36}
+  \item crypto\_blkcipher\_decrypt (C function), \hyperpage{37}
+  \item crypto\_blkcipher\_decrypt\_iv (C function), \hyperpage{37}
+  \item crypto\_blkcipher\_encrypt (C function), \hyperpage{36}
+  \item crypto\_blkcipher\_encrypt\_iv (C function), \hyperpage{36}
+  \item crypto\_blkcipher\_get\_iv (C function), \hyperpage{38}
+  \item crypto\_blkcipher\_ivsize (C function), \hyperpage{35}
+  \item crypto\_blkcipher\_name (C function), \hyperpage{35}
+  \item crypto\_blkcipher\_set\_iv (C function), \hyperpage{37}
+  \item crypto\_blkcipher\_setkey (C function), \hyperpage{36}
+  \item crypto\_cipher\_blocksize (C function), \hyperpage{29}
+  \item crypto\_cipher\_decrypt\_one (C function), \hyperpage{30}
+  \item crypto\_cipher\_encrypt\_one (C function), \hyperpage{30}
+  \item crypto\_cipher\_setkey (C function), \hyperpage{30}
+  \item crypto\_dh\_decode\_key (C function), \hyperpage{67}
+  \item crypto\_dh\_encode\_key (C function), \hyperpage{67}
+  \item crypto\_dh\_key\_len (C function), \hyperpage{66}
+  \item crypto\_ecdh\_decode\_key (C function), \hyperpage{66}
+  \item crypto\_ecdh\_encode\_key (C function), \hyperpage{65}
+  \item crypto\_ecdh\_key\_len (C function), \hyperpage{65}
+  \item crypto\_free\_ablkcipher (C function), \hyperpage{31}
+  \item crypto\_free\_aead (C function), \hyperpage{40}
+  \item crypto\_free\_ahash (C function), \hyperpage{47}
+  \item crypto\_free\_akcipher (C function), \hyperpage{58}
+  \item crypto\_free\_blkcipher (C function), \hyperpage{35}
+  \item crypto\_free\_cipher (C function), \hyperpage{29}
+  \item crypto\_free\_kpp (C function), \hyperpage{63}
+  \item crypto\_free\_rng (C function), \hyperpage{55}
+  \item crypto\_free\_shash (C function), \hyperpage{51}
+  \item crypto\_free\_skcipher (C function), \hyperpage{25}
+  \item crypto\_has\_ablkcipher (C function), \hyperpage{31}
+  \item crypto\_has\_blkcipher (C function), \hyperpage{35}
+  \item crypto\_has\_cipher (C function), \hyperpage{29}
+  \item crypto\_has\_skcipher (C function), \hyperpage{26}
+  \item crypto\_kpp (C type), \hyperpage{61}
+  \item crypto\_kpp\_compute\_shared\_secret (C function), \hyperpage{63}
+  \item crypto\_kpp\_generate\_public\_key (C function), \hyperpage{63}
+  \item crypto\_kpp\_maxsize (C function), \hyperpage{64}
+  \item crypto\_kpp\_set\_secret (C function), \hyperpage{63}
+  \item crypto\_rng\_alg (C function), \hyperpage{55}
+  \item crypto\_rng\_generate (C function), \hyperpage{55}
+  \item crypto\_rng\_get\_bytes (C function), \hyperpage{56}
+  \item crypto\_rng\_reset (C function), \hyperpage{56}
+  \item crypto\_rng\_seedsize (C function), \hyperpage{56}
+  \item crypto\_shash\_blocksize (C function), \hyperpage{51}
+  \item crypto\_shash\_descsize (C function), \hyperpage{52}
+  \item crypto\_shash\_digest (C function), \hyperpage{52}
+  \item crypto\_shash\_digestsize (C function), \hyperpage{52}
+  \item crypto\_shash\_export (C function), \hyperpage{53}
+  \item crypto\_shash\_final (C function), \hyperpage{54}
+  \item crypto\_shash\_finup (C function), \hyperpage{54}
+  \item crypto\_shash\_import (C function), \hyperpage{53}
+  \item crypto\_shash\_init (C function), \hyperpage{53}
+  \item crypto\_shash\_setkey (C function), \hyperpage{52}
+  \item crypto\_shash\_update (C function), \hyperpage{53}
+  \item crypto\_skcipher\_blocksize (C function), \hyperpage{26}
+  \item crypto\_skcipher\_decrypt (C function), \hyperpage{27}
+  \item crypto\_skcipher\_encrypt (C function), \hyperpage{27}
+  \item crypto\_skcipher\_ivsize (C function), \hyperpage{26}
+  \item crypto\_skcipher\_reqsize (C function), \hyperpage{27}
+  \item crypto\_skcipher\_reqtfm (C function), \hyperpage{26}
+  \item crypto\_skcipher\_setkey (C function), \hyperpage{26}
+
+  \indexspace
+  \bigletter D
+  \item dh (C type), \hyperpage{66}
+
+  \indexspace
+  \bigletter E
+  \item ecdh (C type), \hyperpage{65}
+
+  \indexspace
+  \bigletter H
+  \item hash\_alg\_common (C type), \hyperpage{44}
+
+  \indexspace
+  \bigletter K
+  \item kpp\_alg (C type), \hyperpage{62}
+  \item kpp\_request (C type), \hyperpage{61}
+  \item kpp\_request\_alloc (C function), \hyperpage{64}
+  \item kpp\_request\_free (C function), \hyperpage{64}
+  \item kpp\_request\_set\_callback (C function), \hyperpage{64}
+  \item kpp\_request\_set\_input (C function), \hyperpage{64}
+  \item kpp\_request\_set\_output (C function), \hyperpage{65}
+  \item kpp\_secret (C type), \hyperpage{62}
+
+  \indexspace
+  \bigletter R
+  \item rng\_alg (C type), \hyperpage{54}
+
+  \indexspace
+  \bigletter S
+  \item shash\_alg (C type), \hyperpage{46}
+  \item skcipher\_request\_alloc (C function), \hyperpage{28}
+  \item skcipher\_request\_free (C function), \hyperpage{28}
+  \item skcipher\_request\_set\_callback (C function), \hyperpage{28}
+  \item skcipher\_request\_set\_crypt (C function), \hyperpage{28}
+  \item skcipher\_request\_set\_tfm (C function), \hyperpage{27}
+
+\end{theindex}

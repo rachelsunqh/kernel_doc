@@ -1,0 +1,665 @@
+\select@language {english}
+\contentsline {chapter}{\numberline {1}ALSA Kernel API Documentation}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}The ALSA Driver API}{1}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Management of Cards and Devices}{1}{subsection.1.1.1}
+\contentsline {subsubsection}{Card Management}{1}{subsubsection*.3}
+\contentsline {subsubsection}{Device Components}{4}{subsubsection*.17}
+\contentsline {subsubsection}{Module requests and Device File Entries}{5}{subsubsection*.22}
+\contentsline {subsubsection}{Memory Management Helpers}{6}{subsubsection*.27}
+\contentsline {subsection}{\numberline {1.1.2}PCM API}{8}{subsection.1.1.2}
+\contentsline {subsubsection}{PCM Core}{8}{subsubsection*.37}
+\contentsline {subsubsection}{PCM Format Helpers}{26}{subsubsection*.130}
+\contentsline {subsubsection}{PCM Memory Management}{29}{subsubsection*.146}
+\contentsline {subsubsection}{PCM DMA Engine API}{31}{subsubsection*.156}
+\contentsline {subsection}{\numberline {1.1.3}Control/Mixer API}{34}{subsection.1.1.3}
+\contentsline {subsubsection}{General Control Interface}{35}{subsubsection*.170}
+\contentsline {subsubsection}{AC97 Codec API}{39}{subsubsection*.191}
+\contentsline {subsubsection}{Virtual Master Control API}{43}{subsubsection*.209}
+\contentsline {subsection}{\numberline {1.1.4}MIDI API}{45}{subsection.1.1.4}
+\contentsline {subsubsection}{Raw MIDI API}{45}{subsubsection*.216}
+\contentsline {subsubsection}{MPU401-UART API}{47}{subsubsection*.226}
+\contentsline {subsection}{\numberline {1.1.5}Proc Info API}{48}{subsection.1.1.5}
+\contentsline {subsubsection}{Proc Info Interface}{48}{subsubsection*.230}
+\contentsline {subsection}{\numberline {1.1.6}Compress Offload}{50}{subsection.1.1.6}
+\contentsline {subsubsection}{Compress Offload API}{50}{subsubsection*.237}
+\contentsline {subsection}{\numberline {1.1.7}ASoC}{56}{subsection.1.1.7}
+\contentsline {subsubsection}{ASoC Core API}{56}{subsubsection*.255}
+\contentsline {subsubsection}{ASoC DAPM API}{77}{subsubsection*.355}
+\contentsline {subsubsection}{ASoC DMA Engine API}{84}{subsubsection*.387}
+\contentsline {subsection}{\numberline {1.1.8}Miscellaneous Functions}{84}{subsection.1.1.8}
+\contentsline {subsubsection}{Hardware-Dependent Devices API}{84}{subsubsection*.391}
+\contentsline {subsubsection}{Jack Abstraction Layer API}{85}{subsubsection*.393}
+\contentsline {subsubsection}{ISA DMA Helpers}{89}{subsubsection*.412}
+\contentsline {subsubsection}{Other Helper Macros}{90}{subsubsection*.416}
+\contentsline {section}{\numberline {1.2}Writing an ALSA Driver}{91}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Preface}{91}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}File Tree Structure}{91}{subsection.1.2.2}
+\contentsline {subsubsection}{General}{91}{subsubsection*.423}
+\contentsline {subsubsection}{core directory}{92}{subsubsection*.424}
+\contentsline {paragraph}{core/oss}{92}{paragraph*.425}
+\contentsline {paragraph}{core/ioctl32}{92}{paragraph*.426}
+\contentsline {paragraph}{core/seq}{92}{paragraph*.427}
+\contentsline {paragraph}{core/seq/oss}{92}{paragraph*.428}
+\contentsline {paragraph}{core/seq/instr}{93}{paragraph*.429}
+\contentsline {subsubsection}{include directory}{93}{subsubsection*.430}
+\contentsline {subsubsection}{drivers directory}{93}{subsubsection*.431}
+\contentsline {paragraph}{drivers/mpu401}{93}{paragraph*.432}
+\contentsline {paragraph}{drivers/opl3 and opl4}{93}{paragraph*.433}
+\contentsline {subsubsection}{i2c directory}{93}{subsubsection*.434}
+\contentsline {paragraph}{i2c/l3}{93}{paragraph*.435}
+\contentsline {subsubsection}{synth directory}{93}{subsubsection*.436}
+\contentsline {subsubsection}{pci directory}{93}{subsubsection*.437}
+\contentsline {subsubsection}{isa directory}{93}{subsubsection*.438}
+\contentsline {subsubsection}{arm, ppc, and sparc directories}{94}{subsubsection*.439}
+\contentsline {subsubsection}{usb directory}{94}{subsubsection*.440}
+\contentsline {subsubsection}{pcmcia directory}{94}{subsubsection*.441}
+\contentsline {subsubsection}{oss directory}{94}{subsubsection*.442}
+\contentsline {subsection}{\numberline {1.2.3}Basic Flow for PCI Drivers}{94}{subsection.1.2.3}
+\contentsline {subsubsection}{Outline}{94}{subsubsection*.443}
+\contentsline {subsubsection}{Full Code Example}{94}{subsubsection*.444}
+\contentsline {subsubsection}{Driver Constructor}{97}{subsubsection*.445}
+\contentsline {paragraph}{1) Check and increment the device index.}{97}{paragraph*.446}
+\contentsline {paragraph}{2) Create a card instance}{97}{paragraph*.447}
+\contentsline {paragraph}{3) Create a main component}{97}{paragraph*.448}
+\contentsline {paragraph}{4) Set the driver ID and name strings.}{97}{paragraph*.449}
+\contentsline {paragraph}{5) Create other components, such as mixer, MIDI, etc.}{98}{paragraph*.450}
+\contentsline {paragraph}{6) Register the card instance.}{98}{paragraph*.451}
+\contentsline {paragraph}{7) Set the PCI driver data and return zero.}{98}{paragraph*.452}
+\contentsline {subsubsection}{Destructor}{98}{subsubsection*.453}
+\contentsline {subsubsection}{Header Files}{98}{subsubsection*.454}
+\contentsline {subsection}{\numberline {1.2.4}Management of Cards and Components}{99}{subsection.1.2.4}
+\contentsline {subsubsection}{Card Instance}{99}{subsubsection*.455}
+\contentsline {subsubsection}{Components}{99}{subsubsection*.456}
+\contentsline {subsubsection}{Chip-Specific Data}{99}{subsubsection*.457}
+\contentsline {paragraph}{1. Allocating via \texttt {snd\_card\_new()}.}{100}{paragraph*.458}
+\contentsline {paragraph}{2. Allocating an extra device.}{100}{paragraph*.459}
+\contentsline {subsubsection}{Registration and Release}{101}{subsubsection*.460}
+\contentsline {subsection}{\numberline {1.2.5}PCI Resource Management}{101}{subsection.1.2.5}
+\contentsline {subsubsection}{Full Code Example}{101}{subsubsection*.461}
+\contentsline {subsubsection}{Some Hafta's}{103}{subsubsection*.462}
+\contentsline {subsubsection}{Resource Allocation}{103}{subsubsection*.463}
+\contentsline {subsubsection}{PCI Entries}{105}{subsubsection*.464}
+\contentsline {subsection}{\numberline {1.2.6}PCM Interface}{106}{subsection.1.2.6}
+\contentsline {subsubsection}{General}{106}{subsubsection*.465}
+\contentsline {subsubsection}{Full Code Example}{107}{subsubsection*.466}
+\contentsline {subsubsection}{PCM Constructor}{110}{subsubsection*.467}
+\contentsline {subsubsection}{... And the Destructor?}{111}{subsubsection*.468}
+\contentsline {subsubsection}{Runtime Pointer - The Chest of PCM Information}{112}{subsubsection*.469}
+\contentsline {paragraph}{Hardware Description}{113}{paragraph*.470}
+\contentsline {paragraph}{PCM Configurations}{114}{paragraph*.471}
+\contentsline {paragraph}{DMA Buffer Information}{115}{paragraph*.472}
+\contentsline {paragraph}{Running Status}{115}{paragraph*.473}
+\contentsline {paragraph}{Private Data}{115}{paragraph*.474}
+\contentsline {subsubsection}{Operators}{115}{subsubsection*.475}
+\contentsline {paragraph}{PCM open callback}{116}{paragraph*.476}
+\contentsline {paragraph}{close callback}{116}{paragraph*.477}
+\contentsline {paragraph}{ioctl callback}{116}{paragraph*.478}
+\contentsline {paragraph}{hw\_params callback}{117}{paragraph*.479}
+\contentsline {paragraph}{hw\_free callback}{117}{paragraph*.480}
+\contentsline {paragraph}{prepare callback}{117}{paragraph*.481}
+\contentsline {paragraph}{trigger callback}{118}{paragraph*.482}
+\contentsline {paragraph}{pointer callback}{118}{paragraph*.483}
+\contentsline {paragraph}{copy\_user, copy\_kernel and fill\_silence ops}{118}{paragraph*.484}
+\contentsline {paragraph}{ack callback}{119}{paragraph*.485}
+\contentsline {paragraph}{page callback}{119}{paragraph*.486}
+\contentsline {subsubsection}{PCM Interrupt Handler}{119}{subsubsection*.487}
+\contentsline {paragraph}{Interrupts at the period (fragment) boundary}{119}{paragraph*.488}
+\contentsline {paragraph}{High frequency timer interrupts}{120}{paragraph*.489}
+\contentsline {paragraph}{On calling \texttt {snd\_pcm\_period\_elapsed()}}{120}{paragraph*.490}
+\contentsline {subsubsection}{Atomicity}{120}{subsubsection*.491}
+\contentsline {subsubsection}{Constraints}{121}{subsubsection*.492}
+\contentsline {subsection}{\numberline {1.2.7}Control Interface}{122}{subsection.1.2.7}
+\contentsline {subsubsection}{General}{122}{subsubsection*.493}
+\contentsline {subsubsection}{Definition of Controls}{122}{subsubsection*.494}
+\contentsline {subsubsection}{Control Names}{123}{subsubsection*.495}
+\contentsline {paragraph}{Global capture and playback}{123}{paragraph*.496}
+\contentsline {paragraph}{Tone-controls}{124}{paragraph*.497}
+\contentsline {paragraph}{3D controls}{124}{paragraph*.498}
+\contentsline {paragraph}{Mic boost}{124}{paragraph*.499}
+\contentsline {subsubsection}{Access Flags}{124}{subsubsection*.500}
+\contentsline {subsubsection}{Control Callbacks}{124}{subsubsection*.501}
+\contentsline {paragraph}{info callback}{124}{paragraph*.502}
+\contentsline {paragraph}{get callback}{125}{paragraph*.503}
+\contentsline {paragraph}{put callback}{126}{paragraph*.504}
+\contentsline {paragraph}{Callbacks are not atomic}{126}{paragraph*.505}
+\contentsline {subsubsection}{Control Constructor}{126}{subsubsection*.506}
+\contentsline {subsubsection}{Change Notification}{126}{subsubsection*.507}
+\contentsline {subsubsection}{Metadata}{127}{subsubsection*.508}
+\contentsline {subsection}{\numberline {1.2.8}API for AC97 Codec}{127}{subsection.1.2.8}
+\contentsline {subsubsection}{General}{127}{subsubsection*.509}
+\contentsline {subsubsection}{Full Code Example}{127}{subsubsection*.510}
+\contentsline {subsubsection}{AC97 Constructor}{128}{subsubsection*.511}
+\contentsline {subsubsection}{AC97 Callbacks}{128}{subsubsection*.512}
+\contentsline {subsubsection}{Updating Registers in The Driver}{129}{subsubsection*.513}
+\contentsline {subsubsection}{Clock Adjustment}{129}{subsubsection*.514}
+\contentsline {subsubsection}{Proc Files}{130}{subsubsection*.515}
+\contentsline {subsubsection}{Multiple Codecs}{130}{subsubsection*.516}
+\contentsline {subsection}{\numberline {1.2.9}MIDI (MPU401-UART) Interface}{130}{subsection.1.2.9}
+\contentsline {subsubsection}{General}{130}{subsubsection*.517}
+\contentsline {subsubsection}{MIDI Constructor}{130}{subsubsection*.518}
+\contentsline {subsubsection}{MIDI Interrupt Handler}{131}{subsubsection*.519}
+\contentsline {subsection}{\numberline {1.2.10}RawMIDI Interface}{131}{subsection.1.2.10}
+\contentsline {subsubsection}{Overview}{131}{subsubsection*.520}
+\contentsline {subsubsection}{RawMIDI Constructor}{131}{subsubsection*.521}
+\contentsline {subsubsection}{RawMIDI Callbacks}{132}{subsubsection*.522}
+\contentsline {paragraph}{RawMIDI open callback}{132}{paragraph*.523}
+\contentsline {paragraph}{RawMIDI close callback}{132}{paragraph*.524}
+\contentsline {paragraph}{Rawmidi trigger callback for output substreams}{133}{paragraph*.525}
+\contentsline {paragraph}{RawMIDI trigger callback for input substreams}{133}{paragraph*.526}
+\contentsline {paragraph}{drain callback}{134}{paragraph*.527}
+\contentsline {subsection}{\numberline {1.2.11}Miscellaneous Devices}{134}{subsection.1.2.11}
+\contentsline {subsubsection}{FM OPL3}{134}{subsubsection*.528}
+\contentsline {subsubsection}{Hardware-Dependent Devices}{135}{subsubsection*.529}
+\contentsline {subsubsection}{IEC958 (S/PDIF)}{135}{subsubsection*.530}
+\contentsline {subsection}{\numberline {1.2.12}Buffer and Memory Management}{135}{subsection.1.2.12}
+\contentsline {subsubsection}{Buffer Types}{136}{subsubsection*.531}
+\contentsline {subsubsection}{External Hardware Buffers}{136}{subsubsection*.532}
+\contentsline {subsubsection}{Non-Contiguous Buffers}{138}{subsubsection*.533}
+\contentsline {subsubsection}{Vmalloc'ed Buffers}{138}{subsubsection*.534}
+\contentsline {subsection}{\numberline {1.2.13}Proc Interface}{138}{subsection.1.2.13}
+\contentsline {subsection}{\numberline {1.2.14}Power Management}{140}{subsection.1.2.14}
+\contentsline {subsection}{\numberline {1.2.15}Module Parameters}{143}{subsection.1.2.15}
+\contentsline {subsection}{\numberline {1.2.16}How To Put Your Driver Into ALSA Tree}{143}{subsection.1.2.16}
+\contentsline {subsubsection}{General}{143}{subsubsection*.535}
+\contentsline {subsubsection}{Driver with A Single Source File}{143}{subsubsection*.536}
+\contentsline {subsubsection}{Drivers with Several Source Files}{144}{subsubsection*.537}
+\contentsline {subsection}{\numberline {1.2.17}Useful Functions}{144}{subsection.1.2.17}
+\contentsline {subsubsection}{\texttt {snd\_printk()} and friends}{144}{subsubsection*.538}
+\contentsline {subsubsection}{\texttt {snd\_BUG()}}{145}{subsubsection*.539}
+\contentsline {subsubsection}{\texttt {snd\_BUG\_ON()}}{145}{subsubsection*.540}
+\contentsline {subsection}{\numberline {1.2.18}Acknowledgments}{145}{subsection.1.2.18}
+\contentsline {chapter}{\numberline {2}Designs and Implementations}{147}{chapter.2}
+\contentsline {section}{\numberline {2.1}Standard ALSA Control Names}{147}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Standard Syntax}{147}{subsection.2.1.1}
+\contentsline {subsubsection}{DIRECTION}{147}{subsubsection*.541}
+\contentsline {subsubsection}{FUNCTION}{147}{subsubsection*.542}
+\contentsline {subsubsection}{CHANNEL}{147}{subsubsection*.543}
+\contentsline {subsubsection}{LOCATION (Physical location of source)}{147}{subsubsection*.544}
+\contentsline {subsubsection}{SOURCE}{148}{subsubsection*.545}
+\contentsline {subsection}{\numberline {2.1.2}Exceptions (deprecated)}{149}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}PCM interface}{149}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.4}IEC958 (S/PDIF) interface}{149}{subsection.2.1.4}
+\contentsline {section}{\numberline {2.2}ALSA PCM channel-mapping API}{149}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}General}{149}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Design}{150}{subsection.2.2.2}
+\contentsline {subsubsection}{TLV}{150}{subsubsection*.546}
+\contentsline {subsubsection}{Read Operation}{151}{subsubsection*.547}
+\contentsline {subsubsection}{Write Operation}{151}{subsubsection*.548}
+\contentsline {section}{\numberline {2.3}ALSA Compress-Offload API}{151}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Overview}{152}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Requirements}{152}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Design}{152}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Gapless Playback}{153}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.5}Not supported}{154}{subsection.2.3.5}
+\contentsline {subsection}{\numberline {2.3.6}Credits}{154}{subsection.2.3.6}
+\contentsline {section}{\numberline {2.4}ALSA PCM Timestamping}{154}{section.2.4}
+\contentsline {section}{\numberline {2.5}ALSA Jack Controls}{157}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Why we need Jack kcontrols}{157}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Jack Kcontrol Internals}{157}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.3}How to use jack kcontrols}{157}{subsection.2.5.3}
+\contentsline {section}{\numberline {2.6}Tracepoints in ALSA}{158}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Tracepoints in ALSA PCM core}{158}{subsection.2.6.1}
+\contentsline {subsubsection}{Tracepoints for state of PCM buffer}{158}{subsubsection*.549}
+\contentsline {subsubsection}{Tracepoints for processing of PCM hardware parameters}{158}{subsubsection*.550}
+\contentsline {subsection}{\numberline {2.6.2}Tracepoints in drivers}{160}{subsection.2.6.2}
+\contentsline {section}{\numberline {2.7}Proc Files of ALSA Drivers}{160}{section.2.7}
+\contentsline {subsection}{\numberline {2.7.1}General}{160}{subsection.2.7.1}
+\contentsline {subsection}{\numberline {2.7.2}Global Information}{160}{subsection.2.7.2}
+\contentsline {subsection}{\numberline {2.7.3}Card Specific Files}{161}{subsection.2.7.3}
+\contentsline {subsection}{\numberline {2.7.4}PCM Proc Files}{161}{subsection.2.7.4}
+\contentsline {subsection}{\numberline {2.7.5}AC97 Codec Information}{161}{subsection.2.7.5}
+\contentsline {subsection}{\numberline {2.7.6}USB Audio Streams}{162}{subsection.2.7.6}
+\contentsline {subsection}{\numberline {2.7.7}HD-Audio Codecs}{162}{subsection.2.7.7}
+\contentsline {subsection}{\numberline {2.7.8}Sequencer Information}{162}{subsection.2.7.8}
+\contentsline {subsection}{\numberline {2.7.9}Help For Debugging?}{162}{subsection.2.7.9}
+\contentsline {section}{\numberline {2.8}Notes on Power-Saving Mode}{163}{section.2.8}
+\contentsline {section}{\numberline {2.9}Notes on Kernel OSS-Emulation}{163}{section.2.9}
+\contentsline {subsection}{\numberline {2.9.1}Modules}{163}{subsection.2.9.1}
+\contentsline {subsection}{\numberline {2.9.2}Device Mapping}{164}{subsection.2.9.2}
+\contentsline {subsection}{\numberline {2.9.3}PCM Mode}{164}{subsection.2.9.3}
+\contentsline {subsection}{\numberline {2.9.4}Mixer Elements}{166}{subsection.2.9.4}
+\contentsline {subsection}{\numberline {2.9.5}Duplex Streams}{167}{subsection.2.9.5}
+\contentsline {subsection}{\numberline {2.9.6}Unsupported Features}{167}{subsection.2.9.6}
+\contentsline {subsubsection}{MMAP on ICE1712 driver}{167}{subsubsection*.551}
+\contentsline {section}{\numberline {2.10}OSS Sequencer Emulation on ALSA}{167}{section.2.10}
+\contentsline {subsection}{\numberline {2.10.1}Description}{167}{subsection.2.10.1}
+\contentsline {subsection}{\numberline {2.10.2}Installation}{168}{subsection.2.10.2}
+\contentsline {subsection}{\numberline {2.10.3}Using Synthesizer Devices}{169}{subsection.2.10.3}
+\contentsline {subsection}{\numberline {2.10.4}Using MIDI Devices}{169}{subsection.2.10.4}
+\contentsline {subsection}{\numberline {2.10.5}Module Options}{169}{subsection.2.10.5}
+\contentsline {subsection}{\numberline {2.10.6}Queue Mechanism}{169}{subsection.2.10.6}
+\contentsline {subsection}{\numberline {2.10.7}Interface to Synthesizer Device}{169}{subsection.2.10.7}
+\contentsline {subsubsection}{Registration}{169}{subsubsection*.552}
+\contentsline {subsubsection}{Callbacks}{170}{subsubsection*.553}
+\contentsline {subsubsection}{Open Callback}{170}{subsubsection*.554}
+\contentsline {subsubsection}{Ioctl Callback}{171}{subsubsection*.555}
+\contentsline {subsubsection}{Load\_Patch Callback}{171}{subsubsection*.556}
+\contentsline {subsubsection}{Close Callback}{171}{subsubsection*.557}
+\contentsline {subsubsection}{Reset Callback}{171}{subsubsection*.558}
+\contentsline {subsection}{\numberline {2.10.8}Events}{171}{subsection.2.10.8}
+\contentsline {subsection}{\numberline {2.10.9}Interface to MIDI Device}{172}{subsection.2.10.9}
+\contentsline {subsection}{\numberline {2.10.10}Known Problems / TODO's}{172}{subsection.2.10.10}
+\contentsline {chapter}{\numberline {3}ALSA SoC Layer}{173}{chapter.3}
+\contentsline {section}{\numberline {3.1}ALSA SoC Layer Overview}{173}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}ASoC Design}{173}{subsection.3.1.1}
+\contentsline {section}{\numberline {3.2}ASoC Codec Class Driver}{174}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}ASoC Codec driver breakdown}{174}{subsection.3.2.1}
+\contentsline {subsubsection}{Codec DAI and PCM configuration}{174}{subsubsection*.559}
+\contentsline {subsubsection}{Codec control IO}{175}{subsubsection*.560}
+\contentsline {subsubsection}{Mixers and audio controls}{175}{subsubsection*.561}
+\contentsline {subsubsection}{Codec Audio Operations}{175}{subsubsection*.562}
+\contentsline {subsubsection}{DAPM description}{176}{subsubsection*.563}
+\contentsline {subsubsection}{DAPM event handler}{176}{subsubsection*.564}
+\contentsline {subsubsection}{Codec DAC digital mute control}{176}{subsubsection*.565}
+\contentsline {section}{\numberline {3.3}ASoC Digital Audio Interface (DAI)}{176}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}AC97}{177}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}I2S}{177}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}PCM}{177}{subsection.3.3.3}
+\contentsline {section}{\numberline {3.4}Dynamic Audio Power Management for Portable Devices}{177}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Description}{177}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}DAPM Widgets}{178}{subsection.3.4.2}
+\contentsline {subsubsection}{Stream Domain Widgets}{179}{subsubsection*.566}
+\contentsline {subsubsection}{Path Domain Widgets}{179}{subsubsection*.567}
+\contentsline {subsubsection}{Machine domain Widgets}{180}{subsubsection*.568}
+\contentsline {subsubsection}{Codec (BIAS) Domain}{180}{subsubsection*.569}
+\contentsline {subsubsection}{Virtual Widgets}{180}{subsubsection*.570}
+\contentsline {subsection}{\numberline {3.4.3}Codec/DSP Widget Interconnections}{180}{subsection.3.4.3}
+\contentsline {subsubsection}{Machine Widget Interconnections}{181}{subsubsection*.571}
+\contentsline {subsection}{\numberline {3.4.4}Endpoint Widgets}{181}{subsection.3.4.4}
+\contentsline {subsection}{\numberline {3.4.5}DAPM Widget Events}{182}{subsection.3.4.5}
+\contentsline {subsubsection}{Event types}{182}{subsubsection*.572}
+\contentsline {section}{\numberline {3.5}ASoC Platform Driver}{182}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Audio DMA}{182}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}SoC DAI Drivers}{183}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}SoC DSP Drivers}{183}{subsection.3.5.3}
+\contentsline {section}{\numberline {3.6}ASoC Machine Driver}{183}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}probe()/remove()}{184}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.6.2}suspend()/resume()}{184}{subsection.3.6.2}
+\contentsline {subsection}{\numberline {3.6.3}Machine DAI Configuration}{184}{subsection.3.6.3}
+\contentsline {subsection}{\numberline {3.6.4}Machine Power Map}{185}{subsection.3.6.4}
+\contentsline {subsection}{\numberline {3.6.5}Machine Controls}{185}{subsection.3.6.5}
+\contentsline {section}{\numberline {3.7}Audio Pops and Clicks}{185}{section.3.7}
+\contentsline {subsection}{\numberline {3.7.1}Minimising Playback Pops and Clicks}{185}{subsection.3.7.1}
+\contentsline {subsection}{\numberline {3.7.2}Minimising Capture Pops and Clicks}{185}{subsection.3.7.2}
+\contentsline {subsection}{\numberline {3.7.3}Zipper Noise}{185}{subsection.3.7.3}
+\contentsline {section}{\numberline {3.8}Audio Clocking}{186}{section.3.8}
+\contentsline {subsection}{\numberline {3.8.1}Master Clock}{186}{subsection.3.8.1}
+\contentsline {subsection}{\numberline {3.8.2}DAI Clocks}{186}{subsection.3.8.2}
+\contentsline {section}{\numberline {3.9}ASoC jack detection}{186}{section.3.9}
+\contentsline {subsection}{\numberline {3.9.1}The jack - struct snd\_soc\_jack}{187}{subsection.3.9.1}
+\contentsline {subsection}{\numberline {3.9.2}snd\_soc\_jack\_pin}{187}{subsection.3.9.2}
+\contentsline {subsection}{\numberline {3.9.3}Jack detection methods}{187}{subsection.3.9.3}
+\contentsline {subsection}{\numberline {3.9.4}Machine drivers}{187}{subsection.3.9.4}
+\contentsline {section}{\numberline {3.10}Dynamic PCM}{187}{section.3.10}
+\contentsline {subsection}{\numberline {3.10.1}Description}{187}{subsection.3.10.1}
+\contentsline {subsubsection}{Phone Audio System with SoC based DSP}{188}{subsubsection*.573}
+\contentsline {subsubsection}{Example - DPCM Switching playback from DAI0 to DAI1}{188}{subsubsection*.574}
+\contentsline {subsection}{\numberline {3.10.2}DPCM machine driver}{189}{subsection.3.10.2}
+\contentsline {subsubsection}{FE and BE DAI links}{189}{subsubsection*.575}
+\contentsline {subsubsection}{FE/BE PCM operations}{190}{subsubsection*.576}
+\contentsline {subsubsection}{Widget graph connections}{191}{subsubsection*.577}
+\contentsline {subsection}{\numberline {3.10.3}Writing a DPCM DSP driver}{191}{subsection.3.10.3}
+\contentsline {subsection}{\numberline {3.10.4}Hostless PCM streams}{191}{subsection.3.10.4}
+\contentsline {subsubsection}{CODEC \textless {}-\textgreater {} CODEC link}{192}{subsubsection*.578}
+\contentsline {subsubsection}{Hostless FE}{193}{subsubsection*.579}
+\contentsline {section}{\numberline {3.11}Creating codec to codec dai link for ALSA dapm}{193}{section.3.11}
+\contentsline {chapter}{\numberline {4}Advanced Linux Sound Architecture - Driver Configuration guide}{195}{chapter.4}
+\contentsline {section}{\numberline {4.1}Kernel Configuration}{195}{section.4.1}
+\contentsline {section}{\numberline {4.2}Module parameters}{195}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Module snd}{195}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Module snd-pcm-oss}{195}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Module snd-rawmidi}{196}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Common parameters for top sound card modules}{196}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}Module snd-adlib}{196}{subsection.4.2.5}
+\contentsline {subsection}{\numberline {4.2.6}Module snd-ad1816a}{197}{subsection.4.2.6}
+\contentsline {subsection}{\numberline {4.2.7}Module snd-ad1848}{197}{subsection.4.2.7}
+\contentsline {subsection}{\numberline {4.2.8}Module snd-ad1889}{197}{subsection.4.2.8}
+\contentsline {subsection}{\numberline {4.2.9}Module snd-ali5451}{197}{subsection.4.2.9}
+\contentsline {subsection}{\numberline {4.2.10}Module snd-als100}{197}{subsection.4.2.10}
+\contentsline {subsection}{\numberline {4.2.11}Module snd-als300}{197}{subsection.4.2.11}
+\contentsline {subsection}{\numberline {4.2.12}Module snd-als4000}{198}{subsection.4.2.12}
+\contentsline {subsection}{\numberline {4.2.13}Module snd-asihpi}{198}{subsection.4.2.13}
+\contentsline {subsection}{\numberline {4.2.14}Module snd-atiixp}{198}{subsection.4.2.14}
+\contentsline {subsection}{\numberline {4.2.15}Module snd-atiixp-modem}{198}{subsection.4.2.15}
+\contentsline {subsection}{\numberline {4.2.16}Module snd-au8810, snd-au8820, snd-au8830}{198}{subsection.4.2.16}
+\contentsline {subsection}{\numberline {4.2.17}Module snd-azt1605}{199}{subsection.4.2.17}
+\contentsline {subsection}{\numberline {4.2.18}Module snd-azt2316}{199}{subsection.4.2.18}
+\contentsline {subsection}{\numberline {4.2.19}Module snd-aw2}{200}{subsection.4.2.19}
+\contentsline {subsection}{\numberline {4.2.20}Module snd-azt2320}{200}{subsection.4.2.20}
+\contentsline {subsection}{\numberline {4.2.21}Module snd-azt3328}{200}{subsection.4.2.21}
+\contentsline {subsection}{\numberline {4.2.22}Module snd-bt87x}{200}{subsection.4.2.22}
+\contentsline {subsection}{\numberline {4.2.23}Module snd-ca0106}{200}{subsection.4.2.23}
+\contentsline {subsection}{\numberline {4.2.24}Module snd-cmi8330}{200}{subsection.4.2.24}
+\contentsline {subsection}{\numberline {4.2.25}Module snd-cmipci}{201}{subsection.4.2.25}
+\contentsline {subsection}{\numberline {4.2.26}Module snd-cs4231}{201}{subsection.4.2.26}
+\contentsline {subsection}{\numberline {4.2.27}Module snd-cs4236}{201}{subsection.4.2.27}
+\contentsline {subsection}{\numberline {4.2.28}Module snd-cs4281}{202}{subsection.4.2.28}
+\contentsline {subsection}{\numberline {4.2.29}Module snd-cs46xx}{202}{subsection.4.2.29}
+\contentsline {subsection}{\numberline {4.2.30}Module snd-cs5530}{202}{subsection.4.2.30}
+\contentsline {subsection}{\numberline {4.2.31}Module snd-cs5535audio}{202}{subsection.4.2.31}
+\contentsline {subsection}{\numberline {4.2.32}Module snd-ctxfi}{202}{subsection.4.2.32}
+\contentsline {subsection}{\numberline {4.2.33}Module snd-darla20}{203}{subsection.4.2.33}
+\contentsline {subsection}{\numberline {4.2.34}Module snd-darla24}{203}{subsection.4.2.34}
+\contentsline {subsection}{\numberline {4.2.35}Module snd-dt019x}{203}{subsection.4.2.35}
+\contentsline {subsection}{\numberline {4.2.36}Module snd-dummy}{203}{subsection.4.2.36}
+\contentsline {subsection}{\numberline {4.2.37}Module snd-echo3g}{204}{subsection.4.2.37}
+\contentsline {subsection}{\numberline {4.2.38}Module snd-emu10k1}{204}{subsection.4.2.38}
+\contentsline {subsection}{\numberline {4.2.39}Module snd-emu10k1x}{204}{subsection.4.2.39}
+\contentsline {subsection}{\numberline {4.2.40}Module snd-ens1370}{204}{subsection.4.2.40}
+\contentsline {subsection}{\numberline {4.2.41}Module snd-ens1371}{205}{subsection.4.2.41}
+\contentsline {subsection}{\numberline {4.2.42}Module snd-es1688}{205}{subsection.4.2.42}
+\contentsline {subsection}{\numberline {4.2.43}Module snd-es18xx}{205}{subsection.4.2.43}
+\contentsline {subsection}{\numberline {4.2.44}Module snd-es1938}{206}{subsection.4.2.44}
+\contentsline {subsection}{\numberline {4.2.45}Module snd-es1968}{206}{subsection.4.2.45}
+\contentsline {subsection}{\numberline {4.2.46}Module snd-fm801}{206}{subsection.4.2.46}
+\contentsline {subsection}{\numberline {4.2.47}Module snd-gina20}{206}{subsection.4.2.47}
+\contentsline {subsection}{\numberline {4.2.48}Module snd-gina24}{206}{subsection.4.2.48}
+\contentsline {subsection}{\numberline {4.2.49}Module snd-gusclassic}{206}{subsection.4.2.49}
+\contentsline {subsection}{\numberline {4.2.50}Module snd-gusextreme}{207}{subsection.4.2.50}
+\contentsline {subsection}{\numberline {4.2.51}Module snd-gusmax}{207}{subsection.4.2.51}
+\contentsline {subsection}{\numberline {4.2.52}Module snd-hda-intel}{207}{subsection.4.2.52}
+\contentsline {subsection}{\numberline {4.2.53}Module snd-hdsp}{209}{subsection.4.2.53}
+\contentsline {subsection}{\numberline {4.2.54}Module snd-hdspm}{209}{subsection.4.2.54}
+\contentsline {subsection}{\numberline {4.2.55}Module snd-ice1712}{209}{subsection.4.2.55}
+\contentsline {subsection}{\numberline {4.2.56}Module snd-ice1724}{210}{subsection.4.2.56}
+\contentsline {subsection}{\numberline {4.2.57}Module snd-indigo}{211}{subsection.4.2.57}
+\contentsline {subsection}{\numberline {4.2.58}Module snd-indigodj}{211}{subsection.4.2.58}
+\contentsline {subsection}{\numberline {4.2.59}Module snd-indigoio}{211}{subsection.4.2.59}
+\contentsline {subsection}{\numberline {4.2.60}Module snd-intel8x0}{211}{subsection.4.2.60}
+\contentsline {subsection}{\numberline {4.2.61}Module snd-intel8x0m}{212}{subsection.4.2.61}
+\contentsline {subsection}{\numberline {4.2.62}Module snd-interwave}{212}{subsection.4.2.62}
+\contentsline {subsection}{\numberline {4.2.63}Module snd-interwave-stb}{213}{subsection.4.2.63}
+\contentsline {subsection}{\numberline {4.2.64}Module snd-jazz16}{213}{subsection.4.2.64}
+\contentsline {subsection}{\numberline {4.2.65}Module snd-korg1212}{213}{subsection.4.2.65}
+\contentsline {subsection}{\numberline {4.2.66}Module snd-layla20}{213}{subsection.4.2.66}
+\contentsline {subsection}{\numberline {4.2.67}Module snd-layla24}{213}{subsection.4.2.67}
+\contentsline {subsection}{\numberline {4.2.68}Module snd-lola}{214}{subsection.4.2.68}
+\contentsline {subsection}{\numberline {4.2.69}Module snd-lx6464es}{214}{subsection.4.2.69}
+\contentsline {subsection}{\numberline {4.2.70}Module snd-maestro3}{214}{subsection.4.2.70}
+\contentsline {subsection}{\numberline {4.2.71}Module snd-mia}{214}{subsection.4.2.71}
+\contentsline {subsection}{\numberline {4.2.72}Module snd-miro}{214}{subsection.4.2.72}
+\contentsline {subsection}{\numberline {4.2.73}Module snd-mixart}{215}{subsection.4.2.73}
+\contentsline {subsection}{\numberline {4.2.74}Module snd-mona}{215}{subsection.4.2.74}
+\contentsline {subsection}{\numberline {4.2.75}Module snd-mpu401}{215}{subsection.4.2.75}
+\contentsline {subsection}{\numberline {4.2.76}Module snd-msnd-classic}{215}{subsection.4.2.76}
+\contentsline {subsection}{\numberline {4.2.77}Module snd-msnd-pinnacle}{216}{subsection.4.2.77}
+\contentsline {subsection}{\numberline {4.2.78}Module snd-mtpav}{216}{subsection.4.2.78}
+\contentsline {subsection}{\numberline {4.2.79}Module snd-mts64}{216}{subsection.4.2.79}
+\contentsline {subsection}{\numberline {4.2.80}Module snd-nm256}{216}{subsection.4.2.80}
+\contentsline {subsection}{\numberline {4.2.81}Module snd-opl3sa2}{217}{subsection.4.2.81}
+\contentsline {subsection}{\numberline {4.2.82}Module snd-opti92x-ad1848}{217}{subsection.4.2.82}
+\contentsline {subsection}{\numberline {4.2.83}Module snd-opti92x-cs4231}{218}{subsection.4.2.83}
+\contentsline {subsection}{\numberline {4.2.84}Module snd-opti93x}{218}{subsection.4.2.84}
+\contentsline {subsection}{\numberline {4.2.85}Module snd-oxygen}{218}{subsection.4.2.85}
+\contentsline {subsection}{\numberline {4.2.86}Module snd-pcsp}{219}{subsection.4.2.86}
+\contentsline {subsection}{\numberline {4.2.87}Module snd-pcxhr}{219}{subsection.4.2.87}
+\contentsline {subsection}{\numberline {4.2.88}Module snd-portman2x4}{219}{subsection.4.2.88}
+\contentsline {subsection}{\numberline {4.2.89}Module snd-powermac (on ppc only)}{219}{subsection.4.2.89}
+\contentsline {subsection}{\numberline {4.2.90}Module snd-pxa2xx-ac97 (on arm only)}{219}{subsection.4.2.90}
+\contentsline {subsection}{\numberline {4.2.91}Module snd-riptide}{220}{subsection.4.2.91}
+\contentsline {subsection}{\numberline {4.2.92}Module snd-rme32}{220}{subsection.4.2.92}
+\contentsline {subsection}{\numberline {4.2.93}Module snd-rme96}{220}{subsection.4.2.93}
+\contentsline {subsection}{\numberline {4.2.94}Module snd-rme9652}{220}{subsection.4.2.94}
+\contentsline {subsection}{\numberline {4.2.95}Module snd-sa11xx-uda1341 (on arm only)}{220}{subsection.4.2.95}
+\contentsline {subsection}{\numberline {4.2.96}Module snd-sb8}{220}{subsection.4.2.96}
+\contentsline {subsection}{\numberline {4.2.97}Module snd-sb16 and snd-sbawe}{221}{subsection.4.2.97}
+\contentsline {subsection}{\numberline {4.2.98}Module snd-sc6000}{221}{subsection.4.2.98}
+\contentsline {subsection}{\numberline {4.2.99}Module snd-sscape}{221}{subsection.4.2.99}
+\contentsline {subsection}{\numberline {4.2.100}Module snd-sun-amd7930 (on sparc only)}{222}{subsection.4.2.100}
+\contentsline {subsection}{\numberline {4.2.101}Module snd-sun-cs4231 (on sparc only)}{222}{subsection.4.2.101}
+\contentsline {subsection}{\numberline {4.2.102}Module snd-sun-dbri (on sparc only)}{222}{subsection.4.2.102}
+\contentsline {subsection}{\numberline {4.2.103}Module snd-wavefront}{222}{subsection.4.2.103}
+\contentsline {subsection}{\numberline {4.2.104}Module snd-sonicvibes}{223}{subsection.4.2.104}
+\contentsline {subsection}{\numberline {4.2.105}Module snd-serial-u16550}{223}{subsection.4.2.105}
+\contentsline {subsection}{\numberline {4.2.106}Module snd-trident}{223}{subsection.4.2.106}
+\contentsline {subsection}{\numberline {4.2.107}Module snd-ua101}{224}{subsection.4.2.107}
+\contentsline {subsection}{\numberline {4.2.108}Module snd-usb-audio}{224}{subsection.4.2.108}
+\contentsline {subsection}{\numberline {4.2.109}Module snd-usb-caiaq}{224}{subsection.4.2.109}
+\contentsline {subsection}{\numberline {4.2.110}Module snd-usb-usx2y}{224}{subsection.4.2.110}
+\contentsline {subsection}{\numberline {4.2.111}Module snd-via82xx}{225}{subsection.4.2.111}
+\contentsline {subsection}{\numberline {4.2.112}Module snd-via82xx-modem}{225}{subsection.4.2.112}
+\contentsline {subsection}{\numberline {4.2.113}Module snd-virmidi}{225}{subsection.4.2.113}
+\contentsline {subsection}{\numberline {4.2.114}Module snd-virtuoso}{226}{subsection.4.2.114}
+\contentsline {subsection}{\numberline {4.2.115}Module snd-vx222}{226}{subsection.4.2.115}
+\contentsline {subsection}{\numberline {4.2.116}Module snd-vxpocket}{226}{subsection.4.2.116}
+\contentsline {subsection}{\numberline {4.2.117}Module snd-ymfpci}{226}{subsection.4.2.117}
+\contentsline {subsection}{\numberline {4.2.118}Module snd-pdaudiocf}{227}{subsection.4.2.118}
+\contentsline {section}{\numberline {4.3}AC97 Quirk Option}{227}{section.4.3}
+\contentsline {section}{\numberline {4.4}Configuring Non-ISAPNP Cards}{227}{section.4.4}
+\contentsline {section}{\numberline {4.5}Module Autoloading Support}{227}{section.4.5}
+\contentsline {section}{\numberline {4.6}ALSA PCM devices to OSS devices mapping}{228}{section.4.6}
+\contentsline {section}{\numberline {4.7}Proc interfaces (/proc/asound)}{229}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}/proc/asound/card\#/pcm\#{[}cp{]}/oss}{229}{subsection.4.7.1}
+\contentsline {section}{\numberline {4.8}Early Buffer Allocation}{229}{section.4.8}
+\contentsline {section}{\numberline {4.9}Links and Addresses}{230}{section.4.9}
+\contentsline {chapter}{\numberline {5}HD-Audio}{231}{chapter.5}
+\contentsline {section}{\numberline {5.1}More Notes on HD-Audio Driver}{231}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}General}{231}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}HD-Audio Controller}{231}{subsection.5.1.2}
+\contentsline {subsubsection}{DMA-Position Problem}{231}{subsubsection*.580}
+\contentsline {subsubsection}{Codec-Probing Problem}{232}{subsubsection*.581}
+\contentsline {subsubsection}{Interrupt Handling}{232}{subsubsection*.582}
+\contentsline {subsection}{\numberline {5.1.3}HD-Audio Codec}{232}{subsection.5.1.3}
+\contentsline {subsubsection}{Model Option}{233}{subsubsection*.583}
+\contentsline {subsubsection}{Speaker and Headphone Output}{233}{subsubsection*.584}
+\contentsline {subsubsection}{Capture Problems}{234}{subsubsection*.585}
+\contentsline {subsubsection}{Direct Debugging}{234}{subsubsection*.586}
+\contentsline {subsection}{\numberline {5.1.4}Other Issues}{234}{subsection.5.1.4}
+\contentsline {subsubsection}{Kernel Configuration}{234}{subsubsection*.587}
+\contentsline {subsubsection}{Codec Proc-File}{235}{subsubsection*.588}
+\contentsline {subsubsection}{HD-Audio Reconfiguration}{235}{subsubsection*.589}
+\contentsline {subsubsection}{Hint Strings}{236}{subsubsection*.590}
+\contentsline {subsubsection}{Early Patching}{237}{subsubsection*.591}
+\contentsline {subsubsection}{Power-Saving}{238}{subsubsection*.592}
+\contentsline {subsubsection}{Tracepoints}{238}{subsubsection*.593}
+\contentsline {subsubsection}{Development Tree}{239}{subsubsection*.594}
+\contentsline {subsubsection}{Sending a Bug Report}{239}{subsubsection*.595}
+\contentsline {subsection}{\numberline {5.1.5}Debug Tools}{239}{subsection.5.1.5}
+\contentsline {subsubsection}{alsa-info}{240}{subsubsection*.596}
+\contentsline {subsubsection}{hda-verb}{240}{subsubsection*.597}
+\contentsline {subsubsection}{hda-analyzer}{241}{subsubsection*.598}
+\contentsline {subsubsection}{Codecgraph}{241}{subsubsection*.599}
+\contentsline {subsubsection}{hda-emu}{241}{subsubsection*.600}
+\contentsline {subsubsection}{hda-jack-retask}{241}{subsubsection*.601}
+\contentsline {section}{\numberline {5.2}HD-Audio Codec-Specific Models}{242}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}ALC880}{242}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}ALC260}{242}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}ALC262}{242}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.4}ALC267/268}{242}{subsection.5.2.4}
+\contentsline {subsection}{\numberline {5.2.5}ALC22x/23x/25x/269/27x/28x/29x (and vendor-specific ALC3xxx models)}{242}{subsection.5.2.5}
+\contentsline {subsection}{\numberline {5.2.6}ALC66x/67x/892}{243}{subsection.5.2.6}
+\contentsline {subsection}{\numberline {5.2.7}ALC680}{243}{subsection.5.2.7}
+\contentsline {subsection}{\numberline {5.2.8}ALC88x/898/1150}{243}{subsection.5.2.8}
+\contentsline {subsection}{\numberline {5.2.9}ALC861/660}{244}{subsection.5.2.9}
+\contentsline {subsection}{\numberline {5.2.10}ALC861VD/660VD}{244}{subsection.5.2.10}
+\contentsline {subsection}{\numberline {5.2.11}CMI9880}{244}{subsection.5.2.11}
+\contentsline {subsection}{\numberline {5.2.12}AD1882 / AD1882A}{244}{subsection.5.2.12}
+\contentsline {subsection}{\numberline {5.2.13}AD1884A / AD1883 / AD1984A / AD1984B}{244}{subsection.5.2.13}
+\contentsline {subsection}{\numberline {5.2.14}AD1884}{244}{subsection.5.2.14}
+\contentsline {subsection}{\numberline {5.2.15}AD1981}{244}{subsection.5.2.15}
+\contentsline {subsection}{\numberline {5.2.16}AD1983}{244}{subsection.5.2.16}
+\contentsline {subsection}{\numberline {5.2.17}AD1984}{244}{subsection.5.2.17}
+\contentsline {subsection}{\numberline {5.2.18}AD1986A}{245}{subsection.5.2.18}
+\contentsline {subsection}{\numberline {5.2.19}AD1988/AD1988B/AD1989A/AD1989B}{245}{subsection.5.2.19}
+\contentsline {subsection}{\numberline {5.2.20}Conexant 5045}{245}{subsection.5.2.20}
+\contentsline {subsection}{\numberline {5.2.21}Conexant 5047}{245}{subsection.5.2.21}
+\contentsline {subsection}{\numberline {5.2.22}Conexant 5051}{245}{subsection.5.2.22}
+\contentsline {subsection}{\numberline {5.2.23}Conexant 5066}{245}{subsection.5.2.23}
+\contentsline {subsection}{\numberline {5.2.24}STAC9200}{246}{subsection.5.2.24}
+\contentsline {subsection}{\numberline {5.2.25}STAC9205/9254}{246}{subsection.5.2.25}
+\contentsline {subsection}{\numberline {5.2.26}STAC9220/9221}{246}{subsection.5.2.26}
+\contentsline {subsection}{\numberline {5.2.27}STAC9202/9250/9251}{247}{subsection.5.2.27}
+\contentsline {subsection}{\numberline {5.2.28}STAC9227/9228/9229/927x}{247}{subsection.5.2.28}
+\contentsline {subsection}{\numberline {5.2.29}STAC92HD71B*}{248}{subsection.5.2.29}
+\contentsline {subsection}{\numberline {5.2.30}STAC92HD73*}{248}{subsection.5.2.30}
+\contentsline {subsection}{\numberline {5.2.31}STAC92HD83*}{248}{subsection.5.2.31}
+\contentsline {subsection}{\numberline {5.2.32}STAC92HD95}{249}{subsection.5.2.32}
+\contentsline {subsection}{\numberline {5.2.33}STAC9872}{249}{subsection.5.2.33}
+\contentsline {subsection}{\numberline {5.2.34}Cirrus Logic CS4206/4207}{249}{subsection.5.2.34}
+\contentsline {subsection}{\numberline {5.2.35}Cirrus Logic CS4208}{249}{subsection.5.2.35}
+\contentsline {subsection}{\numberline {5.2.36}VIA VT17xx/VT18xx/VT20xx}{249}{subsection.5.2.36}
+\contentsline {section}{\numberline {5.3}HD-Audio Codec-Specific Mixer Controls}{249}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Realtek codecs}{250}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}IDT/Sigmatel codecs}{250}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}VIA codecs}{250}{subsection.5.3.3}
+\contentsline {subsection}{\numberline {5.3.4}Conexant codecs}{251}{subsection.5.3.4}
+\contentsline {subsection}{\numberline {5.3.5}Analog codecs}{251}{subsection.5.3.5}
+\contentsline {section}{\numberline {5.4}HD-Audio DP-MST Support}{251}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}PCM}{251}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Pin Initialization}{251}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}Connection list}{251}{subsection.5.4.3}
+\contentsline {subsection}{\numberline {5.4.4}Jack}{251}{subsection.5.4.4}
+\contentsline {subsubsection}{Build Jack}{252}{subsubsection*.602}
+\contentsline {subsubsection}{Unsolicited Event Enabling}{252}{subsubsection*.603}
+\contentsline {subsubsection}{Monitor Hotplug Event Handling}{252}{subsubsection*.604}
+\contentsline {subsection}{\numberline {5.4.5}Others to be added later}{252}{subsection.5.4.5}
+\contentsline {chapter}{\numberline {6}Card-Specific Information}{253}{chapter.6}
+\contentsline {section}{\numberline {6.1}Analog Joystick Support on ALSA Drivers}{253}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}General}{253}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}PCI Cards}{253}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}ISA Cards}{254}{subsection.6.1.3}
+\contentsline {section}{\numberline {6.2}Brief Notes on C-Media 8338/8738/8768/8770 Driver}{254}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Front/Rear Multi-channel Playback}{254}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}4/6 Multi-Channel Playback}{255}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Digital I/O}{256}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.4}The AC3 (RAW DIGITAL) OUTPUT}{256}{subsection.6.2.4}
+\contentsline {subsection}{\numberline {6.2.5}ANALOG MIXER INTERFACE}{257}{subsection.6.2.5}
+\contentsline {subsection}{\numberline {6.2.6}MIDI CONTROLLER}{257}{subsection.6.2.6}
+\contentsline {subsection}{\numberline {6.2.7}FM OPL/3 Synth}{257}{subsection.6.2.7}
+\contentsline {subsection}{\numberline {6.2.8}Joystick and Modem}{257}{subsection.6.2.8}
+\contentsline {subsection}{\numberline {6.2.9}Debugging Information}{257}{subsection.6.2.9}
+\contentsline {section}{\numberline {6.3}Sound Blaster Live mixer / default DSP code}{257}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}IEC958 (S/PDIF) raw PCM}{258}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Digital mixer controls}{258}{subsection.6.3.2}
+\contentsline {subsubsection}{\texttt {name='Wave Playback Volume',index=0}}{258}{subsubsection*.605}
+\contentsline {subsubsection}{\texttt {name='Wave Surround Playback Volume',index=0}}{258}{subsubsection*.606}
+\contentsline {subsubsection}{\texttt {name='Wave Center Playback Volume',index=0}}{258}{subsubsection*.607}
+\contentsline {subsubsection}{\texttt {name='Wave LFE Playback Volume',index=0}}{259}{subsubsection*.608}
+\contentsline {subsubsection}{\texttt {name='Wave Capture Volume',index=0}, \texttt {name='Wave Capture Switch',index=0}}{259}{subsubsection*.609}
+\contentsline {subsubsection}{\texttt {name='Synth Playback Volume',index=0}}{259}{subsubsection*.610}
+\contentsline {subsubsection}{\texttt {name='Synth Capture Volume',index=0}, \texttt {name='Synth Capture Switch',index=0}}{259}{subsubsection*.611}
+\contentsline {subsubsection}{\texttt {name='Surround Playback Volume',index=0}}{259}{subsubsection*.612}
+\contentsline {subsubsection}{\texttt {name='Surround Capture Volume',index=0}, \texttt {name='Surround Capture Switch',index=0}}{259}{subsubsection*.613}
+\contentsline {subsubsection}{\texttt {name='Center Playback Volume',index=0}}{259}{subsubsection*.614}
+\contentsline {subsubsection}{\texttt {name='LFE Playback Volume',index=0}}{259}{subsubsection*.615}
+\contentsline {subsubsection}{\texttt {name='AC97 Playback Volume',index=0}}{259}{subsubsection*.616}
+\contentsline {subsubsection}{\texttt {name='AC97 Capture Volume',index=0}}{260}{subsubsection*.617}
+\contentsline {subsubsection}{\texttt {name='IEC958 TTL Playback Volume',index=0}}{260}{subsubsection*.618}
+\contentsline {subsubsection}{\texttt {name='IEC958 TTL Capture Volume',index=0}}{260}{subsubsection*.619}
+\contentsline {subsubsection}{\texttt {name='Zoom Video Playback Volume',index=0}}{260}{subsubsection*.620}
+\contentsline {subsubsection}{\texttt {name='Zoom Video Capture Volume',index=0}}{260}{subsubsection*.621}
+\contentsline {subsubsection}{\texttt {name='IEC958 LiveDrive Playback Volume',index=0}}{260}{subsubsection*.622}
+\contentsline {subsubsection}{\texttt {name='IEC958 LiveDrive Capture Volume',index=0}}{260}{subsubsection*.623}
+\contentsline {subsubsection}{\texttt {name='IEC958 Coaxial Playback Volume',index=0}}{261}{subsubsection*.624}
+\contentsline {subsubsection}{\texttt {name='IEC958 Coaxial Capture Volume',index=0}}{261}{subsubsection*.625}
+\contentsline {subsubsection}{\texttt {name='Line LiveDrive Playback Volume',index=0}, \texttt {name='Line LiveDrive Playback Volume',index=1}}{261}{subsubsection*.626}
+\contentsline {subsubsection}{\texttt {name='Line LiveDrive Capture Volume',index=1}, \texttt {name='Line LiveDrive Capture Volume',index=1}}{261}{subsubsection*.627}
+\contentsline {subsubsection}{\texttt {name='Tone Control - Switch',index=0}}{261}{subsubsection*.628}
+\contentsline {subsubsection}{\texttt {name='Tone Control - Bass',index=0}}{261}{subsubsection*.629}
+\contentsline {subsubsection}{\texttt {name='Tone Control - Treble',index=0}}{261}{subsubsection*.630}
+\contentsline {subsubsection}{\texttt {name='IEC958 Optical Raw Playback Switch',index=0}}{261}{subsubsection*.631}
+\contentsline {subsubsection}{\texttt {name='Headphone Playback Volume',index=1}}{261}{subsubsection*.632}
+\contentsline {subsubsection}{\texttt {name='Headphone Center Playback Switch',index=1}}{261}{subsubsection*.633}
+\contentsline {subsubsection}{\texttt {name='Headphone LFE Playback Switch',index=1}}{262}{subsubsection*.634}
+\contentsline {subsection}{\numberline {6.3.3}PCM stream related controls}{262}{subsection.6.3.3}
+\contentsline {subsubsection}{\texttt {name='EMU10K1 PCM Volume',index 0-31}}{262}{subsubsection*.635}
+\contentsline {subsubsection}{\texttt {name='EMU10K1 PCM Send Routing',index 0-31}}{262}{subsubsection*.636}
+\contentsline {subsubsection}{\texttt {name='EMU10K1 PCM Send Volume',index 0-31}}{262}{subsubsection*.637}
+\contentsline {subsection}{\numberline {6.3.4}MANUALS/PATENTS}{263}{subsection.6.3.4}
+\contentsline {subsubsection}{ftp://opensource.creative.com/pub/doc}{263}{subsubsection*.638}
+\contentsline {subsubsection}{WIPO Patents}{263}{subsubsection*.639}
+\contentsline {subsubsection}{US Patents (http://www.uspto.gov/)}{263}{subsubsection*.640}
+\contentsline {section}{\numberline {6.4}Sound Blaster Audigy mixer / default DSP code}{263}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Digital mixer controls}{264}{subsection.6.4.1}
+\contentsline {subsubsection}{name='PCM Front Playback Volume',index=0}{264}{subsubsection*.641}
+\contentsline {subsubsection}{name='PCM Surround Playback Volume',index=0}{264}{subsubsection*.642}
+\contentsline {subsubsection}{name='PCM Center Playback Volume',index=0}{264}{subsubsection*.643}
+\contentsline {subsubsection}{name='PCM LFE Playback Volume',index=0}{264}{subsubsection*.644}
+\contentsline {subsubsection}{name='PCM Playback Volume',index=0}{264}{subsubsection*.645}
+\contentsline {subsubsection}{name='PCM Capture Volume',index=0}{265}{subsubsection*.646}
+\contentsline {subsubsection}{name='Music Playback Volume',index=0}{265}{subsubsection*.647}
+\contentsline {subsubsection}{name='Music Capture Volume',index=0}{265}{subsubsection*.648}
+\contentsline {subsubsection}{name='Mic Playback Volume',index=0}{265}{subsubsection*.649}
+\contentsline {subsubsection}{name='Mic Capture Volume',index=0}{265}{subsubsection*.650}
+\contentsline {subsubsection}{name='Audigy CD Playback Volume',index=0}{265}{subsubsection*.651}
+\contentsline {subsubsection}{name='Audigy CD Capture Volume',index=0}{265}{subsubsection*.652}
+\contentsline {subsubsection}{name='IEC958 Optical Playback Volume',index=0}{265}{subsubsection*.653}
+\contentsline {subsubsection}{name='IEC958 Optical Capture Volume',index=0}{265}{subsubsection*.654}
+\contentsline {subsubsection}{name='Line2 Playback Volume',index=0}{266}{subsubsection*.655}
+\contentsline {subsubsection}{name='Line2 Capture Volume',index=1}{266}{subsubsection*.656}
+\contentsline {subsubsection}{name='Analog Mix Playback Volume',index=0}{266}{subsubsection*.657}
+\contentsline {subsubsection}{name='Analog Mix Capture Volume',index=1}{266}{subsubsection*.658}
+\contentsline {subsubsection}{name='Aux2 Playback Volume',index=0}{266}{subsubsection*.659}
+\contentsline {subsubsection}{name='Aux2 Capture Volume',index=1}{266}{subsubsection*.660}
+\contentsline {subsubsection}{name='Front Playback Volume',index=0}{266}{subsubsection*.661}
+\contentsline {subsubsection}{name='Surround Playback Volume',index=0}{266}{subsubsection*.662}
+\contentsline {subsubsection}{name='Center Playback Volume',index=0}{266}{subsubsection*.663}
+\contentsline {subsubsection}{name='LFE Playback Volume',index=0}{266}{subsubsection*.664}
+\contentsline {subsubsection}{name='Tone Control - Switch',index=0}{267}{subsubsection*.665}
+\contentsline {subsubsection}{name='Tone Control - Bass',index=0}{267}{subsubsection*.666}
+\contentsline {subsubsection}{name='Tone Control - Treble',index=0}{267}{subsubsection*.667}
+\contentsline {subsubsection}{name='Master Playback Volume',index=0}{267}{subsubsection*.668}
+\contentsline {subsubsection}{name='IEC958 Optical Raw Playback Switch',index=0}{267}{subsubsection*.669}
+\contentsline {subsection}{\numberline {6.4.2}PCM stream related controls}{267}{subsection.6.4.2}
+\contentsline {subsubsection}{name='EMU10K1 PCM Volume',index 0-31}{267}{subsubsection*.670}
+\contentsline {subsubsection}{name='EMU10K1 PCM Send Routing',index 0-31}{267}{subsubsection*.671}
+\contentsline {subsubsection}{name='EMU10K1 PCM Send Volume',index 0-31}{268}{subsubsection*.672}
+\contentsline {subsection}{\numberline {6.4.3}MANUALS/PATENTS}{269}{subsection.6.4.3}
+\contentsline {subsubsection}{ftp://opensource.creative.com/pub/doc}{269}{subsubsection*.673}
+\contentsline {subsubsection}{WIPO Patents}{269}{subsubsection*.674}
+\contentsline {subsubsection}{US Patents (http://www.uspto.gov/)}{269}{subsubsection*.675}
+\contentsline {section}{\numberline {6.5}Low latency, multichannel audio with JACK and the emu10k1/emu10k2}{269}{section.6.5}
+\contentsline {section}{\numberline {6.6}VIA82xx mixer}{270}{section.6.6}
+\contentsline {section}{\numberline {6.7}Guide to using M-Audio Audiophile USB with ALSA and Jack}{271}{section.6.7}
+\contentsline {subsection}{\numberline {6.7.1}History}{271}{subsection.6.7.1}
+\contentsline {subsection}{\numberline {6.7.2}Audiophile USB Specs and correct usage}{271}{subsection.6.7.2}
+\contentsline {subsubsection}{Important facts about the Digital interface:}{272}{subsubsection*.676}
+\contentsline {subsection}{\numberline {6.7.3}Audiophile USB MIDI support in ALSA}{272}{subsection.6.7.3}
+\contentsline {subsection}{\numberline {6.7.4}Audiophile USB Audio support in ALSA}{272}{subsection.6.7.4}
+\contentsline {subsubsection}{Default Alsa driver mode}{272}{subsubsection*.677}
+\contentsline {subsubsection}{Advanced module setup}{273}{subsubsection*.678}
+\contentsline {paragraph}{Initializing the working mode of the Audiophile USB}{273}{paragraph*.679}
+\contentsline {paragraph}{16-bit modes}{273}{paragraph*.680}
+\contentsline {paragraph}{24-bit modes}{274}{paragraph*.681}
+\contentsline {paragraph}{AC3 w/ DTS passthru mode}{274}{paragraph*.682}
+\contentsline {paragraph}{How to use the \texttt {device\_setup} parameter}{275}{paragraph*.683}
+\contentsline {subsubsection}{CAUTION when initializing the device}{275}{subsubsection*.684}
+\contentsline {subsubsection}{Technical details for hackers}{275}{subsubsection*.685}
+\contentsline {paragraph}{Audiophile USB's \texttt {device\_setup} structure}{275}{paragraph*.686}
+\contentsline {paragraph}{USB implementation details for this device}{276}{paragraph*.687}
+\contentsline {subsection}{\numberline {6.7.5}Audiophile USB and Jack support}{278}{subsection.6.7.5}
+\contentsline {subsubsection}{Direct support in Jackd}{278}{subsubsection*.688}
+\contentsline {subsubsection}{Using Alsa plughw}{278}{subsubsection*.689}
+\contentsline {subsubsection}{Getting 2 input and/or output interfaces in Jack}{278}{subsubsection*.690}
+\contentsline {section}{\numberline {6.8}Alsa driver for Digigram miXart8 and miXart8AES/EBU soundcards}{279}{section.6.8}
+\contentsline {subsection}{\numberline {6.8.1}GENERAL}{279}{subsection.6.8.1}
+\contentsline {subsection}{\numberline {6.8.2}VERSION 0.1.0}{279}{subsection.6.8.2}
+\contentsline {subsubsection}{Formats}{279}{subsubsection*.691}
+\contentsline {subsubsection}{Playback}{279}{subsubsection*.692}
+\contentsline {subsubsection}{Capture}{279}{subsubsection*.693}
+\contentsline {subsubsection}{Mixer}{279}{subsubsection*.694}
+\contentsline {subsection}{\numberline {6.8.3}NOT YET IMPLEMENTED}{280}{subsection.6.8.3}
+\contentsline {subsection}{\numberline {6.8.4}FIRMWARE}{280}{subsection.6.8.4}
+\contentsline {subsection}{\numberline {6.8.5}COPYRIGHT}{280}{subsection.6.8.5}
+\contentsline {section}{\numberline {6.9}ALSA BT87x Driver}{280}{section.6.9}
+\contentsline {subsection}{\numberline {6.9.1}Intro}{280}{subsection.6.9.1}
+\contentsline {subsection}{\numberline {6.9.2}Driver Status}{281}{subsection.6.9.2}
+\contentsline {subsection}{\numberline {6.9.3}Audio modes}{281}{subsection.6.9.3}
+\contentsline {subsection}{\numberline {6.9.4}Digital audio mode}{281}{subsection.6.9.4}
+\contentsline {subsection}{\numberline {6.9.5}Analog audio mode (A/D)}{281}{subsection.6.9.5}
+\contentsline {section}{\numberline {6.10}Notes on Maya44 USB Audio Support}{281}{section.6.10}
+\contentsline {subsection}{\numberline {6.10.1}STATE OF DEVELOPMENT}{282}{subsection.6.10.1}
+\contentsline {subsection}{\numberline {6.10.2}DRIVER DETAILS}{282}{subsection.6.10.2}
+\contentsline {subsection}{\numberline {6.10.3}SAMPLING RATES}{283}{subsection.6.10.3}
+\contentsline {subsection}{\numberline {6.10.4}SOUND DEVICES}{283}{subsection.6.10.4}
+\contentsline {subsection}{\numberline {6.10.5}NAMING OF MIXER CONTROLS}{283}{subsection.6.10.5}
+\contentsline {section}{\numberline {6.11}Software Interface ALSA-DSP MADI Driver}{284}{section.6.11}
+\contentsline {subsection}{\numberline {6.11.1}Hardware functionality}{284}{subsection.6.11.1}
+\contentsline {subsubsection}{Audio transmission}{284}{subsubsection*.695}
+\contentsline {subsubsection}{Controller}{285}{subsubsection*.696}
+\contentsline {subsubsection}{Mixer}{287}{subsubsection*.697}
+\contentsline {subsubsection}{Information (only read access)}{288}{subsubsection*.698}
+\contentsline {subsection}{\numberline {6.11.2}Calling Parameter}{289}{subsection.6.11.2}
+\contentsline {section}{\numberline {6.12}Serial UART 16450/16550 MIDI driver}{289}{section.6.12}
+\contentsline {section}{\numberline {6.13}Imagination Technologies SPDIF Input Controllers}{291}{section.6.13}
+\contentsline {chapter}{Index}{293}{section*.699}

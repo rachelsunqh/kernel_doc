@@ -1,0 +1,91 @@
+\select@language {english}
+\contentsline {chapter}{\numberline {1}Unreliable Guide To Hacking The Linux Kernel}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Introduction}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}The Players}{1}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}User Context}{1}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Hardware Interrupts (Hard IRQs)}{2}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Software Interrupt Context: Softirqs and Tasklets}{2}{subsection.1.2.3}
+\contentsline {section}{\numberline {1.3}Some Basic Rules}{2}{section.1.3}
+\contentsline {section}{\numberline {1.4}ioctls: Not writing a new system call}{3}{section.1.4}
+\contentsline {section}{\numberline {1.5}Recipes for Deadlock}{3}{section.1.5}
+\contentsline {section}{\numberline {1.6}Common Routines}{4}{section.1.6}
+\contentsline {subsection}{\numberline {1.6.1}\texttt {printk()}}{4}{subsection.1.6.1}
+\contentsline {subsection}{\numberline {1.6.2}\texttt {copy\_to\_user()} / \texttt {copy\_from\_user()} / \texttt {get\_user()} / \texttt {put\_user()}}{4}{subsection.1.6.2}
+\contentsline {subsection}{\numberline {1.6.3}\texttt {kmalloc()}/\texttt {kfree()}}{5}{subsection.1.6.3}
+\contentsline {subsection}{\numberline {1.6.4}\texttt {current()}}{5}{subsection.1.6.4}
+\contentsline {subsection}{\numberline {1.6.5}\texttt {mdelay()}/\texttt {udelay()}}{5}{subsection.1.6.5}
+\contentsline {subsection}{\numberline {1.6.6}\texttt {cpu\_to\_be32()}/\texttt {be32\_to\_cpu()}/\texttt {cpu\_to\_le32()}/\texttt {le32\_to\_cpu()}}{5}{subsection.1.6.6}
+\contentsline {subsection}{\numberline {1.6.7}\texttt {local\_irq\_save()}/\texttt {local\_irq\_restore()}}{6}{subsection.1.6.7}
+\contentsline {subsection}{\numberline {1.6.8}\texttt {local\_bh\_disable()}/\texttt {local\_bh\_enable()}}{6}{subsection.1.6.8}
+\contentsline {subsection}{\numberline {1.6.9}\texttt {smp\_processor\_id()}}{6}{subsection.1.6.9}
+\contentsline {subsection}{\numberline {1.6.10}\texttt {\_\_init}/\texttt {\_\_exit}/\texttt {\_\_initdata}}{6}{subsection.1.6.10}
+\contentsline {subsection}{\numberline {1.6.11}\texttt {\_\_initcall()}/\texttt {module\_init()}}{6}{subsection.1.6.11}
+\contentsline {subsection}{\numberline {1.6.12}\texttt {module\_exit()}}{7}{subsection.1.6.12}
+\contentsline {subsection}{\numberline {1.6.13}\texttt {try\_module\_get()}/\texttt {module\_put()}}{7}{subsection.1.6.13}
+\contentsline {section}{\numberline {1.7}Wait Queues \texttt {include/linux/wait.h}}{7}{section.1.7}
+\contentsline {subsection}{\numberline {1.7.1}Declaring}{7}{subsection.1.7.1}
+\contentsline {subsection}{\numberline {1.7.2}Queuing}{7}{subsection.1.7.2}
+\contentsline {subsection}{\numberline {1.7.3}Waking Up Queued Tasks}{7}{subsection.1.7.3}
+\contentsline {section}{\numberline {1.8}Atomic Operations}{8}{section.1.8}
+\contentsline {section}{\numberline {1.9}Symbols}{8}{section.1.9}
+\contentsline {subsection}{\numberline {1.9.1}\texttt {EXPORT\_SYMBOL()}}{8}{subsection.1.9.1}
+\contentsline {subsection}{\numberline {1.9.2}\texttt {EXPORT\_SYMBOL\_GPL()}}{8}{subsection.1.9.2}
+\contentsline {section}{\numberline {1.10}Routines and Conventions}{8}{section.1.10}
+\contentsline {subsection}{\numberline {1.10.1}Double-linked lists \texttt {include/linux/list.h}}{8}{subsection.1.10.1}
+\contentsline {subsection}{\numberline {1.10.2}Return Conventions}{9}{subsection.1.10.2}
+\contentsline {subsection}{\numberline {1.10.3}Breaking Compilation}{9}{subsection.1.10.3}
+\contentsline {subsection}{\numberline {1.10.4}Initializing structure members}{9}{subsection.1.10.4}
+\contentsline {subsection}{\numberline {1.10.5}GNU Extensions}{9}{subsection.1.10.5}
+\contentsline {subsection}{\numberline {1.10.6}C++}{10}{subsection.1.10.6}
+\contentsline {subsection}{\numberline {1.10.7}\#if}{10}{subsection.1.10.7}
+\contentsline {section}{\numberline {1.11}Putting Your Stuff in the Kernel}{10}{section.1.11}
+\contentsline {section}{\numberline {1.12}Kernel Cantrips}{10}{section.1.12}
+\contentsline {section}{\numberline {1.13}Thanks}{11}{section.1.13}
+\contentsline {chapter}{\numberline {2}Unreliable Guide To Locking}{13}{chapter.2}
+\contentsline {section}{\numberline {2.1}Introduction}{13}{section.2.1}
+\contentsline {section}{\numberline {2.2}The Problem With Concurrency}{13}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Race Conditions and Critical Regions}{14}{subsection.2.2.1}
+\contentsline {section}{\numberline {2.3}Locking in the Linux Kernel}{14}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Two Main Types of Kernel Locks: Spinlocks and Mutexes}{14}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Locks and Uniprocessor Kernels}{14}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Locking Only In User Context}{15}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Locking Between User Context and Softirqs}{15}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.5}Locking Between User Context and Tasklets}{15}{subsection.2.3.5}
+\contentsline {subsection}{\numberline {2.3.6}Locking Between User Context and Timers}{15}{subsection.2.3.6}
+\contentsline {subsection}{\numberline {2.3.7}Locking Between Tasklets/Timers}{15}{subsection.2.3.7}
+\contentsline {subsubsection}{The Same Tasklet/Timer}{15}{subsubsection*.3}
+\contentsline {subsubsection}{Different Tasklets/Timers}{15}{subsubsection*.4}
+\contentsline {subsection}{\numberline {2.3.8}Locking Between Softirqs}{15}{subsection.2.3.8}
+\contentsline {subsubsection}{The Same Softirq}{16}{subsubsection*.5}
+\contentsline {subsubsection}{Different Softirqs}{16}{subsubsection*.6}
+\contentsline {section}{\numberline {2.4}Hard IRQ Context}{16}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Locking Between Hard IRQ and Softirqs/Tasklets}{16}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Locking Between Two Hard IRQ Handlers}{16}{subsection.2.4.2}
+\contentsline {section}{\numberline {2.5}Cheat Sheet For Locking}{16}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Table of Minimum Requirements}{17}{subsection.2.5.1}
+\contentsline {section}{\numberline {2.6}The trylock Functions}{17}{section.2.6}
+\contentsline {section}{\numberline {2.7}Common Examples}{18}{section.2.7}
+\contentsline {subsection}{\numberline {2.7.1}All In User Context}{18}{subsection.2.7.1}
+\contentsline {subsection}{\numberline {2.7.2}Accessing From Interrupt Context}{19}{subsection.2.7.2}
+\contentsline {subsection}{\numberline {2.7.3}Exposing Objects Outside This File}{21}{subsection.2.7.3}
+\contentsline {subsubsection}{Using Atomic Operations For The Reference Count}{23}{subsubsection*.7}
+\contentsline {subsection}{\numberline {2.7.4}Protecting The Objects Themselves}{24}{subsection.2.7.4}
+\contentsline {section}{\numberline {2.8}Common Problems}{25}{section.2.8}
+\contentsline {subsection}{\numberline {2.8.1}Deadlock: Simple and Advanced}{25}{subsection.2.8.1}
+\contentsline {subsection}{\numberline {2.8.2}Preventing Deadlock}{26}{subsection.2.8.2}
+\contentsline {subsubsection}{Overzealous Prevention Of Deadlocks}{26}{subsubsection*.8}
+\contentsline {subsection}{\numberline {2.8.3}Racing Timers: A Kernel Pastime}{26}{subsection.2.8.3}
+\contentsline {section}{\numberline {2.9}Locking Speed}{27}{section.2.9}
+\contentsline {subsection}{\numberline {2.9.1}Read/Write Lock Variants}{27}{subsection.2.9.1}
+\contentsline {subsection}{\numberline {2.9.2}Avoiding Locks: Read Copy Update}{27}{subsection.2.9.2}
+\contentsline {subsection}{\numberline {2.9.3}Per-CPU Data}{30}{subsection.2.9.3}
+\contentsline {subsection}{\numberline {2.9.4}Data Which Mostly Used By An IRQ Handler}{30}{subsection.2.9.4}
+\contentsline {section}{\numberline {2.10}What Functions Are Safe To Call From Interrupts?}{30}{section.2.10}
+\contentsline {subsection}{\numberline {2.10.1}Some Functions Which Sleep}{31}{subsection.2.10.1}
+\contentsline {subsection}{\numberline {2.10.2}Some Functions Which Don't Sleep}{31}{subsection.2.10.2}
+\contentsline {section}{\numberline {2.11}Mutex API reference}{31}{section.2.11}
+\contentsline {section}{\numberline {2.12}Futex API reference}{33}{section.2.12}
+\contentsline {section}{\numberline {2.13}Further reading}{39}{section.2.13}
+\contentsline {section}{\numberline {2.14}Thanks}{40}{section.2.14}
+\contentsline {section}{\numberline {2.15}Glossary}{40}{section.2.15}
+\contentsline {chapter}{Index}{41}{section*.39}

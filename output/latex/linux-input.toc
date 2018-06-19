@@ -1,0 +1,379 @@
+\select@language {english}
+\contentsline {chapter}{\numberline {1}Linux Input Subsystem userspace API}{3}{chapter.1}
+\contentsline {section}{\numberline {1.1}Introduction}{3}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Architecture}{3}{subsection.1.1.1}
+\contentsline {subsubsection}{Device drivers}{3}{subsubsection*.3}
+\contentsline {subsubsection}{Event handlers}{3}{subsubsection*.4}
+\contentsline {subsection}{\numberline {1.1.2}Simple Usage}{3}{subsection.1.1.2}
+\contentsline {subsection}{\numberline {1.1.3}Detailed Description}{4}{subsection.1.1.3}
+\contentsline {subsubsection}{Event handlers}{4}{subsubsection*.5}
+\contentsline {paragraph}{evdev}{4}{paragraph*.6}
+\contentsline {paragraph}{keyboard}{4}{paragraph*.7}
+\contentsline {paragraph}{mousedev}{4}{paragraph*.8}
+\contentsline {paragraph}{joydev}{5}{paragraph*.9}
+\contentsline {subsubsection}{Device drivers}{5}{subsubsection*.10}
+\contentsline {paragraph}{hid-generic}{5}{paragraph*.11}
+\contentsline {paragraph}{usbmouse}{6}{paragraph*.12}
+\contentsline {paragraph}{usbkbd}{6}{paragraph*.13}
+\contentsline {paragraph}{psmouse}{6}{paragraph*.14}
+\contentsline {paragraph}{atkbd}{6}{paragraph*.15}
+\contentsline {paragraph}{iforce}{6}{paragraph*.16}
+\contentsline {subsection}{\numberline {1.1.4}Verifying if it works}{6}{subsection.1.1.4}
+\contentsline {subsection}{\numberline {1.1.5}Event interface}{6}{subsection.1.1.5}
+\contentsline {section}{\numberline {1.2}Input event codes}{7}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Event types}{7}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Event codes}{8}{subsection.1.2.2}
+\contentsline {subsubsection}{EV\_SYN}{8}{subsubsection*.17}
+\contentsline {subsubsection}{EV\_KEY}{8}{subsubsection*.18}
+\contentsline {subsubsection}{EV\_REL}{9}{subsubsection*.19}
+\contentsline {subsubsection}{EV\_ABS}{9}{subsubsection*.20}
+\contentsline {subsubsection}{EV\_SW}{10}{subsubsection*.21}
+\contentsline {subsubsection}{EV\_MSC}{10}{subsubsection*.22}
+\contentsline {subsubsection}{EV\_LED}{10}{subsubsection*.23}
+\contentsline {subsubsection}{EV\_REP}{10}{subsubsection*.24}
+\contentsline {subsubsection}{EV\_SND}{10}{subsubsection*.25}
+\contentsline {subsubsection}{EV\_FF}{10}{subsubsection*.26}
+\contentsline {subsubsection}{EV\_PWR}{10}{subsubsection*.27}
+\contentsline {subsection}{\numberline {1.2.3}Device properties}{11}{subsection.1.2.3}
+\contentsline {subsubsection}{INPUT\_PROP\_DIRECT + INPUT\_PROP\_POINTER}{11}{subsubsection*.28}
+\contentsline {subsubsection}{INPUT\_PROP\_BUTTONPAD}{11}{subsubsection*.29}
+\contentsline {subsubsection}{INPUT\_PROP\_SEMI\_MT}{11}{subsubsection*.30}
+\contentsline {subsubsection}{INPUT\_PROP\_TOPBUTTONPAD}{11}{subsubsection*.31}
+\contentsline {subsubsection}{INPUT\_PROP\_ACCELEROMETER}{11}{subsubsection*.32}
+\contentsline {subsection}{\numberline {1.2.4}Guidelines}{12}{subsection.1.2.4}
+\contentsline {subsubsection}{Mice}{12}{subsubsection*.33}
+\contentsline {subsubsection}{Touchscreens}{12}{subsubsection*.34}
+\contentsline {subsubsection}{Trackpads}{12}{subsubsection*.35}
+\contentsline {subsubsection}{Tablets}{12}{subsubsection*.36}
+\contentsline {section}{\numberline {1.3}Multi-touch (MT) Protocol}{12}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Introduction}{12}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Protocol Usage}{13}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {1.3.3}Protocol Example A}{14}{subsection.1.3.3}
+\contentsline {subsection}{\numberline {1.3.4}Protocol Example B}{14}{subsection.1.3.4}
+\contentsline {subsection}{\numberline {1.3.5}Event Usage}{15}{subsection.1.3.5}
+\contentsline {subsection}{\numberline {1.3.6}Event Semantics}{15}{subsection.1.3.6}
+\contentsline {subsection}{\numberline {1.3.7}Event Computation}{17}{subsection.1.3.7}
+\contentsline {subsection}{\numberline {1.3.8}Finger Tracking}{17}{subsection.1.3.8}
+\contentsline {subsection}{\numberline {1.3.9}Gestures}{17}{subsection.1.3.9}
+\contentsline {subsection}{\numberline {1.3.10}Notes}{18}{subsection.1.3.10}
+\contentsline {section}{\numberline {1.4}Linux Gamepad Specification}{18}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}Introduction}{18}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.4.2}Geometry}{18}{subsection.1.4.2}
+\contentsline {subsection}{\numberline {1.4.3}Detection}{19}{subsection.1.4.3}
+\contentsline {subsection}{\numberline {1.4.4}Events}{19}{subsection.1.4.4}
+\contentsline {section}{\numberline {1.5}Force feedback for Linux}{20}{section.1.5}
+\contentsline {subsection}{\numberline {1.5.1}Introduction}{21}{subsection.1.5.1}
+\contentsline {subsection}{\numberline {1.5.2}Instructions to the user}{21}{subsection.1.5.2}
+\contentsline {subsubsection}{Does it work ?}{21}{subsubsection*.37}
+\contentsline {subsection}{\numberline {1.5.3}Instructions to the developer}{21}{subsection.1.5.3}
+\contentsline {subsubsection}{Querying device capabilities}{21}{subsubsection*.38}
+\contentsline {subsubsection}{Uploading effects to the device}{22}{subsubsection*.39}
+\contentsline {subsubsection}{Removing an effect from the device}{22}{subsubsection*.40}
+\contentsline {subsubsection}{Controlling the playback of effects}{22}{subsubsection*.41}
+\contentsline {subsubsection}{Setting the gain}{24}{subsubsection*.42}
+\contentsline {subsubsection}{Enabling/Disabling autocenter}{24}{subsubsection*.43}
+\contentsline {subsubsection}{Dynamic update of an effect}{24}{subsubsection*.44}
+\contentsline {subsubsection}{Information about the status of effects}{25}{subsubsection*.45}
+\contentsline {section}{\numberline {1.6}Linux Joystick support}{25}{section.1.6}
+\contentsline {subsection}{\numberline {1.6.1}Introduction}{25}{subsection.1.6.1}
+\contentsline {subsection}{\numberline {1.6.2}Usage}{25}{subsection.1.6.2}
+\contentsline {subsubsection}{Utilities}{26}{subsubsection*.46}
+\contentsline {subsubsection}{Device nodes}{26}{subsubsection*.47}
+\contentsline {subsubsection}{Modules needed}{26}{subsubsection*.48}
+\contentsline {subsubsection}{Verifying that it works}{27}{subsubsection*.49}
+\contentsline {subsubsection}{Calibration}{27}{subsubsection*.50}
+\contentsline {subsection}{\numberline {1.6.3}HW specific driver information}{27}{subsection.1.6.3}
+\contentsline {subsubsection}{Analog joysticks}{27}{subsubsection*.51}
+\contentsline {subsubsection}{Microsoft SideWinder joysticks}{29}{subsubsection*.52}
+\contentsline {subsubsection}{Logitech ADI devices}{29}{subsubsection*.53}
+\contentsline {subsubsection}{Gravis GrIP}{29}{subsubsection*.54}
+\contentsline {subsubsection}{FPGaming A3D and MadCatz A3D}{30}{subsubsection*.55}
+\contentsline {subsubsection}{ThrustMaster DirectConnect (BSP)}{30}{subsubsection*.56}
+\contentsline {subsubsection}{Creative Labs Blaster}{30}{subsubsection*.57}
+\contentsline {subsubsection}{Genius Digital joysticks}{30}{subsubsection*.58}
+\contentsline {subsubsection}{InterAct Digital joysticks}{31}{subsubsection*.59}
+\contentsline {subsubsection}{PDPI Lightning 4 gamecards}{31}{subsubsection*.60}
+\contentsline {subsubsection}{Trident 4DWave / Aureal Vortex}{31}{subsubsection*.61}
+\contentsline {subsubsection}{Crystal SoundFusion}{31}{subsubsection*.62}
+\contentsline {subsubsection}{SoundBlaster Live!}{31}{subsubsection*.63}
+\contentsline {subsubsection}{SoundBlaster 64 and 128 - ES1370 and ES1371, ESS Solo1 and S3 SonicVibes}{31}{subsubsection*.64}
+\contentsline {subsubsection}{Amiga}{31}{subsubsection*.65}
+\contentsline {subsubsection}{Game console and 8-bit pads and joysticks}{32}{subsubsection*.66}
+\contentsline {subsubsection}{SpaceTec/LabTec devices}{32}{subsubsection*.67}
+\contentsline {subsubsection}{Logitech SWIFT devices}{32}{subsubsection*.68}
+\contentsline {subsubsection}{Magellan / Space Mouse}{32}{subsubsection*.69}
+\contentsline {subsubsection}{I-Force devices}{33}{subsubsection*.70}
+\contentsline {subsubsection}{Gravis Stinger gamepad}{33}{subsubsection*.71}
+\contentsline {subsection}{\numberline {1.6.4}Troubleshooting}{33}{subsection.1.6.4}
+\contentsline {subsection}{\numberline {1.6.5}FAQ}{34}{subsection.1.6.5}
+\contentsline {subsection}{\numberline {1.6.6}Programming Interface}{34}{subsection.1.6.6}
+\contentsline {subsubsection}{Introduction}{34}{subsubsection*.72}
+\contentsline {subsubsection}{Initialization}{34}{subsubsection*.73}
+\contentsline {subsubsection}{Event Reading}{34}{subsubsection*.74}
+\contentsline {paragraph}{js\_event.type}{35}{paragraph*.75}
+\contentsline {paragraph}{js\_event.number}{35}{paragraph*.76}
+\contentsline {paragraph}{js\_event.value}{35}{paragraph*.77}
+\contentsline {paragraph}{js\_event.time}{36}{paragraph*.78}
+\contentsline {subsubsection}{Reading}{36}{subsubsection*.79}
+\contentsline {paragraph}{O\_NONBLOCK}{36}{paragraph*.80}
+\contentsline {subsubsection}{IOCTLs}{37}{subsubsection*.81}
+\contentsline {paragraph}{JSIOGCVERSION}{37}{paragraph*.82}
+\contentsline {paragraph}{JSIOCGNAME}{37}{paragraph*.83}
+\contentsline {paragraph}{JSIOC{[}SG{]}CORR}{38}{paragraph*.84}
+\contentsline {subsubsection}{Backward compatibility}{38}{subsubsection*.85}
+\contentsline {subsubsection}{Final Notes}{39}{subsubsection*.86}
+\contentsline {section}{\numberline {1.7}uinput module}{39}{section.1.7}
+\contentsline {subsection}{\numberline {1.7.1}Introduction}{39}{subsection.1.7.1}
+\contentsline {subsection}{\numberline {1.7.2}Interface}{39}{subsection.1.7.2}
+\contentsline {subsection}{\numberline {1.7.3}libevdev}{39}{subsection.1.7.3}
+\contentsline {subsection}{\numberline {1.7.4}Examples}{39}{subsection.1.7.4}
+\contentsline {subsubsection}{Keyboard events}{39}{subsubsection*.87}
+\contentsline {subsubsection}{Mouse movements}{40}{subsubsection*.88}
+\contentsline {subsubsection}{uinput old interface}{41}{subsubsection*.89}
+\contentsline {section}{\numberline {1.8}The userio Protocol}{42}{section.1.8}
+\contentsline {subsection}{\numberline {1.8.1}Introduction}{43}{subsection.1.8.1}
+\contentsline {subsection}{\numberline {1.8.2}Usage overview}{43}{subsection.1.8.2}
+\contentsline {subsection}{\numberline {1.8.3}Command Structure}{43}{subsection.1.8.3}
+\contentsline {subsection}{\numberline {1.8.4}Commands}{43}{subsection.1.8.4}
+\contentsline {subsubsection}{USERIO\_CMD\_REGISTER}{43}{subsubsection*.90}
+\contentsline {subsubsection}{USERIO\_CMD\_SET\_PORT\_TYPE}{43}{subsubsection*.91}
+\contentsline {subsubsection}{USERIO\_CMD\_SEND\_INTERRUPT}{43}{subsubsection*.92}
+\contentsline {subsection}{\numberline {1.8.5}Userspace tools}{43}{subsection.1.8.5}
+\contentsline {chapter}{\numberline {2}Linux Input Subsystem kernel API}{45}{chapter.2}
+\contentsline {section}{\numberline {2.1}Creating an input device driver}{45}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}The simplest example}{45}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}What the example does}{46}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}dev-\textgreater {}open() and dev-\textgreater {}close()}{47}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.4}Basic event types}{47}{subsection.2.1.4}
+\contentsline {subsection}{\numberline {2.1.5}BITS\_TO\_LONGS(), BIT\_WORD(), BIT\_MASK()}{48}{subsection.2.1.5}
+\contentsline {subsection}{\numberline {2.1.6}The id* and name fields}{48}{subsection.2.1.6}
+\contentsline {subsection}{\numberline {2.1.7}The keycode, keycodemax, keycodesize fields}{48}{subsection.2.1.7}
+\contentsline {subsection}{\numberline {2.1.8}dev-\textgreater {}getkeycode() and dev-\textgreater {}setkeycode()}{49}{subsection.2.1.8}
+\contentsline {subsection}{\numberline {2.1.9}Key autorepeat}{49}{subsection.2.1.9}
+\contentsline {subsection}{\numberline {2.1.10}Other event types, handling output events}{49}{subsection.2.1.10}
+\contentsline {section}{\numberline {2.2}Programming gameport drivers}{49}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}A basic classic gameport}{49}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Memory mapped gameport}{50}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Cooked mode gameport}{50}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}More complex gameports}{51}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.5}Unregistering a gameport}{51}{subsection.2.2.5}
+\contentsline {subsection}{\numberline {2.2.6}The gameport structure}{51}{subsection.2.2.6}
+\contentsline {section}{\numberline {2.3}Keyboard notifier}{52}{section.2.3}
+\contentsline {chapter}{\numberline {3}Driver-specific documentation}{55}{chapter.3}
+\contentsline {section}{\numberline {3.1}ALPS Touchpad Protocol}{55}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Introduction}{55}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Detection}{55}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Command Mode}{55}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}Packet Format}{56}{subsection.3.1.4}
+\contentsline {subsection}{\numberline {3.1.5}PS/2 packet format}{56}{subsection.3.1.5}
+\contentsline {subsection}{\numberline {3.1.6}ALPS Absolute Mode - Protocol Version 1}{56}{subsection.3.1.6}
+\contentsline {subsection}{\numberline {3.1.7}ALPS Absolute Mode - Protocol Version 2}{56}{subsection.3.1.7}
+\contentsline {subsection}{\numberline {3.1.8}Dualpoint device -- interleaved packet format}{57}{subsection.3.1.8}
+\contentsline {subsection}{\numberline {3.1.9}ALPS Absolute Mode - Protocol Version 3}{57}{subsection.3.1.9}
+\contentsline {subsection}{\numberline {3.1.10}ALPS Absolute Mode - Protocol Version 4}{58}{subsection.3.1.10}
+\contentsline {subsection}{\numberline {3.1.11}ALPS Absolute Mode - Protocol Version 5}{58}{subsection.3.1.11}
+\contentsline {subsection}{\numberline {3.1.12}ALPS Absolute Mode - Protocol Version 6}{59}{subsection.3.1.12}
+\contentsline {subsection}{\numberline {3.1.13}ALPS Absolute Mode - Protocol Version 7}{59}{subsection.3.1.13}
+\contentsline {subsection}{\numberline {3.1.14}ALPS Absolute Mode - Protocol Version 8}{60}{subsection.3.1.14}
+\contentsline {section}{\numberline {3.2}Amiga joystick extensions}{60}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Amiga 4-joystick parport extension}{60}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Amiga digital joystick pinout}{61}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Amiga mouse pinout}{61}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Amiga analog joystick pinout}{61}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Amiga lightpen pinout}{62}{subsection.3.2.5}
+\contentsline {section}{\numberline {3.3}Apple Touchpad Driver (appletouch)}{63}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Usage}{64}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Fuzz problems}{64}{subsection.3.3.2}
+\contentsline {section}{\numberline {3.4}Intelligent Keyboard (ikbd) Protocol}{65}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Introduction}{65}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Keyboard}{65}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Mouse}{65}{subsection.3.4.3}
+\contentsline {subsubsection}{Relative Position Reporting}{66}{subsubsection*.93}
+\contentsline {subsubsection}{Absolute Position reporting}{66}{subsubsection*.94}
+\contentsline {subsubsection}{Mouse Cursor Key Mode}{66}{subsubsection*.95}
+\contentsline {subsection}{\numberline {3.4.4}Joystick}{66}{subsection.3.4.4}
+\contentsline {subsubsection}{Joystick Event Reporting}{66}{subsubsection*.96}
+\contentsline {subsubsection}{Joystick Interrogation}{66}{subsubsection*.97}
+\contentsline {subsubsection}{Joystick Monitoring}{67}{subsubsection*.98}
+\contentsline {subsubsection}{Fire Button Monitoring}{67}{subsubsection*.99}
+\contentsline {subsubsection}{Joystick Key Code Mode}{67}{subsubsection*.100}
+\contentsline {subsection}{\numberline {3.4.5}Time-of-Day Clock}{67}{subsection.3.4.5}
+\contentsline {subsection}{\numberline {3.4.6}Status Inquiries}{67}{subsection.3.4.6}
+\contentsline {subsection}{\numberline {3.4.7}Power-Up Mode}{67}{subsection.3.4.7}
+\contentsline {subsection}{\numberline {3.4.8}ikbd Command Set}{68}{subsection.3.4.8}
+\contentsline {subsubsection}{RESET}{68}{subsubsection*.101}
+\contentsline {subsubsection}{SET MOUSE BUTTON ACTION}{68}{subsubsection*.102}
+\contentsline {subsubsection}{SET RELATIVE MOUSE POSITION REPORTING}{68}{subsubsection*.103}
+\contentsline {subsubsection}{SET ABSOLUTE MOUSE POSITIONING}{68}{subsubsection*.104}
+\contentsline {subsubsection}{SET MOUSE KEYCODE MOSE}{69}{subsubsection*.105}
+\contentsline {subsubsection}{SET MOUSE THRESHOLD}{69}{subsubsection*.106}
+\contentsline {subsubsection}{SET MOUSE SCALE}{69}{subsubsection*.107}
+\contentsline {subsubsection}{INTERROGATE MOUSE POSITION}{69}{subsubsection*.108}
+\contentsline {subsubsection}{LOAD MOUSE POSITION}{70}{subsubsection*.109}
+\contentsline {subsubsection}{SET Y=0 AT BOTTOM}{70}{subsubsection*.110}
+\contentsline {subsubsection}{SET Y=0 AT TOP}{70}{subsubsection*.111}
+\contentsline {subsubsection}{RESUME}{70}{subsubsection*.112}
+\contentsline {subsubsection}{DISABLE MOUSE}{70}{subsubsection*.113}
+\contentsline {subsubsection}{PAUSE OUTPUT}{70}{subsubsection*.114}
+\contentsline {subsubsection}{SET JOYSTICK EVENT REPORTING}{71}{subsubsection*.115}
+\contentsline {subsubsection}{SET JOYSTICK INTERROGATION MODE}{71}{subsubsection*.116}
+\contentsline {subsubsection}{JOYSTICK INTERROGATE}{71}{subsubsection*.117}
+\contentsline {subsubsection}{SET JOYSTICK MONITORING}{71}{subsubsection*.118}
+\contentsline {subsubsection}{SET FIRE BUTTON MONITORING}{71}{subsubsection*.119}
+\contentsline {subsubsection}{SET JOYSTICK KEYCODE MODE}{72}{subsubsection*.120}
+\contentsline {subsubsection}{DISABLE JOYSTICKS}{72}{subsubsection*.121}
+\contentsline {subsubsection}{TIME-OF-DAY CLOCK SET}{72}{subsubsection*.122}
+\contentsline {subsubsection}{INTERROGATE TIME-OF-DAT CLOCK}{72}{subsubsection*.123}
+\contentsline {subsubsection}{MEMORY LOAD}{73}{subsubsection*.124}
+\contentsline {subsubsection}{MEMORY READ}{73}{subsubsection*.125}
+\contentsline {subsubsection}{CONTROLLER EXECUTE}{73}{subsubsection*.126}
+\contentsline {subsubsection}{STATUS INQUIRIES}{73}{subsubsection*.127}
+\contentsline {subsection}{\numberline {3.4.9}SCAN CODES}{74}{subsection.3.4.9}
+\contentsline {section}{\numberline {3.5}BCM5974 Driver (bcm5974)}{76}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Usage}{77}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}USB Race}{77}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}Debug output}{77}{subsection.3.5.3}
+\contentsline {subsection}{\numberline {3.5.4}Trivia}{77}{subsection.3.5.4}
+\contentsline {section}{\numberline {3.6}CMA3000-D0x Accelerometer}{77}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Description}{78}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.6.2}Platform Data}{78}{subsection.3.6.2}
+\contentsline {subsection}{\numberline {3.6.3}Input Interface}{78}{subsection.3.6.3}
+\contentsline {subsection}{\numberline {3.6.4}Register/Platform parameters Description}{79}{subsection.3.6.4}
+\contentsline {section}{\numberline {3.7}Crystal SoundFusion CS4610/CS4612/CS461 joystick}{79}{section.3.7}
+\contentsline {section}{\numberline {3.8}EDT ft5x06 based Polytouch devices}{80}{section.3.8}
+\contentsline {section}{\numberline {3.9}Elantech Touchpad Driver}{80}{section.3.9}
+\contentsline {subsection}{\numberline {3.9.1}Introduction}{81}{subsection.3.9.1}
+\contentsline {subsection}{\numberline {3.9.2}Extra knobs}{81}{subsection.3.9.2}
+\contentsline {subsection}{\numberline {3.9.3}Differentiating hardware versions}{82}{subsection.3.9.3}
+\contentsline {subsection}{\numberline {3.9.4}Hardware version 1}{82}{subsection.3.9.4}
+\contentsline {subsubsection}{Registers}{82}{subsubsection*.128}
+\contentsline {subsubsection}{Native relative mode 4 byte packet format}{83}{subsubsection*.129}
+\contentsline {subsubsection}{Native absolute mode 4 byte packet format}{84}{subsubsection*.130}
+\contentsline {subsection}{\numberline {3.9.5}Hardware version 2}{85}{subsection.3.9.5}
+\contentsline {subsubsection}{Registers}{85}{subsubsection*.131}
+\contentsline {subsubsection}{Native absolute mode 6 byte packet format}{86}{subsubsection*.132}
+\contentsline {paragraph}{Parity checking and packet re-synchronization}{86}{paragraph*.133}
+\contentsline {paragraph}{One/Three finger touch}{86}{paragraph*.134}
+\contentsline {paragraph}{Two finger touch}{87}{paragraph*.135}
+\contentsline {subsection}{\numberline {3.9.6}Hardware version 3}{88}{subsection.3.9.6}
+\contentsline {subsubsection}{Registers}{88}{subsubsection*.136}
+\contentsline {subsubsection}{Native absolute mode 6 byte packet format}{88}{subsubsection*.137}
+\contentsline {paragraph}{One/Three finger touch}{88}{paragraph*.138}
+\contentsline {paragraph}{Two finger touch}{89}{paragraph*.139}
+\contentsline {subsection}{\numberline {3.9.7}Hardware version 4}{89}{subsection.3.9.7}
+\contentsline {subsubsection}{Registers}{89}{subsubsection*.140}
+\contentsline {subsubsection}{Native absolute mode 6 byte packet format}{89}{subsubsection*.141}
+\contentsline {paragraph}{Status packet}{90}{paragraph*.142}
+\contentsline {paragraph}{Head packet}{90}{paragraph*.143}
+\contentsline {paragraph}{Motion packet}{91}{paragraph*.144}
+\contentsline {subsection}{\numberline {3.9.8}Trackpoint (for Hardware version 3 and 4)}{92}{subsection.3.9.8}
+\contentsline {subsubsection}{Registers}{92}{subsubsection*.145}
+\contentsline {subsubsection}{Native relative mode 6 byte packet format}{92}{subsubsection*.146}
+\contentsline {paragraph}{Status Packet}{92}{paragraph*.147}
+\contentsline {section}{\numberline {3.10}Iforce Protocol}{93}{section.3.10}
+\contentsline {subsection}{\numberline {3.10.1}Introduction}{93}{subsection.3.10.1}
+\contentsline {subsection}{\numberline {3.10.2}Preliminary Notes}{93}{subsection.3.10.2}
+\contentsline {subsubsection}{General form of a packet}{93}{subsubsection*.148}
+\contentsline {subsection}{\numberline {3.10.3}Device input state}{93}{subsection.3.10.3}
+\contentsline {subsection}{\numberline {3.10.4}Device effects states}{94}{subsection.3.10.4}
+\contentsline {subsubsection}{Force effect}{94}{subsubsection*.149}
+\contentsline {subsubsection}{Time based parameters}{95}{subsubsection*.150}
+\contentsline {paragraph}{Attack and fade}{95}{paragraph*.151}
+\contentsline {paragraph}{Magnitude}{95}{paragraph*.152}
+\contentsline {paragraph}{Periodicity}{95}{paragraph*.153}
+\contentsline {subsubsection}{Interactive parameters}{95}{subsubsection*.154}
+\contentsline {subsubsection}{Controls}{95}{subsubsection*.155}
+\contentsline {subsubsection}{Init}{96}{subsubsection*.156}
+\contentsline {paragraph}{Querying features}{96}{paragraph*.157}
+\contentsline {subparagraph}{Query ram size}{96}{subparagraph*.158}
+\contentsline {subparagraph}{Query number of effects}{96}{subparagraph*.159}
+\contentsline {subparagraph}{Vendor's id}{96}{subparagraph*.160}
+\contentsline {subparagraph}{Product id}{96}{subparagraph*.161}
+\contentsline {subparagraph}{Open device}{96}{subparagraph*.162}
+\contentsline {subparagraph}{Close device}{96}{subparagraph*.163}
+\contentsline {subparagraph}{Query effect}{96}{subparagraph*.164}
+\contentsline {subparagraph}{Firmware Version}{97}{subparagraph*.165}
+\contentsline {paragraph}{Initialisation of the device}{97}{paragraph*.166}
+\contentsline {subparagraph}{Set Control}{97}{subparagraph*.167}
+\contentsline {subparagraph}{Set Effect State}{97}{subparagraph*.168}
+\contentsline {subparagraph}{Set overall}{97}{subparagraph*.169}
+\contentsline {subsubsection}{Parameter memory}{97}{subsubsection*.170}
+\contentsline {subsection}{\numberline {3.10.5}Appendix: How to study the protocol?}{97}{subsection.3.10.5}
+\contentsline {subsection}{\numberline {3.10.6}URLS}{98}{subsection.3.10.6}
+\contentsline {section}{\numberline {3.11}Parallel Port Joystick Drivers}{98}{section.3.11}
+\contentsline {subsection}{\numberline {3.11.1}Disclaimer}{98}{subsection.3.11.1}
+\contentsline {subsection}{\numberline {3.11.2}Introduction}{98}{subsection.3.11.2}
+\contentsline {subsection}{\numberline {3.11.3}Devices supported}{98}{subsection.3.11.3}
+\contentsline {subsubsection}{NES and SNES}{98}{subsubsection*.171}
+\contentsline {subsubsection}{Multisystem joysticks}{100}{subsubsection*.172}
+\contentsline {paragraph}{Multisystem joysticks using db9.c}{101}{paragraph*.173}
+\contentsline {paragraph}{Multisystem joysticks using gamecon.c}{102}{paragraph*.174}
+\contentsline {paragraph}{Multisystem joysticks using turbografx.c}{102}{paragraph*.175}
+\contentsline {subsubsection}{Sony Playstation}{102}{subsubsection*.176}
+\contentsline {subsubsection}{Sega}{103}{subsubsection*.177}
+\contentsline {paragraph}{Sega Master System}{103}{paragraph*.178}
+\contentsline {paragraph}{Sega Genesis aka MegaDrive}{103}{paragraph*.179}
+\contentsline {paragraph}{Sega Saturn}{104}{paragraph*.180}
+\contentsline {subsubsection}{Amiga CD32}{104}{subsubsection*.181}
+\contentsline {subsection}{\numberline {3.11.4}The drivers}{105}{subsection.3.11.4}
+\contentsline {subsubsection}{gamecon.c}{105}{subsubsection*.182}
+\contentsline {subsubsection}{db9.c}{106}{subsubsection*.183}
+\contentsline {subsubsection}{turbografx.c}{106}{subsubsection*.184}
+\contentsline {subsection}{\numberline {3.11.5}PC parallel port pinout}{106}{subsection.3.11.5}
+\contentsline {section}{\numberline {3.12}N-Trig touchscreen Driver}{107}{section.3.12}
+\contentsline {subsection}{\numberline {3.12.1}Parameters}{107}{subsection.3.12.1}
+\contentsline {subsection}{\numberline {3.12.2}Additional sysfs items}{107}{subsection.3.12.2}
+\contentsline {subsection}{\numberline {3.12.3}Filtering}{108}{subsection.3.12.3}
+\contentsline {subsection}{\numberline {3.12.4}Calibration}{108}{subsection.3.12.4}
+\contentsline {subsection}{\numberline {3.12.5}Tracking}{108}{subsection.3.12.5}
+\contentsline {section}{\numberline {3.13}rotary-encoder - a generic driver for GPIO connected devices}{109}{section.3.13}
+\contentsline {subsection}{\numberline {3.13.1}Function}{109}{subsection.3.13.1}
+\contentsline {subsection}{\numberline {3.13.2}Events / state machine}{109}{subsection.3.13.2}
+\contentsline {subsection}{\numberline {3.13.3}Platform requirements}{110}{subsection.3.13.3}
+\contentsline {subsection}{\numberline {3.13.4}Board integration}{110}{subsection.3.13.4}
+\contentsline {section}{\numberline {3.14}Sentelic Touchpad}{110}{section.3.14}
+\contentsline {subsection}{\numberline {3.14.1}Finger Sensing Pad Intellimouse Mode (scrolling wheel, 4th and 5th buttons)}{111}{subsection.3.14.1}
+\contentsline {subsection}{\numberline {3.14.2}Absolute position for STL3886-G0}{112}{subsection.3.14.2}
+\contentsline {subsection}{\numberline {3.14.3}Absolute position for STL3888-Ax}{113}{subsection.3.14.3}
+\contentsline {subsection}{\numberline {3.14.4}Absolute position for STL3888-B0}{114}{subsection.3.14.4}
+\contentsline {subsection}{\numberline {3.14.5}Absolute position for STL3888-Cx and STL3888-Dx}{116}{subsection.3.14.5}
+\contentsline {subsection}{\numberline {3.14.6}FSP Enable/Disable packet}{117}{subsection.3.14.6}
+\contentsline {subsection}{\numberline {3.14.7}PS/2 Command Set}{118}{subsection.3.14.7}
+\contentsline {subsection}{\numberline {3.14.8}Programming Sequence for Determining Packet Parsing Flow}{118}{subsection.3.14.8}
+\contentsline {subsection}{\numberline {3.14.9}Programming Sequence for Register Reading/Writing}{118}{subsection.3.14.9}
+\contentsline {subsection}{\numberline {3.14.10}Programming Sequence for Page Register Reading/Writing}{120}{subsection.3.14.10}
+\contentsline {subsection}{\numberline {3.14.11}Gesture ID}{121}{subsection.3.14.11}
+\contentsline {subsection}{\numberline {3.14.12}Register Listing}{121}{subsection.3.14.12}
+\contentsline {section}{\numberline {3.15}Walkera WK-0701 transmitter}{124}{section.3.15}
+\contentsline {subsection}{\numberline {3.15.1}Connecting to PC}{124}{subsection.3.15.1}
+\contentsline {subsection}{\numberline {3.15.2}Software}{124}{subsection.3.15.2}
+\contentsline {subsection}{\numberline {3.15.3}Technical details}{124}{subsection.3.15.3}
+\contentsline {subsubsection}{Signal pulses}{125}{subsubsection*.185}
+\contentsline {subsubsection}{Frame}{125}{subsubsection*.186}
+\contentsline {subsubsection}{pulse length}{125}{subsubsection*.187}
+\contentsline {subsubsection}{Binary data representations}{125}{subsubsection*.188}
+\contentsline {subsubsection}{Checksum calculation}{125}{subsubsection*.189}
+\contentsline {section}{\numberline {3.16}xpad - Linux USB driver for Xbox compatible controllers}{126}{section.3.16}
+\contentsline {subsection}{\numberline {3.16.1}Notes}{126}{subsection.3.16.1}
+\contentsline {subsubsection}{Normal Controllers}{126}{subsubsection*.190}
+\contentsline {subsubsection}{Xbox Dance Pads}{126}{subsubsection*.191}
+\contentsline {subsubsection}{Unknown Controllers}{127}{subsubsection*.192}
+\contentsline {subsection}{\numberline {3.16.2}USB adapters}{127}{subsection.3.16.2}
+\contentsline {subsubsection}{Original Xbox USB adapters}{127}{subsubsection*.193}
+\contentsline {subsection}{\numberline {3.16.3}Driver Installation}{127}{subsection.3.16.3}
+\contentsline {subsection}{\numberline {3.16.4}Supported Controllers}{128}{subsection.3.16.4}
+\contentsline {subsection}{\numberline {3.16.5}Manual Testing}{128}{subsection.3.16.5}
+\contentsline {subsection}{\numberline {3.16.6}Thanks}{128}{subsection.3.16.6}
+\contentsline {subsection}{\numberline {3.16.7}References}{128}{subsection.3.16.7}
+\contentsline {subsection}{\numberline {3.16.8}Historic Edits}{128}{subsection.3.16.8}
+\contentsline {section}{\numberline {3.17}Driver documentation for yealink usb-p1k phones}{129}{section.3.17}
+\contentsline {subsection}{\numberline {3.17.1}Status}{129}{subsection.3.17.1}
+\contentsline {subsection}{\numberline {3.17.2}keyboard features}{129}{subsection.3.17.2}
+\contentsline {subsection}{\numberline {3.17.3}LCD features}{129}{subsection.3.17.3}
+\contentsline {subsection}{\numberline {3.17.4}Driver usage}{130}{subsection.3.17.4}
+\contentsline {subsubsection}{lineX}{130}{subsubsection*.196}
+\contentsline {subsubsection}{get\_icons}{131}{subsubsection*.197}
+\contentsline {subsubsection}{show/hide icons}{131}{subsubsection*.198}
+\contentsline {subsection}{\numberline {3.17.5}Sound features}{131}{subsection.3.17.5}
+\contentsline {subsection}{\numberline {3.17.6}Troubleshooting}{132}{subsection.3.17.6}
+\contentsline {subsection}{\numberline {3.17.7}Credits \& Acknowledgments}{132}{subsection.3.17.7}

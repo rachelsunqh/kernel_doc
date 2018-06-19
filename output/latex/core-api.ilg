@@ -1,0 +1,7 @@
+This is makeindex, version 2.15 [TeX Live 2015] (kpathsea + Thai support).
+Scanning style file ./python.ist......done (6 attributes redefined, 0 ignored).
+Scanning input file core-api.idx.....done (1023 entries accepted, 0 rejected).
+Sorting entries...........done (11278 comparisons).
+Generating output file core-api.ind.....done (1041 lines written, 0 warnings).
+Output written in core-api.ind.
+Transcript written in core-api.ilg.

@@ -1,0 +1,670 @@
+\select@language {english}
+\contentsline {chapter}{\numberline {1}Driver Basics}{3}{chapter.1}
+\contentsline {section}{\numberline {1.1}Driver Entry and Exit points}{3}{section.1.1}
+\contentsline {section}{\numberline {1.2}Driver device table}{3}{section.1.2}
+\contentsline {section}{\numberline {1.3}Delaying, scheduling, and timer routines}{7}{section.1.3}
+\contentsline {section}{\numberline {1.4}Wait queues and Wake events}{19}{section.1.4}
+\contentsline {section}{\numberline {1.5}High-resolution timers}{27}{section.1.5}
+\contentsline {section}{\numberline {1.6}Workqueues and Kevents}{33}{section.1.6}
+\contentsline {section}{\numberline {1.7}Internal Functions}{40}{section.1.7}
+\contentsline {section}{\numberline {1.8}Reference counting}{51}{section.1.8}
+\contentsline {section}{\numberline {1.9}Atomics}{55}{section.1.9}
+\contentsline {section}{\numberline {1.10}Kernel objects manipulation}{57}{section.1.10}
+\contentsline {section}{\numberline {1.11}Kernel utility functions}{60}{section.1.11}
+\contentsline {section}{\numberline {1.12}Device Resource Management}{74}{section.1.12}
+\contentsline {chapter}{\numberline {2}Device drivers infrastructure}{81}{chapter.2}
+\contentsline {section}{\numberline {2.1}The Basic Device Driver-Model Structures}{81}{section.2.1}
+\contentsline {section}{\numberline {2.2}Device Drivers Base}{89}{section.2.2}
+\contentsline {section}{\numberline {2.3}Device Drivers DMA Management}{114}{section.2.3}
+\contentsline {section}{\numberline {2.4}Device drivers PnP support}{117}{section.2.4}
+\contentsline {section}{\numberline {2.5}Userspace IO devices}{118}{section.2.5}
+\contentsline {chapter}{\numberline {3}Device Power Management}{121}{chapter.3}
+\contentsline {section}{\numberline {3.1}Device Power Management Basics}{121}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Two Models for Device Power Management}{121}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Interfaces for Entering System Sleep States}{122}{subsection.3.1.2}
+\contentsline {subsubsection}{Device Power Management Operations}{122}{subsubsection*.476}
+\contentsline {subsubsection}{Subsystem-Level Methods}{122}{subsubsection*.477}
+\contentsline {subsubsection}{\texttt {/sys/devices/.../power/wakeup} files}{122}{subsubsection*.478}
+\contentsline {subsubsection}{\texttt {/sys/devices/.../power/control} files}{123}{subsubsection*.479}
+\contentsline {subsection}{\numberline {3.1.3}Calling Drivers to Enter and Leave System Sleep States}{123}{subsection.3.1.3}
+\contentsline {subsubsection}{Call Sequence Guarantees}{124}{subsubsection*.480}
+\contentsline {subsubsection}{System Power Management Phases}{124}{subsubsection*.481}
+\contentsline {subsubsection}{Entering System Suspend}{125}{subsubsection*.482}
+\contentsline {subsubsection}{Leaving System Suspend}{126}{subsubsection*.483}
+\contentsline {subsubsection}{Entering Hibernation}{127}{subsubsection*.484}
+\contentsline {subsubsection}{Leaving Hibernation}{128}{subsubsection*.485}
+\contentsline {subsection}{\numberline {3.1.4}Power Management Notifiers}{129}{subsection.3.1.4}
+\contentsline {subsection}{\numberline {3.1.5}Device Low-Power (suspend) States}{129}{subsection.3.1.5}
+\contentsline {subsection}{\numberline {3.1.6}Device Power Management Domains}{129}{subsection.3.1.6}
+\contentsline {subsection}{\numberline {3.1.7}Runtime Power Management}{130}{subsection.3.1.7}
+\contentsline {section}{\numberline {3.2}Suspend/Hibernation Notifiers}{131}{section.3.2}
+\contentsline {section}{\numberline {3.3}Device Power Management Data Types}{132}{section.3.3}
+\contentsline {chapter}{\numberline {4}Bus-Independent Device Accesses}{137}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introduction}{137}{section.4.1}
+\contentsline {section}{\numberline {4.2}Memory Mapped IO}{137}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Getting Access to the Device}{137}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Accessing the device}{137}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}Port Space Accesses}{139}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Port Space Explained}{139}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Accessing Port Space}{139}{subsection.4.3.2}
+\contentsline {section}{\numberline {4.4}Public Functions Provided}{139}{section.4.4}
+\contentsline {chapter}{\numberline {5}Buffer Sharing and Synchronization}{143}{chapter.5}
+\contentsline {section}{\numberline {5.1}Shared DMA Buffers}{143}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Userspace Interface Notes}{143}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Basic Operation and Device DMA Access}{144}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}CPU Access to DMA Buffer Objects}{144}{subsection.5.1.3}
+\contentsline {subsection}{\numberline {5.1.4}Fence Poll Support}{146}{subsection.5.1.4}
+\contentsline {subsection}{\numberline {5.1.5}Kernel Functions and Structures Reference}{146}{subsection.5.1.5}
+\contentsline {section}{\numberline {5.2}Reservation Objects}{154}{section.5.2}
+\contentsline {section}{\numberline {5.3}DMA Fences}{158}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Seqno Hardware Fences}{166}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}DMA Fence Array}{166}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}DMA Fence uABI/Sync File}{168}{subsection.5.3.3}
+\contentsline {chapter}{\numberline {6}Device links}{171}{chapter.6}
+\contentsline {section}{\numberline {6.1}Usage}{171}{section.6.1}
+\contentsline {section}{\numberline {6.2}Limitations}{172}{section.6.2}
+\contentsline {section}{\numberline {6.3}Examples}{172}{section.6.3}
+\contentsline {section}{\numberline {6.4}Alternatives}{173}{section.6.4}
+\contentsline {section}{\numberline {6.5}Implementation}{173}{section.6.5}
+\contentsline {section}{\numberline {6.6}State machine}{173}{section.6.6}
+\contentsline {section}{\numberline {6.7}API}{174}{section.6.7}
+\contentsline {chapter}{\numberline {7}Message-based devices}{177}{chapter.7}
+\contentsline {section}{\numberline {7.1}Fusion message devices}{177}{section.7.1}
+\contentsline {chapter}{\numberline {8}Sound Devices}{187}{chapter.8}
+\contentsline {chapter}{\numberline {9}Frame Buffer Library}{223}{chapter.9}
+\contentsline {section}{\numberline {9.1}Frame Buffer Memory}{223}{section.9.1}
+\contentsline {section}{\numberline {9.2}Frame Buffer Colormap}{224}{section.9.2}
+\contentsline {section}{\numberline {9.3}Frame Buffer Video Mode Database}{225}{section.9.3}
+\contentsline {section}{\numberline {9.4}Frame Buffer Macintosh Video Mode Database}{227}{section.9.4}
+\contentsline {section}{\numberline {9.5}Frame Buffer Fonts}{228}{section.9.5}
+\contentsline {chapter}{\numberline {10}Voltage and current regulator API}{229}{chapter.10}
+\contentsline {section}{\numberline {10.1}Introduction}{229}{section.10.1}
+\contentsline {subsection}{\numberline {10.1.1}Glossary}{229}{subsection.10.1.1}
+\contentsline {section}{\numberline {10.2}Consumer driver interface}{229}{section.10.2}
+\contentsline {subsection}{\numberline {10.2.1}Enabling and disabling}{230}{subsection.10.2.1}
+\contentsline {subsection}{\numberline {10.2.2}Configuration}{230}{subsection.10.2.2}
+\contentsline {subsection}{\numberline {10.2.3}Callbacks}{230}{subsection.10.2.3}
+\contentsline {section}{\numberline {10.3}Regulator driver interface}{230}{section.10.3}
+\contentsline {section}{\numberline {10.4}Machine interface}{230}{section.10.4}
+\contentsline {subsection}{\numberline {10.4.1}Supplies}{230}{subsection.10.4.1}
+\contentsline {subsection}{\numberline {10.4.2}Constraints}{231}{subsection.10.4.2}
+\contentsline {section}{\numberline {10.5}API reference}{231}{section.10.5}
+\contentsline {chapter}{\numberline {11}Industrial I/O}{251}{chapter.11}
+\contentsline {section}{\numberline {11.1}Introduction}{251}{section.11.1}
+\contentsline {section}{\numberline {11.2}Core elements}{251}{section.11.2}
+\contentsline {subsection}{\numberline {11.2.1}Industrial I/O Devices}{252}{subsection.11.2.1}
+\contentsline {subsubsection}{IIO device sysfs interface}{252}{subsubsection*.866}
+\contentsline {subsubsection}{IIO device channels}{252}{subsubsection*.867}
+\contentsline {subsubsection}{More details}{254}{subsubsection*.868}
+\contentsline {section}{\numberline {11.3}Buffers}{265}{section.11.3}
+\contentsline {subsection}{\numberline {11.3.1}IIO buffer sysfs interface}{265}{subsection.11.3.1}
+\contentsline {subsection}{\numberline {11.3.2}IIO buffer setup}{266}{subsection.11.3.2}
+\contentsline {subsection}{\numberline {11.3.3}More details}{267}{subsection.11.3.3}
+\contentsline {section}{\numberline {11.4}Triggers}{268}{section.11.4}
+\contentsline {subsection}{\numberline {11.4.1}IIO trigger sysfs interface}{268}{subsection.11.4.1}
+\contentsline {subsection}{\numberline {11.4.2}IIO trigger setup}{269}{subsection.11.4.2}
+\contentsline {subsection}{\numberline {11.4.3}IIO trigger ops}{269}{subsection.11.4.3}
+\contentsline {subsection}{\numberline {11.4.4}More details}{269}{subsection.11.4.4}
+\contentsline {section}{\numberline {11.5}Triggered Buffers}{272}{section.11.5}
+\contentsline {subsection}{\numberline {11.5.1}IIO triggered buffer setup}{273}{subsection.11.5.1}
+\contentsline {subsection}{\numberline {11.5.2}More details}{274}{subsection.11.5.2}
+\contentsline {section}{\numberline {11.6}HW consumer}{274}{section.11.6}
+\contentsline {subsection}{\numberline {11.6.1}HW consumer setup}{274}{subsection.11.6.1}
+\contentsline {subsection}{\numberline {11.6.2}More details}{275}{subsection.11.6.2}
+\contentsline {chapter}{\numberline {12}Input Subsystem}{277}{chapter.12}
+\contentsline {section}{\numberline {12.1}Input core}{277}{section.12.1}
+\contentsline {section}{\numberline {12.2}Multitouch Library}{288}{section.12.2}
+\contentsline {section}{\numberline {12.3}Polled input devices}{291}{section.12.3}
+\contentsline {section}{\numberline {12.4}Matrix keyboards/keypads}{293}{section.12.4}
+\contentsline {section}{\numberline {12.5}Sparse keymap support}{294}{section.12.5}
+\contentsline {chapter}{\numberline {13}Linux USB API}{297}{chapter.13}
+\contentsline {section}{\numberline {13.1}The Linux-USB Host Side API}{297}{section.13.1}
+\contentsline {subsection}{\numberline {13.1.1}Introduction to USB on Linux}{297}{subsection.13.1.1}
+\contentsline {subsection}{\numberline {13.1.2}USB Host-Side API Model}{297}{subsection.13.1.2}
+\contentsline {subsection}{\numberline {13.1.3}USB-Standard Types}{298}{subsection.13.1.3}
+\contentsline {subsection}{\numberline {13.1.4}Host-Side Data Types and Macros}{299}{subsection.13.1.4}
+\contentsline {subsection}{\numberline {13.1.5}USB Core APIs}{315}{subsection.13.1.5}
+\contentsline {subsection}{\numberline {13.1.6}Host Controller APIs}{341}{subsection.13.1.6}
+\contentsline {subsection}{\numberline {13.1.7}The USB character device nodes}{347}{subsection.13.1.7}
+\contentsline {subsubsection}{What files are in ``devtmpfs''?}{347}{subsubsection*.1135}
+\contentsline {subsubsection}{/dev/bus/usb/BBB/DDD}{348}{subsubsection*.1136}
+\contentsline {subsubsection}{Life Cycle of User Mode Drivers}{348}{subsubsection*.1137}
+\contentsline {subsubsection}{The ioctl() Requests}{349}{subsubsection*.1138}
+\contentsline {paragraph}{Management/Status Requests}{349}{paragraph*.1139}
+\contentsline {paragraph}{Synchronous I/O Support}{351}{paragraph*.1140}
+\contentsline {paragraph}{Asynchronous I/O Support}{352}{paragraph*.1141}
+\contentsline {subsection}{\numberline {13.1.8}The USB devices}{353}{subsection.13.1.8}
+\contentsline {subsubsection}{/sys/kernel/debug/usb/devices}{353}{subsubsection*.1142}
+\contentsline {paragraph}{/sys/kernel/debug/usb/devices output format}{354}{paragraph*.1143}
+\contentsline {subparagraph}{Topology info}{354}{subparagraph*.1144}
+\contentsline {subparagraph}{Bandwidth info}{354}{subparagraph*.1145}
+\contentsline {subparagraph}{Device descriptor info \& Product ID info}{354}{subparagraph*.1146}
+\contentsline {subparagraph}{String descriptor info}{355}{subparagraph*.1147}
+\contentsline {subparagraph}{Configuration descriptor info}{355}{subparagraph*.1148}
+\contentsline {subparagraph}{Interface descriptor info (can be multiple per Config)}{355}{subparagraph*.1149}
+\contentsline {subparagraph}{Endpoint descriptor info (can be multiple per Interface)}{356}{subparagraph*.1150}
+\contentsline {paragraph}{Usage examples}{356}{paragraph*.1151}
+\contentsline {section}{\numberline {13.2}USB Gadget API for Linux}{358}{section.13.2}
+\contentsline {subsection}{\numberline {13.2.1}Introduction}{358}{subsection.13.2.1}
+\contentsline {subsection}{\numberline {13.2.2}Structure of Gadget Drivers}{359}{subsection.13.2.2}
+\contentsline {subsection}{\numberline {13.2.3}Kernel Mode Gadget API}{360}{subsection.13.2.3}
+\contentsline {subsubsection}{Driver Life Cycle}{361}{subsubsection*.1152}
+\contentsline {subsubsection}{USB 2.0 Chapter 9 Types and Constants}{361}{subsubsection*.1153}
+\contentsline {subsubsection}{Core Objects and Methods}{362}{subsubsection*.1154}
+\contentsline {subsubsection}{Optional Utilities}{370}{subsubsection*.1175}
+\contentsline {subsubsection}{Composite Device Framework}{371}{subsubsection*.1180}
+\contentsline {subsubsection}{Composite Device Functions}{381}{subsubsection*.1202}
+\contentsline {subsection}{\numberline {13.2.4}Peripheral Controller Drivers}{381}{subsection.13.2.4}
+\contentsline {subsection}{\numberline {13.2.5}Gadget Drivers}{381}{subsection.13.2.5}
+\contentsline {subsection}{\numberline {13.2.6}USB On-The-GO (OTG)}{382}{subsection.13.2.6}
+\contentsline {section}{\numberline {13.3}USB Anchors}{383}{section.13.3}
+\contentsline {subsection}{\numberline {13.3.1}What is anchor?}{383}{subsection.13.3.1}
+\contentsline {subsection}{\numberline {13.3.2}Allocation and Initialisation}{383}{subsection.13.3.2}
+\contentsline {subsection}{\numberline {13.3.3}Deallocation}{383}{subsection.13.3.3}
+\contentsline {subsection}{\numberline {13.3.4}Association and disassociation of URBs with anchors}{383}{subsection.13.3.4}
+\contentsline {subsection}{\numberline {13.3.5}Operations on multitudes of URBs}{383}{subsection.13.3.5}
+\contentsline {subsubsection}{\texttt {usb\_kill\_anchored\_urbs()}}{383}{subsubsection*.1203}
+\contentsline {subsubsection}{\texttt {usb\_unlink\_anchored\_urbs()}}{383}{subsubsection*.1204}
+\contentsline {subsubsection}{\texttt {usb\_scuttle\_anchored\_urbs()}}{384}{subsubsection*.1205}
+\contentsline {subsubsection}{\texttt {usb\_wait\_anchor\_empty\_timeout()}}{384}{subsubsection*.1206}
+\contentsline {subsubsection}{\texttt {usb\_anchor\_empty()}}{384}{subsubsection*.1207}
+\contentsline {subsubsection}{\texttt {usb\_get\_from\_anchor()}}{384}{subsubsection*.1208}
+\contentsline {section}{\numberline {13.4}USB bulk streams}{384}{section.13.4}
+\contentsline {subsection}{\numberline {13.4.1}Background}{384}{subsection.13.4.1}
+\contentsline {subsection}{\numberline {13.4.2}Device-side implications}{384}{subsection.13.4.2}
+\contentsline {subsection}{\numberline {13.4.3}Driver implications}{384}{subsection.13.4.3}
+\contentsline {subsection}{\numberline {13.4.4}Picking new Stream IDs to use}{385}{subsection.13.4.4}
+\contentsline {subsection}{\numberline {13.4.5}Clean up}{385}{subsection.13.4.5}
+\contentsline {section}{\numberline {13.5}USB core callbacks}{385}{section.13.5}
+\contentsline {subsection}{\numberline {13.5.1}What callbacks will usbcore do?}{385}{subsection.13.5.1}
+\contentsline {subsection}{\numberline {13.5.2}Calling conventions}{386}{subsection.13.5.2}
+\contentsline {subsection}{\numberline {13.5.3}Hotplugging callbacks}{386}{subsection.13.5.3}
+\contentsline {subsubsection}{The probe() callback}{386}{subsubsection*.1209}
+\contentsline {subsubsection}{The disconnect() callback}{386}{subsubsection*.1210}
+\contentsline {subsection}{\numberline {13.5.4}Device level callbacks}{386}{subsection.13.5.4}
+\contentsline {subsubsection}{pre\_reset}{386}{subsubsection*.1211}
+\contentsline {subsubsection}{post\_reset}{386}{subsubsection*.1212}
+\contentsline {subsection}{\numberline {13.5.5}Call sequences}{387}{subsection.13.5.5}
+\contentsline {section}{\numberline {13.6}USB DMA}{387}{section.13.6}
+\contentsline {subsection}{\numberline {13.6.1}API overview}{387}{subsection.13.6.1}
+\contentsline {subsection}{\numberline {13.6.2}Eliminating copies}{387}{subsection.13.6.2}
+\contentsline {subsection}{\numberline {13.6.3}Working with existing buffers}{388}{subsection.13.6.3}
+\contentsline {section}{\numberline {13.7}USB Request Block (URB)}{389}{section.13.7}
+\contentsline {subsection}{\numberline {13.7.1}Basic concept or `What is an URB?'}{389}{subsection.13.7.1}
+\contentsline {subsection}{\numberline {13.7.2}The URB structure}{389}{subsection.13.7.2}
+\contentsline {subsection}{\numberline {13.7.3}How to get an URB?}{390}{subsection.13.7.3}
+\contentsline {subsection}{\numberline {13.7.4}What has to be filled in?}{390}{subsection.13.7.4}
+\contentsline {subsection}{\numberline {13.7.5}How to submit an URB?}{391}{subsection.13.7.5}
+\contentsline {subsection}{\numberline {13.7.6}How to cancel an already running URB?}{391}{subsection.13.7.6}
+\contentsline {subsection}{\numberline {13.7.7}What about the completion handler?}{392}{subsection.13.7.7}
+\contentsline {subsection}{\numberline {13.7.8}How to do isochronous (ISO) transfers?}{392}{subsection.13.7.8}
+\contentsline {subsection}{\numberline {13.7.9}How to start interrupt (INT) transfers?}{393}{subsection.13.7.9}
+\contentsline {section}{\numberline {13.8}Power Management for USB}{393}{section.13.8}
+\contentsline {subsection}{\numberline {13.8.1}What is Power Management?}{393}{subsection.13.8.1}
+\contentsline {subsection}{\numberline {13.8.2}What is Remote Wakeup?}{393}{subsection.13.8.2}
+\contentsline {subsection}{\numberline {13.8.3}When is a USB device idle?}{394}{subsection.13.8.3}
+\contentsline {subsection}{\numberline {13.8.4}Forms of dynamic PM}{394}{subsection.13.8.4}
+\contentsline {subsection}{\numberline {13.8.5}The user interface for dynamic PM}{394}{subsection.13.8.5}
+\contentsline {subsection}{\numberline {13.8.6}Changing the default idle-delay time}{395}{subsection.13.8.6}
+\contentsline {subsection}{\numberline {13.8.7}Warnings}{395}{subsection.13.8.7}
+\contentsline {subsection}{\numberline {13.8.8}The driver interface for Power Management}{396}{subsection.13.8.8}
+\contentsline {subsection}{\numberline {13.8.9}The driver interface for autosuspend and autoresume}{397}{subsection.13.8.9}
+\contentsline {subsection}{\numberline {13.8.10}Other parts of the driver interface}{398}{subsection.13.8.10}
+\contentsline {subsection}{\numberline {13.8.11}Mutual exclusion}{398}{subsection.13.8.11}
+\contentsline {subsection}{\numberline {13.8.12}Interaction between dynamic PM and system PM}{398}{subsection.13.8.12}
+\contentsline {subsection}{\numberline {13.8.13}xHCI hardware link PM}{399}{subsection.13.8.13}
+\contentsline {subsection}{\numberline {13.8.14}USB Port Power Control}{399}{subsection.13.8.14}
+\contentsline {subsection}{\numberline {13.8.15}User Interface for Port Power Control}{400}{subsection.13.8.15}
+\contentsline {subsection}{\numberline {13.8.16}Suggested Userspace Port Power Policy}{402}{subsection.13.8.16}
+\contentsline {section}{\numberline {13.9}USB hotplugging}{402}{section.13.9}
+\contentsline {subsection}{\numberline {13.9.1}Linux Hotplugging}{402}{subsection.13.9.1}
+\contentsline {subsection}{\numberline {13.9.2}Kernel Hotplug Helper (\texttt {/sbin/hotplug})}{402}{subsection.13.9.2}
+\contentsline {subsection}{\numberline {13.9.3}USB Policy Agent}{403}{subsection.13.9.3}
+\contentsline {subsection}{\numberline {13.9.4}USB Modutils Support}{403}{subsection.13.9.4}
+\contentsline {section}{\numberline {13.10}USB device persistence during system suspend}{404}{section.13.10}
+\contentsline {subsection}{\numberline {13.10.1}What is the problem?}{404}{subsection.13.10.1}
+\contentsline {subsection}{\numberline {13.10.2}What is the solution?}{405}{subsection.13.10.2}
+\contentsline {subsection}{\numberline {13.10.3}Is this the best solution?}{405}{subsection.13.10.3}
+\contentsline {subsection}{\numberline {13.10.4}WARNING: USB-persist can be dangerous!!}{406}{subsection.13.10.4}
+\contentsline {section}{\numberline {13.11}USB Error codes}{406}{section.13.11}
+\contentsline {subsection}{\numberline {13.11.1}Error codes returned by \texttt {usb\_submit\_urb()}}{406}{subsection.13.11.1}
+\contentsline {subsection}{\numberline {13.11.2}Error codes returned by \texttt {in urb-\textgreater {}status} or in \texttt {iso\_frame\_desc{[}n{]}.status} (for ISO)}{407}{subsection.13.11.2}
+\contentsline {subsection}{\numberline {13.11.3}Error codes returned by usbcore-functions}{409}{subsection.13.11.3}
+\contentsline {section}{\numberline {13.12}Writing USB Device Drivers}{409}{section.13.12}
+\contentsline {subsection}{\numberline {13.12.1}Introduction}{409}{subsection.13.12.1}
+\contentsline {subsection}{\numberline {13.12.2}Linux USB Basics}{409}{subsection.13.12.2}
+\contentsline {subsection}{\numberline {13.12.3}Device operation}{411}{subsection.13.12.3}
+\contentsline {subsection}{\numberline {13.12.4}Isochronous Data}{413}{subsection.13.12.4}
+\contentsline {subsection}{\numberline {13.12.5}Conclusion}{413}{subsection.13.12.5}
+\contentsline {subsection}{\numberline {13.12.6}Resources}{413}{subsection.13.12.6}
+\contentsline {section}{\numberline {13.13}Synopsys DesignWare Core SuperSpeed USB 3.0 Controller}{413}{section.13.13}
+\contentsline {subsection}{\numberline {13.13.1}Introduction}{413}{subsection.13.13.1}
+\contentsline {subsection}{\numberline {13.13.2}Summary of Features}{414}{subsection.13.13.2}
+\contentsline {subsection}{\numberline {13.13.3}Driver Design}{414}{subsection.13.13.3}
+\contentsline {subsection}{\numberline {13.13.4}Known Limitations}{414}{subsection.13.13.4}
+\contentsline {subsubsection}{OUT Transfer Size Requirements}{414}{subsubsection*.1213}
+\contentsline {subsubsection}{TRB Ring Size Limitation}{415}{subsubsection*.1214}
+\contentsline {subsection}{\numberline {13.13.5}Reporting Bugs}{415}{subsection.13.13.5}
+\contentsline {subsubsection}{Required Information}{415}{subsubsection*.1215}
+\contentsline {subsection}{\numberline {13.13.6}Debugging}{416}{subsection.13.13.6}
+\contentsline {subsubsection}{\texttt {DebugFS}}{416}{subsubsection*.1216}
+\contentsline {paragraph}{\texttt {link\_state}}{416}{paragraph*.1217}
+\contentsline {paragraph}{\texttt {regdump}}{416}{paragraph*.1218}
+\contentsline {paragraph}{\texttt {testmode}}{416}{paragraph*.1219}
+\contentsline {paragraph}{\texttt {ep{[}0..15{]}\{in,out\}}}{416}{paragraph*.1220}
+\contentsline {subparagraph}{\texttt {transfer\_type}}{417}{subparagraph*.1221}
+\contentsline {subparagraph}{\texttt {trb\_ring}}{417}{subparagraph*.1222}
+\contentsline {subsubsection}{Trace Events}{421}{subsubsection*.1223}
+\contentsline {paragraph}{MMIO}{421}{paragraph*.1224}
+\contentsline {paragraph}{Interrupt Events}{421}{paragraph*.1225}
+\contentsline {paragraph}{Control Request}{421}{paragraph*.1226}
+\contentsline {paragraph}{Lifetime of a \texttt {struct usb\_request}}{421}{paragraph*.1227}
+\contentsline {paragraph}{Generic Commands}{422}{paragraph*.1228}
+\contentsline {paragraph}{Endpoint Commands}{422}{paragraph*.1229}
+\contentsline {paragraph}{Lifetime of a \texttt {TRB}}{422}{paragraph*.1230}
+\contentsline {paragraph}{Lifetime of an Endpoint}{423}{paragraph*.1231}
+\contentsline {subsection}{\numberline {13.13.7}Structures, Methods and Definitions}{423}{subsection.13.13.7}
+\contentsline {section}{\numberline {13.14}Writing a MUSB Glue Layer}{438}{section.13.14}
+\contentsline {subsection}{\numberline {13.14.1}Introduction}{438}{subsection.13.14.1}
+\contentsline {subsection}{\numberline {13.14.2}Linux MUSB Basics}{438}{subsection.13.14.2}
+\contentsline {subsection}{\numberline {13.14.3}Handling IRQs}{442}{subsection.13.14.3}
+\contentsline {subsection}{\numberline {13.14.4}Device Platform Data}{444}{subsection.13.14.4}
+\contentsline {subsection}{\numberline {13.14.5}Device Quirks}{445}{subsection.13.14.5}
+\contentsline {subsection}{\numberline {13.14.6}Conclusion}{447}{subsection.13.14.6}
+\contentsline {subsection}{\numberline {13.14.7}Acknowledgements}{447}{subsection.13.14.7}
+\contentsline {subsection}{\numberline {13.14.8}Resources}{447}{subsection.13.14.8}
+\contentsline {section}{\numberline {13.15}USB Type-C connector class}{447}{section.13.15}
+\contentsline {subsection}{\numberline {13.15.1}Introduction}{447}{subsection.13.15.1}
+\contentsline {subsection}{\numberline {13.15.2}User space interface}{448}{subsection.13.15.2}
+\contentsline {subsection}{\numberline {13.15.3}Driver API}{448}{subsection.13.15.3}
+\contentsline {subsubsection}{Registering the ports}{448}{subsubsection*.1272}
+\contentsline {subsubsection}{Registering Partners}{449}{subsubsection*.1275}
+\contentsline {subsubsection}{Registering Cables}{450}{subsubsection*.1279}
+\contentsline {subsubsection}{Notifications}{451}{subsubsection*.1285}
+\contentsline {subsubsection}{Alternate Modes}{452}{subsubsection*.1290}
+\contentsline {section}{\numberline {13.16}USB3 debug port}{453}{section.13.16}
+\contentsline {subsection}{\numberline {13.16.1}GENERAL}{453}{subsection.13.16.1}
+\contentsline {subsection}{\numberline {13.16.2}INTRODUCTION}{454}{subsection.13.16.2}
+\contentsline {subsection}{\numberline {13.16.3}EARLY PRINTK}{454}{subsection.13.16.3}
+\contentsline {subsection}{\numberline {13.16.4}Serial TTY}{455}{subsection.13.16.4}
+\contentsline {chapter}{\numberline {14}PCI Support Library}{457}{chapter.14}
+\contentsline {chapter}{\numberline {15}PCI Hotplug Support Library}{489}{chapter.15}
+\contentsline {chapter}{\numberline {16}Serial Peripheral Interface (SPI)}{491}{chapter.16}
+\contentsline {chapter}{\numberline {17}I$^{\text {2}}$C and SMBus Subsystem}{513}{chapter.17}
+\contentsline {chapter}{\numberline {18}High Speed Synchronous Serial Interface (HSI)}{529}{chapter.18}
+\contentsline {section}{\numberline {18.1}Introduction}{529}{section.18.1}
+\contentsline {section}{\numberline {18.2}HSI Subsystem in Linux}{529}{section.18.2}
+\contentsline {section}{\numberline {18.3}hsi-char Device}{529}{section.18.3}
+\contentsline {section}{\numberline {18.4}The kernel HSI API}{530}{section.18.4}
+\contentsline {chapter}{\numberline {19}Error Detection And Correction (EDAC) Devices}{539}{chapter.19}
+\contentsline {section}{\numberline {19.1}Main Concepts used at the EDAC subsystem}{539}{section.19.1}
+\contentsline {section}{\numberline {19.2}Memory Controllers}{540}{section.19.2}
+\contentsline {section}{\numberline {19.3}PCI Controllers}{547}{section.19.3}
+\contentsline {section}{\numberline {19.4}EDAC Blocks}{549}{section.19.4}
+\contentsline {chapter}{\numberline {20}SCSI Interfaces Guide}{551}{chapter.20}
+\contentsline {section}{\numberline {20.1}Introduction}{551}{section.20.1}
+\contentsline {subsection}{\numberline {20.1.1}Protocol vs bus}{551}{subsection.20.1.1}
+\contentsline {subsection}{\numberline {20.1.2}Design of the Linux SCSI subsystem}{551}{subsection.20.1.2}
+\contentsline {section}{\numberline {20.2}SCSI upper layer}{551}{section.20.2}
+\contentsline {subsection}{\numberline {20.2.1}sd (SCSI Disk)}{551}{subsection.20.2.1}
+\contentsline {subsection}{\numberline {20.2.2}sr (SCSI CD-ROM)}{552}{subsection.20.2.2}
+\contentsline {subsection}{\numberline {20.2.3}st (SCSI Tape)}{552}{subsection.20.2.3}
+\contentsline {subsection}{\numberline {20.2.4}sg (SCSI Generic)}{552}{subsection.20.2.4}
+\contentsline {subsection}{\numberline {20.2.5}ch (SCSI Media Changer)}{552}{subsection.20.2.5}
+\contentsline {section}{\numberline {20.3}SCSI mid layer}{552}{section.20.3}
+\contentsline {subsection}{\numberline {20.3.1}SCSI midlayer implementation}{552}{subsection.20.3.1}
+\contentsline {subsubsection}{include/scsi/scsi\_device.h}{552}{subsubsection*.1617}
+\contentsline {subsubsection}{drivers/scsi/scsi.c}{553}{subsubsection*.1622}
+\contentsline {subsubsection}{drivers/scsi/scsicam.c}{556}{subsubsection*.1636}
+\contentsline {subsubsection}{drivers/scsi/scsi\_error.c}{557}{subsubsection*.1640}
+\contentsline {subsubsection}{drivers/scsi/scsi\_devinfo.c}{559}{subsubsection*.1652}
+\contentsline {subsubsection}{drivers/scsi/scsi\_ioctl.c}{561}{subsubsection*.1659}
+\contentsline {subsubsection}{drivers/scsi/scsi\_lib.c}{561}{subsubsection*.1661}
+\contentsline {subsubsection}{drivers/scsi/scsi\_lib\_dma.c}{565}{subsubsection*.1678}
+\contentsline {subsubsection}{drivers/scsi/scsi\_module.c}{565}{subsubsection*.1681}
+\contentsline {subsubsection}{drivers/scsi/scsi\_proc.c}{566}{subsubsection*.1682}
+\contentsline {subsubsection}{drivers/scsi/scsi\_netlink.c}{568}{subsubsection*.1694}
+\contentsline {subsubsection}{drivers/scsi/scsi\_scan.c}{568}{subsubsection*.1698}
+\contentsline {subsubsection}{drivers/scsi/scsi\_sysctl.c}{572}{subsubsection*.1713}
+\contentsline {subsubsection}{drivers/scsi/scsi\_sysfs.c}{572}{subsubsection*.1714}
+\contentsline {subsubsection}{drivers/scsi/hosts.c}{572}{subsubsection*.1717}
+\contentsline {subsubsection}{drivers/scsi/scsi\_common.c}{574}{subsubsection*.1727}
+\contentsline {subsection}{\numberline {20.3.2}Transport classes}{575}{subsection.20.3.2}
+\contentsline {subsubsection}{Fibre Channel transport}{576}{subsubsection*.1736}
+\contentsline {subsubsection}{iSCSI transport class}{579}{subsubsection*.1749}
+\contentsline {subsubsection}{Serial Attached SCSI (SAS) transport class}{582}{subsubsection*.1763}
+\contentsline {subsubsection}{SATA transport class}{587}{subsubsection*.1792}
+\contentsline {subsubsection}{Parallel SCSI (SPI) transport class}{587}{subsubsection*.1793}
+\contentsline {subsubsection}{SCSI RDMA (SRP) transport class}{588}{subsubsection*.1797}
+\contentsline {section}{\numberline {20.4}SCSI lower layer}{590}{section.20.4}
+\contentsline {subsection}{\numberline {20.4.1}Host Bus Adapter transport types}{590}{subsection.20.4.1}
+\contentsline {subsubsection}{Debug transport}{590}{subsubsection*.1810}
+\contentsline {subsubsection}{todo}{590}{subsubsection*.1811}
+\contentsline {chapter}{\numberline {21}libATA Developer's Guide}{591}{chapter.21}
+\contentsline {section}{\numberline {21.1}Introduction}{591}{section.21.1}
+\contentsline {section}{\numberline {21.2}libata Driver API}{591}{section.21.2}
+\contentsline {subsection}{\numberline {21.2.1}\texttt {struct ata\_port\_operations}}{591}{subsection.21.2.1}
+\contentsline {subsubsection}{Disable ATA port}{591}{subsubsection*.1812}
+\contentsline {subsubsection}{Post-IDENTIFY device configuration}{591}{subsubsection*.1813}
+\contentsline {subsubsection}{Set PIO/DMA mode}{592}{subsubsection*.1814}
+\contentsline {subsubsection}{Taskfile read/write}{592}{subsubsection*.1815}
+\contentsline {subsubsection}{PIO data read/write}{592}{subsubsection*.1816}
+\contentsline {subsubsection}{ATA command execute}{592}{subsubsection*.1817}
+\contentsline {subsubsection}{Per-cmd ATAPI DMA capabilities filter}{592}{subsubsection*.1818}
+\contentsline {subsubsection}{Read specific ATA shadow registers}{593}{subsubsection*.1819}
+\contentsline {subsubsection}{Write specific ATA shadow register}{593}{subsubsection*.1820}
+\contentsline {subsubsection}{Select ATA device on bus}{593}{subsubsection*.1821}
+\contentsline {subsubsection}{Private tuning method}{593}{subsubsection*.1822}
+\contentsline {subsubsection}{Control PCI IDE BMDMA engine}{593}{subsubsection*.1823}
+\contentsline {subsubsection}{High-level taskfile hooks}{594}{subsubsection*.1824}
+\contentsline {subsubsection}{Exception and probe handling (EH)}{594}{subsubsection*.1825}
+\contentsline {subsubsection}{Hardware interrupt handling}{595}{subsubsection*.1826}
+\contentsline {subsubsection}{SATA phy read/write}{595}{subsubsection*.1827}
+\contentsline {subsubsection}{Init and shutdown}{595}{subsubsection*.1828}
+\contentsline {section}{\numberline {21.3}Error handling}{595}{section.21.3}
+\contentsline {subsection}{\numberline {21.3.1}Origins of commands}{595}{subsection.21.3.1}
+\contentsline {subsection}{\numberline {21.3.2}How commands are issued}{596}{subsection.21.3.2}
+\contentsline {subsection}{\numberline {21.3.3}How commands are processed}{596}{subsection.21.3.3}
+\contentsline {subsection}{\numberline {21.3.4}How commands are completed}{596}{subsection.21.3.4}
+\contentsline {subsection}{\numberline {21.3.5}\texttt {ata\_scsi\_error()}}{597}{subsection.21.3.5}
+\contentsline {subsection}{\numberline {21.3.6}Problems with the current EH}{597}{subsection.21.3.6}
+\contentsline {section}{\numberline {21.4}libata Library}{598}{section.21.4}
+\contentsline {section}{\numberline {21.5}libata Core Internals}{613}{section.21.5}
+\contentsline {section}{\numberline {21.6}libata SCSI translation/emulation}{638}{section.21.6}
+\contentsline {section}{\numberline {21.7}ATA errors and exceptions}{653}{section.21.7}
+\contentsline {subsection}{\numberline {21.7.1}Exception categories}{654}{subsection.21.7.1}
+\contentsline {subsubsection}{HSM violation}{654}{subsubsection*.2060}
+\contentsline {subsubsection}{ATA/ATAPI device error (non-NCQ / non-CHECK CONDITION)}{654}{subsubsection*.2061}
+\contentsline {subsubsection}{ATAPI device CHECK CONDITION}{655}{subsubsection*.2062}
+\contentsline {subsubsection}{ATA device error (NCQ)}{655}{subsubsection*.2063}
+\contentsline {subsubsection}{ATA bus error}{656}{subsubsection*.2064}
+\contentsline {subsubsection}{PCI bus error}{656}{subsubsection*.2065}
+\contentsline {subsubsection}{Late completion}{656}{subsubsection*.2066}
+\contentsline {subsubsection}{Unknown error (timeout)}{656}{subsubsection*.2067}
+\contentsline {subsubsection}{Hotplug and power management exceptions}{656}{subsubsection*.2068}
+\contentsline {subsection}{\numberline {21.7.2}EH recovery actions}{656}{subsection.21.7.2}
+\contentsline {subsubsection}{Clearing error condition}{656}{subsubsection*.2069}
+\contentsline {subsubsection}{Reset}{657}{subsubsection*.2070}
+\contentsline {subsubsection}{Reconfigure transport}{658}{subsubsection*.2071}
+\contentsline {section}{\numberline {21.8}ata\_piix Internals}{658}{section.21.8}
+\contentsline {section}{\numberline {21.9}sata\_sil Internals}{660}{section.21.9}
+\contentsline {section}{\numberline {21.10}Thanks}{660}{section.21.10}
+\contentsline {chapter}{\numberline {22}MTD NAND Driver Programming Interface}{661}{chapter.22}
+\contentsline {section}{\numberline {22.1}Introduction}{661}{section.22.1}
+\contentsline {section}{\numberline {22.2}Known Bugs And Assumptions}{661}{section.22.2}
+\contentsline {section}{\numberline {22.3}Documentation hints}{661}{section.22.3}
+\contentsline {subsection}{\numberline {22.3.1}Function identifiers {[}XXX{]}}{661}{subsection.22.3.1}
+\contentsline {subsection}{\numberline {22.3.2}Struct member identifiers {[}XXX{]}}{662}{subsection.22.3.2}
+\contentsline {section}{\numberline {22.4}Basic board driver}{662}{section.22.4}
+\contentsline {subsection}{\numberline {22.4.1}Basic defines}{662}{subsection.22.4.1}
+\contentsline {subsection}{\numberline {22.4.2}Partition defines}{662}{subsection.22.4.2}
+\contentsline {subsection}{\numberline {22.4.3}Hardware control function}{663}{subsection.22.4.3}
+\contentsline {subsection}{\numberline {22.4.4}Device ready function}{663}{subsection.22.4.4}
+\contentsline {subsection}{\numberline {22.4.5}Init function}{663}{subsection.22.4.5}
+\contentsline {subsection}{\numberline {22.4.6}Exit function}{664}{subsection.22.4.6}
+\contentsline {section}{\numberline {22.5}Advanced board driver functions}{665}{section.22.5}
+\contentsline {subsection}{\numberline {22.5.1}Multiple chip control}{665}{subsection.22.5.1}
+\contentsline {subsection}{\numberline {22.5.2}Hardware ECC support}{666}{subsection.22.5.2}
+\contentsline {subsubsection}{Functions and constants}{666}{subsubsection*.2082}
+\contentsline {subsubsection}{Hardware ECC with syndrome calculation}{666}{subsubsection*.2083}
+\contentsline {subsection}{\numberline {22.5.3}Bad block table support}{666}{subsection.22.5.3}
+\contentsline {subsubsection}{Flash based tables}{667}{subsubsection*.2084}
+\contentsline {subsubsection}{User defined tables}{667}{subsubsection*.2085}
+\contentsline {subsection}{\numberline {22.5.4}Spare area (auto)placement}{669}{subsection.22.5.4}
+\contentsline {subsubsection}{Placement defined by fs driver}{669}{subsubsection*.2086}
+\contentsline {subsubsection}{Automatic placement}{670}{subsubsection*.2087}
+\contentsline {subsection}{\numberline {22.5.5}Spare area autoplacement default schemes}{670}{subsection.22.5.5}
+\contentsline {subsubsection}{256 byte pagesize}{670}{subsubsection*.2088}
+\contentsline {subsubsection}{512 byte pagesize}{670}{subsubsection*.2089}
+\contentsline {subsubsection}{2048 byte pagesize}{671}{subsubsection*.2090}
+\contentsline {section}{\numberline {22.6}Filesystem support}{672}{section.22.6}
+\contentsline {section}{\numberline {22.7}Tools}{672}{section.22.7}
+\contentsline {section}{\numberline {22.8}Constants}{672}{section.22.8}
+\contentsline {subsection}{\numberline {22.8.1}Chip option constants}{672}{subsection.22.8.1}
+\contentsline {subsubsection}{Constants for chip id table}{672}{subsubsection*.2091}
+\contentsline {subsubsection}{Constants for runtime options}{672}{subsubsection*.2092}
+\contentsline {subsection}{\numberline {22.8.2}ECC selection constants}{673}{subsection.22.8.2}
+\contentsline {subsection}{\numberline {22.8.3}Hardware control related constants}{673}{subsection.22.8.3}
+\contentsline {subsection}{\numberline {22.8.4}Bad block table related constants}{673}{subsection.22.8.4}
+\contentsline {section}{\numberline {22.9}Structures}{674}{section.22.9}
+\contentsline {section}{\numberline {22.10}Public Functions Provided}{688}{section.22.10}
+\contentsline {section}{\numberline {22.11}Internal Functions Provided}{698}{section.22.11}
+\contentsline {section}{\numberline {22.12}Credits}{718}{section.22.12}
+\contentsline {chapter}{\numberline {23}Parallel Port Devices}{719}{chapter.23}
+\contentsline {chapter}{\numberline {24}16x50 UART Driver}{727}{chapter.24}
+\contentsline {chapter}{\numberline {25}Pulse-Width Modulation (PWM)}{733}{chapter.25}
+\contentsline {chapter}{\numberline {26}W1: Dallas' 1-wire bus}{741}{chapter.26}
+\contentsline {section}{\numberline {26.1}W1 API internal to the kernel}{741}{section.26.1}
+\contentsline {subsection}{\numberline {26.1.1}W1 API internal to the kernel}{741}{subsection.26.1.1}
+\contentsline {subsubsection}{include/linux/w1.h}{741}{subsubsection*.2333}
+\contentsline {subsubsection}{drivers/w1/w1.c}{745}{subsubsection*.2342}
+\contentsline {subsubsection}{drivers/w1/w1\_family.c}{746}{subsubsection*.2345}
+\contentsline {subsubsection}{drivers/w1/w1\_internal.h}{746}{subsubsection*.2348}
+\contentsline {subsubsection}{drivers/w1/w1\_int.c}{746}{subsubsection*.2350}
+\contentsline {subsubsection}{drivers/w1/w1\_netlink.h}{747}{subsubsection*.2353}
+\contentsline {subsubsection}{drivers/w1/w1\_io.c}{748}{subsubsection*.2359}
+\contentsline {chapter}{\numberline {27}RapidIO Subsystem Guide}{753}{chapter.27}
+\contentsline {section}{\numberline {27.1}Introduction}{753}{section.27.1}
+\contentsline {section}{\numberline {27.2}Known Bugs and Limitations}{753}{section.27.2}
+\contentsline {subsection}{\numberline {27.2.1}Bugs}{753}{subsection.27.2.1}
+\contentsline {subsection}{\numberline {27.2.2}Limitations}{753}{subsection.27.2.2}
+\contentsline {section}{\numberline {27.3}RapidIO driver interface}{753}{section.27.3}
+\contentsline {subsection}{\numberline {27.3.1}Functions}{753}{subsection.27.3.1}
+\contentsline {section}{\numberline {27.4}Internals}{768}{section.27.4}
+\contentsline {subsection}{\numberline {27.4.1}Structures}{768}{subsection.27.4.1}
+\contentsline {subsection}{\numberline {27.4.2}Enumeration and Discovery}{775}{subsection.27.4.2}
+\contentsline {subsection}{\numberline {27.4.3}Driver functionality}{780}{subsection.27.4.3}
+\contentsline {subsection}{\numberline {27.4.4}Device model support}{783}{subsection.27.4.4}
+\contentsline {subsection}{\numberline {27.4.5}PPC32 support}{784}{subsection.27.4.5}
+\contentsline {section}{\numberline {27.5}Credits}{785}{section.27.5}
+\contentsline {chapter}{\numberline {28}Writing s390 channel device drivers}{787}{chapter.28}
+\contentsline {section}{\numberline {28.1}Introduction}{787}{section.28.1}
+\contentsline {section}{\numberline {28.2}The css bus}{787}{section.28.2}
+\contentsline {section}{\numberline {28.3}The ccw bus}{787}{section.28.3}
+\contentsline {subsection}{\numberline {28.3.1}I/O functions for channel-attached devices}{788}{subsection.28.3.1}
+\contentsline {subsection}{\numberline {28.3.2}ccw devices}{793}{subsection.28.3.2}
+\contentsline {subsection}{\numberline {28.3.3}The channel-measurement facility}{802}{subsection.28.3.3}
+\contentsline {section}{\numberline {28.4}The ccwgroup bus}{804}{section.28.4}
+\contentsline {subsection}{\numberline {28.4.1}ccw group devices}{804}{subsection.28.4.1}
+\contentsline {section}{\numberline {28.5}Generic interfaces}{806}{section.28.5}
+\contentsline {subsection}{\numberline {28.5.1}Adapter interrupts}{807}{subsection.28.5.1}
+\contentsline {chapter}{\numberline {29}VME Device Drivers}{809}{chapter.29}
+\contentsline {section}{\numberline {29.1}Driver registration}{809}{section.29.1}
+\contentsline {section}{\numberline {29.2}Resource management}{809}{section.29.2}
+\contentsline {section}{\numberline {29.3}Master windows}{810}{section.29.3}
+\contentsline {subsection}{\numberline {29.3.1}Master window configuration}{810}{subsection.29.3.1}
+\contentsline {subsection}{\numberline {29.3.2}Master window access}{810}{subsection.29.3.2}
+\contentsline {section}{\numberline {29.4}Slave windows}{810}{section.29.4}
+\contentsline {subsection}{\numberline {29.4.1}Slave window configuration}{810}{subsection.29.4.1}
+\contentsline {subsection}{\numberline {29.4.2}Slave window buffer allocation}{810}{subsection.29.4.2}
+\contentsline {subsection}{\numberline {29.4.3}Slave window access}{811}{subsection.29.4.3}
+\contentsline {section}{\numberline {29.5}DMA channels}{811}{section.29.5}
+\contentsline {subsection}{\numberline {29.5.1}List Management}{811}{subsection.29.5.1}
+\contentsline {subsection}{\numberline {29.5.2}List Population}{811}{subsection.29.5.2}
+\contentsline {subsection}{\numberline {29.5.3}Transfer Attributes}{811}{subsection.29.5.3}
+\contentsline {subsection}{\numberline {29.5.4}List Execution}{811}{subsection.29.5.4}
+\contentsline {section}{\numberline {29.6}Interrupts}{812}{section.29.6}
+\contentsline {subsection}{\numberline {29.6.1}Attaching Interrupt Handlers}{812}{subsection.29.6.1}
+\contentsline {subsection}{\numberline {29.6.2}Interrupt Generation}{812}{subsection.29.6.2}
+\contentsline {section}{\numberline {29.7}Location monitors}{812}{section.29.7}
+\contentsline {subsection}{\numberline {29.7.1}Location Monitor Management}{812}{subsection.29.7.1}
+\contentsline {subsection}{\numberline {29.7.2}Location Monitor Configuration}{812}{subsection.29.7.2}
+\contentsline {subsection}{\numberline {29.7.3}Location Monitor Use}{812}{subsection.29.7.3}
+\contentsline {section}{\numberline {29.8}Slot Detection}{812}{section.29.8}
+\contentsline {section}{\numberline {29.9}Bus Detection}{813}{section.29.9}
+\contentsline {section}{\numberline {29.10}VME API}{813}{section.29.10}
+\contentsline {chapter}{\numberline {30}Linux 802.11 Driver Developer's Guide}{825}{chapter.30}
+\contentsline {section}{\numberline {30.1}Introduction}{825}{section.30.1}
+\contentsline {section}{\numberline {30.2}cfg80211 subsystem}{825}{section.30.2}
+\contentsline {subsection}{\numberline {30.2.1}Device registration}{825}{subsection.30.2.1}
+\contentsline {subsection}{\numberline {30.2.2}Actions and configuration}{839}{subsection.30.2.2}
+\contentsline {subsection}{\numberline {30.2.3}Scanning and BSS list handling}{868}{subsection.30.2.3}
+\contentsline {subsection}{\numberline {30.2.4}Utility functions}{873}{subsection.30.2.4}
+\contentsline {subsection}{\numberline {30.2.5}Data path helpers}{875}{subsection.30.2.5}
+\contentsline {subsection}{\numberline {30.2.6}Regulatory enforcement infrastructure}{876}{subsection.30.2.6}
+\contentsline {subsection}{\numberline {30.2.7}RFkill integration}{877}{subsection.30.2.7}
+\contentsline {subsection}{\numberline {30.2.8}Test mode}{877}{subsection.30.2.8}
+\contentsline {section}{\numberline {30.3}mac80211 subsystem (basics)}{878}{section.30.3}
+\contentsline {subsection}{\numberline {30.3.1}Basic hardware handling}{879}{subsection.30.3.1}
+\contentsline {subsection}{\numberline {30.3.2}PHY configuration}{892}{subsection.30.3.2}
+\contentsline {subsection}{\numberline {30.3.3}Virtual interfaces}{893}{subsection.30.3.3}
+\contentsline {subsection}{\numberline {30.3.4}Receive and transmit processing}{894}{subsection.30.3.4}
+\contentsline {subsubsection}{what should be here}{894}{subsubsection*.2727}
+\contentsline {subsubsection}{Frame format}{895}{subsubsection*.2728}
+\contentsline {subsubsection}{Packet alignment}{895}{subsubsection*.2729}
+\contentsline {subsubsection}{Calling into mac80211 from interrupts}{895}{subsubsection*.2730}
+\contentsline {subsubsection}{functions/definitions}{895}{subsubsection*.2731}
+\contentsline {subsection}{\numberline {30.3.5}Frame filtering}{906}{subsection.30.3.5}
+\contentsline {subsection}{\numberline {30.3.6}The mac80211 workqueue}{907}{subsection.30.3.6}
+\contentsline {section}{\numberline {30.4}mac80211 subsystem (advanced)}{908}{section.30.4}
+\contentsline {subsection}{\numberline {30.4.1}LED support}{908}{subsection.30.4.1}
+\contentsline {subsection}{\numberline {30.4.2}Hardware crypto acceleration}{910}{subsection.30.4.2}
+\contentsline {subsection}{\numberline {30.4.3}Powersave support}{912}{subsection.30.4.3}
+\contentsline {subsection}{\numberline {30.4.4}Beacon filter support}{913}{subsection.30.4.4}
+\contentsline {subsection}{\numberline {30.4.5}Multiple queues and QoS support}{914}{subsection.30.4.5}
+\contentsline {subsection}{\numberline {30.4.6}Access point mode support}{914}{subsection.30.4.6}
+\contentsline {subsubsection}{support for powersaving clients}{915}{subsubsection*.2774}
+\contentsline {subsection}{\numberline {30.4.7}Supporting multiple virtual interfaces}{918}{subsection.30.4.7}
+\contentsline {subsection}{\numberline {30.4.8}Station handling}{919}{subsection.30.4.8}
+\contentsline {subsection}{\numberline {30.4.9}Hardware scan offload}{921}{subsection.30.4.9}
+\contentsline {subsection}{\numberline {30.4.10}Aggregation}{922}{subsection.30.4.10}
+\contentsline {subsubsection}{TX A-MPDU aggregation}{922}{subsubsection*.2790}
+\contentsline {subsubsection}{RX A-MPDU aggregation}{922}{subsubsection*.2791}
+\contentsline {subsection}{\numberline {30.4.11}Spatial Multiplexing Powersave (SMPS)}{923}{subsection.30.4.11}
+\contentsline {subsection}{\numberline {30.4.12}Rate Control API}{923}{subsection.30.4.12}
+\contentsline {subsection}{\numberline {30.4.13}Key handling}{926}{subsection.30.4.13}
+\contentsline {subsubsection}{Key handling basics}{926}{subsubsection*.2802}
+\contentsline {subsubsection}{MORE TBD}{926}{subsubsection*.2803}
+\contentsline {subsection}{\numberline {30.4.14}Receive processing}{926}{subsection.30.4.14}
+\contentsline {subsection}{\numberline {30.4.15}Transmit processing}{926}{subsection.30.4.15}
+\contentsline {subsection}{\numberline {30.4.16}Station info handling}{926}{subsection.30.4.16}
+\contentsline {subsubsection}{Programming information}{926}{subsubsection*.2804}
+\contentsline {subsubsection}{STA information lifetime rules}{930}{subsubsection*.2807}
+\contentsline {subsection}{\numberline {30.4.17}Aggregation}{930}{subsection.30.4.17}
+\contentsline {subsection}{\numberline {30.4.18}Synchronisation}{933}{subsection.30.4.18}
+\contentsline {chapter}{\numberline {31}The Userspace I/O HOWTO}{935}{chapter.31}
+\contentsline {section}{\numberline {31.1}About this document}{935}{section.31.1}
+\contentsline {subsection}{\numberline {31.1.1}Translations}{935}{subsection.31.1.1}
+\contentsline {subsection}{\numberline {31.1.2}Preface}{935}{subsection.31.1.2}
+\contentsline {subsection}{\numberline {31.1.3}Acknowledgments}{935}{subsection.31.1.3}
+\contentsline {subsection}{\numberline {31.1.4}Feedback}{935}{subsection.31.1.4}
+\contentsline {section}{\numberline {31.2}About UIO}{936}{section.31.2}
+\contentsline {subsection}{\numberline {31.2.1}How UIO works}{936}{subsection.31.2.1}
+\contentsline {section}{\numberline {31.3}Writing your own kernel module}{937}{section.31.3}
+\contentsline {subsection}{\numberline {31.3.1}struct uio\_info}{937}{subsection.31.3.1}
+\contentsline {subsection}{\numberline {31.3.2}Adding an interrupt handler}{939}{subsection.31.3.2}
+\contentsline {subsection}{\numberline {31.3.3}Using uio\_pdrv for platform devices}{939}{subsection.31.3.3}
+\contentsline {subsection}{\numberline {31.3.4}Using uio\_pdrv\_genirq for platform devices}{939}{subsection.31.3.4}
+\contentsline {subsection}{\numberline {31.3.5}Using uio\_dmem\_genirq for platform devices}{940}{subsection.31.3.5}
+\contentsline {section}{\numberline {31.4}Writing a driver in userspace}{940}{section.31.4}
+\contentsline {subsection}{\numberline {31.4.1}Getting information about your UIO device}{940}{subsection.31.4.1}
+\contentsline {subsection}{\numberline {31.4.2}mmap() device memory}{941}{subsection.31.4.2}
+\contentsline {subsection}{\numberline {31.4.3}Waiting for interrupts}{941}{subsection.31.4.3}
+\contentsline {section}{\numberline {31.5}Generic PCI UIO driver}{941}{section.31.5}
+\contentsline {subsection}{\numberline {31.5.1}Making the driver recognize the device}{941}{subsection.31.5.1}
+\contentsline {subsection}{\numberline {31.5.2}Things to know about uio\_pci\_generic}{942}{subsection.31.5.2}
+\contentsline {subsection}{\numberline {31.5.3}Writing userspace driver using uio\_pci\_generic}{942}{subsection.31.5.3}
+\contentsline {subsection}{\numberline {31.5.4}Example code using uio\_pci\_generic}{942}{subsection.31.5.4}
+\contentsline {section}{\numberline {31.6}Generic Hyper-V UIO driver}{943}{section.31.6}
+\contentsline {subsection}{\numberline {31.6.1}Making the driver recognize the device}{943}{subsection.31.6.1}
+\contentsline {subsection}{\numberline {31.6.2}Things to know about uio\_hv\_generic}{944}{subsection.31.6.2}
+\contentsline {section}{\numberline {31.7}Further information}{944}{section.31.7}
+\contentsline {chapter}{\numberline {32}Linux Firmware API}{945}{chapter.32}
+\contentsline {section}{\numberline {32.1}Introduction}{945}{section.32.1}
+\contentsline {subsection}{\numberline {32.1.1}Types of firmware requests}{945}{subsection.32.1.1}
+\contentsline {section}{\numberline {32.2}Firmware API core features}{945}{section.32.2}
+\contentsline {subsection}{\numberline {32.2.1}Firmware search paths}{945}{subsection.32.2.1}
+\contentsline {subsection}{\numberline {32.2.2}Built-in firmware}{946}{subsection.32.2.2}
+\contentsline {subsection}{\numberline {32.2.3}Firmware cache}{946}{subsection.32.2.3}
+\contentsline {subsection}{\numberline {32.2.4}Direct filesystem lookup}{947}{subsection.32.2.4}
+\contentsline {subsubsection}{Firmware and initramfs}{947}{subsubsection*.2811}
+\contentsline {subsection}{\numberline {32.2.5}Fallback mechanisms}{947}{subsection.32.2.5}
+\contentsline {subsubsection}{Justifying the firmware fallback mechanism}{948}{subsubsection*.2812}
+\contentsline {subsubsection}{Types of fallback mechanisms}{948}{subsubsection*.2813}
+\contentsline {subsubsection}{Firmware sysfs loading facility}{948}{subsubsection*.2814}
+\contentsline {subsubsection}{Firmware kobject uevent fallback mechanism}{949}{subsubsection*.2815}
+\contentsline {subsubsection}{Firmware custom fallback mechanism}{949}{subsubsection*.2816}
+\contentsline {subsubsection}{Firmware fallback timeout}{950}{subsubsection*.2817}
+\contentsline {subsection}{\numberline {32.2.6}Firmware lookup order}{950}{subsection.32.2.6}
+\contentsline {section}{\numberline {32.3}request\_firmware API}{950}{section.32.3}
+\contentsline {subsection}{\numberline {32.3.1}Synchronous firmware requests}{950}{subsection.32.3.1}
+\contentsline {subsubsection}{request\_firmware}{951}{subsubsection*.2818}
+\contentsline {subsubsection}{request\_firmware\_direct}{951}{subsubsection*.2820}
+\contentsline {subsubsection}{request\_firmware\_into\_buf}{951}{subsubsection*.2822}
+\contentsline {subsection}{\numberline {32.3.2}Asynchronous firmware requests}{952}{subsection.32.3.2}
+\contentsline {subsubsection}{request\_firmware\_nowait}{952}{subsubsection*.2824}
+\contentsline {subsection}{\numberline {32.3.3}request firmware API expected driver use}{952}{subsection.32.3.3}
+\contentsline {section}{\numberline {32.4}Other Firmware Interfaces}{953}{section.32.4}
+\contentsline {subsection}{\numberline {32.4.1}DMI Interfaces}{953}{subsection.32.4.1}
+\contentsline {subsection}{\numberline {32.4.2}EDD Interfaces}{954}{subsection.32.4.2}
+\contentsline {chapter}{\numberline {33}PINCTRL (PIN CONTROL) subsystem}{957}{chapter.33}
+\contentsline {section}{\numberline {33.1}Top-level interface}{957}{section.33.1}
+\contentsline {section}{\numberline {33.2}Pin groups}{958}{section.33.2}
+\contentsline {section}{\numberline {33.3}Pin configuration}{960}{section.33.3}
+\contentsline {section}{\numberline {33.4}Interaction with the GPIO subsystem}{961}{section.33.4}
+\contentsline {section}{\numberline {33.5}PINMUX interfaces}{962}{section.33.5}
+\contentsline {section}{\numberline {33.6}What is pinmuxing?}{963}{section.33.6}
+\contentsline {section}{\numberline {33.7}Pinmux conventions}{963}{section.33.7}
+\contentsline {section}{\numberline {33.8}Pinmux drivers}{965}{section.33.8}
+\contentsline {section}{\numberline {33.9}Pin control interaction with the GPIO subsystem}{968}{section.33.9}
+\contentsline {section}{\numberline {33.10}GPIO mode pitfalls}{968}{section.33.10}
+\contentsline {subsection}{\numberline {33.10.1}And your machine configuration may look like this:}{970}{subsection.33.10.1}
+\contentsline {section}{\numberline {33.11}Board/machine configuration}{971}{section.33.11}
+\contentsline {section}{\numberline {33.12}Complex mappings}{972}{section.33.12}
+\contentsline {section}{\numberline {33.13}Pin control requests from drivers}{974}{section.33.13}
+\contentsline {section}{\numberline {33.14}Drivers needing both pin control and GPIOs}{975}{section.33.14}
+\contentsline {section}{\numberline {33.15}System pin control hogging}{976}{section.33.15}
+\contentsline {section}{\numberline {33.16}Runtime pinmuxing}{976}{section.33.16}
+\contentsline {chapter}{\numberline {34}General Purpose Input/Output (GPIO)}{979}{chapter.34}
+\contentsline {section}{\numberline {34.1}Core}{979}{section.34.1}
+\contentsline {section}{\numberline {34.2}Legacy API}{995}{section.34.2}
+\contentsline {section}{\numberline {34.3}ACPI support}{996}{section.34.3}
+\contentsline {section}{\numberline {34.4}Device tree support}{996}{section.34.4}
+\contentsline {section}{\numberline {34.5}Device-managed API}{997}{section.34.5}
+\contentsline {section}{\numberline {34.6}sysfs helpers}{1001}{section.34.6}
+\contentsline {chapter}{\numberline {35}Miscellaneous Devices}{1003}{chapter.35}
+\contentsline {chapter}{\numberline {36}DMAEngine documentation}{1005}{chapter.36}
+\contentsline {section}{\numberline {36.1}DMAEngine documentation}{1005}{section.36.1}
+\contentsline {subsection}{\numberline {36.1.1}DMAengine controller documentation}{1005}{subsection.36.1.1}
+\contentsline {subsubsection}{Hardware Introduction}{1005}{subsubsection*.2931}
+\contentsline {subsubsection}{DMA Support in Linux}{1006}{subsubsection*.2932}
+\contentsline {subsubsection}{DMAEngine APIs}{1006}{subsubsection*.2933}
+\contentsline {paragraph}{\texttt {struct dma\_device} Initialization}{1006}{paragraph*.2934}
+\contentsline {paragraph}{Supported transaction types}{1007}{paragraph*.2935}
+\contentsline {paragraph}{Device operations}{1008}{paragraph*.2936}
+\contentsline {subsubsection}{Misc notes}{1010}{subsubsection*.2937}
+\contentsline {subsubsection}{General Design Notes}{1011}{subsubsection*.2938}
+\contentsline {subsubsection}{Glossary}{1011}{subsubsection*.2939}
+\contentsline {section}{\numberline {36.2}DMAEngine client documentation}{1011}{section.36.2}
+\contentsline {subsection}{\numberline {36.2.1}DMA Engine API Guide}{1011}{subsection.36.2.1}
+\contentsline {subsubsection}{DMA usage}{1011}{subsubsection*.2940}
+\contentsline {paragraph}{Further APIs:}{1013}{paragraph*.2941}
+\contentsline {section}{\numberline {36.3}DMA Test documentation}{1014}{section.36.3}
+\contentsline {subsection}{\numberline {36.3.1}DMA Test Guide}{1015}{subsection.36.3.1}
+\contentsline {subsubsection}{Part 1 - How to build the test module}{1015}{subsubsection*.2942}
+\contentsline {subsubsection}{Part 2 - When dmatest is built as a module}{1015}{subsubsection*.2943}
+\contentsline {subsubsection}{Part 3 - When built-in in the kernel}{1016}{subsubsection*.2944}
+\contentsline {subsubsection}{Part 4 - Gathering the test results}{1016}{subsubsection*.2945}
+\contentsline {section}{\numberline {36.4}PXA DMA documentation}{1016}{section.36.4}
+\contentsline {subsection}{\numberline {36.4.1}PXA/MMP - DMA Slave controller}{1016}{subsection.36.4.1}
+\contentsline {subsubsection}{Constraints}{1016}{subsubsection*.2946}
+\contentsline {subsubsection}{Design}{1017}{subsubsection*.2947}
+\contentsline {chapter}{\numberline {37}Linux kernel SLIMbus support}{1019}{chapter.37}
+\contentsline {section}{\numberline {37.1}Overview}{1019}{section.37.1}
+\contentsline {subsection}{\numberline {37.1.1}What is SLIMbus?}{1019}{subsection.37.1.1}
+\contentsline {subsection}{\numberline {37.1.2}Hardware description:}{1019}{subsection.37.1.2}
+\contentsline {subsection}{\numberline {37.1.3}Software description:}{1020}{subsection.37.1.3}
+\contentsline {subsection}{\numberline {37.1.4}Device notifications to the driver:}{1020}{subsection.37.1.4}
+\contentsline {subsection}{\numberline {37.1.5}Driver and Controller APIs:}{1020}{subsection.37.1.5}
+\contentsline {subsection}{\numberline {37.1.6}Clock-pause:}{1025}{subsection.37.1.6}
+\contentsline {subsubsection}{Clock-pause APIs:}{1026}{subsubsection*.2964}
+\contentsline {subsection}{\numberline {37.1.7}Messaging:}{1026}{subsection.37.1.7}
+\contentsline {subsubsection}{Messaging APIs:}{1026}{subsubsection*.2966}
+\contentsline {chapter}{\numberline {38}SoundWire Documentation}{1029}{chapter.38}
+\contentsline {section}{\numberline {38.1}SoundWire Subsystem Summary}{1029}{section.38.1}
+\contentsline {subsection}{\numberline {38.1.1}Terminology}{1030}{subsection.38.1.1}
+\contentsline {subsection}{\numberline {38.1.2}Programming interfaces (SoundWire Master interface Driver)}{1030}{subsection.38.1.2}
+\contentsline {subsection}{\numberline {38.1.3}Programming interfaces (SoundWire Slave Driver)}{1031}{subsection.38.1.3}
+\contentsline {subsection}{\numberline {38.1.4}Future enhancements to be done}{1031}{subsection.38.1.4}
+\contentsline {subsection}{\numberline {38.1.5}Links}{1031}{subsection.38.1.5}
+\contentsline {chapter}{Index}{1033}{section*.2974}

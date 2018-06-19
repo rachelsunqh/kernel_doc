@@ -1,0 +1,1041 @@
+\begin{theindex}
+\def\bigletter#1{{\Large\sffamily#1}\nopagebreak\vspace{1mm}}
+
+  \bigletter {Symbols}
+  \item \_\_audit\_fd\_pair (C function), \hyperpage{106}
+  \item \_\_audit\_free (C function), \hyperpage{103}
+  \item \_\_audit\_getname (C function), \hyperpage{104}
+  \item \_\_audit\_inode (C function), \hyperpage{104}
+  \item \_\_audit\_ipc\_obj (C function), \hyperpage{105}
+  \item \_\_audit\_ipc\_set\_perm (C function), \hyperpage{105}
+  \item \_\_audit\_log\_bprm\_fcaps (C function), \hyperpage{106}
+  \item \_\_audit\_log\_capset (C function), \hyperpage{106}
+  \item \_\_audit\_mq\_getsetattr (C function), \hyperpage{105}
+  \item \_\_audit\_mq\_notify (C function), \hyperpage{105}
+  \item \_\_audit\_mq\_open (C function), \hyperpage{105}
+  \item \_\_audit\_mq\_sendrecv (C function), \hyperpage{105}
+  \item \_\_audit\_reusename (C function), \hyperpage{104}
+  \item \_\_audit\_sockaddr (C function), \hyperpage{106}
+  \item \_\_audit\_socketcall (C function), \hyperpage{105}
+  \item \_\_audit\_syscall\_entry (C function), \hyperpage{103}
+  \item \_\_audit\_syscall\_exit (C function), \hyperpage{103}
+  \item \_\_bitmap\_parse (C function), \hyperpage{28}
+  \item \_\_bitmap\_parselist (C function), \hyperpage{33}
+  \item \_\_bitmap\_shift\_left (C function), \hyperpage{27}
+  \item \_\_bitmap\_shift\_right (C function), \hyperpage{27}
+  \item \_\_blk\_drain\_queue (C function), \hyperpage{117}
+  \item \_\_blk\_end\_bidi\_request (C function), \hyperpage{119}
+  \item \_\_blk\_end\_request (C function), \hyperpage{114}
+  \item \_\_blk\_end\_request\_all (C function), \hyperpage{114}
+  \item \_\_blk\_end\_request\_cur (C function), \hyperpage{114}
+  \item \_\_blk\_queue\_free\_tags (C function), \hyperpage{131}
+  \item \_\_blk\_release\_queue (C function), \hyperpage{120}
+  \item \_\_blk\_run\_queue (C function), \hyperpage{109}
+  \item \_\_blk\_run\_queue\_uncond (C function), \hyperpage{109}
+  \item \_\_blkdev\_issue\_zeroout (C function), \hyperpage{129}
+  \item \_\_change\_bit (C function), \hyperpage{23}
+  \item \_\_clear\_user (C function), \hyperpage{49}
+  \item \_\_device\_add\_disk (C function), \hyperpage{135}
+  \item \_\_ffs (C function), \hyperpage{25}
+  \item \_\_generic\_file\_write\_iter (C function), \hyperpage{57}
+  \item \_\_get\_pfnblock\_flags\_mask (C function), \hyperpage{64}
+  \item \_\_get\_request (C function), \hyperpage{118}
+  \item \_\_get\_user (C function), \hyperpage{48}
+  \item \_\_handle\_domain\_irq (C function), \hyperpage{248}
+  \item \_\_irq\_alloc\_descs (C function), \hyperpage{248}
+  \item \_\_irq\_alloc\_domain\_generic\_chips (C function), \hyperpage{229}
+  \item \_\_list\_del\_entry (C function), \hyperpage{3}
+  \item \_\_list\_splice\_init\_rcu (C function), \hyperpage{171}
+  \item \_\_lock\_page (C function), \hyperpage{54}
+  \item \_\_put\_user (C function), \hyperpage{49}
+  \item \_\_register\_chrdev (C function), \hyperpage{139}
+  \item \_\_relay\_reset (C function), \hyperpage{88}
+  \item \_\_release\_region (C function), \hyperpage{99}
+  \item \_\_request\_module (C function), \hyperpage{90}
+  \item \_\_request\_percpu\_irq (C function), \hyperpage{94}, \hyperpage{242}
+  \item \_\_request\_region (C function), \hyperpage{99}
+  \item \_\_rounddown\_pow\_of\_two (C function), \hyperpage{38}
+  \item \_\_roundup\_pow\_of\_two (C function), \hyperpage{38}
+  \item \_\_set\_bit (C function), \hyperpage{23}
+  \item \_\_sysfs\_match\_string (C function), \hyperpage{19}
+  \item \_\_test\_and\_clear\_bit (C function), \hyperpage{24}
+  \item \_\_test\_and\_set\_bit (C function), \hyperpage{24}
+  \item \_\_unregister\_chrdev (C function), \hyperpage{139}
+
+  \indexspace
+  \bigletter A
+  \item absent\_pages\_in\_range (C function), \hyperpage{66}
+  \item access\_ok (C function), \hyperpage{47}
+  \item acct\_collect (C function), \hyperpage{107}
+  \item acct\_process (C function), \hyperpage{108}
+  \item add\_page\_wait\_queue (C function), \hyperpage{53}
+  \item add\_to\_page\_cache\_locked (C function), \hyperpage{53}
+  \item addr\_in\_gen\_pool (C function), \hyperpage{268}
+  \item adjust\_resource (C function), \hyperpage{98}
+  \item alloc\_chrdev\_region (C function), \hyperpage{138}
+  \item alloc\_contig\_range (C function), \hyperpage{67}
+  \item alloc\_ordered\_workqueue (C function), \hyperpage{221}
+  \item alloc\_pages\_exact\_nid (C function), \hyperpage{65}
+  \item alloc\_vm\_area (C function), \hyperpage{64}
+  \item alloc\_workqueue (C function), \hyperpage{221}
+  \item allocate\_resource (C function), \hyperpage{97}
+  \item arch\_phys\_wc\_add (C function), \hyperpage{100}
+  \item audit\_alloc (C function), \hyperpage{103}
+  \item audit\_compare\_dname\_path (C function), \hyperpage{107}
+  \item audit\_core\_dumps (C function), \hyperpage{106}
+  \item audit\_list\_rules\_send (C function), \hyperpage{107}
+  \item audit\_log (C function), \hyperpage{103}
+  \item audit\_log\_end (C function), \hyperpage{102}
+  \item audit\_log\_format (C function), \hyperpage{102}
+  \item audit\_log\_start (C function), \hyperpage{102}
+  \item audit\_rule\_change (C function), \hyperpage{107}
+  \item audit\_set\_loginuid (C function), \hyperpage{104}
+  \item audit\_signal\_info (C function), \hyperpage{106}
+  \item auditsc\_get\_stamp (C function), \hyperpage{104}
+
+  \indexspace
+  \bigletter B
+  \item balance\_dirty\_pages\_ratelimited (C function), \hyperpage{70}
+  \item bdev\_stack\_limits (C function), \hyperpage{125}
+  \item bdget\_disk (C function), \hyperpage{138}
+  \item bitmap\_allocate\_region (C function), \hyperpage{32}
+  \item bitmap\_bitremap (C function), \hyperpage{30}
+  \item bitmap\_copy\_le (C function), \hyperpage{32}
+  \item bitmap\_find\_free\_region (C function), \hyperpage{32}
+  \item bitmap\_find\_next\_zero\_area (C function), \hyperpage{34}
+  \item bitmap\_find\_next\_zero\_area\_off (C function), \hyperpage{28}
+  \item bitmap\_fold (C function), \hyperpage{31}
+  \item bitmap\_from\_arr32 (C function), \hyperpage{33}
+  \item BITMAP\_FROM\_U64 (C function), \hyperpage{34}
+  \item bitmap\_from\_u64 (C function), \hyperpage{35}
+  \item bitmap\_onto (C function), \hyperpage{30}
+  \item bitmap\_ord\_to\_pos (C function), \hyperpage{34}
+  \item bitmap\_parse\_user (C function), \hyperpage{28}
+  \item bitmap\_parselist\_user (C function), \hyperpage{29}
+  \item bitmap\_pos\_to\_ord (C function), \hyperpage{33}
+  \item bitmap\_print\_to\_pagebuf (C function), \hyperpage{29}
+  \item bitmap\_release\_region (C function), \hyperpage{32}
+  \item bitmap\_remap (C function), \hyperpage{29}
+  \item bitmap\_to\_arr32 (C function), \hyperpage{33}
+  \item blk\_add\_trace\_bio (C function), \hyperpage{133}
+  \item blk\_add\_trace\_bio\_remap (C function), \hyperpage{133}
+  \item blk\_add\_trace\_rq (C function), \hyperpage{133}
+  \item blk\_add\_trace\_rq\_remap (C function), \hyperpage{134}
+  \item blk\_alloc\_devt (C function), \hyperpage{134}
+  \item blk\_attempt\_plug\_merge (C function), \hyperpage{118}
+  \item blk\_cleanup\_queue (C function), \hyperpage{110}
+  \item blk\_cloned\_rq\_check\_limits (C function), \hyperpage{119}
+  \item blk\_delay\_queue (C function), \hyperpage{108}
+  \item blk\_end\_bidi\_request (C function), \hyperpage{119}
+  \item blk\_end\_request (C function), \hyperpage{113}
+  \item blk\_end\_request\_all (C function), \hyperpage{114}
+  \item blk\_execute\_rq (C function), \hyperpage{128}
+  \item blk\_execute\_rq\_nowait (C function), \hyperpage{128}
+  \item blk\_fetch\_request (C function), \hyperpage{113}
+  \item blk\_free\_devt (C function), \hyperpage{134}
+  \item blk\_free\_tags (C function), \hyperpage{130}
+  \item blk\_get\_request\_flags (C function), \hyperpage{111}
+  \item blk\_init\_queue (C function), \hyperpage{110}
+  \item blk\_init\_tags (C function), \hyperpage{130}
+  \item blk\_insert\_cloned\_request (C function), \hyperpage{112}
+  \item blk\_integrity\_compare (C function), \hyperpage{132}
+  \item blk\_integrity\_register (C function), \hyperpage{132}
+  \item blk\_integrity\_unregister (C function), \hyperpage{132}
+  \item blk\_limits\_io\_min (C function), \hyperpage{124}
+  \item blk\_limits\_io\_opt (C function), \hyperpage{125}
+  \item blk\_lld\_busy (C function), \hyperpage{115}
+  \item blk\_mangle\_minor (C function), \hyperpage{134}
+  \item blk\_peek\_request (C function), \hyperpage{112}
+  \item blk\_pm\_runtime\_init (C function), \hyperpage{116}
+  \item blk\_post\_runtime\_resume (C function), \hyperpage{117}
+  \item blk\_post\_runtime\_suspend (C function), \hyperpage{116}
+  \item blk\_pre\_runtime\_resume (C function), \hyperpage{117}
+  \item blk\_pre\_runtime\_suspend (C function), \hyperpage{116}
+  \item blk\_queue\_alignment\_offset (C function), \hyperpage{124}
+  \item blk\_queue\_bounce\_limit (C function), \hyperpage{122}
+  \item blk\_queue\_bypass\_end (C function), \hyperpage{110}
+  \item blk\_queue\_bypass\_start (C function), \hyperpage{110}
+  \item blk\_queue\_chunk\_sectors (C function), \hyperpage{122}
+  \item blk\_queue\_dma\_alignment (C function), \hyperpage{127}
+  \item blk\_queue\_dma\_drain (C function), \hyperpage{126}
+  \item blk\_queue\_dma\_pad (C function), \hyperpage{126}
+  \item blk\_queue\_end\_tag (C function), \hyperpage{131}
+  \item blk\_queue\_enter (C function), \hyperpage{118}
+  \item blk\_queue\_find\_tag (C function), \hyperpage{130}
+  \item blk\_queue\_free\_tags (C function), \hyperpage{130}
+  \item blk\_queue\_init\_tags (C function), \hyperpage{130}
+  \item blk\_queue\_invalidate\_tags (C function), \hyperpage{131}
+  \item blk\_queue\_io\_min (C function), \hyperpage{124}
+  \item blk\_queue\_io\_opt (C function), \hyperpage{125}
+  \item blk\_queue\_logical\_block\_size (C function), \hyperpage{124}
+  \item blk\_queue\_make\_request (C function), \hyperpage{122}
+  \item blk\_queue\_max\_discard\_sectors (C function), \hyperpage{123}
+  \item blk\_queue\_max\_discard\_segments (C function), \hyperpage{123}
+  \item blk\_queue\_max\_hw\_sectors (C function), \hyperpage{122}
+  \item blk\_queue\_max\_segment\_size (C function), \hyperpage{123}
+  \item blk\_queue\_max\_segments (C function), \hyperpage{123}
+  \item blk\_queue\_max\_write\_same\_sectors (C function), \hyperpage{123}
+  \item blk\_queue\_max\_write\_zeroes\_sectors (C function), \hyperpage{123}
+  \item blk\_queue\_physical\_block\_size (C function), \hyperpage{124}
+  \item blk\_queue\_prep\_rq (C function), \hyperpage{121}
+  \item blk\_queue\_resize\_tags (C function), \hyperpage{131}
+  \item blk\_queue\_segment\_boundary (C function), \hyperpage{127}
+  \item blk\_queue\_stack\_limits (C function), \hyperpage{125}
+  \item blk\_queue\_start\_tag (C function), \hyperpage{131}
+  \item blk\_queue\_unprep\_rq (C function), \hyperpage{121}
+  \item blk\_queue\_update\_dma\_alignment (C function), \hyperpage{127}
+  \item blk\_queue\_update\_dma\_pad (C function), \hyperpage{126}
+  \item blk\_queue\_virt\_boundary (C function), \hyperpage{127}
+  \item blk\_queue\_write\_cache (C function), \hyperpage{127}
+  \item blk\_requeue\_request (C function), \hyperpage{111}
+  \item blk\_rq\_count\_integrity\_sg (C function), \hyperpage{132}
+  \item blk\_rq\_err\_bytes (C function), \hyperpage{112}
+  \item blk\_rq\_map\_integrity\_sg (C function), \hyperpage{132}
+  \item blk\_rq\_map\_kern (C function), \hyperpage{120}
+  \item blk\_rq\_map\_user\_iov (C function), \hyperpage{120}
+  \item blk\_rq\_prep\_clone (C function), \hyperpage{115}
+  \item blk\_rq\_unmap\_user (C function), \hyperpage{120}
+  \item blk\_rq\_unprep\_clone (C function), \hyperpage{115}
+  \item blk\_run\_queue (C function), \hyperpage{109}
+  \item blk\_run\_queue\_async (C function), \hyperpage{109}
+  \item blk\_set\_default\_limits (C function), \hyperpage{121}
+  \item blk\_set\_preempt\_only (C function), \hyperpage{109}
+  \item blk\_set\_queue\_depth (C function), \hyperpage{127}
+  \item blk\_set\_runtime\_active (C function), \hyperpage{117}
+  \item blk\_set\_stacking\_limits (C function), \hyperpage{121}
+  \item blk\_stack\_limits (C function), \hyperpage{125}
+  \item blk\_start\_plug (C function), \hyperpage{116}
+  \item blk\_start\_queue (C function), \hyperpage{108}
+  \item blk\_start\_queue\_async (C function), \hyperpage{108}
+  \item blk\_start\_request (C function), \hyperpage{113}
+  \item blk\_stop\_queue (C function), \hyperpage{108}
+  \item blk\_sync\_queue (C function), \hyperpage{108}
+  \item blk\_trace\_ioctl (C function), \hyperpage{133}
+  \item blk\_trace\_shutdown (C function), \hyperpage{133}
+  \item blk\_unprep\_request (C function), \hyperpage{113}
+  \item blk\_unregister\_queue (C function), \hyperpage{121}
+  \item blk\_update\_request (C function), \hyperpage{113}
+  \item blkdev\_issue\_discard (C function), \hyperpage{128}
+  \item blkdev\_issue\_flush (C function), \hyperpage{128}
+  \item blkdev\_issue\_write\_same (C function), \hyperpage{129}
+  \item blkdev\_issue\_zeroout (C function), \hyperpage{129}
+  \item bprintf (C function), \hyperpage{13}
+  \item bstr\_printf (C function), \hyperpage{13}
+
+  \indexspace
+  \bigletter C
+  \item call\_rcu (C function), \hyperpage{161}
+  \item call\_rcu\_bh (C function), \hyperpage{159}
+  \item call\_rcu\_sched (C function), \hyperpage{159}
+  \item call\_rcu\_tasks (C function), \hyperpage{164}
+  \item call\_srcu (C function), \hyperpage{167}
+  \item cdev\_add (C function), \hyperpage{139}
+  \item cdev\_alloc (C function), \hyperpage{141}
+  \item cdev\_del (C function), \hyperpage{141}
+  \item cdev\_device\_add (C function), \hyperpage{140}
+  \item cdev\_device\_del (C function), \hyperpage{140}
+  \item cdev\_init (C function), \hyperpage{141}
+  \item cdev\_set\_parent (C function), \hyperpage{140}
+  \item change\_bit (C function), \hyperpage{23}
+  \item cleanup\_srcu\_struct (C function), \hyperpage{167}
+  \item clear\_bit (C function), \hyperpage{23}
+  \item clear\_user (C function), \hyperpage{49}
+  \item clk\_bulk\_data (C type), \hyperpage{142}
+  \item clk\_bulk\_disable (C function), \hyperpage{146}
+  \item clk\_bulk\_enable (C function), \hyperpage{146}
+  \item clk\_bulk\_get (C function), \hyperpage{144}
+  \item clk\_bulk\_put (C function), \hyperpage{147}
+  \item clk\_disable (C function), \hyperpage{146}
+  \item clk\_enable (C function), \hyperpage{146}
+  \item clk\_get (C function), \hyperpage{144}
+  \item clk\_get\_accuracy (C function), \hyperpage{143}
+  \item clk\_get\_parent (C function), \hyperpage{149}
+  \item clk\_get\_phase (C function), \hyperpage{143}
+  \item clk\_get\_rate (C function), \hyperpage{147}
+  \item clk\_get\_sys (C function), \hyperpage{149}
+  \item clk\_has\_parent (C function), \hyperpage{148}
+  \item clk\_is\_match (C function), \hyperpage{143}
+  \item clk\_notifier (C type), \hyperpage{142}
+  \item clk\_notifier\_data (C type), \hyperpage{142}
+  \item clk\_notifier\_register (C function), \hyperpage{143}
+  \item clk\_notifier\_unregister (C function), \hyperpage{143}
+  \item clk\_prepare (C function), \hyperpage{144}
+  \item clk\_put (C function), \hyperpage{147}
+  \item clk\_rate\_exclusive\_get (C function), \hyperpage{145}
+  \item clk\_rate\_exclusive\_put (C function), \hyperpage{146}
+  \item clk\_round\_rate (C function), \hyperpage{147}
+  \item clk\_set\_max\_rate (C function), \hyperpage{149}
+  \item clk\_set\_min\_rate (C function), \hyperpage{149}
+  \item clk\_set\_parent (C function), \hyperpage{149}
+  \item clk\_set\_phase (C function), \hyperpage{143}
+  \item clk\_set\_rate (C function), \hyperpage{148}
+  \item clk\_set\_rate\_exclusive (C function), \hyperpage{148}
+  \item clk\_set\_rate\_range (C function), \hyperpage{148}
+  \item clk\_unprepare (C function), \hyperpage{144}
+  \item cond\_resched\_rcu\_qs (C function), \hyperpage{150}
+  \item cond\_synchronize\_rcu (C function), \hyperpage{160}
+  \item cond\_synchronize\_sched (C function), \hyperpage{161}
+  \item cpuhp\_remove\_multi\_state (C function), \hyperpage{204}
+  \item cpuhp\_remove\_state (C function), \hyperpage{204}
+  \item cpuhp\_remove\_state\_nocalls (C function), \hyperpage{204}
+  \item cpuhp\_setup\_state (C function), \hyperpage{203}
+  \item cpuhp\_setup\_state\_multi (C function), \hyperpage{203}
+  \item cpuhp\_setup\_state\_nocalls (C function), \hyperpage{203}
+  \item cpuhp\_state\_add\_instance (C function), \hyperpage{203}
+  \item cpuhp\_state\_add\_instance\_nocalls (C function), \hyperpage{204}
+  \item cpuhp\_state\_remove\_instance (C function), \hyperpage{204}
+  \item cpuhp\_state\_remove\_instance\_nocalls (C function), \hyperpage{204}
+  \item crc16 (C function), \hyperpage{37}
+  \item crc32\_be\_generic (C function), \hyperpage{37}
+  \item crc32\_generic\_shift (C function), \hyperpage{37}
+  \item crc32\_le\_generic (C function), \hyperpage{37}
+  \item crc4 (C function), \hyperpage{36}
+  \item crc7\_be (C function), \hyperpage{36}
+  \item crc8 (C function), \hyperpage{36}
+  \item crc8\_populate\_lsb (C function), \hyperpage{36}
+  \item crc8\_populate\_msb (C function), \hyperpage{36}
+  \item crc\_ccitt (C function), \hyperpage{38}
+  \item crc\_ccitt\_false (C function), \hyperpage{38}
+  \item crc\_itu\_t (C function), \hyperpage{38}
+
+  \indexspace
+  \bigletter D
+  \item debug\_obj (C type), \hyperpage{282}
+  \item debug\_obj\_descr (C type), \hyperpage{282}
+  \item debug\_object\_activate (C function), \hyperpage{280}
+  \item debug\_object\_assert\_init (C function), \hyperpage{282}
+  \item debug\_object\_deactivate (C function), \hyperpage{281}
+  \item debug\_object\_destroy (C function), \hyperpage{281}
+  \item debug\_object\_free (C function), \hyperpage{281}
+  \item debug\_object\_init (C function), \hyperpage{280}
+  \item debug\_object\_init\_on\_stack (C function), \hyperpage{280}
+  \item DECLARE\_KFIFO (C function), \hyperpage{79}
+  \item DECLARE\_KFIFO\_PTR (C function), \hyperpage{79}
+  \item decode\_rs16 (C function), \hyperpage{263}
+  \item decode\_rs8 (C function), \hyperpage{262}
+  \item DEFINE\_IDR (C function), \hyperpage{206}
+  \item DEFINE\_KFIFO (C function), \hyperpage{79}
+  \item delayed\_work\_pending (C function), \hyperpage{221}
+  \item delete\_from\_page\_cache (C function), \hyperpage{50}
+  \item destroy\_rcu\_head\_on\_stack (C function), \hyperpage{164}
+  \item devm\_clk\_bulk\_get (C function), \hyperpage{145}
+  \item devm\_clk\_get (C function), \hyperpage{145}
+  \item devm\_clk\_put (C function), \hyperpage{147}
+  \item devm\_gen\_pool\_create (C function), \hyperpage{264}
+  \item devm\_get\_clk\_from\_child (C function), \hyperpage{145}
+  \item devm\_release\_resource (C function), \hyperpage{99}
+  \item devm\_request\_resource (C function), \hyperpage{99}
+  \item direct\_make\_request (C function), \hyperpage{112}
+  \item disable\_hardirq (C function), \hyperpage{91}, \hyperpage{239}
+  \item disable\_irq (C function), \hyperpage{91}, \hyperpage{238}
+  \item disable\_irq\_nosync (C function), \hyperpage{91}, \hyperpage{238}
+  \item disk\_block\_events (C function), \hyperpage{135}
+  \item disk\_clear\_events (C function), \hyperpage{136}
+  \item disk\_expand\_part\_tbl (C function), \hyperpage{135}
+  \item disk\_flush\_events (C function), \hyperpage{136}
+  \item disk\_get\_part (C function), \hyperpage{136}
+  \item disk\_map\_sector\_rcu (C function), \hyperpage{137}
+  \item disk\_part\_iter\_exit (C function), \hyperpage{137}
+  \item disk\_part\_iter\_init (C function), \hyperpage{136}
+  \item disk\_part\_iter\_next (C function), \hyperpage{137}
+  \item disk\_replace\_part\_tbl (C function), \hyperpage{135}
+  \item disk\_stack\_limits (C function), \hyperpage{126}
+  \item disk\_unblock\_events (C function), \hyperpage{136}
+  \item div64\_s64 (C function), \hyperpage{40, 41}
+  \item div64\_u64 (C function), \hyperpage{40, 41}
+  \item div64\_u64\_rem (C function), \hyperpage{40, 41}
+  \item div\_s64 (C function), \hyperpage{41}
+  \item div\_s64\_rem (C function), \hyperpage{40, 41}
+  \item div\_u64 (C function), \hyperpage{40}
+  \item div\_u64\_rem (C function), \hyperpage{40}
+  \item dma\_pool\_alloc (C function), \hyperpage{69}
+  \item dma\_pool\_create (C function), \hyperpage{69}
+  \item dma\_pool\_destroy (C function), \hyperpage{69}
+  \item dma\_pool\_free (C function), \hyperpage{70}
+  \item dmam\_pool\_create (C function), \hyperpage{70}
+  \item dmam\_pool\_destroy (C function), \hyperpage{70}
+  \item do\_div (C function), \hyperpage{39}
+
+  \indexspace
+  \bigletter E
+  \item enable\_irq (C function), \hyperpage{92}, \hyperpage{239}
+  \item encode\_rs16 (C function), \hyperpage{263}
+  \item encode\_rs8 (C function), \hyperpage{262}
+  \item end\_page\_writeback (C function), \hyperpage{53}
+  \item errseq\_check (C function), \hyperpage{271}
+  \item errseq\_check\_and\_advance (C function), \hyperpage{271}
+  \item errseq\_sample (C function), \hyperpage{271}
+  \item errseq\_set (C function), \hyperpage{271}
+
+  \indexspace
+  \bigletter F
+  \item ffs (C function), \hyperpage{25}
+  \item ffz (C function), \hyperpage{25}
+  \item file\_check\_and\_advance\_wb\_err (C function), \hyperpage{52}
+  \item file\_fdatawait\_range (C function), \hyperpage{51}
+  \item file\_write\_and\_wait\_range (C function), \hyperpage{52}
+  \item filemap\_fault (C function), \hyperpage{56}
+  \item filemap\_fdatawait\_keep\_errors (C function), \hyperpage{51}
+  \item filemap\_fdatawait\_range (C function), \hyperpage{51}
+  \item filemap\_flush (C function), \hyperpage{51}
+  \item filemap\_range\_has\_page (C function), \hyperpage{51}
+  \item filemap\_write\_and\_wait\_range (C function), \hyperpage{52}
+  \item find\_get\_entries\_tag (C function), \hyperpage{56}
+  \item find\_get\_entry (C function), \hyperpage{54}
+  \item find\_get\_pages\_contig (C function), \hyperpage{55}
+  \item find\_get\_pages\_range\_tag (C function), \hyperpage{56}
+  \item find\_lock\_entry (C function), \hyperpage{55}
+  \item find\_min\_pfn\_with\_active\_regions (C function), \hyperpage{66}
+  \item find\_next\_best\_node (C function), \hyperpage{65}
+  \item flex\_array\_alloc (C function), \hyperpage{257}
+  \item flex\_array\_clear (C function), \hyperpage{258}
+  \item flex\_array\_free (C function), \hyperpage{257}
+  \item flex\_array\_free\_parts (C function), \hyperpage{258}
+  \item flex\_array\_get (C function), \hyperpage{258}
+  \item flex\_array\_prealloc (C function), \hyperpage{257}
+  \item flex\_array\_put (C function), \hyperpage{258}
+  \item flex\_array\_shrink (C function), \hyperpage{258}
+  \item fls (C function), \hyperpage{25}
+  \item fls64 (C function), \hyperpage{26}
+  \item flush\_scheduled\_work (C function), \hyperpage{222}
+  \item follow\_pfn (C function), \hyperpage{60}
+  \item free\_area\_init\_nodes (C function), \hyperpage{67}
+  \item free\_bootmem\_with\_active\_regions (C function), \hyperpage{65}
+  \item free\_dma (C function), \hyperpage{95}
+  \item free\_irq (C function), \hyperpage{92}, \hyperpage{240}
+  \item free\_percpu\_irq (C function), \hyperpage{94}, \hyperpage{241}
+  \item free\_rs (C function), \hyperpage{262}
+
+  \indexspace
+  \bigletter G
+  \item gcd (C function), \hyperpage{42}
+  \item gen\_pool\_add (C function), \hyperpage{265}
+  \item gen\_pool\_add\_virt (C function), \hyperpage{265}
+  \item gen\_pool\_alloc (C function), \hyperpage{265}
+  \item gen\_pool\_alloc\_algo (C function), \hyperpage{266}
+  \item gen\_pool\_avail (C function), \hyperpage{268}
+  \item gen\_pool\_create (C function), \hyperpage{264}
+  \item gen\_pool\_destroy (C function), \hyperpage{265}
+  \item gen\_pool\_dma\_alloc (C function), \hyperpage{266}
+  \item gen\_pool\_for\_each\_chunk (C function), \hyperpage{267}
+  \item gen\_pool\_free (C function), \hyperpage{266}
+  \item gen\_pool\_get (C function), \hyperpage{268}
+  \item gen\_pool\_set\_algo (C function), \hyperpage{267}
+  \item gen\_pool\_size (C function), \hyperpage{268}
+  \item gen\_pool\_virt\_to\_phys (C function), \hyperpage{267}
+  \item generate\_random\_uuid (C function), \hyperpage{42}
+  \item generic\_file\_read\_iter (C function), \hyperpage{56}
+  \item generic\_file\_write\_iter (C function), \hyperpage{58}
+  \item generic\_handle\_irq (C function), \hyperpage{248}
+  \item generic\_make\_request (C function), \hyperpage{111}
+  \item generic\_writepages (C function), \hyperpage{71}
+  \item get\_gendisk (C function), \hyperpage{138}
+  \item get\_option (C function), \hyperpage{35}
+  \item get\_options (C function), \hyperpage{35}
+  \item get\_pfn\_range\_for\_nid (C function), \hyperpage{66}
+  \item get\_request (C function), \hyperpage{118}
+  \item get\_state\_synchronize\_rcu (C function), \hyperpage{160}
+  \item get\_state\_synchronize\_sched (C function), \hyperpage{160}
+  \item get\_user (C function), \hyperpage{48}
+  \item get\_user\_pages\_fast (C function), \hyperpage{47}
+
+  \indexspace
+  \bigletter H
+  \item handle\_bad\_irq (C function), \hyperpage{250}
+  \item handle\_edge\_eoi\_irq (C function), \hyperpage{245}, \hyperpage{252}
+  \item handle\_edge\_irq (C function), \hyperpage{245}, \hyperpage{252}
+  \item handle\_fasteoi\_ack\_irq (C function), \hyperpage{246}, \hyperpage{253}
+  \item handle\_fasteoi\_irq (C function), \hyperpage{244}, \hyperpage{252}
+  \item handle\_fasteoi\_mask\_irq (C function), \hyperpage{246}, \hyperpage{253}
+  \item handle\_level\_irq (C function), \hyperpage{244}, \hyperpage{252}
+  \item handle\_percpu\_devid\_irq (C function), \hyperpage{245}, \hyperpage{253}
+  \item handle\_percpu\_irq (C function), \hyperpage{245}, \hyperpage{252}
+  \item handle\_simple\_irq (C function), \hyperpage{244}, \hyperpage{251}
+  \item handle\_untracked\_irq (C function), \hyperpage{244}, \hyperpage{251}
+  \item hlist\_add\_before\_rcu (C function), \hyperpage{174}
+  \item hlist\_add\_behind\_rcu (C function), \hyperpage{174}
+  \item hlist\_add\_head\_rcu (C function), \hyperpage{174}
+  \item hlist\_add\_tail\_rcu (C function), \hyperpage{174}
+  \item hlist\_bl\_add\_head\_rcu (C function), \hyperpage{169}
+  \item hlist\_bl\_del\_init\_rcu (C function), \hyperpage{169}
+  \item hlist\_bl\_del\_rcu (C function), \hyperpage{169}
+  \item hlist\_bl\_for\_each\_entry\_rcu (C function), \hyperpage{169}
+  \item hlist\_del\_init\_rcu (C function), \hyperpage{170}
+  \item hlist\_del\_rcu (C function), \hyperpage{173}
+  \item hlist\_for\_each\_entry (C function), \hyperpage{9}
+  \item hlist\_for\_each\_entry\_continue (C function), \hyperpage{9}
+  \item hlist\_for\_each\_entry\_continue\_rcu (C function), \hyperpage{175}
+  \item hlist\_for\_each\_entry\_continue\_rcu\_bh (C function), \hyperpage{175}
+  \item hlist\_for\_each\_entry\_from (C function), \hyperpage{9}
+  \item hlist\_for\_each\_entry\_from\_rcu (C function), \hyperpage{176}
+  \item hlist\_for\_each\_entry\_rcu (C function), \hyperpage{175}
+  \item hlist\_for\_each\_entry\_rcu\_bh (C function), \hyperpage{175}
+  \item hlist\_for\_each\_entry\_rcu\_notrace (C function), \hyperpage{175}
+  \item hlist\_for\_each\_entry\_safe (C function), \hyperpage{10}
+  \item hlist\_nulls\_add\_head\_rcu (C function), \hyperpage{176}
+  \item hlist\_nulls\_del\_init\_rcu (C function), \hyperpage{176}
+  \item hlist\_nulls\_del\_rcu (C function), \hyperpage{176}
+  \item hlist\_nulls\_for\_each\_entry\_rcu (C function), \hyperpage{177}
+  \item hlist\_nulls\_for\_each\_entry\_safe (C function), \hyperpage{177}
+  \item hlist\_replace\_rcu (C function), \hyperpage{173}
+
+  \indexspace
+  \bigletter I
+  \item ida\_destroy (C function), \hyperpage{212}
+  \item ida\_get\_new (C function), \hyperpage{208}
+  \item ida\_get\_new\_above (C function), \hyperpage{211}
+  \item ida\_remove (C function), \hyperpage{211}
+  \item ida\_simple\_get (C function), \hyperpage{212}
+  \item ida\_simple\_remove (C function), \hyperpage{212}
+  \item idr\_alloc (C function), \hyperpage{208}
+  \item idr\_alloc\_cyclic (C function), \hyperpage{209}
+  \item idr\_alloc\_u32 (C function), \hyperpage{208}
+  \item idr\_find (C function), \hyperpage{210}
+  \item idr\_for\_each (C function), \hyperpage{210}
+  \item idr\_for\_each\_entry (C function), \hyperpage{207}
+  \item idr\_for\_each\_entry\_continue (C function), \hyperpage{208}
+  \item idr\_for\_each\_entry\_ul (C function), \hyperpage{207}
+  \item idr\_get\_cursor (C function), \hyperpage{206}
+  \item idr\_get\_next (C function), \hyperpage{210}
+  \item idr\_get\_next\_ul (C function), \hyperpage{210}
+  \item IDR\_INIT (C function), \hyperpage{206}
+  \item idr\_init (C function), \hyperpage{207}
+  \item idr\_init\_base (C function), \hyperpage{207}
+  \item idr\_is\_empty (C function), \hyperpage{207}
+  \item idr\_preload\_end (C function), \hyperpage{207}
+  \item idr\_remove (C function), \hyperpage{209}
+  \item idr\_replace (C function), \hyperpage{211}
+  \item idr\_set\_cursor (C function), \hyperpage{206}
+  \item ilog2 (C function), \hyperpage{39}
+  \item INIT\_KFIFO (C function), \hyperpage{79}
+  \item init\_rcu\_head\_on\_stack (C function), \hyperpage{164}
+  \item init\_rs (C function), \hyperpage{262}
+  \item init\_rs\_non\_canonical (C function), \hyperpage{262}
+  \item init\_srcu\_struct (C function), \hyperpage{167}
+  \item insert\_resource (C function), \hyperpage{98}
+  \item insert\_resource\_conflict (C function), \hyperpage{96}
+  \item insert\_resource\_expand\_to\_fit (C function), \hyperpage{96}
+  \item invalidate\_inode\_pages2 (C function), \hyperpage{73}
+  \item invalidate\_inode\_pages2\_range (C function), \hyperpage{73}
+  \item invalidate\_mapping\_pages (C function), \hyperpage{72}
+  \item ipc64\_perm\_to\_ipc\_perm (C function), \hyperpage{77}
+  \item ipc\_addid (C function), \hyperpage{75}
+  \item ipc\_check\_perms (C function), \hyperpage{75}
+  \item ipc\_findkey (C function), \hyperpage{75}
+  \item ipc\_init (C function), \hyperpage{74}
+  \item ipc\_init\_ids (C function), \hyperpage{74}
+  \item ipc\_init\_proc\_interface (C function), \hyperpage{75}
+  \item ipc\_kht\_remove (C function), \hyperpage{76}
+  \item ipc\_lock (C function), \hyperpage{77}
+  \item ipc\_obtain\_object\_check (C function), \hyperpage{78}
+  \item ipc\_obtain\_object\_idr (C function), \hyperpage{77}
+  \item ipc\_parse\_version (C function), \hyperpage{79}
+  \item ipc\_rmid (C function), \hyperpage{76}
+  \item ipc\_set\_key\_private (C function), \hyperpage{76}
+  \item ipc\_update\_perm (C function), \hyperpage{78}
+  \item ipcctl\_pre\_down\_nolock (C function), \hyperpage{78}
+  \item ipcget (C function), \hyperpage{78}
+  \item ipcget\_new (C function), \hyperpage{75}
+  \item ipcget\_public (C function), \hyperpage{76}
+  \item ipcperms (C function), \hyperpage{77}
+  \item irq\_affinity (C type), \hyperpage{236}
+  \item irq\_affinity\_notify (C type), \hyperpage{236}
+  \item irq\_alloc\_generic\_chip (C function), \hyperpage{229}
+  \item irq\_alloc\_hwirqs (C function), \hyperpage{249}
+  \item irq\_can\_set\_affinity (C function), \hyperpage{237}
+  \item irq\_can\_set\_affinity\_usr (C function), \hyperpage{237}
+  \item irq\_chip (C type), \hyperpage{231}
+  \item irq\_chip\_ack\_parent (C function), \hyperpage{246}, \hyperpage{254}
+  \item irq\_chip\_compose\_msi\_msg (C function), \hyperpage{247}, \hyperpage{255}
+  \item irq\_chip\_disable\_parent (C function), \hyperpage{246}, \hyperpage{253}
+  \item irq\_chip\_enable\_parent (C function), \hyperpage{246}, \hyperpage{253}
+  \item irq\_chip\_eoi\_parent (C function), \hyperpage{247}, \hyperpage{254}
+  \item irq\_chip\_generic (C type), \hyperpage{234}
+  \item irq\_chip\_mask\_parent (C function), \hyperpage{246}, \hyperpage{254}
+  \item irq\_chip\_pm\_get (C function), \hyperpage{248}, \hyperpage{255}
+  \item irq\_chip\_pm\_put (C function), \hyperpage{248}, \hyperpage{255}
+  \item irq\_chip\_regs (C type), \hyperpage{233}
+  \item irq\_chip\_retrigger\_hierarchy (C function), \hyperpage{247}, \hyperpage{254}
+  \item irq\_chip\_set\_affinity\_parent (C function), \hyperpage{247}, \hyperpage{254}
+  \item irq\_chip\_set\_type\_parent (C function), \hyperpage{247}, \hyperpage{254}
+  \item irq\_chip\_set\_vcpu\_affinity\_parent (C function), \hyperpage{247}, \hyperpage{254}
+  \item irq\_chip\_set\_wake\_parent (C function), \hyperpage{247}, \hyperpage{255}
+  \item irq\_chip\_type (C type), \hyperpage{233}
+  \item irq\_chip\_unmask\_parent (C function), \hyperpage{246}, \hyperpage{254}
+  \item irq\_common\_data (C type), \hyperpage{230}
+  \item irq\_cpu\_offline (C function), \hyperpage{246}, \hyperpage{253}
+  \item irq\_cpu\_online (C function), \hyperpage{245}, \hyperpage{253}
+  \item irq\_data (C type), \hyperpage{231}
+  \item irq\_disable (C function), \hyperpage{244}, \hyperpage{251}
+  \item irq\_force\_affinity (C function), \hyperpage{236}
+  \item irq\_free\_descs (C function), \hyperpage{248}
+  \item irq\_free\_hwirqs (C function), \hyperpage{249}
+  \item irq\_gc\_ack\_set\_bit (C function), \hyperpage{228}
+  \item irq\_gc\_flags (C type), \hyperpage{235}
+  \item irq\_gc\_mask\_clr\_bit (C function), \hyperpage{228}
+  \item irq\_gc\_mask\_set\_bit (C function), \hyperpage{228}
+  \item irq\_get\_domain\_generic\_chip (C function), \hyperpage{229}
+  \item irq\_get\_irqchip\_state (C function), \hyperpage{94}, \hyperpage{242}
+  \item irq\_get\_next\_irq (C function), \hyperpage{249}
+  \item irq\_percpu\_is\_enabled (C function), \hyperpage{94}, \hyperpage{241}
+  \item irq\_remove\_generic\_chip (C function), \hyperpage{230}
+  \item irq\_set\_affinity (C function), \hyperpage{236}
+  \item irq\_set\_affinity\_notifier (C function), \hyperpage{91}, \hyperpage{238}
+  \item irq\_set\_chip (C function), \hyperpage{243}, \hyperpage{250}
+  \item irq\_set\_chip\_data (C function), \hyperpage{243}, \hyperpage{251}
+  \item irq\_set\_handler\_data (C function), \hyperpage{243}, \hyperpage{250}
+  \item irq\_set\_irq\_type (C function), \hyperpage{243}, \hyperpage{250}
+  \item irq\_set\_irq\_wake (C function), \hyperpage{92}, \hyperpage{239}
+  \item irq\_set\_irqchip\_state (C function), \hyperpage{95}, \hyperpage{242}
+  \item irq\_set\_msi\_desc (C function), \hyperpage{243}, \hyperpage{251}
+  \item irq\_set\_msi\_desc\_off (C function), \hyperpage{243}, \hyperpage{250}
+  \item irq\_set\_thread\_affinity (C function), \hyperpage{238}
+  \item irq\_set\_vcpu\_affinity (C function), \hyperpage{91}, \hyperpage{238}
+  \item irq\_setup\_alt\_chip (C function), \hyperpage{230}
+  \item irq\_setup\_generic\_chip (C function), \hyperpage{229}
+  \item irq\_wake\_thread (C function), \hyperpage{92}, \hyperpage{239}
+  \item irqaction (C type), \hyperpage{235}
+  \item is\_power\_of\_2 (C function), \hyperpage{38}
+
+  \indexspace
+  \bigletter K
+  \item kcalloc (C function), \hyperpage{44}
+  \item kernel\_to\_ipc64\_perm (C function), \hyperpage{77}
+  \item kfifo\_alloc (C function), \hyperpage{81}
+  \item kfifo\_avail (C function), \hyperpage{80}
+  \item kfifo\_dma\_in\_finish (C function), \hyperpage{84}
+  \item kfifo\_dma\_in\_prepare (C function), \hyperpage{84}
+  \item kfifo\_dma\_out\_finish (C function), \hyperpage{84}
+  \item kfifo\_dma\_out\_prepare (C function), \hyperpage{84}
+  \item kfifo\_esize (C function), \hyperpage{80}
+  \item kfifo\_free (C function), \hyperpage{81}
+  \item kfifo\_from\_user (C function), \hyperpage{83}
+  \item kfifo\_get (C function), \hyperpage{82}
+  \item kfifo\_in (C function), \hyperpage{82}
+  \item kfifo\_in\_spinlocked (C function), \hyperpage{82}
+  \item kfifo\_init (C function), \hyperpage{81}
+  \item kfifo\_initialized (C function), \hyperpage{79}
+  \item kfifo\_is\_empty (C function), \hyperpage{80}
+  \item kfifo\_is\_full (C function), \hyperpage{80}
+  \item kfifo\_len (C function), \hyperpage{80}
+  \item kfifo\_out (C function), \hyperpage{83}
+  \item kfifo\_out\_peek (C function), \hyperpage{85}
+  \item kfifo\_out\_spinlocked (C function), \hyperpage{83}
+  \item kfifo\_peek (C function), \hyperpage{82}
+  \item kfifo\_peek\_len (C function), \hyperpage{81}
+  \item kfifo\_put (C function), \hyperpage{81}
+  \item kfifo\_recsize (C function), \hyperpage{80}
+  \item kfifo\_reset (C function), \hyperpage{80}
+  \item kfifo\_reset\_out (C function), \hyperpage{80}
+  \item kfifo\_size (C function), \hyperpage{80}
+  \item kfifo\_skip (C function), \hyperpage{81}
+  \item kfifo\_to\_user (C function), \hyperpage{83}
+  \item kfree (C function), \hyperpage{45}
+  \item kfree\_const (C function), \hyperpage{45}
+  \item kfree\_rcu (C function), \hyperpage{155}
+  \item kmalloc (C function), \hyperpage{43}
+  \item kmalloc\_array (C function), \hyperpage{44}
+  \item kmem\_cache\_alloc (C function), \hyperpage{44}
+  \item kmem\_cache\_alloc\_node (C function), \hyperpage{44}
+  \item kmem\_cache\_free (C function), \hyperpage{45}
+  \item kmemdup (C function), \hyperpage{46}
+  \item kmemdup\_nul (C function), \hyperpage{46}
+  \item ksize (C function), \hyperpage{45}
+  \item kstat\_irqs (C function), \hyperpage{249}
+  \item kstat\_irqs\_cpu (C function), \hyperpage{249}
+  \item kstat\_irqs\_usr (C function), \hyperpage{250}
+  \item kstrdup (C function), \hyperpage{45}
+  \item kstrdup\_const (C function), \hyperpage{45}
+  \item kstrndup (C function), \hyperpage{46}
+  \item kstrtobool (C function), \hyperpage{15}
+  \item kstrtoint (C function), \hyperpage{15}
+  \item kstrtol (C function), \hyperpage{14}
+  \item kstrtoll (C function), \hyperpage{14}
+  \item kstrtouint (C function), \hyperpage{15}
+  \item kstrtoul (C function), \hyperpage{14}
+  \item kstrtoull (C function), \hyperpage{14}
+  \item kvmalloc\_node (C function), \hyperpage{47}
+  \item kzalloc (C function), \hyperpage{44}
+  \item kzalloc\_node (C function), \hyperpage{44}
+
+  \indexspace
+  \bigletter L
+  \item list\_add (C function), \hyperpage{3}
+  \item list\_add\_rcu (C function), \hyperpage{170}
+  \item list\_add\_tail (C function), \hyperpage{3}
+  \item list\_add\_tail\_rcu (C function), \hyperpage{170}
+  \item list\_cut\_position (C function), \hyperpage{4}
+  \item list\_del\_init (C function), \hyperpage{3}
+  \item list\_del\_rcu (C function), \hyperpage{170}
+  \item list\_empty (C function), \hyperpage{4}
+  \item list\_empty\_careful (C function), \hyperpage{4}
+  \item list\_entry (C function), \hyperpage{5}
+  \item list\_entry\_lockless (C function), \hyperpage{172}
+  \item list\_entry\_rcu (C function), \hyperpage{172}
+  \item list\_first\_entry (C function), \hyperpage{5}
+  \item list\_first\_entry\_or\_null (C function), \hyperpage{6}
+  \item list\_first\_or\_null\_rcu (C function), \hyperpage{172}
+  \item list\_for\_each (C function), \hyperpage{6}
+  \item list\_for\_each\_entry (C function), \hyperpage{7}
+  \item list\_for\_each\_entry\_continue (C function), \hyperpage{7}
+  \item list\_for\_each\_entry\_continue\_rcu (C function), \hyperpage{173}
+  \item list\_for\_each\_entry\_continue\_reverse (C function), \hyperpage{7}
+  \item list\_for\_each\_entry\_from (C function), \hyperpage{8}
+  \item list\_for\_each\_entry\_from\_reverse (C function), \hyperpage{8}
+  \item list\_for\_each\_entry\_lockless (C function), \hyperpage{173}
+  \item list\_for\_each\_entry\_rcu (C function), \hyperpage{172}
+  \item list\_for\_each\_entry\_reverse (C function), \hyperpage{7}
+  \item list\_for\_each\_entry\_safe (C function), \hyperpage{8}
+  \item list\_for\_each\_entry\_safe\_continue (C function), \hyperpage{8}
+  \item list\_for\_each\_entry\_safe\_from (C function), \hyperpage{8}
+  \item list\_for\_each\_entry\_safe\_reverse (C function), \hyperpage{9}
+  \item list\_for\_each\_prev (C function), \hyperpage{6}
+  \item list\_for\_each\_prev\_safe (C function), \hyperpage{7}
+  \item list\_for\_each\_safe (C function), \hyperpage{6}
+  \item list\_is\_last (C function), \hyperpage{4}
+  \item list\_is\_singular (C function), \hyperpage{4}
+  \item list\_last\_entry (C function), \hyperpage{6}
+  \item list\_move (C function), \hyperpage{4}
+  \item list\_move\_tail (C function), \hyperpage{4}
+  \item list\_next\_entry (C function), \hyperpage{6}
+  \item list\_next\_or\_null\_rcu (C function), \hyperpage{172}
+  \item list\_prepare\_entry (C function), \hyperpage{7}
+  \item list\_prev\_entry (C function), \hyperpage{6}
+  \item list\_replace (C function), \hyperpage{3}
+  \item list\_replace\_rcu (C function), \hyperpage{171}
+  \item list\_rotate\_left (C function), \hyperpage{4}
+  \item list\_safe\_reset\_next (C function), \hyperpage{9}
+  \item list\_sort (C function), \hyperpage{42}
+  \item list\_splice (C function), \hyperpage{5}
+  \item list\_splice\_init (C function), \hyperpage{5}
+  \item list\_splice\_init\_rcu (C function), \hyperpage{171}
+  \item list\_splice\_tail (C function), \hyperpage{5}
+  \item list\_splice\_tail\_init (C function), \hyperpage{5}
+  \item list\_splice\_tail\_init\_rcu (C function), \hyperpage{171}
+  \item lookup\_resource (C function), \hyperpage{96}
+
+  \indexspace
+  \bigletter M
+  \item match\_string (C function), \hyperpage{19}
+  \item memchr (C function), \hyperpage{22}
+  \item memchr\_inv (C function), \hyperpage{22}
+  \item memcmp (C function), \hyperpage{21}
+  \item memcpy (C function), \hyperpage{21}
+  \item memdup\_user (C function), \hyperpage{46}
+  \item memdup\_user\_nul (C function), \hyperpage{46}
+  \item memmove (C function), \hyperpage{21}
+  \item memparse (C function), \hyperpage{35}
+  \item mempool\_alloc (C function), \hyperpage{68}
+  \item mempool\_create (C function), \hyperpage{68}
+  \item mempool\_destroy (C function), \hyperpage{68}
+  \item mempool\_free (C function), \hyperpage{68}
+  \item mempool\_resize (C function), \hyperpage{68}
+  \item memscan (C function), \hyperpage{21}
+  \item memset (C function), \hyperpage{20}
+  \item memset16 (C function), \hyperpage{20}
+  \item memset32 (C function), \hyperpage{20}
+  \item memset64 (C function), \hyperpage{21}
+  \item memzero\_explicit (C function), \hyperpage{20}
+  \item mod\_delayed\_work (C function), \hyperpage{222}
+
+  \indexspace
+  \bigletter N
+  \item node\_map\_pfn\_alignment (C function), \hyperpage{66}
+  \item nr\_free\_pagecache\_pages (C function), \hyperpage{65}
+  \item nr\_free\_zone\_pages (C function), \hyperpage{65}
+
+  \indexspace
+  \bigletter O
+  \item of\_gen\_pool\_get (C function), \hyperpage{268}
+  \item order\_base\_2 (C function), \hyperpage{39}
+
+  \indexspace
+  \bigletter P
+  \item page\_cache\_async\_readahead (C function), \hyperpage{50}
+  \item page\_cache\_next\_hole (C function), \hyperpage{54}
+  \item page\_cache\_prev\_hole (C function), \hyperpage{54}
+  \item page\_cache\_sync\_readahead (C function), \hyperpage{50}
+  \item pagecache\_get\_page (C function), \hyperpage{55}
+  \item pagecache\_isize\_extended (C function), \hyperpage{74}
+  \item parent\_len (C function), \hyperpage{107}
+  \item part\_round\_stats (C function), \hyperpage{111}
+  \item put\_user (C function), \hyperpage{48}
+
+  \indexspace
+  \bigletter Q
+  \item queue\_delayed\_work (C function), \hyperpage{221}
+  \item queue\_work (C function), \hyperpage{221}
+
+  \indexspace
+  \bigletter R
+  \item rcu\_access\_pointer (C function), \hyperpage{151}
+  \item rcu\_assign\_pointer (C function), \hyperpage{150}
+  \item rcu\_barrier (C function), \hyperpage{162}
+  \item rcu\_barrier\_bh (C function), \hyperpage{161}
+  \item rcu\_barrier\_sched (C function), \hyperpage{161}
+  \item rcu\_barrier\_tasks (C function), \hyperpage{165}
+  \item rcu\_cpu\_stall\_reset (C function), \hyperpage{158}
+  \item rcu\_dereference (C function), \hyperpage{152}
+  \item rcu\_dereference\_bh (C function), \hyperpage{152}
+  \item rcu\_dereference\_bh\_check (C function), \hyperpage{152}
+  \item rcu\_dereference\_check (C function), \hyperpage{151}
+  \item rcu\_dereference\_protected (C function), \hyperpage{152}
+  \item rcu\_dereference\_sched (C function), \hyperpage{153}
+  \item rcu\_dereference\_sched\_check (C function), \hyperpage{152}
+  \item rcu\_expedite\_gp (C function), \hyperpage{163}
+  \item rcu\_idle\_enter (C function), \hyperpage{156}
+  \item rcu\_idle\_exit (C function), \hyperpage{157}
+  \item RCU\_INIT\_POINTER (C function), \hyperpage{155}
+  \item RCU\_INITIALIZER (C function), \hyperpage{150}
+  \item rcu\_irq\_enter (C function), \hyperpage{158}
+  \item rcu\_irq\_exit (C function), \hyperpage{157}
+  \item rcu\_is\_cpu\_rrupt\_from\_idle (C function), \hyperpage{158}
+  \item rcu\_is\_watching (C function), \hyperpage{158}
+  \item RCU\_LOCKDEP\_WARN (C function), \hyperpage{150}
+  \item rcu\_nmi\_enter (C function), \hyperpage{158}
+  \item rcu\_nmi\_exit (C function), \hyperpage{157}
+  \item RCU\_NONIDLE (C function), \hyperpage{150}
+  \item rcu\_pointer\_handoff (C function), \hyperpage{153}
+  \item RCU\_POINTER\_INITIALIZER (C function), \hyperpage{155}
+  \item rcu\_read\_lock (C function), \hyperpage{153}
+  \item rcu\_read\_lock\_bh (C function), \hyperpage{154}
+  \item rcu\_read\_lock\_bh\_held (C function), \hyperpage{164}
+  \item rcu\_read\_lock\_held (C function), \hyperpage{163}
+  \item rcu\_read\_lock\_sched (C function), \hyperpage{154}
+  \item rcu\_read\_lock\_sched\_held (C function), \hyperpage{163}
+  \item rcu\_read\_unlock (C function), \hyperpage{154}
+  \item rcu\_swap\_protected (C function), \hyperpage{151}
+  \item rcu\_sync\_dtor (C function), \hyperpage{178}
+  \item rcu\_sync\_enter (C function), \hyperpage{177}
+  \item rcu\_sync\_enter\_start (C function), \hyperpage{177}
+  \item rcu\_sync\_exit (C function), \hyperpage{178}
+  \item rcu\_sync\_func (C function), \hyperpage{178}
+  \item rcu\_sync\_init (C function), \hyperpage{177}
+  \item rcu\_sync\_is\_idle (C function), \hyperpage{177}
+  \item rcu\_unexpedite\_gp (C function), \hyperpage{163}
+  \item rcu\_user\_enter (C function), \hyperpage{156}
+  \item rcu\_user\_exit (C function), \hyperpage{157}
+  \item read\_cache\_page (C function), \hyperpage{57}
+  \item read\_cache\_page\_gfp (C function), \hyperpage{57}
+  \item read\_cache\_pages (C function), \hyperpage{50}
+  \item reallocate\_resource (C function), \hyperpage{95}
+  \item region\_intersects (C function), \hyperpage{97}
+  \item register\_blkdev (C function), \hyperpage{137}
+  \item register\_chrdev\_region (C function), \hyperpage{138}
+  \item relay\_alloc\_buf (C function), \hyperpage{87}
+  \item relay\_buf\_empty (C function), \hyperpage{88}
+  \item relay\_buf\_full (C function), \hyperpage{85}
+  \item relay\_close (C function), \hyperpage{86}
+  \item relay\_close\_buf (C function), \hyperpage{88}
+  \item relay\_create\_buf (C function), \hyperpage{87}
+  \item relay\_destroy\_buf (C function), \hyperpage{87}
+  \item relay\_destroy\_channel (C function), \hyperpage{87}
+  \item relay\_file\_mmap (C function), \hyperpage{88}
+  \item relay\_file\_open (C function), \hyperpage{88}
+  \item relay\_file\_poll (C function), \hyperpage{89}
+  \item relay\_file\_read\_end\_pos (C function), \hyperpage{89}
+  \item relay\_file\_read\_start\_pos (C function), \hyperpage{89}
+  \item relay\_file\_read\_subbuf\_avail (C function), \hyperpage{89}
+  \item relay\_file\_release (C function), \hyperpage{89}
+  \item relay\_flush (C function), \hyperpage{87}
+  \item relay\_late\_setup\_files (C function), \hyperpage{86}
+  \item relay\_mmap\_buf (C function), \hyperpage{87}
+  \item relay\_open (C function), \hyperpage{85}
+  \item relay\_remove\_buf (C function), \hyperpage{88}
+  \item relay\_reset (C function), \hyperpage{85}
+  \item relay\_subbufs\_consumed (C function), \hyperpage{86}
+  \item relay\_switch\_subbuf (C function), \hyperpage{86}
+  \item release\_mem\_region\_adjustable (C function), \hyperpage{96}
+  \item release\_resource (C function), \hyperpage{97}
+  \item remap\_pfn\_range (C function), \hyperpage{59}
+  \item remap\_vmalloc\_range (C function), \hyperpage{64}
+  \item remap\_vmalloc\_range\_partial (C function), \hyperpage{63}
+  \item remove\_irq (C function), \hyperpage{92}, \hyperpage{240}
+  \item remove\_percpu\_irq (C function), \hyperpage{241}
+  \item remove\_resource (C function), \hyperpage{98}
+  \item replace\_page\_cache\_page (C function), \hyperpage{53}
+  \item request\_any\_context\_irq (C function), \hyperpage{93}, \hyperpage{241}
+  \item request\_dma (C function), \hyperpage{95}
+  \item request\_resource (C function), \hyperpage{97}
+  \item request\_resource\_conflict (C function), \hyperpage{95}
+  \item request\_threaded\_irq (C function), \hyperpage{93}, \hyperpage{240}
+  \item resource\_alignment (C function), \hyperpage{96}
+  \item rounddown\_pow\_of\_two (C function), \hyperpage{39}
+  \item roundup\_pow\_of\_two (C function), \hyperpage{39}
+  \item rq\_flush\_dcache\_pages (C function), \hyperpage{115}
+  \item rs\_control (C type), \hyperpage{261}
+
+  \indexspace
+  \bigletter S
+  \item schedule\_delayed\_work (C function), \hyperpage{223}
+  \item schedule\_delayed\_work\_on (C function), \hyperpage{223}
+  \item schedule\_work (C function), \hyperpage{222}
+  \item schedule\_work\_on (C function), \hyperpage{222}
+  \item scnprintf (C function), \hyperpage{12}
+  \item security\_add\_hooks (C function), \hyperpage{100}
+  \item security\_init (C function), \hyperpage{100}
+  \item security\_module\_enable (C function), \hyperpage{100}
+  \item securityfs\_create\_dir (C function), \hyperpage{101}
+  \item securityfs\_create\_file (C function), \hyperpage{100}
+  \item securityfs\_create\_symlink (C function), \hyperpage{101}
+  \item securityfs\_remove (C function), \hyperpage{102}
+  \item set\_bit (C function), \hyperpage{23}
+  \item set\_dma\_reserve (C function), \hyperpage{67}
+  \item set\_pfnblock\_flags\_mask (C function), \hyperpage{64}
+  \item setup\_irq (C function), \hyperpage{92}, \hyperpage{239}
+  \item setup\_per\_zone\_wmarks (C function), \hyperpage{67}
+  \item setup\_percpu\_irq (C function), \hyperpage{242}
+  \item simple\_strtol (C function), \hyperpage{10}
+  \item simple\_strtoll (C function), \hyperpage{10}
+  \item simple\_strtoul (C function), \hyperpage{10}
+  \item simple\_strtoull (C function), \hyperpage{10}
+  \item skip\_spaces (C function), \hyperpage{18}
+  \item smp\_mb\_\_after\_srcu\_read\_unlock (C function), \hyperpage{167}
+  \item snprintf (C function), \hyperpage{11}
+  \item sort (C function), \hyperpage{42}
+  \item sparse\_memory\_present\_with\_active\_regions (C function), \hyperpage{66}
+  \item sprintf (C function), \hyperpage{12}
+  \item srcu\_barrier (C function), \hyperpage{168}
+  \item srcu\_batches\_completed (C function), \hyperpage{168}
+  \item srcu\_dereference (C function), \hyperpage{166}
+  \item srcu\_dereference\_check (C function), \hyperpage{166}
+  \item srcu\_read\_lock (C function), \hyperpage{166}
+  \item srcu\_read\_lock\_held (C function), \hyperpage{165}
+  \item srcu\_read\_unlock (C function), \hyperpage{166}
+  \item srcu\_readers\_active (C function), \hyperpage{167}
+  \item sscanf (C function), \hyperpage{13}
+  \item strcat (C function), \hyperpage{17}
+  \item strchr (C function), \hyperpage{17}
+  \item strchrnul (C function), \hyperpage{17}
+  \item strcmp (C function), \hyperpage{17}
+  \item strcpy (C function), \hyperpage{16}
+  \item strcspn (C function), \hyperpage{19}
+  \item strim (C function), \hyperpage{18}
+  \item strlcat (C function), \hyperpage{17}
+  \item strlcpy (C function), \hyperpage{16}
+  \item strlen (C function), \hyperpage{18}
+  \item strncasecmp (C function), \hyperpage{16}
+  \item strncat (C function), \hyperpage{17}
+  \item strnchr (C function), \hyperpage{18}
+  \item strncmp (C function), \hyperpage{17}
+  \item strncpy (C function), \hyperpage{16}
+  \item strnlen (C function), \hyperpage{18}
+  \item strnstr (C function), \hyperpage{22}
+  \item strpbrk (C function), \hyperpage{19}
+  \item strrchr (C function), \hyperpage{18}
+  \item strreplace (C function), \hyperpage{22}
+  \item strscpy (C function), \hyperpage{16}
+  \item strsep (C function), \hyperpage{19}
+  \item strspn (C function), \hyperpage{18}
+  \item strstr (C function), \hyperpage{22}
+  \item submit\_bio (C function), \hyperpage{112}
+  \item synchronize\_hardirq (C function), \hyperpage{90}, \hyperpage{237}
+  \item synchronize\_irq (C function), \hyperpage{90}, \hyperpage{237}
+  \item synchronize\_rcu (C function), \hyperpage{161}
+  \item synchronize\_rcu\_bh (C function), \hyperpage{160}
+  \item synchronize\_rcu\_bh\_expedited (C function), \hyperpage{156}
+  \item synchronize\_rcu\_expedited (C function), \hyperpage{162}
+  \item synchronize\_rcu\_mult (C function), \hyperpage{156}
+  \item synchronize\_rcu\_tasks (C function), \hyperpage{165}
+  \item synchronize\_sched (C function), \hyperpage{159}
+  \item synchronize\_sched\_expedited (C function), \hyperpage{162}
+  \item synchronize\_srcu (C function), \hyperpage{168}
+  \item synchronize\_srcu\_expedited (C function), \hyperpage{168}
+  \item sys\_acct (C function), \hyperpage{107}
+  \item sysfs\_streq (C function), \hyperpage{19}
+
+  \indexspace
+  \bigletter T
+  \item tag\_pages\_for\_writeback (C function), \hyperpage{70}
+  \item test\_and\_change\_bit (C function), \hyperpage{25}
+  \item test\_and\_clear\_bit (C function), \hyperpage{24}
+  \item test\_and\_set\_bit (C function), \hyperpage{24}
+  \item test\_and\_set\_bit\_lock (C function), \hyperpage{24}
+  \item test\_bit (C function), \hyperpage{25}
+  \item trace\_block\_bio\_backmerge (C function), \hyperpage{288}
+  \item trace\_block\_bio\_bounce (C function), \hyperpage{287}
+  \item trace\_block\_bio\_complete (C function), \hyperpage{287}
+  \item trace\_block\_bio\_frontmerge (C function), \hyperpage{288}
+  \item trace\_block\_bio\_queue (C function), \hyperpage{288}
+  \item trace\_block\_bio\_remap (C function), \hyperpage{289}
+  \item trace\_block\_dirty\_buffer (C function), \hyperpage{286}
+  \item trace\_block\_getrq (C function), \hyperpage{288}
+  \item trace\_block\_plug (C function), \hyperpage{289}
+  \item trace\_block\_rq\_complete (C function), \hyperpage{287}
+  \item trace\_block\_rq\_insert (C function), \hyperpage{287}
+  \item trace\_block\_rq\_issue (C function), \hyperpage{287}
+  \item trace\_block\_rq\_remap (C function), \hyperpage{289}
+  \item trace\_block\_rq\_requeue (C function), \hyperpage{286}
+  \item trace\_block\_sleeprq (C function), \hyperpage{288}
+  \item trace\_block\_split (C function), \hyperpage{289}
+  \item trace\_block\_touch\_buffer (C function), \hyperpage{286}
+  \item trace\_block\_unplug (C function), \hyperpage{289}
+  \item trace\_irq\_handler\_entry (C function), \hyperpage{285}
+  \item trace\_irq\_handler\_exit (C function), \hyperpage{285}
+  \item trace\_signal\_deliver (C function), \hyperpage{286}
+  \item trace\_signal\_generate (C function), \hyperpage{286}
+  \item trace\_softirq\_entry (C function), \hyperpage{285}
+  \item trace\_softirq\_exit (C function), \hyperpage{285}
+  \item trace\_softirq\_raise (C function), \hyperpage{285}
+  \item trace\_workqueue\_activate\_work (C function), \hyperpage{290}
+  \item trace\_workqueue\_execute\_end (C function), \hyperpage{290}
+  \item trace\_workqueue\_execute\_start (C function), \hyperpage{290}
+  \item trace\_workqueue\_queue\_work (C function), \hyperpage{290}
+  \item truncate\_inode\_pages (C function), \hyperpage{72}
+  \item truncate\_inode\_pages\_final (C function), \hyperpage{72}
+  \item truncate\_inode\_pages\_range (C function), \hyperpage{72}
+  \item truncate\_pagecache (C function), \hyperpage{73}
+  \item truncate\_pagecache\_range (C function), \hyperpage{74}
+  \item truncate\_setsize (C function), \hyperpage{73}
+  \item try\_to\_release\_page (C function), \hyperpage{58}
+
+  \indexspace
+  \bigletter U
+  \item unlock\_page (C function), \hyperpage{53}
+  \item unmap\_kernel\_range (C function), \hyperpage{61}
+  \item unmap\_kernel\_range\_noflush (C function), \hyperpage{61}
+  \item unmap\_mapping\_range (C function), \hyperpage{60}
+  \item unregister\_chrdev\_region (C function), \hyperpage{139}
+  \item uuid\_is\_valid (C function), \hyperpage{43}
+
+  \indexspace
+  \bigletter V
+  \item vbin\_printf (C function), \hyperpage{12}
+  \item vfree (C function), \hyperpage{61}
+  \item vm\_insert\_page (C function), \hyperpage{58}
+  \item vm\_insert\_pfn (C function), \hyperpage{59}
+  \item vm\_insert\_pfn\_prot (C function), \hyperpage{59}
+  \item vm\_iomap\_memory (C function), \hyperpage{60}
+  \item vm\_map\_ram (C function), \hyperpage{61}
+  \item vm\_unmap\_aliases (C function), \hyperpage{60}
+  \item vm\_unmap\_ram (C function), \hyperpage{61}
+  \item vmalloc (C function), \hyperpage{62}
+  \item vmalloc\_32 (C function), \hyperpage{63}
+  \item vmalloc\_32\_user (C function), \hyperpage{63}
+  \item vmalloc\_node (C function), \hyperpage{63}
+  \item vmalloc\_user (C function), \hyperpage{62}
+  \item vmap (C function), \hyperpage{62}
+  \item vmemdup\_user (C function), \hyperpage{46}
+  \item vscnprintf (C function), \hyperpage{11}
+  \item vsnprintf (C function), \hyperpage{11}
+  \item vsprintf (C function), \hyperpage{12}
+  \item vsscanf (C function), \hyperpage{13}
+  \item vunmap (C function), \hyperpage{62}
+  \item vzalloc (C function), \hyperpage{62}
+  \item vzalloc\_node (C function), \hyperpage{63}
+
+  \indexspace
+  \bigletter W
+  \item wait\_for\_stable\_page (C function), \hyperpage{71}
+  \item wakeme\_after\_rcu (C function), \hyperpage{164}
+  \item wakeup\_readers (C function), \hyperpage{88}
+  \item work\_pending (C function), \hyperpage{220}
+  \item workqueue\_attrs (C type), \hyperpage{220}
+  \item write\_cache\_pages (C function), \hyperpage{71}
+  \item write\_one\_page (C function), \hyperpage{71}
+
+  \indexspace
+  \bigletter Z
+  \item zap\_vma\_ptes (C function), \hyperpage{58}
+
+\end{theindex}

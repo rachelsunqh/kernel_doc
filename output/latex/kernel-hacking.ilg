@@ -1,0 +1,7 @@
+This is makeindex, version 2.15 [TeX Live 2015] (kpathsea + Thai support).
+Scanning style file ./python.ist......done (6 attributes redefined, 0 ignored).
+Scanning input file kernel-hacking.idx....done (30 entries accepted, 0 rejected).
+Sorting entries....done (163 comparisons).
+Generating output file kernel-hacking.ind....done (66 lines written, 0 warnings).
+Output written in kernel-hacking.ind.
+Transcript written in kernel-hacking.ilg.

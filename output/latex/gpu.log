@@ -1,0 +1,5342 @@
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.1.23)  8 MAR 2018 16:36
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**gpu.tex
+(./gpu.tex
+LaTeX2e <2016/02/01>
+Babel <3.9q> and hyphenation patterns for 3 language(s) loaded.
+(./sphinxmanual.cls
+Document Class: sphinxmanual 2009/06/02 Document class (Sphinx manual)
+(/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)) (/usr/share/texlive/texmf-dist/tex/latex/cmap/cmap.sty
+Package: cmap 2008/03/06 v1.0h CMap support: searchable PDF
+
+Package cmap Warning: pdftex not detected - exiting.
+
+) (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+)) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks14
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+) (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2016/02/24 3.9q The Babel package
+(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2012/08/20 v3.3p English support from the babel system
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2016/02/24 3.9q Babel common definitions
+\babel@savecnt=\count88
+\U@D=\dimen103
+(/usr/share/texlive/texmf-dist/tex/generic/babel/xebabel.def))
+\l@british = a dialect from \language\l@english 
+\l@UKenglish = a dialect from \language\l@english 
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+)) (/usr/share/texlive/texmf-dist/tex/latex/psnfss/times.sty
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+) (./fncychap.sty
+Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
+\RW=\skip43
+\mylen=\skip44
+\myhi=\skip45
+\px=\skip46
+\py=\skip47
+\pyy=\skip48
+\pxx=\skip49
+\c@AlphaCnt=\count89
+\c@AlphaDecCnt=\count90
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip50
+\LTright=\skip51
+\LTpre=\skip52
+\LTpost=\skip53
+\LTchunksize=\count91
+\LTcapwidth=\dimen104
+\LT@head=\box26
+\LT@firsthead=\box27
+\LT@foot=\box28
+\LT@lastfoot=\box29
+\LT@cols=\count92
+\LT@rows=\count93
+\c@LT@tables=\count94
+\c@LT@chunks=\count95
+\LT@p@ftn=\toks15
+) (./sphinx.sty
+Package: sphinx 2010/01/15 LaTeX package (Sphinx markup)
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip54
+\f@ncyO@elh=\skip55
+\f@ncyO@erh=\skip56
+\f@ncyO@olh=\skip57
+\f@ncyO@orh=\skip58
+\f@ncyO@elf=\skip59
+\f@ncyO@erf=\skip60
+\f@ncyO@olf=\skip61
+\f@ncyO@orf=\skip62
+) (/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+)
+LaTeX Info: Redefining \oldstylenums on input line 334.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 350.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 351.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 352.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 353.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 354.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 355.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 356.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 357.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 358.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 359.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 360.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 361.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 362.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 363.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 364.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 365.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 366.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 367.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 368.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 369.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 370.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 371.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 372.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 373.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 374.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 375.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 376.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 377.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 378.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 379.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 380.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 381.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 382.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 383.
+Package textcomp Info: Setting lmtt sub-encoding to TS1/0 on input line 384.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 385.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 386.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 387.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 388.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 389.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 390.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 391.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 392.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 393.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 394.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 395.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 396.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 397.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 398.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 399.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 400.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 401.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 402.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 403.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 404.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 405.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
+) (/usr/share/texlive/texmf-dist/tex/latex/fancybox/fancybox.sty
+Package: fancybox 2010/05/15 1.4
+Style option: `fancybox' v1.4 <2010/05/15> (tvz)
+\@fancybox=\box30
+\shadowsize=\dimen105
+\@Sbox=\box31
+\do@VerbBox=\toks16
+\the@fancyput=\toks17
+\this@fancyput=\toks18
+\EndVerbatimTokens=\toks19
+\Verbatim@Outfile=\write3
+\Verbatim@Infile=\read1
+) (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2016/03/15 v2.10.1 Sectioning titles
+\ttl@box=\box32
+\beforetitleunit=\skip63
+\aftertitleunit=\skip64
+\ttl@plus=\dimen106
+\ttl@minus=\dimen107
+\ttl@toksa=\toks20
+\titlewidth=\dimen108
+\titlewidthlast=\dimen109
+\titlewidthfirst=\dimen110
+) (./tabulary.sty
+Package: tabulary 2008/12/01 v0.9 tabulary package (DPC)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen111
+\extrarowheight=\dimen112
+\NC@list=\toks21
+\extratabsurround=\skip65
+\backup@length=\skip66
+)
+\TY@count=\count96
+\TY@linewidth=\dimen113
+\tymin=\dimen114
+\tymax=\dimen115
+\TY@tablewidth=\dimen116
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2016/03/03 v2.15a AMS math features
+\@mathmargin=\skip67
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks22
+\ex@=\dimen117
+)) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen118
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count97
+LaTeX Info: Redefining \frac on input line 199.
+\uproot@=\count98
+\leftroot@=\count99
+LaTeX Info: Redefining \overline on input line 297.
+\classnum@=\count100
+\DOTSCASE@=\count101
+LaTeX Info: Redefining \ldots on input line 394.
+LaTeX Info: Redefining \dots on input line 397.
+LaTeX Info: Redefining \cdots on input line 518.
+\Mathstrutbox@=\box33
+\strutbox@=\box34
+\big@size=\dimen119
+LaTeX Font Info:    Redeclaring font encoding OML on input line 630.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
+\macc@depth=\count102
+\c@MaxMatrixCols=\count103
+\dotsspace@=\muskip10
+\c@parentequation=\count104
+\dspbrk@lvl=\count105
+\tag@help=\toks23
+\row@=\count106
+\column@=\count107
+\maxfields@=\count108
+\andhelp@=\toks24
+\eqnshift@=\dimen120
+\alignsep@=\dimen121
+\tagshift@=\dimen122
+\tagwidth@=\dimen123
+\totwidth@=\dimen124
+\lineht@=\dimen125
+\@envbody=\toks25
+\multlinegap=\skip68
+\multlinetaggap=\skip69
+\mathdisplay@stack=\toks26
+LaTeX Info: Redefining \[ on input line 2735.
+LaTeX Info: Redefining \] on input line 2736.
+) (/usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
+Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
+) (/usr/share/texlive/texmf-dist/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip70
+\fb@frw=\dimen126
+\fb@frh=\dimen127
+\FrameRule=\dimen128
+\FrameSep=\dimen129
+) (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/01/03 v1.1b Standard LaTeX Color (DPC)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: xetex.def on input line 143.
+(/usr/share/texlive/texmf-dist/tex/xelatex/xetex-def/xetex.def
+File: xetex.def 2015/09/11 v4.06 LaTeX color/graphics driver for XeTeX (TeX Liv
+e/RRM/JK)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+))) (/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2008/02/07
+
+Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
+<2008/02/07> (tvz) (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks27
+)
+\FV@CodeLineNo=\count109
+\FV@InFile=\read2
+\FV@TabBox=\box35
+\c@FancyVerbLine=\count110
+\FV@StepNumber=\count111
+\FV@OutFile=\write4
+) (/usr/share/texlive/texmf-dist/tex/latex/threeparttable/threeparttable.sty
+Package: threeparttable 2003/06/13  v 3.0
+\@tempboxb=\box36
+) (/usr/share/texlive/texmf-dist/tex/latex/mdwtools/footnote.sty
+Package: footnote 1997/01/28 1.13 Save footnotes around boxes
+\fn@notes=\box37
+\fn@width=\dimen130
+) (/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen131
+\WF@size=\dimen132
+\c@WF@wrappedlines=\count112
+\WF@box=\box38
+\WF@everypar=\toks28
+Package: wrapfig 2003/01/31  v 3.6
+) (/usr/share/texlive/texmf-dist/tex/latex/parskip/parskip.sty
+Package: parskip 2001/04/09 non-zero parskip adjustments
+) (/usr/share/texlive/texmf-dist/tex/latex/base/alltt.sty
+Package: alltt 1997/06/16 v2.0g defines alltt environment
+) (/usr/share/texlive/texmf-dist/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: xetex.def on input line 95.
+)
+\Gin@req@height=\dimen133
+\Gin@req@width=\dimen134
+)
+\distancetoright=\skip71
+\py@argswidth=\skip72
+\py@noticelength=\skip73
+\lineblockindentation=\skip74
+\image@box=\box39
+\image@width=\dimen135
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is not detected.
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: pdfTeX >= 1.30 not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode not found.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
+\@linkdim=\dimen136
+\Hy@linkcounter=\count113
+\Hy@pagecounter=\count114
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count115
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 4319.
+Package hyperref Info: Option `breaklinks' set `true' on input line 4319.
+Package hyperref Info: Hyper figures OFF on input line 4443.
+Package hyperref Info: Link nesting OFF on input line 4448.
+Package hyperref Info: Hyper index ON on input line 4451.
+Package hyperref Info: Plain pages OFF on input line 4458.
+Package hyperref Info: Backreferencing OFF on input line 4463.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4688.
+\c@Hy@tempcnt=\count116
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5041.
+\XeTeXLinkMargin=\dimen137
+\Fld@menulength=\count117
+\Field@Width=\dimen138
+\Fld@charsize=\dimen139
+Package hyperref Info: Hyper figures OFF on input line 6295.
+Package hyperref Info: Link nesting OFF on input line 6300.
+Package hyperref Info: Hyper index ON on input line 6303.
+Package hyperref Info: backreferencing OFF on input line 6310.
+Package hyperref Info: Link coloring ON on input line 6313.
+Package hyperref Info: Link coloring with OCG OFF on input line 6320.
+Package hyperref Info: PDF/A mode OFF on input line 6325.
+LaTeX Info: Redefining \ref on input line 6365.
+LaTeX Info: Redefining \pageref on input line 6369.
+\Hy@abspage=\count118
+\c@Item=\count119
+\c@Hfootnote=\count120
+)
+
+Package hyperref Message: Driver (autodetected): hxetex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hxetex.def
+File: hxetex.def 2012/11/06 v6.83m Hyperref driver for XeTeX
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2012/11/06 v6.83m Hyperref: PDF Unicode definition (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/stringenc.sty
+Package: stringenc 2011/12/02 v1.10 Convert strings between diff. encodings (HO
+)
+)
+\pdfm@box=\box40
+\c@Hy@AnnotLevel=\count121
+\HyField@AnnotCount=\count122
+\Fld@listcount=\count123
+\c@bookmark@seq@number=\count124
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package rerunfilecheck Info: Feature \pdfmdfivesum is not available
+(rerunfilecheck)             (e.g. pdfTeX or LuaTeX with package `pdftexcmds').
+
+(rerunfilecheck)             Therefore file contents cannot be checked efficien
+tly
+(rerunfilecheck)             and the loading of the package is aborted.
+)
+\Hy@SectionHShift=\skip75
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/hypcap.sty
+Package: hypcap 2011/02/16 v1.11 Adjusting the anchors of captions (HO)
+)
+\DUlineblockindent=\skip76
+(/usr/share/texlive/texmf-dist/tex/latex/caption/newfloat.sty
+Package: newfloat 2015/09/17 v1.1-109 Defining new floating environments (AR)
+)
+Package newfloat Info: New float `literal-block' with options `' on input line 
+527.
+\c@literal-block=\count125
+\newfloat@ftype=\count126
+Package newfloat Info: float type `literal-block'=8 on input line 527.
+(/usr/share/texlive/texmf-dist/tex/latex/capt-of/capt-of.sty
+Package: capt-of 2009/12/29 v0.2 standard captions outside of floats
+) (/usr/share/texlive/texmf-dist/tex/latex/needspace/needspace.sty
+Package: needspace 2010/09/12 v1.3d reserve vertical space
+)) (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen140
+) (/usr/share/texlive/texmf-dist/tex/latex/eqparbox/eqparbox.sty
+Package: eqparbox 2013/03/15 v4.0 Create equal-widthed boxes
+\eqp@tempdima=\skip77
+\eqp@tempdimb=\skip78
+\eqp@tabular@box=\box41
+\eqp@list@box=\box42
+\eqp@list@indent=\skip79
+(/usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+(/usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))) (/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.sty (/usr/share/
+texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2016/01/19 v6377 L3 programming layer (loader) 
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+Package: expl3 2016/01/19 v6377 L3 programming layer (code)
+L3 Module: l3bootstrap 2016/01/01 v6339 L3 Bootstrap code
+L3 Module: l3names 2015/12/21 v6328 L3 Namespace for primitives
+L3 Module: l3basics 2015/11/22 v6315 L3 Basic definitions
+L3 Module: l3expan 2015/09/10 v5983 L3 Argument expansion
+L3 Module: l3tl 2015/09/29 v6121 L3 Token lists
+L3 Module: l3str 2016/01/03 v6357 L3 Strings
+L3 Module: l3seq 2015/08/05 v5777 L3 Sequences and stacks
+L3 Module: l3int 2016/01/05 v6366 L3 Integers
+\c_max_int=\count127
+\l_tmpa_int=\count128
+\l_tmpb_int=\count129
+\g_tmpa_int=\count130
+\g_tmpb_int=\count131
+L3 Module: l3quark 2015/08/17 v5855 L3 Quarks
+L3 Module: l3prg 2015/11/01 v6216 L3 Control structures
+\g__prg_map_int=\count132
+L3 Module: l3clist 2015/09/02 v5901 L3 Comma separated lists
+L3 Module: l3token 2015/11/11 v6249 L3 Experimental token manipulation
+L3 Module: l3prop 2016/01/05 v6366 L3 Property lists
+L3 Module: l3msg 2015/09/28 v6113 L3 Messages
+L3 Module: l3file 2015/12/03 v6317 L3 File and I/O operations
+\l_iow_line_count_int=\count133
+\l__iow_target_count_int=\count134
+\l__iow_current_line_int=\count135
+\l__iow_current_word_int=\count136
+\l__iow_current_indentation_int=\count137
+L3 Module: l3skip 2016/01/05 v6366 L3 Dimensions and skips
+\c_zero_dim=\dimen141
+\c_max_dim=\dimen142
+\l_tmpa_dim=\dimen143
+\l_tmpb_dim=\dimen144
+\g_tmpa_dim=\dimen145
+\g_tmpb_dim=\dimen146
+\c_zero_skip=\skip80
+\c_max_skip=\skip81
+\l_tmpa_skip=\skip82
+\l_tmpb_skip=\skip83
+\g_tmpa_skip=\skip84
+\g_tmpb_skip=\skip85
+\c_zero_muskip=\muskip12
+\c_max_muskip=\muskip13
+\l_tmpa_muskip=\muskip14
+\l_tmpb_muskip=\muskip15
+\g_tmpa_muskip=\muskip16
+\g_tmpb_muskip=\muskip17
+L3 Module: l3keys 2015/11/17 v6284 L3 Key-value interfaces
+\g__keyval_level_int=\count138
+\l_keys_choice_int=\count139
+L3 Module: l3fp 2015/08/25 v5890 L3 Floating points
+\c__fp_leading_shift_int=\count140
+\c__fp_middle_shift_int=\count141
+\c__fp_trailing_shift_int=\count142
+\c__fp_big_leading_shift_int=\count143
+\c__fp_big_middle_shift_int=\count144
+\c__fp_big_trailing_shift_int=\count145
+\c__fp_Bigg_leading_shift_int=\count146
+\c__fp_Bigg_middle_shift_int=\count147
+\c__fp_Bigg_trailing_shift_int=\count148
+L3 Module: l3box 2015/08/09 v5822 L3 Experimental boxes
+\c_empty_box=\box43
+\l_tmpa_box=\box44
+\l_tmpb_box=\box45
+\g_tmpa_box=\box46
+\g_tmpb_box=\box47
+L3 Module: l3coffins 2015/08/06 v5789 L3 Coffin code layer
+\l__coffin_internal_box=\box48
+\l__coffin_internal_dim=\dimen147
+\l__coffin_offset_x_dim=\dimen148
+\l__coffin_offset_y_dim=\dimen149
+\l__coffin_x_dim=\dimen150
+\l__coffin_y_dim=\dimen151
+\l__coffin_x_prime_dim=\dimen152
+\l__coffin_y_prime_dim=\dimen153
+\c_empty_coffin=\box49
+\l__coffin_aligned_coffin=\box50
+\l__coffin_aligned_internal_coffin=\box51
+\l_tmpa_coffin=\box52
+\l_tmpb_coffin=\box53
+\l__coffin_display_coffin=\box54
+\l__coffin_display_coord_coffin=\box55
+\l__coffin_display_pole_coffin=\box56
+\l__coffin_display_offset_dim=\dimen154
+\l__coffin_display_x_dim=\dimen155
+\l__coffin_display_y_dim=\dimen156
+L3 Module: l3color 2014/08/23 v5354 L3 Experimental color support
+L3 Module: l3sys 2015/09/25 v6087 L3 Experimental system/runtime functions
+L3 Module: l3candidates 2016/01/14 v6376 L3 Experimental additions to l3kernel
+\l__box_top_dim=\dimen157
+\l__box_bottom_dim=\dimen158
+\l__box_left_dim=\dimen159
+\l__box_right_dim=\dimen160
+\l__box_top_new_dim=\dimen161
+\l__box_bottom_new_dim=\dimen162
+\l__box_left_new_dim=\dimen163
+\l__box_right_new_dim=\dimen164
+\l__box_internal_box=\box57
+\l__coffin_bounding_shift_dim=\dimen165
+\l__coffin_left_corner_dim=\dimen166
+\l__coffin_right_corner_dim=\dimen167
+\l__coffin_bottom_corner_dim=\dimen168
+\l__coffin_top_corner_dim=\dimen169
+\l__coffin_scaled_total_height_dim=\dimen170
+\l__coffin_scaled_width_dim=\dimen171
+L3 Module: l3luatex 2015/11/11 v6250 L3 Experimental LuaTeX-specific functions
+) (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3xdvipdfmx.def
+File: l3xdvidpfmx.def 2015/11/11 v6250 L3 Experimental driver: xdvipdfmx
+)) (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2016/01/19 v6377 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count149
+\l__xparse_m_args_int=\count150
+\l__xparse_mandatory_args_int=\count151
+\l__xparse_processor_int=\count152
+\l__xparse_v_nesting_int=\count153
+)
+Package: fontspec 2016/02/01 v2.5a Font selection for XeLaTeX and LuaLaTeX
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+Package: fontspec-xetex 2016/02/01 v2.5a Font selection for XeLaTeX and LuaLaTe
+X
+\l_fontspec_script_int=\count154
+\l_fontspec_language_int=\count155
+\l_fontspec_strnum_int=\count156
+\l__fontspec_tmpa_dim=\dimen172
+\l__fontspec_tmpb_dim=\dimen173
+\l__fontspec_tmpc_dim=\dimen174
+\g__file_internal_ior=\read3
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+(/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1enc.def
+File: eu1enc.def 2010/05/27 v0.1h Experimental Unicode font encodings
+)
+LaTeX Font Info:    Try loading font information for EU1+lmr on input line 105.
+
+(/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmr.fd
+File: eu1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)) (/usr/share/texlive/texmf-dist/tex/xelatex/xunicode/xunicode.sty
+File: xunicode.sty 2011/09/09 v0.981 provides access to latin accents and many 
+other characters in Unicode lower plane
+(/usr/share/texmf/tex/latex/tipa/t3enc.def
+File: t3enc.def 2001/12/31 T3 encoding
+LaTeX Font Info:    Try loading font information for EU1+lmss on input line 357
+.
+(/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmss.fd
+File: eu1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
+))
+\tipaTiiicode=\count157
+\tipasavetokens=\toks29
+\tipachecktokens=\toks30
+)
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__fontspec_post_arg:w with sig. 'mmO{}' on line 353.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \fontspec with sig. 'om' on line 355.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmainfont with sig. 'om' on line 365.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setsansfont with sig. 'om' on line 375.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmonofont with sig. 'om' on line 385.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathrm with sig. 'om' on line 399.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setboldmathrm with sig. 'om' on line 407.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathsf with sig. 'om' on line 415.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathtt with sig. 'om' on line 423.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontfamily with sig. 'mom' on line 437.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontface with sig. 'mom' on line 453.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \defaultfontfeatures with sig. 't+om' on line 467.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \addfontfeatures with sig. 'm' on line 529.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontfeature with sig. 'mm' on line 540.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newAATfeature with sig. 'mmmm' on line 548.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newopentypefeature with sig. 'mmm' on line 556.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \aliasfontfeature with sig. 'mm' on line 577.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \aliasfontfeatureoption with sig. 'mmm' on line 586.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontscript with sig. 'mm' on line 590.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontlanguage with sig. 'mm' on line 594.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareFontsExtensions with sig. 'm' on line 599.
+.................................................
+\l__fontspec_tmp_int=\count158
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.cfg)
+LaTeX Info: Redefining \itshape on input line 2705.
+LaTeX Info: Redefining \slshape on input line 2710.
+LaTeX Info: Redefining \scshape on input line 2715.
+LaTeX Info: Redefining \upshape on input line 2720.
+\l__fontspec_em_int=\count159
+\l__fontspec_emdef_int=\count160
+LaTeX Info: Redefining \em on input line 2736.
+LaTeX Info: Redefining \emph on input line 2742.
+LaTeX Info: Redefining \- on input line 2746.
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \oldstylenums with sig. 'm' on line 2841.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \liningnums with sig. 'm' on line 2845.
+.................................................
+))
+\g__fontspec_family_DejaVuSerif_int=\count161
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSerif(0)' created for font 'DejaVu Serif' with options
+. [Ligatures=TeX].
+. 
+. This font family consists of the following NFSS series/shapes:
+. - 'normal' (m/n) with NFSS spec.: <->"DejaVu
+. Serif/OT:script=latn;language=DFLT;mapping=tex-text;"
+. - 'small caps'  (m/sc) with NFSS spec.: - 'bold' (bx/n) with NFSS spec.:
+. <->"DejaVu Serif/B/OT:script=latn;language=DFLT;mapping=tex-text;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.: - 'italic' (m/it) with NFSS
+. spec.: <->"DejaVu Serif/I/OT:script=latn;language=DFLT;mapping=tex-text;"
+. - 'italic small caps'  (m/itsc) with NFSS spec.: - 'bold italic' (bx/it)
+. with NFSS spec.: <->"DejaVu
+. Serif/BI/OT:script=latn;language=DFLT;mapping=tex-text;"
+. - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
+.................................................
+\g__fontspec_family_DejaVuSans_int=\count162
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSans(0)' created for font 'DejaVu Sans' with options
+. [Ligatures=TeX].
+. 
+. This font family consists of the following NFSS series/shapes:
+. - 'normal' (m/n) with NFSS spec.: <->"DejaVu
+. Sans/OT:script=latn;language=DFLT;mapping=tex-text;"
+. - 'small caps'  (m/sc) with NFSS spec.: - 'bold' (bx/n) with NFSS spec.:
+. <->"DejaVu Sans/B/OT:script=latn;language=DFLT;mapping=tex-text;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.: - 'italic' (m/it) with NFSS
+. spec.: <->"DejaVu Sans/I/OT:script=latn;language=DFLT;mapping=tex-text;"
+. - 'italic small caps'  (m/itsc) with NFSS spec.: - 'bold italic' (bx/it)
+. with NFSS spec.: <->"DejaVu
+. Sans/BI/OT:script=latn;language=DFLT;mapping=tex-text;"
+. - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
+.................................................
+\g__fontspec_family_DejaVuSansMono_int=\count163
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'DejaVuSansMono(0)' created for font 'DejaVu Sans Mono' with
+. options [WordSpace={1,0,0},PunctuationSpace=WordSpace].
+. 
+. This font family consists of the following NFSS series/shapes:
+. - 'normal' (m/n) with NFSS spec.: <->"DejaVu Sans
+. Mono/OT:script=latn;language=DFLT;"
+. - 'small caps'  (m/sc) with NFSS spec.: 
+. and font adjustment code:
+. \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font =0\fontdimen 3\font
+. \fontdimen 4\font =0\fontdimen 4\font \fontdimen 7\font =0\fontdimen 2\font
+. - 'bold' (bx/n) with NFSS spec.: <->"DejaVu Sans
+. Mono/B/OT:script=latn;language=DFLT;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.: 
+. and font adjustment code:
+. \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font =0\fontdimen 3\font
+. \fontdimen 4\font =0\fontdimen 4\font \fontdimen 7\font =0\fontdimen 2\font
+. - 'italic' (m/it) with NFSS spec.: <->"DejaVu Sans
+. Mono/I/OT:script=latn;language=DFLT;"
+. - 'italic small caps'  (m/itsc) with NFSS spec.: 
+. and font adjustment code:
+. \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font =0\fontdimen 3\font
+. \fontdimen 4\font =0\fontdimen 4\font \fontdimen 7\font =0\fontdimen 2\font
+. - 'bold italic' (bx/it) with NFSS spec.: <->"DejaVu Sans
+. Mono/BI/OT:script=latn;language=DFLT;"
+. - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
+. and font adjustment code:
+. \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font =0\fontdimen 3\font
+. \fontdimen 4\font =0\fontdimen 4\font \fontdimen 7\font =0\fontdimen 2\font 
+.................................................
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+\Gm@cnth=\count164
+\Gm@cntv=\count165
+\c@Gm@tempcnt=\count166
+\Gm@bindingoffset=\dimen175
+\Gm@wd@mp=\dimen176
+\Gm@odd@mp=\dimen177
+\Gm@even@mp=\dimen178
+\Gm@layoutwidth=\dimen179
+\Gm@layoutheight=\dimen180
+\Gm@layouthoffset=\dimen181
+\Gm@layoutvoffset=\dimen182
+\Gm@dimlist=\toks31
+)
+\mynoticelength=\skip86
+\@indexfile=\write5
+\openout5 = `gpu.idx'.
+
+Writing index file gpu.idx
+
+LaTeX Warning: Unused global option(s):
+    [8pt].
+
+(./gpu.aux)
+\openout1 = `gpu.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 190.
+LaTeX Font Info:    ... okay on input line 190.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 190.
+LaTeX Font Info:    ... okay on input line 190.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 190.
+LaTeX Font Info:    ... okay on input line 190.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 190.
+LaTeX Font Info:    ... okay on input line 190.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 190.
+LaTeX Font Info:    ... okay on input line 190.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 190.
+LaTeX Font Info:    ... okay on input line 190.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 190.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 190.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 190.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 190.
+LaTeX Font Info:    ... okay on input line 190.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 190.
+LaTeX Font Info:    ... okay on input line 190.
+LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 190.
+LaTeX Font Info:    ... okay on input line 190.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 190.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 190.
+(/usr/share/texmf/tex/latex/tipa/t3cmr.fd
+File: t3cmr.fd 2001/12/31 TIPA font definitions
+)
+LaTeX Font Info:    ... okay on input line 190.
+\AtBeginShipoutBox=\box58
+Package hyperref Info: Link coloring ON on input line 190.
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count167
+)
+LaTeX Info: Redefining \ref on input line 190.
+LaTeX Info: Redefining \pageref on input line 190.
+LaTeX Info: Redefining \nameref on input line 190.
+(./gpu.out) (./gpu.out)
+\@outlinefile=\write6
+\openout6 = `gpu.out'.
+
+.................................................
+. fontspec info: "setup-math"
+. 
+. Adjusting the maths setup (use [no-math] to avoid this).
+.................................................
+\symlegacymaths=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 190.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 190.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 190.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 190.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 190.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 190.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 190.
+LaTeX Font Info:    Redeclaring math accent \check on input line 190.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 190.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 190.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 190.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 190.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 190.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 190.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 190.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 190.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 190.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 190.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 190.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 190.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 190.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 190.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 190.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 190.
+LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
+(Font)              `operators' in the math version `normal' on input line 190.
+
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> EU1/DejaVuSans(0)/m/n on input line 190
+.
+LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
+(Font)              `operators' in the math version `bold' on input line 190.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> EU1/DejaVuSans(0)/m/n on input line 19
+0.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  EU1/DejaVuSans(0)/m/n --> EU1/DejaVuSans(0)/m/n on inpu
+t line 190.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> EU1/DejaVuSans(0)/m/it on input line 1
+90.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> EU1/DejaVuSans(0)/bx/n on input line 1
+90.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> EU1/DejaVuSerif(0)/m/n on input line 1
+90.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> EU1/DejaVuSansMono(0)/m/n on input lin
+e 190.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  EU1/DejaVuSans(0)/m/n --> EU1/DejaVuSans(0)/bx/n on inp
+ut line 190.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> EU1/DejaVuSans(0)/bx/it on input line
+ 190.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> EU1/DejaVuSerif(0)/bx/n on input line
+ 190.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> EU1/DejaVuSansMono(0)/bx/n on input li
+ne 190.
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+*geometry* verbose mode - [ preamble ] result:
+* driver: xetex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(36.135pt, 525.23788pt, 36.135pt)
+* v-part:(T,H,B)=(72.26999pt, 700.50687pt, 72.26999pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=525.23788pt
+* \textheight=700.50687pt
+* \oddsidemargin=-36.135pt
+* \evensidemargin=-36.135pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=36.135pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 193.
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 193.
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/se-ascii-print.def
+File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
+
+) [1
+
+] [2
+
+] (./gpu.toc
+Overfull \hbox (3.58688pt too wide) detected at line 60
+ []\EU1/DejaVuSans(0)/m/n/10 106
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 62
+ []\EU1/DejaVuSans(0)/m/n/10 111
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 63
+ []\EU1/DejaVuSans(0)/m/n/10 114
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 64
+ []\EU1/DejaVuSans(0)/m/n/10 114
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 66
+ []\EU1/DejaVuSans(0)/m/n/10 122
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 67
+ []\EU1/DejaVuSans(0)/m/n/10 135
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 69
+ []\EU1/DejaVuSans(0)/m/n/10 153
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 71
+ []\EU1/DejaVuSans(0)/m/n/10 156
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 76
+ []\EU1/DejaVuSans(0)/m/n/10 157
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 77
+ []\EU1/DejaVuSans(0)/m/n/10 161
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 85
+ []\EU1/DejaVuSans(0)/m/n/10 182
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 88
+ []\EU1/DejaVuSans(0)/m/n/10 189
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 89
+ []\EU1/DejaVuSans(0)/m/n/10 202
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 94
+ []\EU1/DejaVuSans(0)/m/n/10 220
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 95
+ []\EU1/DejaVuSans(0)/m/n/10 222
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 96
+ []\EU1/DejaVuSans(0)/m/n/10 233
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 97
+ []\EU1/DejaVuSans(0)/m/n/10 236
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 102
+ []\EU1/DejaVuSans(0)/m/n/10 242
+ []
+
+[1
+
+]
+Overfull \hbox (3.58688pt too wide) detected at line 103
+ []\EU1/DejaVuSans(0)/m/n/10 246
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 104
+ []\EU1/DejaVuSans(0)/m/n/10 252
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 105
+ []\EU1/DejaVuSans(0)/m/n/10 255
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 106
+ []\EU1/DejaVuSans(0)/m/n/10 263
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 107
+ []\EU1/DejaVuSans(0)/m/n/10 272
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 108
+ []\EU1/DejaVuSans(0)/m/n/10 275
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 109
+ []\EU1/DejaVuSans(0)/m/n/10 281
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 110
+ []\EU1/DejaVuSans(0)/m/n/10 283
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 111
+ []\EU1/DejaVuSans(0)/m/n/10 288
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 112
+ []\EU1/DejaVuSans(0)/m/n/10 291
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 113
+ []\EU1/DejaVuSans(0)/m/n/10 293
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 114
+ []\EU1/DejaVuSans(0)/m/n/10 294
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 115
+ []\EU1/DejaVuSans(0)/m/n/10 297
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 116
+ []\EU1/DejaVuSans(0)/m/n/10 300
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 118
+ []\EU1/DejaVuSans(0)/m/n/10 305
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 119
+ []\EU1/DejaVuSans(0)/m/n/10 306
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 120
+ []\EU1/DejaVuSans(0)/m/n/10 307
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 121
+ []\EU1/DejaVuSans(0)/m/n/10 308
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 122
+ []\EU1/DejaVuSans(0)/m/n/10 309
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 124
+ []\EU1/DejaVuSans(0)/m/n/10 313
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 128
+ []\EU1/DejaVuSans(0)/m/n/10 316
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 129
+ []\EU1/DejaVuSans(0)/m/n/10 316
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 131
+ []\EU1/DejaVuSans(0)/m/n/10 317
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 136
+ []\EU1/DejaVuSans(0)/m/n/10 326
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 154
+ []\EU1/DejaVuSans(0)/m/n/10 354
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 165
+ []\EU1/DejaVuSans(0)/m/n/10 367
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 169
+ []\EU1/DejaVuSans(0)/m/n/10 369
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 173
+ []\EU1/DejaVuSans(0)/m/n/10 370
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 181
+ []\EU1/DejaVuSans(0)/m/n/10 391
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 187
+ []\EU1/DejaVuSans(0)/m/n/10 393
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 188
+ []\EU1/DejaVuSans(0)/m/n/10 393
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 189
+ []\EU1/DejaVuSans(0)/m/n/10 394
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 190
+ []\EU1/DejaVuSans(0)/m/n/10 394
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 191
+ []\EU1/DejaVuSans(0)/m/n/10 395
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 192
+ []\EU1/DejaVuSans(0)/m/n/10 395
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 193
+ []\EU1/DejaVuSans(0)/m/n/10 395
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 196
+ []\EU1/DejaVuSans(0)/m/n/10 399
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 199
+ []\EU1/DejaVuSans(0)/m/n/10 403
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 207
+ []\EU1/DejaVuSans(0)/m/n/10 405
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 212
+ []\EU1/DejaVuSans(0)/m/n/10 407
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 213
+ []\EU1/DejaVuSans(0)/m/n/10 410
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 214
+ []\EU1/DejaVuSans(0)/m/n/10 413
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 217
+ []\EU1/DejaVuSans(0)/m/n/10 421
+ []
+
+[2]
+Overfull \hbox (3.58688pt too wide) detected at line 225
+ []\EU1/DejaVuSans(0)/m/n/10 422
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 232
+ []\EU1/DejaVuSans(0)/m/n/10 425
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 235
+ []\EU1/DejaVuSans(0)/m/n/10 426
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 240
+ []\EU1/DejaVuSans(0)/m/n/10 433
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 247
+ []\EU1/DejaVuSans(0)/m/n/10 437
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 248
+ []\EU1/DejaVuSans(0)/m/n/10 438
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 249
+ []\EU1/DejaVuSans(0)/m/n/10 440
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 250
+ []\EU1/DejaVuSans(0)/m/n/10 441
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 251
+ []\EU1/DejaVuSans(0)/m/n/10 441
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 253
+ []\EU1/DejaVuSans(0)/m/n/10 443
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 256
+ []\EU1/DejaVuSans(0)/m/n/10 445
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 268
+ []\EU1/DejaVuSans(0)/m/n/10 448
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 275
+ []\EU1/DejaVuSans(0)/m/n/10 450
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 279
+ []\EU1/DejaVuSans(0)/m/n/10 450
+ []
+
+
+Overfull \hbox (3.58688pt too wide) detected at line 282
+ []\EU1/DejaVuSans(0)/m/n/10 451
+ []
+
+)
+\tf@toc=\write7
+\openout7 = `gpu.toc'.
+
+Adding blank page after the table of contents.
+[3] [4]
+Chapter 1.
+[1
+
+
+] [2]
+Chapter 2.
+[3
+
+] [4] [5]
+Underfull \hbox (badness 10000) in paragraph at lines 579--585
+[]\EU1/DejaVuSans(0)/m/n/10 Modern drivers should only use this to force-restor
+e the fbdev framebuffer using
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 629--631
+[]\EU1/DejaVuSans(0)/m/n/10 This is deprecated and should not be used by new dr
+ivers. Use
+ []
+
+[7] [8] [9]
+Underfull \hbox (badness 5741) in paragraph at lines 972--978
+[]\EU1/DejaVuSans(0)/m/n/10 Use of this function is deprecated. It will eventua
+lly go away completely. Please use
+ []
+
+
+Underfull \hbox (badness 5175) in paragraph at lines 995--1000
+[]\EU1/DejaVuSans(0)/m/n/10 This unplugs a hotpluggable DRM device, which makes
+ it inaccessible to userspace opera-
+ []
+
+[10]
+Underfull \hbox (badness 7540) in paragraph at lines 1070--1073
+[]\EU1/DejaVuSans(0)/m/n/10 The ref-count of \EU1/DejaVuSans(0)/bx/n/10 dev \EU
+1/DejaVuSans(0)/m/n/10 must be zero, and [][]\EU1/DejaVuSansMono(0)/m/it/10 drm
+_dev_fini()[][] \EU1/DejaVuSans(0)/m/n/10 should only be called from a
+ []
+
+[11] [12]
+Underfull \hbox (badness 6978) in paragraph at lines 1280--1286
+[]\EU1/DejaVuSans(0)/m/n/10 These IRQ helpers are strictly optional. Drivers wh
+ich roll their own only need to set
+ []
+
+[13] [14] [15] [16] [17] [18] [19] [20]
+Underfull \hbox (badness 10000) in paragraph at lines 2062--2064
+[]\EU1/DejaVuSans(0)/m/n/10 This is the locked version of [][]\EU1/DejaVuSansMo
+no(0)/m/it/10 drm_event_reserve_init()[][] \EU1/DejaVuSans(0)/m/n/10 for caller
+s which already hold
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2071--2071
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_device *\EU1/DejaVuSans(0)/m/it/10  dev\
+EU1/DejaVuSans(0)/m/n/10 , struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_file[][] \
+EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  file_priv\EU1/DejaVuSans(
+0)/m/n/10 , struct
+ []
+
+[21] [22] [23] [24]
+Chapter 3.
+[25
+
+] [26]
+Underfull \hbox (badness 10000) in paragraph at lines 2696--2702
+[]\EU1/DejaVuSans(0)/m/n/10 Drivers are responsible for the actual physical pag
+es allocation by calling
+ []
+
+[27] [28] [29]
+Underfull \hbox (badness 10000) in paragraph at lines 2926--2929
+[]\EU1/DejaVuSans(0)/m/n/10 Please use [][]\EU1/DejaVuSansMono(0)/m/it/10 drm_g
+em_object_get()[][] \EU1/DejaVuSans(0)/m/n/10 to acquire and [][]\EU1/DejaVuSan
+sMono(0)/m/it/10 drm_gem_object_put()[][] \EU1/DejaVuSans(0)/m/n/10 or
+ []
+
+[30] [31]
+Underfull \hbox (badness 7759) in paragraph at lines 3189--3189
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_device *\EU1/DejaVuSans(0)/m/it/10  dev\
+EU1/DejaVuSans(0)/m/n/10 , struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_gem_object
+[][] \EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  obj\EU1/DejaVuSans(
+0)/m/n/10 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3234--3238
+[]\EU1/DejaVuSans(0)/m/n/10 Removes the GEM handle from the \EU1/DejaVuSans(0)/
+bx/n/10 filp \EU1/DejaVuSans(0)/m/n/10 lookup table which has been added with
+ []
+
+[32] [33]
+Underfull \hbox (badness 10000) in paragraph at lines 3433--3439
+[]\EU1/DejaVuSans(0)/m/n/10 Note that you are not allowed to change gfp-zones d
+uring runtime. That is,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3441--3441
+[]\EU1/DejaVuSans(0)/m/n/10 struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_gem_objec
+t[][] \EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  obj\EU1/DejaVuSans
+(0)/m/n/10 , struct page **\EU1/DejaVuSans(0)/m/it/10  pages\EU1/DejaVuSans(0)/
+m/n/10 , bool\EU1/DejaVuSans(0)/m/it/10  dirty\EU1/DejaVuSans(0)/m/n/10 ,
+ []
+
+[34]
+Underfull \hbox (badness 10000) in paragraph at lines 3523--3525
+[]\EU1/DejaVuSans(0)/m/n/10 Called after the last reference to the object has b
+een lost. Must be called holding
+ []
+
+[35] [36] [37]
+Underfull \hbox (badness 10000) in paragraph at lines 3843--3843
+[]\EU1/DejaVuSans(0)/m/n/10 struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_file[][] 
+\EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  file_priv\EU1/DejaVuSans
+(0)/m/n/10 , struct drm_device *\EU1/DejaVuSans(0)/m/it/10  drm\EU1/DejaVuSans(
+0)/m/n/10 , struct
+ []
+
+[38]
+Underfull \hbox (badness 10000) in paragraph at lines 3913--3913
+[]\EU1/DejaVuSans(0)/m/n/10 struct file *\EU1/DejaVuSans(0)/m/it/10  filp\EU1/D
+ejaVuSans(0)/m/n/10 , unsigned long\EU1/DejaVuSans(0)/m/it/10  addr\EU1/DejaVuS
+ans(0)/m/n/10 , un-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3951--3951
+[]\EU1/DejaVuSans(0)/m/n/10 struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_printer[]
+[] \EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  p\EU1/DejaVuSans(0)/m
+/n/10 , unsigned int\EU1/DejaVuSans(0)/m/it/10  indent\EU1/DejaVuSans(0)/m/n/10
+ , const struct
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4002--4002
+\EU1/DejaVuSans(0)/m/n/10 dma_buf_attachment *\EU1/DejaVuSans(0)/m/it/10  attac
+h\EU1/DejaVuSans(0)/m/n/10 ,
+ []
+
+[39] [40]
+Underfull \hbox (badness 10000) in paragraph at lines 4149--4149
+[]\EU1/DejaVuSans(0)/m/n/10 struct
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4149--4149
+\EU1/DejaVuSans(0)/m/n/10 drm_vma_offset_manager
+ []
+
+[41] [42]
+Underfull \hbox (badness 10000) in paragraph at lines 4332--4332
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_vma_offset_node *\EU1/DejaVuSans(0)/m/it
+/10  node\EU1/DejaVuSans(0)/m/n/10 , struct address_space
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4387--4387
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_vma_offset_manager *\EU1/DejaVuSans(0)/m
+/it/10  mgr\EU1/DejaVuSans(0)/m/n/10 , unsigned
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4443--4443
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_vma_offset_manager
+ []
+
+[43]
+Underfull \hbox (badness 10000) in paragraph at lines 4469--4472
+[]\EU1/DejaVuSans(0)/m/n/10 Note that before lookup the vma offset manager look
+up lock must be acquired with
+ []
+
+
+Underfull \hbox (badness 6559) in paragraph at lines 4491--4491
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_vma_offset_manager *\EU1/DejaVuSans(0)/m
+/it/10  mgr\EU1/DejaVuSans(0)/m/n/10 , struct drm_vma_offset_node
+ []
+
+[44]
+Underfull \hbox (badness 7433) in paragraph at lines 4640--4642
+[]\EU1/DejaVuSans(0)/m/n/10 Search the list in \EU1/DejaVuSans(0)/bx/n/10 node 
+\EU1/DejaVuSans(0)/m/n/10 whether \EU1/DejaVuSans(0)/bx/n/10 tag \EU1/DejaVuSan
+s(0)/m/n/10 is currently on the list of allowed open-files (see
+ []
+
+[45] [46]
+Underfull \hbox (badness 10000) in paragraph at lines 4774--4778
+\EU1/DejaVuSans(0)/m/n/10 In addition to calling \EU1/DejaVuSansMono(0)/m/n/10 
+dma_buf_export()\EU1/DejaVuSans(0)/m/n/10 , we take a reference to the \EU1/Dej
+aVuSansMono(0)/m/n/10 drm_device \EU1/DejaVuSans(0)/m/n/10 and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4774--4778
+\EU1/DejaVuSans(0)/m/n/10 the exported [][]\EU1/DejaVuSansMono(0)/m/it/10 drm_g
+em_object[][] \EU1/DejaVuSans(0)/m/n/10 (stored in \EU1/DejaVuSansMono(0)/m/n/1
+0 dma_buf_export_info.priv\EU1/DejaVuSans(0)/m/n/10 ) which is released by
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4831--4831
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_device *\EU1/DejaVuSans(0)/m/it/10  dev\
+EU1/DejaVuSans(0)/m/n/10 , struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_file[][] \
+EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  file_priv\EU1/DejaVuSans(
+0)/m/n/10 ,
+ []
+
+[47]
+Underfull \hbox (badness 10000) in paragraph at lines 4892--4892
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_device *\EU1/DejaVuSans(0)/m/it/10  dev\
+EU1/DejaVuSans(0)/m/n/10 , struct dma_buf
+ []
+
+[48] [49] [50] [51] [52]
+Underfull \hbox (badness 10000) in paragraph at lines 5494--5494
+[]\EU1/DejaVuSans(0)/m/n/10 struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_mm[][] \E
+U1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  mm\EU1/DejaVuSans(0)/m/n/1
+0 , struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_mm_node[][] \EU1/DejaVuSans(0)/m/
+n/10 *\EU1/DejaVuSans(0)/m/it/10  node\EU1/DejaVuSans(0)/m/n/10 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5494--5494
+\EU1/DejaVuSans(0)/m/n/10 u64\EU1/DejaVuSans(0)/m/it/10  size\EU1/DejaVuSans(0)
+/m/n/10 , u64\EU1/DejaVuSans(0)/m/it/10  alignment\EU1/DejaVuSans(0)/m/n/10 , u
+nsigned long\EU1/DejaVuSans(0)/m/it/10  color\EU1/DejaVuSans(0)/m/n/10 , enum
+ []
+
+[53] [54]
+Underfull \hbox (badness 10000) in paragraph at lines 5622--5622
+[]\EU1/DejaVuSans(0)/m/n/10 struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_mm_scan[]
+[] \EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  scan\EU1/DejaVuSans(0
+)/m/n/10 , struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_mm[][] \EU1/DejaVuSans(0)/
+m/n/10 *\EU1/DejaVuSans(0)/m/it/10  mm\EU1/DejaVuSans(0)/m/n/10 , u64\EU1/DejaV
+uSans(0)/m/it/10  size\EU1/DejaVuSans(0)/m/n/10 ,
+ []
+
+[55] [56] [57] [58]
+Underfull \hbox (badness 10000) in paragraph at lines 6092--6094
+[]\EU1/DejaVuSans(0)/m/n/10 This field should not be used directly. Use [][]\EU
+1/DejaVuSansMono(0)/m/it/10 drm_syncobj_fence_get()[][] \EU1/DejaVuSans(0)/m/n/
+10 and
+ []
+
+[59]
+Underfull \hbox (badness 7397) in paragraph at lines 6230--6230
+[]\EU1/DejaVuSans(0)/m/n/10 struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_syncobj[]
+[] \EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  syncobj\EU1/DejaVuSan
+s(0)/m/n/10 , struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_syncobj_cb[][] \EU1/Dej
+aVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  cb\EU1/DejaVuSans(0)/m/n/10 ,
+ []
+
+[60] [61] [62
+
+]
+Chapter 4.
+File: DOT-dade12aa9127c64406e41cdf8d7f80694c134db2.pdf Graphic file (type QTm)
+<use  "DOT-dade12aa9127c64406e41cdf8d7f80694c134db2.pdf" >
+File: DOT-dade12aa9127c64406e41cdf8d7f80694c134db2.pdf Graphic file (type QTm)
+<use  "DOT-dade12aa9127c64406e41cdf8d7f80694c134db2.pdf" >
+File: DOT-6445c75fc4859992454fd377127d4d309e82f09a.pdf Graphic file (type QTm)
+<use  "DOT-6445c75fc4859992454fd377127d4d309e82f09a.pdf" >
+File: DOT-6445c75fc4859992454fd377127d4d309e82f09a.pdf Graphic file (type QTm)
+<use  "DOT-6445c75fc4859992454fd377127d4d309e82f09a.pdf" > [63] [64] [65] [66] 
+[67] [68]
+Overfull \vbox (1.45355pt too high) detected at line 6893
+ []
+
+[69] [70]
+Underfull \hbox (badness 6268) in paragraph at lines 6954--6960
+[]\EU1/DejaVuSans(0)/m/n/10 List of connector objects linked with [][]\EU1/Deja
+VuSansMono(0)/m/it/10 drm_connector.free_head[][]\EU1/DejaVuSans(0)/m/n/10 . Pr
+o-
+ []
+
+
+Underfull \hbox (badness 5954) in paragraph at lines 6954--6960
+\EU1/DejaVuSans(0)/m/n/10 tected by \EU1/DejaVuSans(0)/bx/n/10 connector_list_l
+ock\EU1/DejaVuSans(0)/m/n/10 . Used by [][]\EU1/DejaVuSansMono(0)/m/it/10 drm_f
+or_each_connector_iter()[][] \EU1/DejaVuSans(0)/m/n/10 and [][]\EU1/DejaVuSansM
+ono(0)/m/it/10 struct
+ []
+
+
+Underfull \hbox (badness 7944) in paragraph at lines 7058--7061
+[]\EU1/DejaVuSans(0)/m/n/10 Default atomic plane property for the plane source 
+position in the connected
+ []
+
+[71]
+Underfull \hbox (badness 7944) in paragraph at lines 7062--7065
+[]\EU1/DejaVuSans(0)/m/n/10 Default atomic plane property for the plane source 
+position in the connected
+ []
+
+
+Underfull \hbox (badness 7944) in paragraph at lines 7066--7069
+[]\EU1/DejaVuSans(0)/m/n/10 Default atomic plane property for the plane source 
+position in the connected
+ []
+
+
+Underfull \hbox (badness 7944) in paragraph at lines 7070--7073
+[]\EU1/DejaVuSans(0)/m/n/10 Default atomic plane property for the plane source 
+position in the connected
+ []
+
+[72] [73]
+File: DOT-1eee3f74bb2de20b2b68c4aa6c9c1cabe5078857.pdf Graphic file (type QTm)
+<use  "DOT-1eee3f74bb2de20b2b68c4aa6c9c1cabe5078857.pdf" >
+File: DOT-1eee3f74bb2de20b2b68c4aa6c9c1cabe5078857.pdf Graphic file (type QTm)
+<use  "DOT-1eee3f74bb2de20b2b68c4aa6c9c1cabe5078857.pdf" > [74]
+Underfull \hbox (badness 10000) in paragraph at lines 7456--7459
+[]\EU1/DejaVuSans(0)/m/n/10 Hence atomic drivers should not use [][]\EU1/DejaVu
+SansMono(0)/m/it/10 drm_object_property_set_value()[][] \EU1/DejaVuSans(0)/m/n/
+10 and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7456--7459
+[][]\EU1/DejaVuSansMono(0)/m/it/10 drm_object_property_get_value()[][] \EU1/Dej
+aVuSans(0)/m/n/10 on mutable objects, i.e. those without the
+ []
+
+[75]
+Underfull \hbox (badness 10000) in paragraph at lines 7504--7504
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_device *\EU1/DejaVuSans(0)/m/it/10  dev\
+EU1/DejaVuSans(0)/m/n/10 , struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_file[][]
+ []
+
+[76]
+File: DOT-69c6997054dbfdfb0892fa0cab076cfd8074c7ed.pdf Graphic file (type QTm)
+<use  "DOT-69c6997054dbfdfb0892fa0cab076cfd8074c7ed.pdf" >
+File: DOT-69c6997054dbfdfb0892fa0cab076cfd8074c7ed.pdf Graphic file (type QTm)
+<use  "DOT-69c6997054dbfdfb0892fa0cab076cfd8074c7ed.pdf" > [77]
+Underfull \hbox (badness 10000) in paragraph at lines 7746--7751
+[]\EU1/DejaVuSans(0)/m/n/10 Similar to userspace-exposed objects, private state
+ structures can be acquired by calling
+ []
+
+
+Underfull \hbox (badness 7888) in paragraph at lines 7752--7758
+[]\EU1/DejaVuSans(0)/m/n/10 All private state structures contained in a [][]\EU
+1/DejaVuSansMono(0)/m/it/10 drm_atomic_state[][] \EU1/DejaVuSans(0)/m/n/10 upda
+te can be iterated us-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7752--7758
+\EU1/DejaVuSans(0)/m/n/10 ing [][]\EU1/DejaVuSansMono(0)/m/it/10 for_each_oldne
+w_private_obj_in_state()[][]\EU1/DejaVuSans(0)/m/n/10 , [][]\EU1/DejaVuSansMono
+(0)/m/it/10 for_each_new_private_obj_in_state()[][] \EU1/DejaVuSans(0)/m/n/10 a
+nd
+ []
+
+[78]
+Underfull \hbox (badness 10000) in paragraph at lines 7819--7825
+[]\EU1/DejaVuSans(0)/m/n/10 Will be signalled after old buffers have been clean
+ed up by calling
+ []
+
+[79] [80] [81]
+Underfull \hbox (badness 10000) in paragraph at lines 8058--8060
+[]\EU1/DejaVuSans(0)/m/n/10 This commit (if set) is not bound to any crtc, but 
+will be completed when
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8069--8073
+[]\EU1/DejaVuSans(0)/m/n/10 States are added to an atomic update by calling [][
+]\EU1/DejaVuSansMono(0)/m/it/10 drm_atomic_get_crtc_state()[][]\EU1/DejaVuSans(
+0)/m/n/10 ,
+ []
+
+[82]
+Underfull \hbox (badness 10000) in paragraph at lines 8229--8229
+[]\EU1/DejaVuSans(0)/m/n/10 struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_atomic_st
+ate[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8229--8229
+\EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  state\EU1/DejaVuSans(0)/
+m/n/10 , struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_plane[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8255--8255
+[]\EU1/DejaVuSans(0)/m/n/10 struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_atomic_st
+ate[][] \EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  state\EU1/DejaVu
+Sans(0)/m/n/10 ,
+ []
+
+[83]
+Underfull \hbox (badness 10000) in paragraph at lines 8278--8278
+[]\EU1/DejaVuSans(0)/m/n/10 struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_atomic_st
+ate[][] \EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  state\EU1/DejaVu
+Sans(0)/m/n/10 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8301--8301
+[]\EU1/DejaVuSans(0)/m/n/10 struct
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8301--8301
+[][]\EU1/DejaVuSans(0)/m/it/10 drm_atomic_state[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8301--8301
+\EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  state\EU1/DejaVuSans(0)/
+m/n/10 , struct
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8322--8325
+[]\EU1/DejaVuSans(0)/m/n/10 This function is deprecated, \EU1/DejaVuSans(0)/bx/
+n/10 drm_atomic_get_old_connector_state \EU1/DejaVuSans(0)/m/n/10 or
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8327--8327
+[]\EU1/DejaVuSans(0)/m/n/10 struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_atomic_st
+ate[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8327--8327
+\EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  state\EU1/DejaVuSans(0)/
+m/n/10 , struct
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8327--8327
+[][]\EU1/DejaVuSans(0)/m/it/10 drm_connector[][] \EU1/DejaVuSans(0)/m/n/10 *\EU
+1/DejaVuSans(0)/m/it/10  connec-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8350--8350
+[]\EU1/DejaVuSans(0)/m/n/10 struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_atomic_st
+ate[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8350--8350
+\EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  state\EU1/DejaVuSans(0)/
+m/n/10 , struct
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8350--8350
+[][]\EU1/DejaVuSans(0)/m/it/10 drm_connector[][] \EU1/DejaVuSans(0)/m/n/10 *\EU
+1/DejaVuSans(0)/m/it/10  connec-
+ []
+
+[84]
+Underfull \hbox (badness 10000) in paragraph at lines 8373--8373
+[]\EU1/DejaVuSans(0)/m/n/10 struct
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8373--8373
+[][]\EU1/DejaVuSans(0)/m/it/10 drm_atomic_state[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8373--8373
+\EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  state\EU1/DejaVuSans(0)/
+m/n/10 , struct
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8414--8414
+[]\EU1/DejaVuSans(0)/m/it/10 __state\EU1/DejaVuSans(0)/m/n/10 , \EU1/DejaVuSans
+(0)/m/it/10 connector\EU1/DejaVuSans(0)/m/n/10 , \EU1/DejaVuSans(0)/m/it/10 old
+_connector_state\EU1/DejaVuSans(0)/m/n/10 ,
+ []
+
+[85] [86] [87] [88]
+Underfull \hbox (badness 10000) in paragraph at lines 8954--8954
+[]\EU1/DejaVuSans(0)/m/n/10 struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_atomic_st
+ate[][] \EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  state\EU1/DejaVu
+Sans(0)/m/n/10 , struct
+ []
+
+[89]
+Underfull \hbox (badness 10000) in paragraph at lines 9064--9068
+[]\EU1/DejaVuSans(0)/m/n/10 This function handles generic/core properties and c
+alls out to driver’s
+ []
+
+[90] [91] [92]
+Underfull \hbox (badness 10000) in paragraph at lines 9295--9295
+[]\EU1/DejaVuSans(0)/m/n/10 struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_connector
+_state[][] \EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  conn_state\EU
+1/DejaVuSans(0)/m/n/10 , struct
+ []
+
+[93] [94]
+Underfull \hbox (badness 10000) in paragraph at lines 9547--9553
+\EU1/DejaVuSans(0)/m/n/10 legacy plane operations, see [][]\EU1/DejaVuSansMono(
+0)/m/it/10 drm_crtc_funcs.page_flip[][] \EU1/DejaVuSans(0)/m/n/10 and [][]\EU1/
+DejaVuSansMono(0)/m/it/10 drm_crtc_funcs.cursor_set2[][]\EU1/DejaVuSans(0)/m/n/
+10 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9547--9553
+\EU1/DejaVuSans(0)/m/n/10 tures are controlled through [][]\EU1/DejaVuSansMono(
+0)/m/it/10 drm_property[][] \EU1/DejaVuSans(0)/m/n/10 and [][]\EU1/DejaVuSansMo
+no(0)/m/it/10 drm_mode_config_funcs.atomic_check[][] \EU1/DejaVuSans(0)/m/n/10 
+and
+ []
+
+[95] [96]
+Underfull \hbox (badness 10000) in paragraph at lines 9743--9749
+[]\EU1/DejaVuSans(0)/m/n/10 Note that the distinction between \EU1/DejaVuSans(0
+)/bx/n/10 enable \EU1/DejaVuSans(0)/m/n/10 and \EU1/DejaVuSans(0)/bx/n/10 activ
+e \EU1/DejaVuSans(0)/m/n/10 is rather subtile: Flipping \EU1/DejaVuSans(0)/bx/n
+/10 active
+ []
+
+
+Overfull \vbox (1.45355pt too high) detected at line 9789
+ []
+
+[97]
+Underfull \hbox (badness 10000) in paragraph at lines 9862--9866
+[]\EU1/DejaVuSans(0)/m/n/10 Clean up plane resources. This is only called at dr
+iver unload time through
+ []
+
+[98]
+Underfull \hbox (badness 10000) in paragraph at lines 9961--9966
+[]\EU1/DejaVuSans(0)/m/n/10 Atomic drivers which don’t subclass [][]\EU1/DejaVu
+SansMono(0)/m/it/10 struct drm_crtc_state[][] \EU1/DejaVuSans(0)/m/n/10 should 
+use
+ []
+
+[99] [100] [101] [102]
+Underfull \hbox (badness 10000) in paragraph at lines 10255--10262
+\EU1/DejaVuSans(0)/m/n/10 pointers, see [][]\EU1/DejaVuSansMono(0)/m/it/10 for_
+each_oldnew_crtc_in_state()[][]\EU1/DejaVuSans(0)/m/n/10 , [][]\EU1/DejaVuSansM
+ono(0)/m/it/10 for_each_old_crtc_in_state()[][] \EU1/DejaVuSans(0)/m/n/10 and
+ []
+
+[103] [104]
+Underfull \hbox (badness 5924) in paragraph at lines 10517--10519
+[]\EU1/DejaVuSans(0)/m/n/10 This should only be used by non-atomic legacy drive
+rs. For an atomic version look at
+ []
+
+[105]
+Underfull \hbox (badness 10000) in paragraph at lines 10619--10619
+[]\EU1/DejaVuSans(0)/m/n/10 const struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_crt
+c[][] \EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  crtc\EU1/DejaVuSan
+s(0)/m/n/10 , int\EU1/DejaVuSans(0)/m/it/10  x\EU1/DejaVuSans(0)/m/n/10 , int\E
+U1/DejaVuSans(0)/m/it/10  y\EU1/DejaVuSans(0)/m/n/10 , const struct
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10662--10667
+[]\EU1/DejaVuSans(0)/m/n/10 Framebuffers are tracked with [][]\EU1/DejaVuSansMo
+no(0)/m/it/10 struct drm_framebuffer[][]\EU1/DejaVuSans(0)/m/n/10 . They are pu
+blished using
+ []
+
+[106] [107] [108] [109]
+Underfull \hbox (badness 10000) in paragraph at lines 11027--11027
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_device *\EU1/DejaVuSans(0)/m/it/10  dev\
+EU1/DejaVuSans(0)/m/n/10 , struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_file[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11098--11101
+[]\EU1/DejaVuSans(0)/m/n/10 Cleanup framebuffer. This function is intended to b
+e used from the drivers
+ []
+
+[110] [111]
+Underfull \hbox (badness 10000) in paragraph at lines 11325--11325
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_device *\EU1/DejaVuSans(0)/m/it/10  dev\
+EU1/DejaVuSans(0)/m/n/10 , const struct
+ []
+
+[112] [113]
+Underfull \hbox (badness 10000) in paragraph at lines 11492--11496
+[]\EU1/DejaVuSans(0)/m/n/10 To support dumb objects drivers must implement the 
+[][]\EU1/DejaVuSansMono(0)/m/it/10 drm_driver.dumb_create[][] \EU1/DejaVuSans(0
+)/m/n/10 oper-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11492--11496
+\EU1/DejaVuSans(0)/m/n/10 ation. [][]\EU1/DejaVuSansMono(0)/m/it/10 drm_driver.
+dumb_destroy[][] \EU1/DejaVuSans(0)/m/n/10 defaults to [][]\EU1/DejaVuSansMono(
+0)/m/it/10 drm_gem_dumb_destroy()[][] \EU1/DejaVuSans(0)/m/n/10 if not set and
+ []
+
+[114]
+Underfull \hbox (badness 10000) in paragraph at lines 11564--11567
+[]\EU1/DejaVuSans(0)/m/n/10 Currently bound CRTC, NULL if disabled. Do not this
+ write directly, use
+ []
+
+[115]
+Underfull \hbox (badness 10000) in paragraph at lines 11708--11712
+[]\EU1/DejaVuSans(0)/m/n/10 Clean up plane resources. This is only called at dr
+iver unload time through
+ []
+
+[116]
+Underfull \hbox (badness 10000) in paragraph at lines 11741--11746
+[]\EU1/DejaVuSans(0)/m/n/10 Atomic drivers which don’t subclass [][]\EU1/DejaVu
+SansMono(0)/m/it/10 struct drm_plane_state[][] \EU1/DejaVuSans(0)/m/n/10 should
+ use
+ []
+
+[117] [118]
+Underfull \hbox (badness 10000) in paragraph at lines 11987--11990
+[]\EU1/DejaVuSans(0)/m/n/10 Temporary tracking of the old fb while a modeset is
+ ongoing. Used by
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12010--12017
+\EU1/DejaVuSans(0)/m/n/10 pointers, see [][]\EU1/DejaVuSansMono(0)/m/it/10 for_
+each_oldnew_plane_in_state()[][]\EU1/DejaVuSans(0)/m/n/10 , [][]\EU1/DejaVuSans
+Mono(0)/m/it/10 for_each_old_plane_in_state()[][] \EU1/DejaVuSans(0)/m/n/10 and
+
+ []
+
+[119]
+Underfull \hbox (badness 10000) in paragraph at lines 12145--12145
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_device *\EU1/DejaVuSans(0)/m/it/10  dev\
+EU1/DejaVuSans(0)/m/n/10 , struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_plane[][] 
+\EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  plane\EU1/DejaVuSans(0)/
+m/n/10 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12145--12145
+\EU1/DejaVuSans(0)/m/n/10 const uint32_t *\EU1/DejaVuSans(0)/m/it/10  formats\E
+U1/DejaVuSans(0)/m/n/10 , unsigned int\EU1/DejaVuSans(0)/m/it/10  format_count\
+EU1/DejaVuSans(0)/m/n/10 , const
+ []
+
+[120]
+Underfull \hbox (badness 10000) in paragraph at lines 12171--12174
+[]\EU1/DejaVuSans(0)/m/n/10 array of struct drm_format modifiers terminated by
+ []
+
+[121] [122] [123] [124] [125] [126] [127]
+Underfull \hbox (badness 10000) in paragraph at lines 12956--12956
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_device *\EU1/DejaVuSans(0)/m/it/10  dev\
+EU1/DejaVuSans(0)/m/n/10 , int\EU1/DejaVuSans(0)/m/it/10  hdisplay\EU1/DejaVuSa
+ns(0)/m/n/10 , int\EU1/DejaVuSans(0)/m/it/10  vdisplay\EU1/DejaVuSans(0)/m/n/10
+ ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12956--12956
+\EU1/DejaVuSans(0)/m/n/10 int\EU1/DejaVuSans(0)/m/it/10  vrefresh\EU1/DejaVuSan
+s(0)/m/n/10 , bool\EU1/DejaVuSans(0)/m/it/10  reduced\EU1/DejaVuSans(0)/m/n/10 
+, bool\EU1/DejaVuSans(0)/m/it/10  interlaced\EU1/DejaVuSans(0)/m/n/10 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13006--13006
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_device *\EU1/DejaVuSans(0)/m/it/10  dev\
+EU1/DejaVuSans(0)/m/n/10 , int\EU1/DejaVuSans(0)/m/it/10  hdisplay\EU1/DejaVuSa
+ns(0)/m/n/10 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13006--13006
+\EU1/DejaVuSans(0)/m/n/10 int\EU1/DejaVuSans(0)/m/it/10  vdisplay\EU1/DejaVuSan
+s(0)/m/n/10 , int\EU1/DejaVuSans(0)/m/it/10  vrefresh\EU1/DejaVuSans(0)/m/n/10 
+, bool\EU1/DejaVuSans(0)/m/it/10  interlaced\EU1/DejaVuSans(0)/m/n/10 ,
+ []
+
+[128]
+Underfull \hbox (badness 10000) in paragraph at lines 13059--13059
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_device *\EU1/DejaVuSans(0)/m/it/10  dev\
+EU1/DejaVuSans(0)/m/n/10 , int\EU1/DejaVuSans(0)/m/it/10  hdisplay\EU1/DejaVuSa
+ns(0)/m/n/10 , int\EU1/DejaVuSans(0)/m/it/10  vdisplay\EU1/DejaVuSans(0)/m/n/10
+ ,
+ []
+
+[129] [130]
+Underfull \hbox (badness 10000) in paragraph at lines 13368--13368
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_device *\EU1/DejaVuSans(0)/m/it/10  dev\
+EU1/DejaVuSans(0)/m/n/10 , const struct
+ []
+
+[131]
+Underfull \hbox (badness 10000) in paragraph at lines 13421--13421
+[]\EU1/DejaVuSans(0)/m/n/10 const struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_dis
+play_mode[][] \EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  mode1\EU1/
+DejaVuSans(0)/m/n/10 , const struct
+ []
+
+[132]
+Underfull \hbox (badness 10000) in paragraph at lines 13499--13499
+[]\EU1/DejaVuSans(0)/m/n/10 const struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_dis
+play_mode[][] \EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  mode\EU1/D
+ejaVuSans(0)/m/n/10 ,
+ []
+
+[133]
+Underfull \hbox (badness 10000) in paragraph at lines 13629--13629
+[]\EU1/DejaVuSans(0)/m/n/10 const char *\EU1/DejaVuSans(0)/m/it/10  mode_option
+\EU1/DejaVuSans(0)/m/n/10 , struct
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13629--13629
+[][]\EU1/DejaVuSans(0)/m/it/10 drm_connector[][] \EU1/DejaVuSans(0)/m/n/10 *\EU
+1/DejaVuSans(0)/m/it/10  connector\EU1/DejaVuSans(0)/m/n/10 , struct
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13690--13690
+[]\EU1/DejaVuSans(0)/m/n/10 const struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_dis
+play_info[][] \EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  display\EU
+1/DejaVuSans(0)/m/n/10 , const struct
+ []
+
+[134]
+Underfull \hbox (badness 10000) in paragraph at lines 13713--13713
+[]\EU1/DejaVuSans(0)/m/n/10 const struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_dis
+play_info[][] \EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  display\EU
+1/DejaVuSans(0)/m/n/10 , const struct
+ []
+
+
+Underfull \hbox (badness 6047) in paragraph at lines 13714--13715
+\EU1/DejaVuSans(0)/m/n/10 if a given videomode can be supported in YCBCR420 out
+put format also (along with
+ []
+
+[135]
+Underfull \hbox (badness 10000) in paragraph at lines 13877--13882
+[]\EU1/DejaVuSans(0)/m/n/10 bitmap of modes which can support ycbcr420 output o
+nly (not normal
+ []
+
+[136] [137]
+Underfull \hbox (badness 10000) in paragraph at lines 14033--14039
+[]\EU1/DejaVuSans(0)/m/n/10 Read only connector property for built-in panels, i
+ndicating the ori-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14033--14039
+\EU1/DejaVuSans(0)/m/n/10 entation of the panel vs the device’s casing. [][]\EU
+1/DejaVuSansMono(0)/m/it/10 drm_connector_init()[][] \EU1/DejaVuSans(0)/m/n/10 
+sets this to
+ []
+
+
+Underfull \hbox (badness 7238) in paragraph at lines 14033--14039
+\EU1/DejaVuSans(0)/m/n/10 DRM_MODE_PANEL_ORIENTATION_UNKNOWN. When not UNKNOWN 
+this gets used by the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14040--14045
+[]\EU1/DejaVuSans(0)/m/n/10 HDMI Color formats, selects between RGB and YCrCb m
+odes. Used
+ []
+
+[138] [139] [140]
+Underfull \hbox (badness 10000) in paragraph at lines 14365--14370
+[]\EU1/DejaVuSans(0)/m/n/10 Clean up connector resources. This is called at dri
+ver unload time through
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14379--14384
+[]\EU1/DejaVuSans(0)/m/n/10 Atomic drivers which don’t subclass [][]\EU1/DejaVu
+SansMono(0)/m/it/10 struct drm_connector_state[][] \EU1/DejaVuSans(0)/m/n/10 sh
+ould
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14379--14384
+\EU1/DejaVuSans(0)/m/n/10 use [][]\EU1/DejaVuSansMono(0)/m/it/10 drm_atomic_hel
+per_connector_duplicate_state()[][]\EU1/DejaVuSans(0)/m/n/10 . Drivers that sub
+-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14379--14384
+\EU1/DejaVuSans(0)/m/n/10 class the state structure to extend it with driver-pr
+ivate state should use
+ []
+
+[141] [142] [143]
+Underfull \hbox (badness 10000) in paragraph at lines 14598--14601
+[]\EU1/DejaVuSans(0)/m/n/10 Modes available on this connector (from \EU1/DejaVu
+SansMono(0)/m/n/10 fill_modes() \EU1/DejaVuSans(0)/m/n/10 + user). Protected by
+
+ []
+
+[144]
+Underfull \hbox (badness 10000) in paragraph at lines 14713--14721
+\EU1/DejaVuSans(0)/m/n/10 the [][]\EU1/DejaVuSansMono(0)/m/it/10 struct drm_ato
+mic_state[][] \EU1/DejaVuSans(0)/m/n/10 pointers, see [][]\EU1/DejaVuSansMono(0
+)/m/it/10 for_each_oldnew_connector_in_state()[][]\EU1/DejaVuSans(0)/m/n/10 ,
+ []
+
+[145] [146]
+Underfull \hbox (badness 10000) in paragraph at lines 14927--14933
+[]\EU1/DejaVuSans(0)/m/n/10 This iterator tracks state needed to be able to wal
+k the connector_list within
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14927--14933
+\EU1/DejaVuSans(0)/m/n/10 struct drm_mode_config. Only use together with [][]\E
+U1/DejaVuSansMono(0)/m/it/10 drm_connector_list_iter_begin()[][]\EU1/DejaVuSans
+(0)/m/n/10 ,
+ []
+
+[147] [148] [149]
+Underfull \hbox (badness 10000) in paragraph at lines 15286--15286
+[]\EU1/DejaVuSans(0)/m/n/10 struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_connector
+[][] \EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  connector\EU1/DejaV
+uSans(0)/m/n/10 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15359--15359
+[]\EU1/DejaVuSans(0)/m/n/10 struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_connector
+[][] \EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  connector\EU1/DejaV
+uSans(0)/m/n/10 , const char
+ []
+
+[150]
+Underfull \hbox (badness 10000) in paragraph at lines 15440--15440
+[]\EU1/DejaVuSans(0)/m/n/10 struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_connector
+[][] \EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  connector\EU1/DejaV
+uSans(0)/m/n/10 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15476--15476
+[]\EU1/DejaVuSans(0)/m/n/10 struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_connector
+[][] \EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  connector\EU1/DejaV
+uSans(0)/m/n/10 ,
+ []
+
+[151]
+Underfull \hbox (badness 10000) in paragraph at lines 15497--15499
+[]\EU1/DejaVuSans(0)/m/n/10 This function should only be called for built-in pa
+nels, after setting connector-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15500--15504
+[]\EU1/DejaVuSans(0)/m/n/10 This function will check for platform specific (e.g
+. DMI based) quirks
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15500--15504
+\EU1/DejaVuSans(0)/m/n/10 overriding display_info.panel_orientation first, then
+ if panel_orientation is not
+ []
+
+[152]
+Underfull \hbox (badness 6792) in paragraph at lines 15638--15642
+[]\EU1/DejaVuSans(0)/m/n/10 Clean up encoder resources. This is only called at 
+driver unload time through
+ []
+
+[153] [154]
+Underfull \hbox (badness 7291) in paragraph at lines 15837--15837
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_device *\EU1/DejaVuSans(0)/m/it/10  dev\
+EU1/DejaVuSans(0)/m/n/10 , struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_file[][] \
+EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  file_priv\EU1/DejaVuSans(
+0)/m/n/10 ,
+ []
+
+[155] [156] [157] [158]
+Underfull \hbox (badness 10000) in paragraph at lines 16236--16243
+[]\EU1/DejaVuSans(0)/m/n/10 This function is deprecated. It allocates a lock ac
+quisition context and stores it in
+ []
+
+[159]
+Underfull \hbox (badness 10000) in paragraph at lines 16368--16372
+[]\EU1/DejaVuSans(0)/m/n/10 This function returns 0 on success, or -ERESTARTSYS
+ if this context is initialized with
+ []
+
+[160] [161] [162] [163] [164]
+Underfull \hbox (badness 7238) in paragraph at lines 16871--16875
+[]\EU1/DejaVuSans(0)/m/n/10 This creates a new generic drm property which can t
+hen be attached to a drm object
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16871--16875
+\EU1/DejaVuSans(0)/m/n/10 with [][]\EU1/DejaVuSansMono(0)/m/it/10 drm_object_at
+tach_property()[][]\EU1/DejaVuSans(0)/m/n/10 . The returned property object mus
+t be freed with
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16882--16882
+\EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  name\EU1/DejaVuSans(0)/m
+/n/10 , const struct drm_prop_enum_list
+ []
+
+
+Underfull \hbox (badness 7238) in paragraph at lines 16909--16913
+[]\EU1/DejaVuSans(0)/m/n/10 This creates a new generic drm property which can t
+hen be attached to a drm object
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16909--16913
+\EU1/DejaVuSans(0)/m/n/10 with [][]\EU1/DejaVuSansMono(0)/m/it/10 drm_object_at
+tach_property()[][]\EU1/DejaVuSans(0)/m/n/10 . The returned property object mus
+t be freed with
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16923--16923
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_device *\EU1/DejaVuSans(0)/m/it/10  dev\
+EU1/DejaVuSans(0)/m/n/10 , int\EU1/DejaVuSans(0)/m/it/10  flags\EU1/DejaVuSans(
+0)/m/n/10 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16923--16923
+\EU1/DejaVuSans(0)/m/n/10 const char *\EU1/DejaVuSans(0)/m/it/10  name\EU1/Deja
+VuSans(0)/m/n/10 , const struct
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16923--16923
+\EU1/DejaVuSans(0)/m/n/10 drm_prop_enum_list *\EU1/DejaVuSans(0)/m/it/10  props
+\EU1/DejaVuSans(0)/m/n/10 ,
+ []
+
+[165]
+Underfull \hbox (badness 6691) in paragraph at lines 16953--16957
+[]\EU1/DejaVuSans(0)/m/n/10 This creates a new bitmask drm property which can t
+hen be attached to a drm object
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16953--16957
+\EU1/DejaVuSans(0)/m/n/10 with [][]\EU1/DejaVuSansMono(0)/m/it/10 drm_object_at
+tach_property()[][]\EU1/DejaVuSans(0)/m/n/10 . The returned property object mus
+t be freed with
+ []
+
+
+Underfull \hbox (badness 7238) in paragraph at lines 16994--16998
+[]\EU1/DejaVuSans(0)/m/n/10 This creates a new generic drm property which can t
+hen be attached to a drm object
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16994--16998
+\EU1/DejaVuSans(0)/m/n/10 with [][]\EU1/DejaVuSansMono(0)/m/it/10 drm_object_at
+tach_property()[][]\EU1/DejaVuSans(0)/m/n/10 . The returned property object mus
+t be freed with
+ []
+
+
+Underfull \hbox (badness 5756) in paragraph at lines 17008--17008
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_device *\EU1/DejaVuSans(0)/m/it/10  dev\
+EU1/DejaVuSans(0)/m/n/10 , int\EU1/DejaVuSans(0)/m/it/10  flags\EU1/DejaVuSans(
+0)/m/n/10 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17008--17008
+\EU1/DejaVuSans(0)/m/n/10 const char *\EU1/DejaVuSans(0)/m/it/10  name\EU1/Deja
+VuSans(0)/m/n/10 , int64_t\EU1/DejaVuSans(0)/m/it/10  min\EU1/DejaVuSans(0)/m/n
+/10 ,
+ []
+
+
+Underfull \hbox (badness 7238) in paragraph at lines 17035--17039
+[]\EU1/DejaVuSans(0)/m/n/10 This creates a new generic drm property which can t
+hen be attached to a drm object
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17035--17039
+\EU1/DejaVuSans(0)/m/n/10 with [][]\EU1/DejaVuSansMono(0)/m/it/10 drm_object_at
+tach_property()[][]\EU1/DejaVuSans(0)/m/n/10 . The returned property object mus
+t be freed with
+ []
+
+[166]
+Underfull \hbox (badness 7238) in paragraph at lines 17073--17077
+[]\EU1/DejaVuSans(0)/m/n/10 This creates a new generic drm property which can t
+hen be attached to a drm object
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17073--17077
+\EU1/DejaVuSans(0)/m/n/10 with [][]\EU1/DejaVuSansMono(0)/m/it/10 drm_object_at
+tach_property()[][]\EU1/DejaVuSans(0)/m/n/10 . The returned property object mus
+t be freed with
+ []
+
+
+Underfull \hbox (badness 7238) in paragraph at lines 17108--17112
+[]\EU1/DejaVuSans(0)/m/n/10 This creates a new generic drm property which can t
+hen be attached to a drm object
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17108--17112
+\EU1/DejaVuSans(0)/m/n/10 with [][]\EU1/DejaVuSansMono(0)/m/it/10 drm_object_at
+tach_property()[][]\EU1/DejaVuSans(0)/m/n/10 . The returned property object mus
+t be freed with
+ []
+
+[167] [168]
+Underfull \hbox (badness 10000) in paragraph at lines 17278--17278
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_device *\EU1/DejaVuSans(0)/m/it/10  dev\
+EU1/DejaVuSans(0)/m/n/10 , struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_property_b
+lob[][]
+ []
+
+
+Underfull \hbox (badness 7326) in paragraph at lines 17278--17278
+\EU1/DejaVuSans(0)/m/n/10 **\EU1/DejaVuSans(0)/m/it/10  replace\EU1/DejaVuSans(
+0)/m/n/10 , size_t\EU1/DejaVuSans(0)/m/it/10  length\EU1/DejaVuSans(0)/m/n/10 ,
+ const void *\EU1/DejaVuSans(0)/m/it/10  data\EU1/DejaVuSans(0)/m/n/10 , struct
+
+ []
+
+[169] [170]
+Underfull \hbox (badness 10000) in paragraph at lines 17520--17524
+[]\EU1/DejaVuSans(0)/m/n/10 Z position is set up with [][]\EU1/DejaVuSansMono(0
+)/m/it/10 drm_plane_create_zpos_immutable_property()[][] \EU1/DejaVuSans(0)/m/n
+/10 and
+ []
+
+[171]
+Underfull \hbox (badness 10000) in paragraph at lines 17613--17616
+[]\EU1/DejaVuSans(0)/m/n/10 DRM_MODE_ROTATE_90 |
+ []
+
+
+Underfull \hbox (badness 7030) in paragraph at lines 17650--17658
+[]\EU1/DejaVuSans(0)/m/n/10 This function initializes generic mutable zpos prop
+erty and enables support for it in drm
+ []
+
+[172] [173]
+Underfull \hbox (badness 10000) in paragraph at lines 17799--17804
+[]\EU1/DejaVuSans(0)/m/n/10 There is also support for a legacy gamma table, whi
+ch is set up by call-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17799--17804
+\EU1/DejaVuSans(0)/m/n/10 ing [][]\EU1/DejaVuSansMono(0)/m/it/10 drm_mode_crtc_
+set_gamma_size()[][]\EU1/DejaVuSans(0)/m/n/10 . Drivers which support both shou
+ld use
+ []
+
+[174]
+Underfull \hbox (badness 10000) in paragraph at lines 17862--17865
+[]\EU1/DejaVuSans(0)/m/n/10 Drivers should use [][]\EU1/DejaVuSansMono(0)/m/it/
+10 drm_atomic_helper_legacy_gamma_set()[][] \EU1/DejaVuSans(0)/m/n/10 to implem
+ent the legacy
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17931--17936
+\EU1/DejaVuSans(0)/m/n/10 Drivers which also support implicit fencing should se
+t the implicit fence using
+ []
+
+[175]
+Underfull \hbox (badness 10000) in paragraph at lines 17965--17967
+[]|\EU1/DejaVuSerif(0)/m/n/10 Owner Mod-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17969--17971
+[]|\EU1/DejaVuSerif(0)/m/n/10 Property
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17975--17977
+[]|\EU1/DejaVuSerif(0)/m/n/10 Object at-
+ []
+
+
+Overfull \hbox (51.64787pt too wide) in paragraph at lines 17977--17980
+[]|\EU1/DejaVuSerif(0)/m/n/10 Description/Restrictions| 
+ []
+
+
+Overfull \hbox (61.99434pt too wide) in alignment at lines 17963--17980
+ [] [] [] [] [] [] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17985--17987
+[]|\EU1/DejaVuSerif(0)/m/n/10 Owner Mod-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17989--17991
+[]|\EU1/DejaVuSerif(0)/m/n/10 Property
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17995--17997
+[]|\EU1/DejaVuSerif(0)/m/n/10 Object at-
+ []
+
+
+Overfull \hbox (51.64787pt too wide) in paragraph at lines 17997--18000
+[]|\EU1/DejaVuSerif(0)/m/n/10 Description/Restrictions| 
+ []
+
+
+Overfull \hbox (61.99434pt too wide) in alignment at lines 17980--18000
+ [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (61.99434pt too wide) in alignment at lines 18000--18003
+ [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (61.99434pt too wide) in alignment at lines 18003--18005
+ [] [] [] [] [] [] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18008--18009
+[]|\EU1/DejaVuSans(0)/m/n/10 “scaling
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18012--18013
+[]|\EU1/DejaVuSans(0)/m/n/10 { “None”,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18012--18013
+\EU1/DejaVuSans(0)/m/n/10 “Full”, “Cen-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18012--18013
+\EU1/DejaVuSans(0)/m/n/10 ter”, “Full
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18016--18018
+[]|\EU1/DejaVuSans(0)/m/n/10 Supported
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18016--18018
+\EU1/DejaVuSans(0)/m/n/10 gma500,
+ []
+
+
+Overfull \hbox (7.33635pt too wide) in paragraph at lines 18021--18022
+[]|\EU1/DejaVuSans(0)/m/n/10 “subconnector”| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18032--18033
+[]|\EU1/DejaVuSans(0)/m/n/10 “select sub-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18036--18037
+[]|\EU1/DejaVuSans(0)/m/n/10 { “Auto-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18036--18037
+\EU1/DejaVuSans(0)/m/n/10 D”, “DVI-A”
+ []
+
+
+Overfull \hbox (7.33635pt too wide) in paragraph at lines 18045--18046
+[]|\EU1/DejaVuSans(0)/m/n/10 “subconnector”| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18049--18050
+\EU1/DejaVuSans(0)/m/n/10 “Composite”,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18049--18050
+\EU1/DejaVuSans(0)/m/n/10 “SVIDEO”,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18049--18050
+\EU1/DejaVuSans(0)/m/n/10 “Com-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18049--18050
+\EU1/DejaVuSans(0)/m/n/10 ponent”,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18056--18057
+[]|\EU1/DejaVuSans(0)/m/n/10 “select sub-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18060--18061
+[]|\EU1/DejaVuSans(0)/m/n/10 { “Auto-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18060--18061
+\EU1/DejaVuSans(0)/m/n/10 matic”,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18060--18061
+\EU1/DejaVuSans(0)/m/n/10 “Composite”,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18060--18061
+\EU1/DejaVuSans(0)/m/n/10 “SVIDEO”,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18060--18061
+\EU1/DejaVuSans(0)/m/n/10 “Com-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18060--18061
+\EU1/DejaVuSans(0)/m/n/10 ponent”,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18071--18072
+[]|\EU1/DejaVuSans(0)/m/n/10 { “NTSC_M”,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18071--18072
+\EU1/DejaVuSans(0)/m/n/10 “NTSC_J”,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18071--18072
+\EU1/DejaVuSans(0)/m/n/10 “NTSC_443”,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18082--18083
+[]|\EU1/DejaVuSans(0)/m/n/10 Min=0,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18093--18094
+[]|\EU1/DejaVuSans(0)/m/n/10 Min=0,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18104--18105
+[]|\EU1/DejaVuSans(0)/m/n/10 Min=0,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18115--18116
+[]|\EU1/DejaVuSans(0)/m/n/10 Min=0,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18126--18127
+[]|\EU1/DejaVuSans(0)/m/n/10 Min=0,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18137--18138
+[]|\EU1/DejaVuSans(0)/m/n/10 Min=0,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18148--18149
+[]|\EU1/DejaVuSans(0)/m/n/10 Min=0,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18159--18160
+[]|\EU1/DejaVuSans(0)/m/n/10 Min=0,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18170--18171
+[]|\EU1/DejaVuSans(0)/m/n/10 Min=0,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18181--18182
+[]|\EU1/DejaVuSans(0)/m/n/10 Min=0,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18194--18195
+[]|\EU1/DejaVuSans(0)/m/n/10 Min=0,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18198--18200
+[]|\EU1/DejaVuSans(0)/m/n/10 property to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18198--18200
+\EU1/DejaVuSans(0)/m/n/10 suggest an
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18205--18206
+[]|\EU1/DejaVuSans(0)/m/n/10 Min=0,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18209--18211
+[]|\EU1/DejaVuSans(0)/m/n/10 property to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18209--18211
+\EU1/DejaVuSans(0)/m/n/10 suggest an
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18218--18219
+[]|\EU1/DejaVuSans(0)/m/n/10 { “None”,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18229--18230
+[]|\EU1/DejaVuSans(0)/m/n/10 “Broadcast
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18233--18234
+[]|\EU1/DejaVuSans(0)/m/n/10 { “Auto-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18233--18234
+\EU1/DejaVuSans(0)/m/n/10 “Limited
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18237--18239
+[]|\EU1/DejaVuSans(0)/m/n/10 When this
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18237--18239
+\EU1/DejaVuSans(0)/m/n/10 property is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18237--18239
+\EU1/DejaVuSans(0)/m/n/10 set to Lim-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18237--18239
+\EU1/DejaVuSans(0)/m/n/10 ited 16:235
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18237--18239
+\EU1/DejaVuSans(0)/m/n/10 and CTM is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18237--18239
+\EU1/DejaVuSans(0)/m/n/10 programmed
+ []
+
+
+Underfull \hbox (badness 8170) in paragraph at lines 18237--18239
+\EU1/DejaVuSans(0)/m/n/10 with the re-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18237--18239
+\EU1/DejaVuSans(0)/m/n/10 sult of the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18237--18239
+\EU1/DejaVuSans(0)/m/n/10 multiplication
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18237--18239
+\EU1/DejaVuSans(0)/m/n/10 of CTM by
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18237--18239
+\EU1/DejaVuSans(0)/m/n/10 the limited
+ []
+
+
+Underfull \hbox (badness 7081) in paragraph at lines 18237--18239
+\EU1/DejaVuSans(0)/m/n/10 range matrix
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18237--18239
+\EU1/DejaVuSans(0)/m/n/10 pixels nor-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18237--18239
+\EU1/DejaVuSans(0)/m/n/10 maly in the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18237--18239
+\EU1/DejaVuSans(0)/m/n/10 range 0..1.0
+ []
+
+
+Overfull \hbox (14.82658pt too wide) in paragraph at lines 18237--18239
+\EU1/DejaVuSans(0)/m/n/10 16/255..235/255.| 
+ []
+
+
+Overfull \hbox (61.99434pt too wide) in alignment at lines 18005--18239
+ [] [] [] [] [] [] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18257--18258
+[]|\EU1/DejaVuSans(0)/m/n/10 { “NTSC_M”,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18257--18258
+\EU1/DejaVuSans(0)/m/n/10 “NTSC_J”,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18257--18258
+\EU1/DejaVuSans(0)/m/n/10 “NTSC_443”,
+ []
+
+
+Overfull \hbox (1.59904pt too wide) in paragraph at lines 18275--18276
+[]|\EU1/DejaVuSans(0)/m/n/10 “right_margin”| 
+ []
+
+
+Overfull \hbox (14.81682pt too wide) in paragraph at lines 18297--18298
+[]|\EU1/DejaVuSans(0)/m/n/10 “bottom_margin”| 
+ []
+
+
+Overfull \hbox (46.184pt too wide) in paragraph at lines 18385--18386
+[]|\EU1/DejaVuSans(0)/m/n/10 “flicker_filter_adaptive”| 
+ []
+
+
+Overfull \hbox (15.17326pt too wide) in paragraph at lines 18396--18397
+[]|\EU1/DejaVuSans(0)/m/n/10 “flicker_filter_2d”| 
+ []
+
+
+Overfull \hbox (20.1635pt too wide) in paragraph at lines 18407--18408
+[]|\EU1/DejaVuSans(0)/m/n/10 “tv_chroma_filter”| 
+ []
+
+
+Overfull \hbox (7.434pt too wide) in paragraph at lines 18418--18419
+[]|\EU1/DejaVuSans(0)/m/n/10 “tv_luma_filter”| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18433--18434
+[]|\EU1/DejaVuSans(0)/m/n/10 Min=0,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18440--18441
+[]|\EU1/DejaVuSans(0)/m/n/10 SDVO-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18457--18458
+[]|\EU1/DejaVuSans(0)/m/n/10 “Broadcast
+ []
+
+
+Overfull \hbox (61.99434pt too wide) in alignment at lines 18239--18467
+ [] [] [] [] [] [] [] 
+ []
+
+[176]
+Underfull \hbox (badness 10000) in paragraph at lines 18468--18469
+[]|\EU1/DejaVuSans(0)/m/n/10 “Broadcast
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18472--18473
+[]|\EU1/DejaVuSans(0)/m/n/10 { “off”,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18487--18488
+[]|\EU1/DejaVuSans(0)/m/n/10 Min=0,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18500--18501
+[]|\EU1/DejaVuSans(0)/m/n/10 { “NTSC_M”,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18500--18501
+\EU1/DejaVuSans(0)/m/n/10 “NTSC_J”,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18500--18501
+\EU1/DejaVuSans(0)/m/n/10 “NTSC_443”,
+ []
+
+
+Overfull \hbox (1.59904pt too wide) in paragraph at lines 18518--18519
+[]|\EU1/DejaVuSans(0)/m/n/10 “right_margin”| 
+ []
+
+
+Overfull \hbox (14.81682pt too wide) in paragraph at lines 18540--18541
+[]|\EU1/DejaVuSans(0)/m/n/10 “bottom_margin”| 
+ []
+
+
+Overfull \hbox (46.184pt too wide) in paragraph at lines 18628--18629
+[]|\EU1/DejaVuSans(0)/m/n/10 “flicker_filter_adaptive”| 
+ []
+
+
+Overfull \hbox (15.17326pt too wide) in paragraph at lines 18639--18640
+[]|\EU1/DejaVuSans(0)/m/n/10 “flicker_filter_2d”| 
+ []
+
+
+Overfull \hbox (20.1635pt too wide) in paragraph at lines 18650--18651
+[]|\EU1/DejaVuSans(0)/m/n/10 “tv_chroma_filter”| 
+ []
+
+
+Overfull \hbox (7.434pt too wide) in paragraph at lines 18661--18662
+[]|\EU1/DejaVuSans(0)/m/n/10 “tv_luma_filter”| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18676--18677
+[]|\EU1/DejaVuSans(0)/m/n/10 Min=0,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18683--18684
+[]|\EU1/DejaVuSans(0)/m/n/10 SDVO-
+ []
+
+
+Overfull \hbox (61.99434pt too wide) in alignment at lines 18467--18695
+ [] [] [] [] [] [] [] 
+ []
+
+[177]
+Underfull \hbox (badness 10000) in paragraph at lines 18704--18705
+[]|\EU1/DejaVuSans(0)/m/n/10 { “Auto” ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18704--18705
+\EU1/DejaVuSans(0)/m/n/10 “CCIR601”,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18715--18716
+[]|\EU1/DejaVuSans(0)/m/n/10 { “Auto”,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18715--18716
+\EU1/DejaVuSans(0)/m/n/10 “Computer
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18715--18716
+\EU1/DejaVuSans(0)/m/n/10 system”,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18728--18729
+[]|\EU1/DejaVuSans(0)/m/n/10 Min=0,
+ []
+
+
+Overfull \hbox (4.3676pt too wide) in paragraph at lines 18735--18736
+[]|\EU1/DejaVuSans(0)/m/n/10 “colorkey_min”| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18739--18740
+[]|\EU1/DejaVuSans(0)/m/n/10 Min=0,
+ []
+
+
+Overfull \hbox (7.84416pt too wide) in paragraph at lines 18746--18747
+[]|\EU1/DejaVuSans(0)/m/n/10 “colorkey_max”| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18750--18751
+[]|\EU1/DejaVuSans(0)/m/n/10 Min=0,
+ []
+
+
+Overfull \hbox (0.88127pt too wide) in paragraph at lines 18757--18758
+[]|\EU1/DejaVuSans(0)/m/n/10 “colorkey_val”| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18761--18762
+[]|\EU1/DejaVuSans(0)/m/n/10 Min=0,
+ []
+
+
+Overfull \hbox (13.77678pt too wide) in paragraph at lines 18768--18769
+[]|\EU1/DejaVuSans(0)/m/n/10 “colorkey_alpha”| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18772--18773
+[]|\EU1/DejaVuSans(0)/m/n/10 Min=0,
+ []
+
+
+Overfull \hbox (14.41643pt too wide) in paragraph at lines 18779--18780
+[]|\EU1/DejaVuSans(0)/m/n/10 “colorkey_mode”| 
+ []
+
+
+Underfull \hbox (badness 6110) in paragraph at lines 18783--18784
+[]|\EU1/DejaVuSans(0)/m/n/10 { “disabled”,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18783--18784
+\EU1/DejaVuSans(0)/m/n/10 “Y compo-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18783--18784
+\EU1/DejaVuSans(0)/m/n/10 nent”, “U
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18783--18784
+\EU1/DejaVuSans(0)/m/n/10 component”
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18783--18784
+\EU1/DejaVuSans(0)/m/n/10 “R compo-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18783--18784
+\EU1/DejaVuSans(0)/m/n/10 nent”, “G
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18783--18784
+\EU1/DejaVuSans(0)/m/n/10 component”,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18783--18784
+\EU1/DejaVuSans(0)/m/n/10 “B compo-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18794--18795
+[]|\EU1/DejaVuSans(0)/m/n/10 Min=0,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18794--18795
+\EU1/DejaVuSans(0)/m/n/10 Max=256
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18805--18806
+[]|\EU1/DejaVuSans(0)/m/n/10 Min=0,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18816--18817
+[]|\EU1/DejaVuSans(0)/m/n/10 Min=0,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18831--18832
+[]|\EU1/DejaVuSans(0)/m/n/10 { “normal”,
+ []
+
+
+Overfull \hbox (5.23674pt too wide) in paragraph at lines 18838--18839
+[]|\EU1/DejaVuSans(0)/m/n/10 i2c/ch7006_drv| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18846--18847
+[]|\EU1/DejaVuSans(0)/m/n/10 Min=0,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18859--18860
+\EU1/DejaVuSans(0)/m/n/10 M”,”PAL-N”},
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18859--18860
+\EU1/DejaVuSans(0)/m/n/10 ”PAL-Nc” ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18859--18860
+\EU1/DejaVuSans(0)/m/n/10 “PAL-60”,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18859--18860
+\EU1/DejaVuSans(0)/m/n/10 “NTSC-M”,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18874--18875
+[]|\EU1/DejaVuSans(0)/m/n/10 Min=0,
+ []
+
+
+Overfull \hbox (3.29338pt too wide) in paragraph at lines 18874--18875
+\EU1/DejaVuSans(0)/m/n/10 Max=0x01ffffff| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18885--18886
+[]|\EU1/DejaVuSans(0)/m/n/10 Min=0,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18896--18897
+[]|\EU1/DejaVuSans(0)/m/n/10 Min=0,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18907--18908
+[]|\EU1/DejaVuSans(0)/m/n/10 Min=0,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18918--18919
+[]|\EU1/DejaVuSans(0)/m/n/10 Min=0,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18929--18930
+[]|\EU1/DejaVuSans(0)/m/n/10 Min=0,
+ []
+
+
+Overfull \hbox (61.99434pt too wide) in alignment at lines 18695--18935
+ [] [] [] [] [] [] [] 
+ []
+
+[178]
+Underfull \hbox (badness 10000) in paragraph at lines 18942--18943
+[]|\EU1/DejaVuSans(0)/m/n/10 Min=0,
+ []
+
+
+Overfull \hbox (3.29338pt too wide) in paragraph at lines 18942--18943
+\EU1/DejaVuSans(0)/m/n/10 Max=0x01ffffff| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18953--18954
+[]|\EU1/DejaVuSans(0)/m/n/10 Min=0,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18962--18963
+[]|\EU1/DejaVuSans(0)/m/n/10 “dithering
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18966--18967
+[]|\EU1/DejaVuSans(0)/m/n/10 { “auto”,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18973--18974
+[]|\EU1/DejaVuSans(0)/m/n/10 “dithering
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18977--18978
+[]|\EU1/DejaVuSans(0)/m/n/10 { “auto”,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18977--18978
+\EU1/DejaVuSans(0)/m/n/10 “off”, “on”,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18977--18978
+\EU1/DejaVuSans(0)/m/n/10 “static 2x2”,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18977--18978
+\EU1/DejaVuSans(0)/m/n/10 “dynamic
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18995--18996
+[]|\EU1/DejaVuSans(0)/m/n/10 “underscan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18999--19000
+[]|\EU1/DejaVuSans(0)/m/n/10 Min=0,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19006--19007
+[]|\EU1/DejaVuSans(0)/m/n/10 “underscan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19010--19011
+[]|\EU1/DejaVuSans(0)/m/n/10 Min=0,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19021--19022
+[]|\EU1/DejaVuSans(0)/m/n/10 Min=0,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19028--19029
+[]|\EU1/DejaVuSans(0)/m/n/10 “color vi-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19032--19033
+[]|\EU1/DejaVuSans(0)/m/n/10 Min=0,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19047--19048
+[]|\EU1/DejaVuSans(0)/m/n/10 Min=0,
+ []
+
+
+Overfull \hbox (50.71037pt too wide) in paragraph at lines 19058--19059
+[]|\EU1/DejaVuSans(0)/m/n/10 “hotplug_mode_update”| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19062--19063
+[]|\EU1/DejaVuSans(0)/m/n/10 Min=0,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19077--19078
+[]|\EU1/DejaVuSans(0)/m/n/10 Min=0,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19084--19085
+[]|\EU1/DejaVuSans(0)/m/n/10 DAC enable
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19086--19087
+[]|\EU1/DejaVuSans(0)/m/n/10 “load detec-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19090--19091
+[]|\EU1/DejaVuSans(0)/m/n/10 Min=0,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19103--19104
+[]|\EU1/DejaVuSans(0)/m/n/10 { “ntsc”,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19103--19104
+\EU1/DejaVuSans(0)/m/n/10 “pal”, “pal-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19103--19104
+\EU1/DejaVuSans(0)/m/n/10 “ntsc-j” ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19103--19104
+\EU1/DejaVuSans(0)/m/n/10 “scart-pal”,
+ []
+
+
+Underfull \hbox (badness 7308) in paragraph at lines 19110--19111
+[]|\EU1/DejaVuSans(0)/m/n/10 legacy TMDS
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19116--19117
+[]|\EU1/DejaVuSans(0)/m/n/10 { “driver”,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19137--19138
+[]|\EU1/DejaVuSans(0)/m/n/10 “underscan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19141--19142
+[]|\EU1/DejaVuSans(0)/m/n/10 Min=0,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19148--19149
+[]|\EU1/DejaVuSans(0)/m/n/10 “underscan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19152--19153
+[]|\EU1/DejaVuSans(0)/m/n/10 Min=0,
+ []
+
+
+Overfull \hbox (61.99434pt too wide) in alignment at lines 18935--19184
+ [] [] [] [] [] [] [] 
+ []
+
+[179] [180]
+Underfull \hbox (badness 10000) in paragraph at lines 19193--19194
+[]|\EU1/DejaVuSans(0)/m/n/10 Min=0,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19204--19205
+[]|\EU1/DejaVuSans(0)/m/n/10 Min=0,
+ []
+
+
+Overfull \hbox (3.29338pt too wide) in paragraph at lines 19204--19205
+\EU1/DejaVuSans(0)/m/n/10 Max=0x01ffffff| 
+ []
+
+
+Overfull \hbox (61.99434pt too wide) in alignment at lines 19184--19210
+ [] [] [] [] [] [] [] 
+ []
+
+[181] [182] [183]
+Underfull \hbox (badness 10000) in paragraph at lines 19496--19496
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_device *\EU1/DejaVuSans(0)/m/it/10  dev\
+EU1/DejaVuSans(0)/m/n/10 , unsigned int\EU1/DejaVuSans(0)/m/it/10  pipe\EU1/Dej
+aVuSans(0)/m/n/10 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19496--19496
+\EU1/DejaVuSans(0)/m/n/10 int *\EU1/DejaVuSans(0)/m/it/10  max_error\EU1/DejaVu
+Sans(0)/m/n/10 , ktime_t *\EU1/DejaVuSans(0)/m/it/10  vblank_time\EU1/DejaVuSan
+s(0)/m/n/10 ,
+ []
+
+[184] [185] [186] [187] [188]
+Chapter 5.
+[189
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 20032--20036
+[]\EU1/DejaVuSans(0)/m/n/10 This hook is used by the probe helpers to filter th
+e mode list in
+ []
+
+[190]
+Underfull \hbox (badness 6775) in paragraph at lines 20075--20081
+[]\EU1/DejaVuSans(0)/m/n/10 Atomic drivers which need to inspect and adjust mor
+e state should instead use the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20075--20081
+\EU1/DejaVuSans(0)/bx/n/10 atomic_check \EU1/DejaVuSans(0)/m/n/10 callback, but
+ note that they’re not perfectly equivalent: \EU1/DejaVuSans(0)/bx/n/10 mode_va
+lid
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20075--20081
+\EU1/DejaVuSans(0)/m/n/10 is called from [][]\EU1/DejaVuSansMono(0)/m/it/10 drm
+_atomic_helper_check_modeset()[][]\EU1/DejaVuSans(0)/m/n/10 , but \EU1/DejaVuSa
+ns(0)/bx/n/10 atomic_check \EU1/DejaVuSans(0)/m/n/10 is called from
+ []
+
+[191]
+Underfull \hbox (badness 10000) in paragraph at lines 20193--20199
+[]\EU1/DejaVuSans(0)/m/n/10 When using [][]\EU1/DejaVuSansMono(0)/m/it/10 drm_a
+tomic_helper_check_planes()[][] \EU1/DejaVuSans(0)/m/n/10 this hook is called a
+fter the
+ []
+
+[192] [193]
+Underfull \hbox (badness 10000) in paragraph at lines 20380--20384
+[]\EU1/DejaVuSans(0)/m/n/10 This hook is used by the probe helpers to filter th
+e mode list in
+ []
+
+[194] [195] [196]
+Underfull \hbox (badness 10000) in paragraph at lines 20605--20605
+[]\EU1/DejaVuSans(0)/m/n/10 struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_encoder[]
+[] \EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  encoder\EU1/DejaVuSan
+s(0)/m/n/10 , const struct
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20644--20648
+[]\EU1/DejaVuSans(0)/m/n/10 This function should fill in all modes currently va
+lid for the sink into the
+ []
+
+[197]
+Underfull \hbox (badness 10000) in paragraph at lines 20712--20722
+\EU1/DejaVuSans(0)/m/n/10 pared to [][]\EU1/DejaVuSansMono(0)/m/it/10 drm_encod
+er_helper_funcs.mode_valid[][]\EU1/DejaVuSans(0)/m/n/10 , [][]\EU1/DejaVuSansMo
+no(0)/m/it/10 drm_crtc_helper_funcs.mode_valid[][]
+ []
+
+
+Underfull \hbox (badness 6445) in paragraph at lines 20712--20722
+\EU1/DejaVuSans(0)/m/n/10 and [][]\EU1/DejaVuSansMono(0)/m/it/10 drm_bridge_fun
+cs.mode_valid[][]\EU1/DejaVuSans(0)/m/n/10 , which are also called by the atomi
+c helpers from
+ []
+
+[198]
+Underfull \hbox (badness 10000) in paragraph at lines 20820--20820
+[]\EU1/DejaVuSans(0)/m/n/10 struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_connector
+[][] \EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  connector\EU1/DejaV
+uSans(0)/m/n/10 , const struct
+ []
+
+[199]
+Underfull \hbox (badness 10000) in paragraph at lines 20881--20885
+[]\EU1/DejaVuSans(0)/m/n/10 0 on success or one of the following negative error
+ codes allowed by the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20948--20951
+[]\EU1/DejaVuSans(0)/m/n/10 This hook is also useful to disable planes in prepa
+ration of a modeset, by calling
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20948--20951
+[][]\EU1/DejaVuSansMono(0)/m/it/10 drm_atomic_helper_disable_planes_on_crtc()[]
+[] \EU1/DejaVuSans(0)/m/n/10 from the [][]\EU1/DejaVuSansMono(0)/m/it/10 drm_cr
+tc_helper_funcs.disable[][]
+ []
+
+[200]
+Underfull \hbox (badness 10000) in paragraph at lines 20986--20991
+[]\EU1/DejaVuSans(0)/m/n/10 Note that unlike [][]\EU1/DejaVuSansMono(0)/m/it/10
+ drm_plane_helper_funcs.atomic_update[][] \EU1/DejaVuSans(0)/m/n/10 this hook t
+akes the new
+ []
+
+
+Underfull \hbox (badness 7186) in paragraph at lines 21018--21018
+[]\EU1/DejaVuSans(0)/m/n/10 struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_plane[][]
+ \EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  plane\EU1/DejaVuSans(0)
+/m/n/10 , const struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_plane_helper_funcs[][
+]
+ []
+
+
+Underfull \hbox (badness 7907) in paragraph at lines 21052--21058
+[]\EU1/DejaVuSans(0)/m/n/10 This hook is used by the default \EU1/DejaVuSansMon
+o(0)/m/n/10 atomic_commit() \EU1/DejaVuSans(0)/m/n/10 hook implemented
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21052--21058
+\EU1/DejaVuSans(0)/m/n/10 in [][]\EU1/DejaVuSansMono(0)/m/it/10 drm_atomic_help
+er_commit()[][] \EU1/DejaVuSans(0)/m/n/10 together with the nonblocking commit 
+helpers (see
+ []
+
+[201]
+Underfull \hbox (badness 10000) in paragraph at lines 21068--21074
+[]\EU1/DejaVuSans(0)/m/n/10 After the atomic update is committed to the hardwar
+e this hook needs to call
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21068--21074
+[][]\EU1/DejaVuSansMono(0)/m/it/10 drm_atomic_helper_commit_hw_done()[][]\EU1/D
+ejaVuSans(0)/m/n/10 . Then wait for the upate to be executed
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21068--21074
+\EU1/DejaVuSans(0)/m/n/10 by the hardware, for example using [][]\EU1/DejaVuSan
+sMono(0)/m/it/10 drm_atomic_helper_wait_for_vblanks()[][] \EU1/DejaVuSans(0)/m/
+n/10 or
+ []
+
+[202] [203]
+Underfull \hbox (badness 10000) in paragraph at lines 21269--21269
+[]\EU1/DejaVuSans(0)/m/n/10 struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_plane_sta
+te[][] \EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  old_plane_state\E
+U1/DejaVuSans(0)/m/n/10 , struct
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21331--21333
+[][][]\EU1/DejaVuSansMono(0)/m/it/10 drm_encoder_helper_funcs.mode_valid[][]\EU
+1/DejaVuSans(0)/m/n/10 , [][]\EU1/DejaVuSansMono(0)/m/it/10 drm_bridge_funcs.mo
+de_valid[][] \EU1/DejaVuSans(0)/m/n/10 and
+ []
+
+[204]
+Underfull \hbox (badness 6204) in paragraph at lines 21338--21343
+\EU1/DejaVuSans(0)/m/n/10 function is only called when the encoder will be part
+ of a configured crtc, it must
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21349--21354
+[][][]\EU1/DejaVuSansMono(0)/m/it/10 drm_crtc_state.mode_changed[][] \EU1/DejaV
+uSans(0)/m/n/10 is set when the input mode is changed.
+ []
+
+[205]
+Underfull \hbox (badness 10000) in paragraph at lines 21475--21481
+[]\EU1/DejaVuSans(0)/m/n/10 This just wraps the two parts of the state checking
+ for planes and mode-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21475--21481
+\EU1/DejaVuSans(0)/m/n/10 set state in the default order: First it calls [][]\E
+U1/DejaVuSansMono(0)/m/it/10 drm_atomic_helper_check_modeset()[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21475--21481
+\EU1/DejaVuSans(0)/m/n/10 and then [][]\EU1/DejaVuSansMono(0)/m/it/10 drm_atomi
+c_helper_check_planes()[][]\EU1/DejaVuSans(0)/m/n/10 . The assumption is that t
+he
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21475--21481
+\EU1/DejaVuSans(0)/bx/n/10 drm_plane_helper_funcs.atomic_check \EU1/DejaVuSans(
+0)/m/n/10 and \EU1/DejaVuSans(0)/bx/n/10 drm_crtc_helper_funcs.atomic_check \EU
+1/DejaVuSans(0)/m/n/10 functions
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21488--21488
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_device *\EU1/DejaVuSans(0)/m/it/10  dev\
+EU1/DejaVuSans(0)/m/n/10 , struct
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21514--21520
+[]\EU1/DejaVuSans(0)/m/n/10 Since these updates are not synchronized with locki
+ngs, only code paths called from
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21522--21522
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_device *\EU1/DejaVuSans(0)/m/it/10  dev\
+EU1/DejaVuSans(0)/m/n/10 , struct
+ []
+
+[206]
+Underfull \hbox (badness 10000) in paragraph at lines 21543--21549
+[]\EU1/DejaVuSans(0)/m/n/10 For compatibility with legacy crtc helpers this sho
+uld be called before
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21551--21551
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_device *\EU1/DejaVuSans(0)/m/it/10  dev\
+EU1/DejaVuSans(0)/m/n/10 , struct
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21572--21578
+[]\EU1/DejaVuSans(0)/m/n/10 For compatibility with legacy crtc helpers this sho
+uld be called after
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21580--21580
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_device *\EU1/DejaVuSans(0)/m/it/10  dev\
+EU1/DejaVuSans(0)/m/n/10 , struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_atomic_sta
+te[][]
+ []
+
+[207]
+Underfull \hbox (badness 10000) in paragraph at lines 21642--21646
+[]\EU1/DejaVuSans(0)/m/n/10 Drivers using the nonblocking commit tracking suppo
+rt initialized by calling
+ []
+
+
+Underfull \hbox (badness 7740) in paragraph at lines 21642--21646
+[][]\EU1/DejaVuSansMono(0)/m/it/10 drm_atomic_helper_setup_commit()[][] \EU1/De
+jaVuSans(0)/m/n/10 should look at [][]\EU1/DejaVuSansMono(0)/m/it/10 drm_atomic
+_helper_wait_for_flip_done()[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21666--21672
+[]\EU1/DejaVuSans(0)/m/n/10 Helper to, after atomic commit, wait for page flips
+ on all effected crtcs (ie. before
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21666--21672
+\EU1/DejaVuSans(0)/m/n/10 cleaning up old framebuffers using [][]\EU1/DejaVuSan
+sMono(0)/m/it/10 drm_atomic_helper_cleanup_planes()[][]\EU1/DejaVuSans(0)/m/n/1
+0 ). Compared to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21673--21676
+[]\EU1/DejaVuSans(0)/m/n/10 This requires that drivers use the nonblocking comm
+it tracking support initialized using
+ []
+
+[208]
+Underfull \hbox (badness 10000) in paragraph at lines 21781--21781
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_device *\EU1/DejaVuSans(0)/m/it/10  dev\
+EU1/DejaVuSans(0)/m/n/10 , struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_atomic_sta
+te[][] \EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  state\EU1/DejaVuS
+ans(0)/m/n/10 ,
+ []
+
+
+Overfull \hbox (43.74649pt too wide) in paragraph at lines 21807--21810
+[]\EU1/DejaVuSans(0)/m/n/10 Committing the actual hardware state is done throug
+h the [][]\EU1/DejaVuSansMono(0)/m/it/10 drm_mode_config_helper_funcs.atomic_co
+mmit_tail[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21840--21846
+[]\EU1/DejaVuSans(0)/m/n/10 To be able to use this support drivers need to use 
+a few more helper functions.
+ []
+
+
+Overfull \hbox (3.26309pt too wide) in paragraph at lines 21847--21854
+[]\EU1/DejaVuSans(0)/m/n/10 Completion of the hardware commit step must be sign
+alled using [][]\EU1/DejaVuSansMono(0)/m/it/10 drm_atomic_helper_commit_hw_done
+()[][]\EU1/DejaVuSans(0)/m/n/10 .
+ []
+
+
+Overfull \hbox (0.66739pt too wide) in paragraph at lines 21855--21857
+[]\EU1/DejaVuSans(0)/m/n/10 At the very end, before cleaning up \EU1/DejaVuSans
+(0)/bx/n/10 state \EU1/DejaVuSans(0)/m/n/10 drivers must call [][]\EU1/DejaVuSa
+nsMono(0)/m/it/10 drm_atomic_helper_commit_cleanup_done()[][]\EU1/DejaVuSans(0)
+/m/n/10 . 
+ []
+
+[209]
+Underfull \hbox (badness 10000) in paragraph at lines 21864--21867
+[]\EU1/DejaVuSans(0)/m/n/10 By default there’s no need to clean up resources al
+located by this function explicitly:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21895--21898
+[]\EU1/DejaVuSans(0)/m/n/10 This is part of the atomic helper support for nonbl
+ocking commits, see
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21923--21926
+[]\EU1/DejaVuSans(0)/m/n/10 This is part of the atomic helper support for nonbl
+ocking commits, see
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21947--21950
+[]\EU1/DejaVuSans(0)/m/n/10 This is part of the atomic helper support for nonbl
+ocking commits, see
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21952--21952
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_device *\EU1/DejaVuSans(0)/m/it/10  dev\
+EU1/DejaVuSans(0)/m/n/10 , struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_atomic_sta
+te[][]
+ []
+
+[210]
+Underfull \hbox (badness 10000) in paragraph at lines 21981--21981
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_device *\EU1/DejaVuSans(0)/m/it/10  dev\
+EU1/DejaVuSans(0)/m/n/10 , struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_atomic_sta
+te[][]
+ []
+
+[211]
+Underfull \hbox (badness 10000) in paragraph at lines 22069--22069
+[]\EU1/DejaVuSans(0)/m/n/10 struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_crtc_stat
+e[][] \EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  old_crtc_state\EU1
+/DejaVuSans(0)/m/n/10 ,
+ []
+
+
+Overfull \hbox (3.59024pt too wide) in paragraph at lines 22095--22098
+[]\EU1/DejaVuSans(0)/m/n/10 It is a bug to call this function without having im
+plemented the [][]\EU1/DejaVuSansMono(0)/m/it/10 drm_plane_helper_funcs.atomic_
+disable[][]
+ []
+
+
+Underfull \hbox (badness 8019) in paragraph at lines 22100--22100
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_device *\EU1/DejaVuSans(0)/m/it/10  dev\
+EU1/DejaVuSans(0)/m/n/10 , struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_atomic_sta
+te[][]
+ []
+
+[212]
+Underfull \hbox (badness 10000) in paragraph at lines 22183--22183
+[]\EU1/DejaVuSans(0)/m/n/10 struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_plane[][]
+ \EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  plane\EU1/DejaVuSans(0)
+/m/n/10 , struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_crtc[][] \EU1/DejaVuSans(0)
+/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  crtc\EU1/DejaVuSans(0)/m/n/10 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22183--22183
+\EU1/DejaVuSans(0)/m/n/10 signed int\EU1/DejaVuSans(0)/m/it/10  crtc_w\EU1/Deja
+VuSans(0)/m/n/10 , unsigned int\EU1/DejaVuSans(0)/m/it/10  crtc_h\EU1/DejaVuSan
+s(0)/m/n/10 , uint32_t\EU1/DejaVuSans(0)/m/it/10  src_x\EU1/DejaVuSans(0)/m/n/1
+0 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22183--22183
+\EU1/DejaVuSans(0)/m/n/10 uint32_t\EU1/DejaVuSans(0)/m/it/10  src_y\EU1/DejaVuS
+ans(0)/m/n/10 , uint32_t\EU1/DejaVuSans(0)/m/it/10  src_w\EU1/DejaVuSans(0)/m/n
+/10 , uint32_t\EU1/DejaVuSans(0)/m/it/10  src_h\EU1/DejaVuSans(0)/m/n/10 , stru
+ct
+ []
+
+[213]
+Underfull \hbox (badness 10000) in paragraph at lines 22332--22336
+[]\EU1/DejaVuSans(0)/m/n/10 See also: [][]\EU1/DejaVuSansMono(0)/m/it/10 drm_at
+omic_helper_suspend()[][]\EU1/DejaVuSans(0)/m/n/10 , [][]\EU1/DejaVuSansMono(0)
+/m/it/10 drm_atomic_helper_resume()[][] \EU1/DejaVuSans(0)/m/n/10 and
+ []
+
+[214]
+Underfull \hbox (badness 10000) in paragraph at lines 22395--22399
+[]\EU1/DejaVuSans(0)/m/n/10 See also: [][]\EU1/DejaVuSansMono(0)/m/it/10 drm_at
+omic_helper_duplicate_state()[][]\EU1/DejaVuSans(0)/m/n/10 , [][]\EU1/DejaVuSan
+sMono(0)/m/it/10 drm_atomic_helper_disable_all()[][]\EU1/DejaVuSans(0)/m/n/10 ,
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22401--22401
+[]\EU1/DejaVuSans(0)/m/n/10 struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_atomic_st
+ate[][] \EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  state\EU1/DejaVu
+Sans(0)/m/n/10 , struct
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22464--22464
+[][]\EU1/DejaVuSans(0)/m/it/10 drm_pending_vblank_event[][] \EU1/DejaVuSans(0)/
+m/n/10 *\EU1/DejaVuSans(0)/m/it/10  event\EU1/DejaVuSans(0)/m/n/10 , uint32_t\E
+U1/DejaVuSans(0)/m/it/10  flags\EU1/DejaVuSans(0)/m/n/10 , struct
+ []
+
+[215]
+Underfull \hbox (badness 10000) in paragraph at lines 22503--22503
+[]\EU1/DejaVuSans(0)/m/n/10 struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_crtc[][] 
+\EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  crtc\EU1/DejaVuSans(0)/m
+/n/10 , struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_framebuffer[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22503--22503
+\EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  fb\EU1/DejaVuSans(0)/m/n
+/10 , struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_pending_vblank_event[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22503--22503
+\EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  event\EU1/DejaVuSans(0)/
+m/n/10 , uint32_t\EU1/DejaVuSans(0)/m/it/10  flags\EU1/DejaVuSans(0)/m/n/10 , u
+int32_t\EU1/DejaVuSans(0)/m/it/10  target\EU1/DejaVuSans(0)/m/n/10 , struct
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22533--22536
+[]\EU1/DejaVuSans(0)/m/n/10 Provides a default [][]\EU1/DejaVuSansMono(0)/m/it/
+10 drm_crtc_funcs.page_flip_target[][] \EU1/DejaVuSans(0)/m/n/10 implementation
+. Similar to
+ []
+
+[216]
+Underfull \hbox (badness 10000) in paragraph at lines 22648--22648
+[]\EU1/DejaVuSans(0)/m/n/10 struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_crtc[][] 
+\EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  crtc\EU1/DejaVuSans(0)/m
+/n/10 , struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_crtc_state[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22691--22691
+[]\EU1/DejaVuSans(0)/m/n/10 struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_plane[][]
+ \EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  plane\EU1/DejaVuSans(0)
+/m/n/10 , struct
+ []
+
+[217]
+Underfull \hbox (badness 10000) in paragraph at lines 22778--22778
+[]\EU1/DejaVuSans(0)/m/n/10 struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_connector
+[][] \EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  connector\EU1/DejaV
+uSans(0)/m/n/10 , struct
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22826--22826
+[]\EU1/DejaVuSans(0)/m/n/10 struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_connector
+[][] \EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  connector\EU1/DejaV
+uSans(0)/m/n/10 ,
+ []
+
+[218]
+Underfull \hbox (badness 10000) in paragraph at lines 22849--22849
+[]\EU1/DejaVuSans(0)/m/n/10 struct
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22849--22849
+[][]\EU1/DejaVuSans(0)/m/it/10 drm_connector[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22869--22869
+[][]\EU1/DejaVuSans(0)/m/it/10 drm_modeset_acquire_ctx[][]
+ []
+
+[219] [220]
+Underfull \hbox (badness 10000) in paragraph at lines 23141--23141
+[]\EU1/DejaVuSans(0)/m/n/10 struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_simple_di
+splay_pipe[][] \EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  pipe\EU1/
+DejaVuSans(0)/m/n/10 , struct
+ []
+
+[221]
+Underfull \hbox (badness 10000) in paragraph at lines 23162--23164
+[]\EU1/DejaVuSans(0)/m/n/10 Note that you probably want to initialize the pipe 
+by passing a NULL connector to
+ []
+
+
+Underfull \hbox (badness 5519) in paragraph at lines 23171--23171
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_device *\EU1/DejaVuSans(0)/m/it/10  dev\
+EU1/DejaVuSans(0)/m/n/10 , struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_simple_dis
+play_pipe[][]
+ []
+
+
+Underfull \hbox (badness 7814) in paragraph at lines 23230--23235
+[]\EU1/DejaVuSans(0)/m/n/10 Drivers that need to handle connector hotplugging (
+e.g. dp mst) can’t use the setup
+ []
+
+
+Underfull \hbox (badness 6825) in paragraph at lines 23236--23241
+\EU1/DejaVuSans(0)/m/n/10 dates to the output configuration by using [][]\EU1/D
+ejaVuSansMono(0)/m/it/10 drm_fb_helper_output_poll_changed()[][] \EU1/DejaVuSan
+s(0)/m/n/10 as their
+ []
+
+[222]
+Underfull \hbox (badness 10000) in paragraph at lines 23242--23244
+[]\EU1/DejaVuSans(0)/m/n/10 For suspend/resume consider using [][]\EU1/DejaVuSa
+nsMono(0)/m/it/10 drm_mode_config_helper_suspend()[][] \EU1/DejaVuSans(0)/m/n/1
+0 and
+ []
+
+[223] [224]
+Underfull \hbox (badness 10000) in paragraph at lines 23438--23441
+[]\EU1/DejaVuSans(0)/m/n/10 Array of per-connector information. Do not iterate 
+directly, but use
+ []
+
+[225]
+Underfull \hbox (badness 10000) in paragraph at lines 23541--23545
+[]\EU1/DejaVuSans(0)/m/n/10 This function is protected against concurrent conne
+ctor hotadds/removals using
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23646--23646
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_device *\EU1/DejaVuSans(0)/m/it/10  dev\
+EU1/DejaVuSans(0)/m/n/10 , struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_fb_helper[
+][] \EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  fb_helper\EU1/DejaVu
+Sans(0)/m/n/10 ,
+ []
+
+[226]
+Underfull \hbox (badness 6526) in paragraph at lines 23743--23746
+[]\EU1/DejaVuSans(0)/m/n/10 This cleans up all remaining resources associated w
+ith \EU1/DejaVuSans(0)/bx/n/10 fb_helper\EU1/DejaVuSans(0)/m/n/10 . Must be cal
+led after
+ []
+
+[227]
+Underfull \hbox (badness 10000) in paragraph at lines 23812--23815
+[]\EU1/DejaVuSans(0)/m/n/10 A copy of \EU1/DejaVuSansMono(0)/m/n/10 fb_ops \EU1
+/DejaVuSans(0)/m/n/10 is made and assigned to \EU1/DejaVuSansMono(0)/m/n/10 inf
+o->fbops\EU1/DejaVuSans(0)/m/n/10 . This is done because
+ []
+
+[228] [229]
+Underfull \hbox (badness 10000) in paragraph at lines 24028--24032
+[]\EU1/DejaVuSans(0)/m/n/10 A wrapper around fb_set_suspend implemented by fbde
+v core. Use
+ []
+
+[230]
+Underfull \hbox (badness 10000) in paragraph at lines 24195--24195
+[]\EU1/DejaVuSans(0)/m/n/10 struct fb_info *\EU1/DejaVuSans(0)/m/it/10  info\EU
+1/DejaVuSans(0)/m/n/10 , struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_fb_helper[][
+] \EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  fb_helper\EU1/DejaVuSa
+ns(0)/m/n/10 ,
+ []
+
+[231]
+Underfull \hbox (badness 10000) in paragraph at lines 24337--24340
+[]\EU1/DejaVuSans(0)/m/n/10 Preferred bits per pixel for the device. \EU1/DejaV
+uSans(0)/bx/n/10 dev\EU1/DejaVuSans(0)/m/n/10 -
+ []
+
+[232]
+Underfull \hbox (badness 10000) in paragraph at lines 24384--24389
+[]\EU1/DejaVuSans(0)/m/n/10 In order to support device removal/unplug while fil
+e handles are still open,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24384--24389
+[][]\EU1/DejaVuSansMono(0)/m/it/10 drm_fb_helper_unregister_fbi()[][] \EU1/Deja
+VuSans(0)/m/n/10 should be called on device removal and
+ []
+
+
+Underfull \hbox (badness 6380) in paragraph at lines 24439--24444
+[][]\EU1/DejaVuSansMono(0)/m/it/10 drm_fb_cma_fbdev_fini()[][] \EU1/DejaVuSans(
+0)/m/n/10 tears it down. If the [][]\EU1/DejaVuSansMono(0)/m/it/10 drm_framebuf
+fer_funcs.dirty[][] \EU1/DejaVuSans(0)/m/n/10 callback is
+ []
+
+[233]
+Underfull \hbox (badness 10000) in paragraph at lines 24501--24501
+[]\EU1/DejaVuSans(0)/m/n/10 struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_framebuff
+er[][] \EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  fb\EU1/DejaVuSans
+(0)/m/n/10 , struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_plane_state[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24527--24527
+\EU1/DejaVuSans(0)/m/n/10 unsigned int\EU1/DejaVuSans(0)/m/it/10  max_conn_coun
+t\EU1/DejaVuSans(0)/m/n/10 , const struct
+ []
+
+[234]
+Underfull \hbox (badness 10000) in paragraph at lines 24538--24541
+[]\EU1/DejaVuSans(0)/m/n/10 Preferred bits per pixel for the device. \EU1/DejaV
+uSans(0)/bx/n/10 dev\EU1/DejaVuSans(0)/m/n/10 -
+ []
+
+
+Underfull \hbox (badness 7504) in paragraph at lines 24558--24558
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_device *\EU1/DejaVuSans(0)/m/it/10  dev\
+EU1/DejaVuSans(0)/m/n/10 , unsigned int\EU1/DejaVuSans(0)/m/it/10  preferred_bp
+p\EU1/DejaVuSans(0)/m/n/10 , unsigned
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24569--24572
+[]\EU1/DejaVuSans(0)/m/n/10 Preferred bits per pixel for the device. \EU1/DejaV
+uSans(0)/bx/n/10 dev\EU1/DejaVuSans(0)/m/n/10 -
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24600--24600
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_device *\EU1/DejaVuSans(0)/m/it/10  dev\
+EU1/DejaVuSans(0)/m/n/10 , un-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24600--24600
+\EU1/DejaVuSans(0)/m/n/10 signed int\EU1/DejaVuSans(0)/m/it/10  preferred_bpp\E
+U1/DejaVuSans(0)/m/n/10 , unsigned
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24600--24600
+\EU1/DejaVuSans(0)/m/n/10 int\EU1/DejaVuSans(0)/m/it/10  max_conn_count\EU1/Dej
+aVuSans(0)/m/n/10 , const struct
+ []
+
+[235] [236]
+Underfull \hbox (badness 10000) in paragraph at lines 24849--24853
+[]\EU1/DejaVuSans(0)/m/n/10 This hook is used by the probe helpers to filter th
+e mode list in
+ []
+
+[237] [238] [239]
+Underfull \hbox (badness 10000) in paragraph at lines 25054--25054
+[]\EU1/DejaVuSans(0)/m/n/10 struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_encoder[]
+[] \EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  encoder\EU1/DejaVuSan
+s(0)/m/n/10 , struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_bridge[][] \EU1/DejaVuS
+ans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  bridge\EU1/DejaVuSans(0)/m/n/10 , st
+ruct
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25123--25123
+[]\EU1/DejaVuSans(0)/m/n/10 struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_bridge[][
+] \EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  bridge\EU1/DejaVuSans(
+0)/m/n/10 , const struct
+ []
+
+[240] [241] [242] [243] [244] [245]
+Underfull \hbox (badness 10000) in paragraph at lines 25766--25768
+[]\EU1/DejaVuSans(0)/m/n/10 A DRM_MODE_PANEL_ORIENTATION_* value if there is a 
+quirk for this system, or
+ []
+
+[246] [247] [248] [249] [250] [251] [252] [253] [254] [255] [256] [257]
+Overfull \hbox (1.52676pt too wide) in paragraph at lines 27111--27114
+[]\EU1/DejaVuSans(0)/m/n/10 protects \EU1/DejaVuSans(0)/bx/n/10 tx_msg_downq\EU
+1/DejaVuSans(0)/m/n/10 , the [][]\EU1/DejaVuSansMono(0)/m/it/10 drm_dp_mst_bran
+ch.txslost[][] \EU1/DejaVuSans(0)/m/n/10 and \EU1/DejaVuSansMono(0)/m/n/10 drm_
+dp_sideband_msg_tx.state
+ []
+
+[258] [259]
+Underfull \hbox (badness 10000) in paragraph at lines 27334--27334
+[]\EU1/DejaVuSans(0)/m/n/10 struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_dp_mst_to
+pology_mgr[][] \EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  mgr\EU1/D
+ejaVuSans(0)/m/n/10 , struct
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27356--27356
+[]\EU1/DejaVuSans(0)/m/n/10 struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_connector
+[][] \EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  connector\EU1/DejaV
+uSans(0)/m/n/10 , struct
+ []
+
+
+Underfull \hbox (badness 6559) in paragraph at lines 27356--27356
+[][]\EU1/DejaVuSans(0)/m/it/10 drm_dp_mst_topology_mgr[][] \EU1/DejaVuSans(0)/m
+/n/10 *\EU1/DejaVuSans(0)/m/it/10  mgr\EU1/DejaVuSans(0)/m/n/10 , struct [][]\E
+U1/DejaVuSans(0)/m/it/10 drm_dp_mst_port[][]
+ []
+
+[260]
+Underfull \hbox (badness 10000) in paragraph at lines 27401--27401
+[]\EU1/DejaVuSans(0)/m/n/10 struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_atomic_st
+ate[][] \EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  state\EU1/DejaVu
+Sans(0)/m/n/10 , struct
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27429--27429
+[]\EU1/DejaVuSans(0)/m/n/10 struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_atomic_st
+ate[][] \EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  state\EU1/DejaVu
+Sans(0)/m/n/10 , struct
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27479--27479
+[]\EU1/DejaVuSans(0)/m/n/10 struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_dp_mst_to
+pology_mgr[][] \EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  mgr\EU1/D
+ejaVuSans(0)/m/n/10 , struct
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27501--27501
+[]\EU1/DejaVuSans(0)/m/n/10 struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_dp_mst_to
+pology_mgr[][] \EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  mgr\EU1/D
+ejaVuSans(0)/m/n/10 , struct
+ []
+
+[261]
+Underfull \hbox (badness 10000) in paragraph at lines 27580--27580
+[]\EU1/DejaVuSans(0)/m/n/10 struct
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27580--27580
+[][]\EU1/DejaVuSans(0)/m/it/10 drm_atomic_state[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27580--27580
+\EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  state\EU1/DejaVuSans(0)/
+m/n/10 , struct
+ []
+
+
+Overfull \hbox (24.73773pt too wide) in paragraph at lines 27580--27580
+[][]\EU1/DejaVuSans(0)/m/it/10 drm_dp_mst_topology_mgr[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27596--27600
+[]\EU1/DejaVuSans(0)/m/n/10 This function wraps \EU1/DejaVuSansMono(0)/m/n/10 d
+rm_atomic_get_priv_obj_state() \EU1/DejaVuSans(0)/m/n/10 passing in the MST ato
+mic state
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27607--27607
+[]\EU1/DejaVuSans(0)/m/n/10 struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_dp_mst_to
+pology_mgr[][] \EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  mgr\EU1/D
+ejaVuSans(0)/m/n/10 , struct
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27607--27607
+\EU1/DejaVuSans(0)/m/n/10 drm_device *\EU1/DejaVuSans(0)/m/it/10  dev\EU1/DejaV
+uSans(0)/m/n/10 , struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_dp_aux[][] \EU1/Dej
+aVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  aux\EU1/DejaVuSans(0)/m/n/10 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27607--27607
+\EU1/DejaVuSans(0)/m/n/10 int\EU1/DejaVuSans(0)/m/it/10  max_dpcd_transaction_b
+ytes\EU1/DejaVuSans(0)/m/n/10 , int\EU1/DejaVuSans(0)/m/it/10  max_payloads\EU1
+/DejaVuSans(0)/m/n/10 ,
+ []
+
+[262] [263] [264] [265] [266] [267]
+Underfull \hbox (badness 10000) in paragraph at lines 28227--28227
+[]\EU1/DejaVuSans(0)/m/n/10 struct [][]\EU1/DejaVuSans(0)/m/it/10 mipi_dsi_devi
+ce[][] \EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  dsi\EU1/DejaVuSan
+s(0)/m/n/10 , const void *\EU1/DejaVuSans(0)/m/it/10  params\EU1/DejaVuSans(0)/
+m/n/10 ,
+ []
+
+[268] [269] [270] [271]
+Underfull \hbox (badness 10000) in paragraph at lines 28808--28808
+[]\EU1/DejaVuSans(0)/m/n/10 struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_connector
+[][] \EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  connector\EU1/DejaV
+uSans(0)/m/n/10 ,
+ []
+
+[272]
+Underfull \hbox (badness 10000) in paragraph at lines 28887--28891
+[]\EU1/DejaVuSans(0)/m/n/10 the optional [][]\EU1/DejaVuSansMono(0)/m/it/10 drm
+_crtc_helper_funcs.mode_valid[][]\EU1/DejaVuSans(0)/m/n/10 , [][]\EU1/DejaVuSan
+sMono(0)/m/it/10 drm_bridge_funcs.mode_valid[][] \EU1/DejaVuSans(0)/m/n/10 and
+ []
+
+[273] [274] [275] [276]
+Underfull \hbox (badness 10000) in paragraph at lines 29293--29295
+[]\EU1/DejaVuSans(0)/m/n/10 EDID block
+ []
+
+[277] [278]
+Underfull \hbox (badness 7759) in paragraph at lines 29633--29633
+[]\EU1/DejaVuSans(0)/m/n/10 const struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_dis
+play_mode[][]
+ []
+
+[279]
+Underfull \hbox (badness 10000) in paragraph at lines 29741--29741
+[]\EU1/DejaVuSans(0)/m/n/10 struct hdmi_avi_infoframe *\EU1/DejaVuSans(0)/m/it/
+10  frame\EU1/DejaVuSans(0)/m/n/10 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29741--29741
+\EU1/DejaVuSans(0)/m/n/10 const struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_displ
+ay_mode[][] \EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  mode\EU1/Dej
+aVuSans(0)/m/n/10 ,
+ []
+
+[280]
+Underfull \hbox (badness 10000) in paragraph at lines 29766--29766
+[]\EU1/DejaVuSans(0)/m/n/10 struct hdmi_avi_infoframe *\EU1/DejaVuSans(0)/m/it/
+10  frame\EU1/DejaVuSans(0)/m/n/10 , const
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29766--29766
+\EU1/DejaVuSans(0)/m/n/10 struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_display_mod
+e[][] \EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  mode\EU1/DejaVuSan
+s(0)/m/n/10 , enum
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29766--29766
+\EU1/DejaVuSans(0)/m/n/10 hdmi_quantization_range\EU1/DejaVuSans(0)/m/it/10  rg
+b_quant_range\EU1/DejaVuSans(0)/m/n/10 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29766--29766
+\EU1/DejaVuSans(0)/m/n/10 bool\EU1/DejaVuSans(0)/m/it/10  rgb_quant_range_selec
+table\EU1/DejaVuSans(0)/m/n/10 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29799--29799
+[]\EU1/DejaVuSans(0)/m/n/10 struct hdmi_vendor_infoframe *\EU1/DejaVuSans(0)/m/
+it/10  frame\EU1/DejaVuSans(0)/m/n/10 ,
+ []
+
+[281] [282] [283] [284] [285] [286] [287] [288] [289]
+Underfull \hbox (badness 10000) in paragraph at lines 30802--30802
+[]\EU1/DejaVuSans(0)/m/n/10 struct hdmi_audio_infoframe *\EU1/DejaVuSans(0)/m/i
+t/10  frame\EU1/DejaVuSans(0)/m/n/10 , void *\EU1/DejaVuSans(0)/m/it/10  buffer
+\EU1/DejaVuSans(0)/m/n/10 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30852--30852
+[]\EU1/DejaVuSans(0)/m/n/10 struct hdmi_vendor_infoframe *\EU1/DejaVuSans(0)/m/
+it/10  frame\EU1/DejaVuSans(0)/m/n/10 , void *\EU1/DejaVuSans(0)/m/it/10  buffe
+r\EU1/DejaVuSans(0)/m/n/10 ,
+ []
+
+[290] [291] [292] [293] [294]
+Underfull \hbox (badness 10000) in paragraph at lines 31410--31410
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_device *\EU1/DejaVuSans(0)/m/it/10  dev\
+EU1/DejaVuSans(0)/m/n/10 , struct
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31410--31410
+[][]\EU1/DejaVuSans(0)/m/it/10 drm_file[][] \EU1/DejaVuSans(0)/m/n/10 *\EU1/Dej
+aVuSans(0)/m/it/10  file\EU1/DejaVuSans(0)/m/n/10 , const struct
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31410--31410
+\EU1/DejaVuSans(0)/m/n/10 drm_mode_fb_cmd2 *\EU1/DejaVuSans(0)/m/it/10  mode_cm
+d\EU1/DejaVuSans(0)/m/n/10 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31410--31410
+\EU1/DejaVuSans(0)/m/n/10 const struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_frame
+buffer_funcs[][]
+ []
+
+[295]
+Underfull \hbox (badness 10000) in paragraph at lines 31514--31514
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_device *\EU1/DejaVuSans(0)/m/it/10  dev\
+EU1/DejaVuSans(0)/m/n/10 , struct
+ []
+
+[296]
+Underfull \hbox (badness 10000) in paragraph at lines 31580--31580
+[][]\EU1/DejaVuSans(0)/m/it/10 drm_framebuffer[][] \EU1/DejaVuSans(0)/m/n/10 *\
+EU1/DejaVuSans(0)/m/it/10  fb\EU1/DejaVuSans(0)/m/n/10 , struct [][]\EU1/DejaVu
+Sans(0)/m/it/10 drm_rect[][] \EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it
+/10  src\EU1/DejaVuSans(0)/m/n/10 , struct
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31643--31643
+[]\EU1/DejaVuSans(0)/m/n/10 struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_plane[][]
+ \EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  plane\EU1/DejaVuSans(0)
+/m/n/10 , struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_crtc[][] \EU1/DejaVuSans(0)
+/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  crtc\EU1/DejaVuSans(0)/m/n/10 , struct
+ []
+
+[297]
+Underfull \hbox (badness 6445) in paragraph at lines 31725--31725
+[]\EU1/DejaVuSans(0)/m/n/10 struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_plane[][]
+ \EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  plane\EU1/DejaVuSans(0)
+/m/n/10 , struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_modeset_acquire_ctx[][]
+ []
+
+[298]
+Underfull \hbox (badness 10000) in paragraph at lines 31783--31783
+[]\EU1/DejaVuSans(0)/m/n/10 struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_plane[][]
+ \EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  plane\EU1/DejaVuSans(0)
+/m/n/10 , struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_crtc[][] \EU1/DejaVuSans(0)
+/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  crtc\EU1/DejaVuSans(0)/m/n/10 , struct
+ []
+
+[299]
+Underfull \hbox (badness 10000) in paragraph at lines 31868--31872
+\EU1/DejaVuSans(0)/m/n/10 The CRTC modeset helper library provides a default se
+t_config implementation in
+ []
+
+
+Underfull \hbox (badness 7221) in paragraph at lines 31868--31872
+[][]\EU1/DejaVuSansMono(0)/m/it/10 drm_crtc_helper_set_config()[][]\EU1/DejaVuS
+ans(0)/m/n/10 . Plus a few other convenience functions using the same
+ []
+
+[300]
+Underfull \hbox (badness 10000) in paragraph at lines 31970--31977
+[]\EU1/DejaVuSans(0)/m/n/10 This function is part of the legacy modeset helper 
+library and will cause major con-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31970--31977
+\EU1/DejaVuSans(0)/m/n/10 fusion with atomic drivers. This is because atomic he
+lpers guarantee to never call -
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32043--32045
+[]\EU1/DejaVuSans(0)/m/n/10 It first tries to locate the best encoder for each 
+connector by calling the connector
+ []
+
+
+Underfull \hbox (badness 6708) in paragraph at lines 32053--32056
+[]\EU1/DejaVuSans(0)/m/n/10 If the adjusted mode is identical to the current mo
+de but changes to the frame buffer
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32053--32056
+\EU1/DejaVuSans(0)/m/n/10 need to be applied, the [][]\EU1/DejaVuSansMono(0)/m/
+it/10 drm_crtc_helper_set_config()[][] \EU1/DejaVuSans(0)/m/n/10 function will 
+call the CRTC
+ []
+
+[301]
+Underfull \hbox (badness 10000) in paragraph at lines 32151--32151
+[]\EU1/DejaVuSans(0)/m/n/10 struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_crtc[][] 
+\EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  crtc\EU1/DejaVuSans(0)/m
+/n/10 , struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_display_mode[][] \EU1/DejaVuS
+ans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  mode\EU1/DejaVuSans(0)/m/n/10 ,
+ []
+
+[302] [303] [304
+
+]
+Chapter 6.
+[305] [306] [307] [308] [309] [310] [311] [312] [313]
+Underfull \hbox (badness 6412) in paragraph at lines 33151--33156
+[]\EU1/DejaVuSans(0)/m/n/10 On the driver side the implementation effort is min
+imal, drivers only need to implement
+ []
+
+[314] [315]
+Underfull \hbox (badness 10000) in paragraph at lines 33306--33311
+\EU1/DejaVuSans(0)/m/n/10 in case of hot-plugged connectors. Unregistration is 
+also automatically handled by
+ []
+
+[316]
+Chapter 7.
+
+Underfull \hbox (badness 10000) in paragraph at lines 33425--33425
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_i915_private *\EU1/DejaVuSans(0)/m/it/10
+  dev_priv\EU1/DejaVuSans(0)/m/n/10 , enum in-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 33453--33453
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_i915_private *\EU1/DejaVuSans(0)/m/it/10
+  dev_priv\EU1/DejaVuSans(0)/m/n/10 , enum in-
+ []
+
+[317
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 33511--33511
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_i915_private *\EU1/DejaVuSans(0)/m/it/10
+  dev_priv\EU1/DejaVuSans(0)/m/n/10 , enum in-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 33538--33538
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_i915_private *\EU1/DejaVuSans(0)/m/it/10
+  dev_priv\EU1/DejaVuSans(0)/m/n/10 , enum in-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 33565--33565
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_i915_private *\EU1/DejaVuSans(0)/m/it/10
+  dev_priv\EU1/DejaVuSans(0)/m/n/10 , enum in-
+ []
+
+[318] [319]
+Underfull \hbox (badness 6316) in paragraph at lines 33717--33720
+[]\EU1/DejaVuSans(0)/m/n/10 Any runtime pm reference obtained by this function 
+must have a symmetric call to [][]\EU1/DejaVuSansMono(0)/m/it/10 in-
+ []
+
+
+Underfull \hbox (badness 6316) in paragraph at lines 33740--33743
+[]\EU1/DejaVuSans(0)/m/n/10 Any runtime pm reference obtained by this function 
+must have a symmetric call to [][]\EU1/DejaVuSansMono(0)/m/it/10 in-
+ []
+
+
+Underfull \hbox (badness 6316) in paragraph at lines 33770--33773
+[]\EU1/DejaVuSans(0)/m/n/10 Any runtime pm reference obtained by this function 
+must have a symmetric call to [][]\EU1/DejaVuSansMono(0)/m/it/10 in-
+ []
+
+[320]
+Underfull \hbox (badness 10000) in paragraph at lines 33819--33819
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_i915_private *\EU1/DejaVuSans(0)/m/it/10
+  dev_priv\EU1/DejaVuSans(0)/m/n/10 , enum force-
+ []
+
+
+Underfull \hbox (badness 5022) in paragraph at lines 33888--33888
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_i915_private *\EU1/DejaVuSans(0)/m/it/10
+  dev_priv\EU1/DejaVuSans(0)/m/n/10 , enum force-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 33911--33911
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_i915_private *\EU1/DejaVuSans(0)/m/it/10
+  dev_priv\EU1/DejaVuSans(0)/m/n/10 , enum force-
+ []
+
+[321]
+Underfull \hbox (badness 10000) in paragraph at lines 33929--33932
+[]\EU1/DejaVuSans(0)/m/n/10 This function drops the device-level forcewakes for
+ specified domains obtained by [][]\EU1/DejaVuSansMono(0)/m/it/10 in-
+ []
+
+
+Underfull \hbox (badness 5022) in paragraph at lines 33934--33934
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_i915_private *\EU1/DejaVuSans(0)/m/it/10
+  dev_priv\EU1/DejaVuSans(0)/m/n/10 , enum force-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 33987--33987
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_i915_private *\EU1/DejaVuSans(0)/m/it/10
+  dev_priv\EU1/DejaVuSans(0)/m/n/10 , i915_reg_t\EU1/DejaVuSans(0)/m/it/10  reg
+\EU1/DejaVuSans(0)/m/n/10 ,
+ []
+
+
+Underfull \hbox (badness 5374) in paragraph at lines 34027--34030
+[]\EU1/DejaVuSans(0)/m/n/10 Otherwise, the wait will timeout after \EU1/DejaVuS
+ans(0)/bx/n/10 slow_timeout_ms \EU1/DejaVuSans(0)/m/n/10 milliseconds. For atom
+ic context
+ []
+
+[322]
+Underfull \hbox (badness 6792) in paragraph at lines 34040--34040
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_i915_private *\EU1/DejaVuSans(0)/m/it/10
+  dev_priv\EU1/DejaVuSans(0)/m/n/10 , i915_reg_t\EU1/DejaVuSans(0)/m/it/10  reg
+\EU1/DejaVuSans(0)/m/n/10 , u32\EU1/DejaVuSans(0)/m/it/10  mask\EU1/DejaVuSans(
+0)/m/n/10 ,
+ []
+
+[323] [324] [325] [326]
+Underfull \hbox (badness 7777) in paragraph at lines 34479--34479
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_i915_private *\EU1/DejaVuSans(0)/m/it/10
+  dev_priv\EU1/DejaVuSans(0)/m/n/10 , unsigned\EU1/DejaVuSans(0)/m/it/10  front
+buffer_bits\EU1/DejaVuSans(0)/m/n/10 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34508--34508
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_i915_private *\EU1/DejaVuSans(0)/m/it/10
+  dev_priv\EU1/DejaVuSans(0)/m/n/10 , un-
+ []
+
+[327]
+Underfull \hbox (badness 10000) in paragraph at lines 34535--34535
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_i915_private *\EU1/DejaVuSans(0)/m/it/10
+  dev_priv\EU1/DejaVuSans(0)/m/n/10 , un-
+ []
+
+[328]
+Underfull \hbox (badness 10000) in paragraph at lines 34631--34631
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_i915_private *\EU1/DejaVuSans(0)/m/it/10
+  dev_priv\EU1/DejaVuSans(0)/m/n/10 , enum
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34664--34664
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_i915_private *\EU1/DejaVuSans(0)/m/it/10
+  dev_priv\EU1/DejaVuSans(0)/m/n/10 , enum
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34695--34695
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_i915_private *\EU1/DejaVuSans(0)/m/it/10
+  dev_priv\EU1/DejaVuSans(0)/m/n/10 , enum
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34719--34719
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_i915_private *\EU1/DejaVuSans(0)/m/it/10
+  dev_priv\EU1/DejaVuSans(0)/m/n/10 , enum
+ []
+
+[329] [330] [331]
+Underfull \hbox (badness 6428) in paragraph at lines 34966--34969
+[]\EU1/DejaVuSans(0)/m/n/10 The regular hotplug work function \EU1/DejaVuSansMo
+no(0)/m/n/10 i915_hotplug_work_func() \EU1/DejaVuSans(0)/m/n/10 calls connector
+ detect hooks,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34966--34969
+\EU1/DejaVuSans(0)/m/n/10 and, if connector status changes, triggers sending of
+ hotplug uevent to userspace via
+ []
+
+[332] [333]
+Underfull \hbox (badness 10000) in paragraph at lines 35205--35205
+\EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  old_crtc_state\EU1/DejaV
+uSans(0)/m/n/10 , const struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_connector_sta
+te[][]
+ []
+
+[334] [335] [336] [337]
+Underfull \hbox (badness 10000) in paragraph at lines 35652--35652
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_i915_private *\EU1/DejaVuSans(0)/m/it/10
+  dev_priv\EU1/DejaVuSans(0)/m/n/10 , un-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35704--35704
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_i915_private *\EU1/DejaVuSans(0)/m/it/10
+  dev_priv\EU1/DejaVuSans(0)/m/n/10 , unsigned\EU1/DejaVuSans(0)/m/it/10  front
+buffer_bits\EU1/DejaVuSans(0)/m/n/10 , enum
+ []
+
+[338] [339] [340]
+Underfull \hbox (badness 10000) in paragraph at lines 35997--35999
+[]\EU1/DejaVuSans(0)/m/n/10 For integration with frontbuffer tracking code, [][
+]\EU1/DejaVuSansMono(0)/m/it/10 intel_edp_drrs_invalidate()[][] \EU1/DejaVuSans
+(0)/m/n/10 and [][]\EU1/DejaVuSansMono(0)/m/it/10 in-
+ []
+
+[341]
+Underfull \hbox (badness 10000) in paragraph at lines 36058--36058
+[]\EU1/DejaVuSans(0)/m/n/10 struct intel_dp *\EU1/DejaVuSans(0)/m/it/10  intel_
+dp\EU1/DejaVuSans(0)/m/n/10 , const struct intel_crtc_state
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36076--36076
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_i915_private *\EU1/DejaVuSans(0)/m/it/10
+  dev_priv\EU1/DejaVuSans(0)/m/n/10 , unsigned
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36128--36128
+[]\EU1/DejaVuSans(0)/m/n/10 struct intel_connector *\EU1/DejaVuSans(0)/m/it/10 
+ connector\EU1/DejaVuSans(0)/m/n/10 , struct
+ []
+
+[342] [343] [344] [345] [346] [347] [348] [349]
+Underfull \hbox (badness 10000) in paragraph at lines 36993--36993
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_i915_private *\EU1/DejaVuSans(0)/m/it/10
+  dev_priv\EU1/DejaVuSans(0)/m/n/10 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37015--37015
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_i915_private *\EU1/DejaVuSans(0)/m/it/10
+  dev_priv\EU1/DejaVuSans(0)/m/n/10 , struct [][]\EU1/DejaVuSans(0)/m/it/10 in-
+
+ []
+
+[350] [351] [352]
+Underfull \hbox (badness 10000) in paragraph at lines 37331--37335
+[]\EU1/DejaVuSans(0)/m/n/10 Optional hook to perform operations prior to enabli
+ng the PLL. Called from [][]\EU1/DejaVuSansMono(0)/m/it/10 in-
+ []
+
+[353] [354]
+Underfull \hbox (badness 10000) in paragraph at lines 37513--37513
+[]\EU1/DejaVuSans(0)/m/n/10 struct intel_engine_cs *\EU1/DejaVuSans(0)/m/it/10 
+ engine\EU1/DejaVuSans(0)/m/n/10 , struct drm_i915_gem_object
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37513--37513
+\EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  batch_obj\EU1/DejaVuSans
+(0)/m/n/10 , struct drm_i915_gem_object *\EU1/DejaVuSans(0)/m/it/10  shadow_bat
+ch_obj\EU1/DejaVuSans(0)/m/n/10 ,
+ []
+
+[355]
+Underfull \hbox (badness 10000) in paragraph at lines 37627--37627
+[]\EU1/DejaVuSans(0)/m/n/10 struct i915_gem_batch_pool *\EU1/DejaVuSans(0)/m/it
+/10  pool\EU1/DejaVuSans(0)/m/n/10 ,
+ []
+
+[356] [357] [358] [359] [360] [361] [362] [363] [364] [365] [366] [367]
+Underfull \hbox (badness 10000) in paragraph at lines 38894--38894
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_i915_private *\EU1/DejaVuSans(0)/m/it/10
+  dev_priv\EU1/DejaVuSans(0)/m/n/10 , u32\EU1/DejaVuSans(0)/m/it/10  engines\EU
+1/DejaVuSans(0)/m/n/10 ,
+ []
+
+[368] [369] [370] [371] [372] [373] [374]
+Underfull \hbox (badness 10000) in paragraph at lines 39542--39542
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_i915_private *\EU1/DejaVuSans(0)/m/it/10
+  dev_priv\EU1/DejaVuSans(0)/m/n/10 , u64 __user *\EU1/DejaVuSans(0)/m/it/10  u
+props\EU1/DejaVuSans(0)/m/n/10 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39576--39576
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_i915_private *\EU1/DejaVuSans(0)/m/it/10
+  dev_priv\EU1/DejaVuSans(0)/m/n/10 , struct
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39576--39576
+\EU1/DejaVuSans(0)/m/n/10 drm_i915_perf_open_param *\EU1/DejaVuSans(0)/m/it/10 
+ param\EU1/DejaVuSans(0)/m/n/10 , struct
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39602--39605
+[]\EU1/DejaVuSans(0)/m/n/10 Implements further stream config validation and str
+eam initialization on behalf of
+ []
+
+[375] [376]
+Underfull \hbox (badness 7504) in paragraph at lines 39801--39801
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_i915_private *\EU1/DejaVuSans(0)/m/it/10
+  dev_priv\EU1/DejaVuSans(0)/m/n/10 , struct [][]\EU1/DejaVuSans(0)/m/it/10 i91
+5_perf_stream[][]
+ []
+
+[377] [378] [379] [380] [381] [382] [383] [384] [385]
+Underfull \hbox (badness 7504) in paragraph at lines 40741--40741
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_i915_private *\EU1/DejaVuSans(0)/m/it/10
+  dev_priv\EU1/DejaVuSans(0)/m/n/10 , struct [][]\EU1/DejaVuSans(0)/m/it/10 i91
+5_perf_stream[][]
+ []
+
+[386] [387]
+Underfull \hbox (badness 10000) in paragraph at lines 40978--40978
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_i915_private *\EU1/DejaVuSans(0)/m/it/10
+  dev_priv\EU1/DejaVuSans(0)/m/n/10 , struct
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40978--40978
+\EU1/DejaVuSans(0)/m/n/10 drm_i915_perf_open_param *\EU1/DejaVuSans(0)/m/it/10 
+ param\EU1/DejaVuSans(0)/m/n/10 , struct
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41004--41007
+[]\EU1/DejaVuSans(0)/m/n/10 Implements further stream config validation and str
+eam initialization on behalf of
+ []
+
+[388]
+Underfull \hbox (badness 10000) in paragraph at lines 41025--41025
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_i915_private *\EU1/DejaVuSans(0)/m/it/10
+  dev_priv\EU1/DejaVuSans(0)/m/n/10 , u64 __user *\EU1/DejaVuSans(0)/m/it/10  u
+props\EU1/DejaVuSans(0)/m/n/10 ,
+ []
+
+[389] [390] [391] [392]
+Chapter 8.
+[393
+
+] [394] [395] [396]
+Chapter 9.
+[397
+
+] [398
+
+]
+Chapter 10.
+[399] [400] [401] [402] [403] [404] [405] [406
+
+]
+Chapter 11.
+[407]
+Underfull \hbox (badness 10000) in paragraph at lines 42467--42467
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_device *\EU1/DejaVuSans(0)/m/it/10  drm\
+EU1/DejaVuSans(0)/m/n/10 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42467--42467
+\EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  attach\EU1/DejaVuSans(0)
+/m/n/10 , struct sg_table
+ []
+
+
+Underfull \hbox (badness 5189) in paragraph at lines 42488--42494
+[]\EU1/DejaVuSans(0)/m/n/10 This function imports a scatter/gather table export
+ed via DMA-BUF by another driver using
+ []
+
+
+Underfull \hbox (badness 8019) in paragraph at lines 42525--42525
+[]\EU1/DejaVuSans(0)/m/n/10 struct device *\EU1/DejaVuSans(0)/m/it/10  parent\E
+U1/DejaVuSans(0)/m/n/10 , struct [][]\EU1/DejaVuSans(0)/m/it/10 tinydrm_device[
+][] \EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  tdev\EU1/DejaVuSans(
+0)/m/n/10 , const struct
+ []
+
+[408]
+Underfull \hbox (badness 10000) in paragraph at lines 42605--42605
+[]\EU1/DejaVuSans(0)/m/n/10 struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_simple_di
+splay_pipe[][] \EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  pipe\EU1/
+DejaVuSans(0)/m/n/10 , struct
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42629--42629
+[]\EU1/DejaVuSans(0)/m/n/10 struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_simple_di
+splay_pipe[][] \EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  pipe\EU1/
+DejaVuSans(0)/m/n/10 , struct
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42654--42654
+[]\EU1/DejaVuSans(0)/m/n/10 struct [][]\EU1/DejaVuSans(0)/m/it/10 tinydrm_devic
+e[][] \EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  tdev\EU1/DejaVuSan
+s(0)/m/n/10 , const struct
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42654--42654
+[][]\EU1/DejaVuSans(0)/m/it/10 drm_simple_display_pipe_funcs[][] \EU1/DejaVuSan
+s(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  funcs\EU1/DejaVuSans(0)/m/n/10 , int\E
+U1/DejaVuSans(0)/m/it/10  connector_type\EU1/DejaVuSans(0)/m/n/10 ,
+ []
+
+[409]
+Underfull \hbox (badness 10000) in paragraph at lines 42742--42742
+[]\EU1/DejaVuSans(0)/m/n/10 struct drm_clip_rect *\EU1/DejaVuSans(0)/m/it/10  d
+st\EU1/DejaVuSans(0)/m/n/10 , struct drm_clip_rect *\EU1/DejaVuSans(0)/m/it/10 
+ src\EU1/DejaVuSans(0)/m/n/10 , unsigned
+ []
+
+[410]
+Underfull \hbox (badness 6047) in paragraph at lines 42911--42915
+[]\EU1/DejaVuSans(0)/m/n/10 This function looks for a DT node pointed to by a p
+roperty named ‘backlight’ and uses
+ []
+
+[411] [412] [413] [414]
+Underfull \hbox (badness 5374) in paragraph at lines 43266--43266
+[]\EU1/DejaVuSans(0)/m/n/10 void *\EU1/DejaVuSans(0)/m/it/10  dst\EU1/DejaVuSan
+s(0)/m/n/10 , struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_framebuffer[][] \EU1/De
+jaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  fb\EU1/DejaVuSans(0)/m/n/10 , s
+truct drm_clip_rect *\EU1/DejaVuSans(0)/m/it/10  clip\EU1/DejaVuSans(0)/m/n/10 
+,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43294--43294
+[]\EU1/DejaVuSans(0)/m/n/10 struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_simple_di
+splay_pipe[][] \EU1/DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  pipe\EU1/
+DejaVuSans(0)/m/n/10 , struct [][]\EU1/DejaVuSans(0)/m/it/10 drm_crtc_state[][]
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43338--43338
+[]\EU1/DejaVuSans(0)/m/n/10 struct device *\EU1/DejaVuSans(0)/m/it/10  dev\EU1/
+DejaVuSans(0)/m/n/10 , struct [][]\EU1/DejaVuSans(0)/m/it/10 mipi_dbi[][] \EU1/
+DejaVuSans(0)/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  mipi\EU1/DejaVuSans(0)/m/n/10
+ , const struct
+ []
+
+[415] [416] [417] [418
+
+]
+Chapter 12.
+[419] [420
+
+]
+Chapter 13.
+[421] [422] [423] [424]
+Chapter 14.
+[425
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 43881--43884
+[]\EU1/DejaVuSans(0)/m/n/10 When the audio device resumes, the GPU needs to be 
+woken. This is achieved by
+ []
+
+[426]
+Underfull \hbox (badness 10000) in paragraph at lines 43968--43968
+[]\EU1/DejaVuSans(0)/m/n/10 struct pci_dev *\EU1/DejaVuSans(0)/m/it/10  pdev\EU
+1/DejaVuSans(0)/m/n/10 , const struct
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43968--43968
+[][]\EU1/DejaVuSans(0)/m/it/10 vga_switcheroo_client_ops[][] \EU1/DejaVuSans(0)
+/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  ops\EU1/DejaVuSans(0)/m/n/10 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44001--44001
+[]\EU1/DejaVuSans(0)/m/n/10 struct pci_dev *\EU1/DejaVuSans(0)/m/it/10  pdev\EU
+1/DejaVuSans(0)/m/n/10 , const struct
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44001--44001
+[][]\EU1/DejaVuSans(0)/m/it/10 vga_switcheroo_client_ops[][] \EU1/DejaVuSans(0)
+/m/n/10 *\EU1/DejaVuSans(0)/m/it/10  ops\EU1/DejaVuSans(0)/m/n/10 , enum
+ []
+
+[427] [428]
+Underfull \hbox (badness 10000) in paragraph at lines 44215--44215
+[]\EU1/DejaVuSans(0)/m/n/10 struct pci_dev *\EU1/DejaVuSans(0)/m/it/10  pdev\EU
+1/DejaVuSans(0)/m/n/10 , enum
+ []
+
+[429]
+Underfull \hbox (badness 10000) in paragraph at lines 44268--44268
+[]\EU1/DejaVuSans(0)/m/n/10 struct device *\EU1/DejaVuSans(0)/m/it/10  dev\EU1/
+DejaVuSans(0)/m/n/10 , struct
+ []
+
+[430] [431]
+Underfull \hbox (badness 10000) in paragraph at lines 44476--44480
+[]\EU1/DejaVuSans(0)/m/n/10 client has not registered with vga_switcheroo. Only
+ used in
+ []
+
+[432] [433] [434] [435] [436
+
+]
+Chapter 15.
+[437] [438] [439] [440]
+Overfull \hbox (5.22113pt too wide) in paragraph at lines 45225--45226
+[][][]\EU1/DejaVuSans(0)/m/n/10 http://cgit.freedesktop.org/xorg/xserver/commit
+/?id=4b42448a2388d40f257774fbffdccaea87bd0347[][] 
+ []
+
+[441] [442]
+Chapter 16.
+
+Overfull \hbox (28.67863pt too wide) in paragraph at lines 45387--45387
+\EU1/DejaVuSansMono(0)/m/n/10 DIA_BUS_FMT_RGB888_1X24|  
+ []
+
+
+Overfull \hbox (46.74016pt too wide) in paragraph at lines 45387--45387
+\EU1/DejaVuSansMono(0)/m/n/10 DIA_BUS_FMT_RGB101010_1X30|  
+ []
+
+
+Overfull \hbox (46.74016pt too wide) in paragraph at lines 45387--45387
+\EU1/DejaVuSansMono(0)/m/n/10 DIA_BUS_FMT_RGB121212_1X36|  
+ []
+
+
+Overfull \hbox (46.74016pt too wide) in paragraph at lines 45387--45387
+\EU1/DejaVuSansMono(0)/m/n/10 DIA_BUS_FMT_RGB161616_1X48|  
+ []
+
+
+Overfull \hbox (16.63762pt too wide) in paragraph at lines 45387--45387
+\EU1/DejaVuSansMono(0)/m/n/10 DIA_BUS_FMT_YUV8_1X24|  
+ []
+
+
+Overfull \hbox (22.65813pt too wide) in paragraph at lines 45387--45387
+\EU1/DejaVuSansMono(0)/m/n/10 DIA_BUS_FMT_YUV10_1X30|  
+ []
+
+
+Overfull \hbox (22.65813pt too wide) in paragraph at lines 45387--45387
+\EU1/DejaVuSansMono(0)/m/n/10 DIA_BUS_FMT_YUV12_1X36|  
+ []
+
+
+Overfull \hbox (22.65813pt too wide) in paragraph at lines 45387--45387
+\EU1/DejaVuSansMono(0)/m/n/10 DIA_BUS_FMT_YUV16_1X48|  
+ []
+
+
+Overfull \hbox (22.65813pt too wide) in paragraph at lines 45387--45387
+\EU1/DejaVuSansMono(0)/m/n/10 DIA_BUS_FMT_UYVY8_1X16|  
+ []
+
+
+Overfull \hbox (28.67863pt too wide) in paragraph at lines 45387--45387
+\EU1/DejaVuSansMono(0)/m/n/10 DIA_BUS_FMT_UYVY10_1X20|  
+ []
+
+
+Overfull \hbox (28.67863pt too wide) in paragraph at lines 45387--45387
+\EU1/DejaVuSansMono(0)/m/n/10 DIA_BUS_FMT_UYVY12_1X24|  
+ []
+
+
+Overfull \hbox (46.74016pt too wide) in paragraph at lines 45387--45387
+\EU1/DejaVuSansMono(0)/m/n/10 DIA_BUS_FMT_UYYVYY8_0_5X24|  
+ []
+
+
+Overfull \hbox (52.76067pt too wide) in paragraph at lines 45387--45387
+\EU1/DejaVuSansMono(0)/m/n/10 DIA_BUS_FMT_UYYVYY10_0_5X30|  
+ []
+
+
+Overfull \hbox (52.76067pt too wide) in paragraph at lines 45387--45387
+\EU1/DejaVuSansMono(0)/m/n/10 DIA_BUS_FMT_UYYVYY12_0_5X36|  
+ []
+
+
+Overfull \hbox (52.76067pt too wide) in paragraph at lines 45387--45387
+\EU1/DejaVuSansMono(0)/m/n/10 DIA_BUS_FMT_UYYVYY16_0_5X48|  
+ []
+
+[443
+
+] [444
+
+]
+Chapter 17.
+[445] [446] [447] [448] [449] [450] (./gpu.ind [451] [452
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
+[]\EU1/DejaVuSans(0)/m/n/10 __drm_atomic_get_current_plane_state (C func-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--7
+[]\EU1/DejaVuSans(0)/m/n/10 __drm_atomic_helper_connector_destroy_state (C
+ []
+
+
+Underfull \hbox (badness 5475) in paragraph at lines 9--10
+[]\EU1/DejaVuSans(0)/m/n/10 __drm_atomic_helper_crtc_destroy_state (C func-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
+[]\EU1/DejaVuSans(0)/m/n/10 __drm_atomic_helper_plane_duplicate_state (C
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
+[]\EU1/DejaVuSans(0)/m/n/10 __drm_atomic_helper_private_obj_duplicate_state
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
+[]\EU1/DejaVuSans(0)/m/n/10 drm_atomic_crtc_state_for_each_plane_state (C
+ []
+
+
+Underfull \hbox (badness 7558) in paragraph at lines 74--75
+[]\EU1/DejaVuSans(0)/m/n/10 drm_atomic_helper_check_modeset (C function),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
+[]\EU1/DejaVuSans(0)/m/n/10 drm_atomic_helper_cleanup_planes (C function),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
+[]\EU1/DejaVuSans(0)/m/n/10 drm_atomic_helper_commit_duplicated_state (C
+ []
+
+[453
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
+[]\EU1/DejaVuSans(0)/m/n/10 drm_atomic_helper_commit_modeset_disables (C
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
+[]\EU1/DejaVuSans(0)/m/n/10 drm_atomic_helper_commit_modeset_enables (C
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
+[]\EU1/DejaVuSans(0)/m/n/10 drm_atomic_helper_commit_planes (C function),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
+[]\EU1/DejaVuSans(0)/m/n/10 drm_atomic_helper_commit_planes_on_crtc (C
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
+[]\EU1/DejaVuSans(0)/m/n/10 drm_atomic_helper_connector_destroy_state (C
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--90
+[]\EU1/DejaVuSans(0)/m/n/10 drm_atomic_helper_connector_duplicate_state (C
+ []
+
+
+Underfull \hbox (badness 7379) in paragraph at lines 92--93
+[]\EU1/DejaVuSans(0)/m/n/10 drm_atomic_helper_crtc_duplicate_state (C func-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
+[]\EU1/DejaVuSans(0)/m/n/10 drm_atomic_helper_duplicate_state (C function),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--99
+[]\EU1/DejaVuSans(0)/m/n/10 drm_atomic_helper_legacy_gamma_set (C func-
+ []
+
+
+Underfull \hbox (badness 7415) in paragraph at lines 101--102
+[]\EU1/DejaVuSans(0)/m/n/10 drm_atomic_helper_plane_destroy_state (C func-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--105
+[]\EU1/DejaVuSans(0)/m/n/10 drm_atomic_helper_prepare_planes (C function),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--112
+[]\EU1/DejaVuSans(0)/m/n/10 drm_atomic_helper_update_legacy_modeset_state
+ []
+
+
+Underfull \hbox (badness 8056) in paragraph at lines 114--115
+[]\EU1/DejaVuSans(0)/m/n/10 drm_atomic_helper_wait_for_fences (C function),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 160--161
+[]\EU1/DejaVuSans(0)/m/n/10 drm_connector_attach_scaling_mode_property (C
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 167--168
+[]\EU1/DejaVuSans(0)/m/n/10 drm_connector_init_panel_orientation_property (C
+ []
+
+[454]
+Underfull \hbox (badness 6316) in paragraph at lines 269--270
+[]\EU1/DejaVuSans(0)/m/n/10 drm_dp_get_dual_mode_type_name (C function),
+ []
+
+[455]
+Underfull \hbox (badness 10000) in paragraph at lines 286--287
+[]\EU1/DejaVuSans(0)/m/n/10 drm_dp_mst_topology_mgr_destroy (C function),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 288--289
+[]\EU1/DejaVuSans(0)/m/n/10 drm_dp_mst_topology_mgr_resume (C function),
+ []
+
+
+Underfull \hbox (badness 6575) in paragraph at lines 289--290
+[]\EU1/DejaVuSans(0)/m/n/10 drm_dp_mst_topology_mgr_set_mst (C function),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 328--329
+[]\EU1/DejaVuSans(0)/m/n/10 drm_fb_cma_fbdev_init_with_funcs (C function),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 357--358
+[]\EU1/DejaVuSans(0)/m/n/10 drm_fb_helper_restore_fbdev_mode_unlocked (C
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 377--378
+[]\EU1/DejaVuSans(0)/m/n/10 drm_fbdev_cma_set_suspend_unlocked (C func-
+ []
+
+[456]
+Underfull \hbox (badness 10000) in paragraph at lines 394--395
+[]\EU1/DejaVuSans(0)/m/n/10 drm_format_horz_chroma_subsampling (C func-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 402--403
+[]\EU1/DejaVuSans(0)/m/n/10 drm_format_vert_chroma_subsampling (C func-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 460--461
+[]\EU1/DejaVuSans(0)/m/n/10 drm_gem_object_unreference_unlocked (C func-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 484--485
+[]\EU1/DejaVuSans(0)/m/n/10 drm_hdmi_avi_infoframe_from_display_mode (C
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 487--488
+[]\EU1/DejaVuSans(0)/m/n/10 drm_hdmi_vendor_infoframe_from_display_mode
+ []
+
+[457]
+Underfull \hbox (badness 10000) in paragraph at lines 496--497
+[]\EU1/DejaVuSans(0)/m/n/10 drm_helper_move_panel_connectors_to_head (C
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 498--499
+[]\EU1/DejaVuSans(0)/m/n/10 drm_helper_probe_single_connector_modes (C
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 575--576
+[]\EU1/DejaVuSans(0)/m/n/10 drm_mode_connector_set_link_status_property (C
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 577--578
+[]\EU1/DejaVuSans(0)/m/n/10 drm_mode_connector_set_tile_property (C func-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 578--579
+[]\EU1/DejaVuSans(0)/m/n/10 drm_mode_connector_update_edid_property (C
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 582--583
+[]\EU1/DejaVuSans(0)/m/n/10 drm_mode_create_dvi_i_properties (C function),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 583--584
+[]\EU1/DejaVuSans(0)/m/n/10 drm_mode_create_from_cmdline_mode (C func-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 585--586
+[]\EU1/DejaVuSans(0)/m/n/10 drm_mode_create_suggested_offset_properties (C
+ []
+
+[458]
+Underfull \hbox (badness 10000) in paragraph at lines 637--638
+[]\EU1/DejaVuSans(0)/m/n/10 drm_modeset_lock_single_interruptible (C func-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 668--669
+[]\EU1/DejaVuSans(0)/m/n/10 drm_plane_create_zpos_immutable_property (C
+ []
+
+
+Underfull \hbox (badness 5862) in paragraph at lines 690--691
+[]\EU1/DejaVuSans(0)/m/n/10 drm_prime_sg_to_page_addr_arrays (C function),
+ []
+
+[459]
+Underfull \hbox (badness 10000) in paragraph at lines 710--711
+[]\EU1/DejaVuSans(0)/m/n/10 drm_property_create_signed_range (C function),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 759--760
+[]\EU1/DejaVuSans(0)/m/n/10 drm_simple_display_pipe_attach_bridge (C func-
+ []
+
+[460]
+Underfull \hbox (badness 8000) in paragraph at lines 886--887
+[]\EU1/DejaVuSans(0)/m/n/10 i915_gem_object_do_bit_17_swizzle (C function),
+ []
+
+[461]
+Underfull \hbox (badness 10000) in paragraph at lines 948--949
+[]\EU1/DejaVuSans(0)/m/n/10 intel_cpu_fifo_underrun_irq_handler (C function),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 957--958
+[]\EU1/DejaVuSans(0)/m/n/10 intel_display_power_get_if_enabled (C function),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1010--1011
+[]\EU1/DejaVuSans(0)/m/n/10 intel_pch_fifo_underrun_irq_handler (C function),
+ []
+
+
+Underfull \hbox (badness 5460) in paragraph at lines 1032--1033
+[]\EU1/DejaVuSans(0)/m/n/10 intel_runtime_pm_enable_interrupts (C function),
+ []
+
+[462] [463]
+Underfull \hbox (badness 10000) in paragraph at lines 1179--1180
+[]\EU1/DejaVuSans(0)/m/n/10 vga_switcheroo_client_probe_defer (C function),
+ []
+
+
+Overfull \hbox (12.70332pt too wide) in paragraph at lines 1185--1186
+[]\EU1/DejaVuSans(0)/m/n/10 vga_switcheroo_init_domain_pm_optimus_hdmi_audio
+ []
+
+
+Underfull \hbox (badness 5787) in paragraph at lines 1187--1188
+[]\EU1/DejaVuSans(0)/m/n/10 vga_switcheroo_process_delayed_switch (C func-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1195--1196
+[]\EU1/DejaVuSans(0)/m/n/10 vga_switcheroo_unregister_handler (C function),
+ []
+
+[464
+
+])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 45888.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 45888.
+(./gpu.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 45888.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 45888.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 45888.
+ ) 
+Here is how much of TeX's memory you used:
+ 25665 strings out of 495579
+ 483227 string characters out of 6187322
+ 602169 words of memory out of 5000000
+ 28617 multiletter control sequences out of 15000+600000
+ 10938 words of font info for 88 fonts, out of 8000000 for 9000
+ 15 hyphenation exceptions out of 8191
+ 36i,12n,61p,10377b,503s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on gpu.pdf (470 pages).

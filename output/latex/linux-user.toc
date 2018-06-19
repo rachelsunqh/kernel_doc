@@ -1,0 +1,269 @@
+\select@language {english}
+\contentsline {chapter}{\numberline {1}Linux kernel release 4.x \textless {}http://kernel.org/\textgreater {}}{3}{chapter.1}
+\contentsline {section}{\numberline {1.1}What is Linux?}{3}{section.1.1}
+\contentsline {section}{\numberline {1.2}On what hardware does it run?}{3}{section.1.2}
+\contentsline {section}{\numberline {1.3}Documentation}{3}{section.1.3}
+\contentsline {section}{\numberline {1.4}Installing the kernel source}{4}{section.1.4}
+\contentsline {section}{\numberline {1.5}Software requirements}{4}{section.1.5}
+\contentsline {section}{\numberline {1.6}Build directory for the kernel}{4}{section.1.6}
+\contentsline {section}{\numberline {1.7}Configuring the kernel}{5}{section.1.7}
+\contentsline {section}{\numberline {1.8}Compiling the kernel}{6}{section.1.8}
+\contentsline {section}{\numberline {1.9}If something goes wrong}{7}{section.1.9}
+\contentsline {chapter}{\numberline {2}The kernel's command-line parameters}{9}{chapter.2}
+\contentsline {section}{\numberline {2.1}cpu lists:}{9}{section.2.1}
+\contentsline {section}{\numberline {2.2}Todo}{92}{section.2.2}
+\contentsline {chapter}{\numberline {3}Linux allocated devices (4.x+ version)}{93}{chapter.3}
+\contentsline {section}{\numberline {3.1}Additional \texttt {/dev/} directory entries}{147}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Compulsory links}{147}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Recommended links}{147}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Locally defined links}{147}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}Sockets and pipes}{148}{subsection.3.1.4}
+\contentsline {subsection}{\numberline {3.1.5}Mount points}{148}{subsection.3.1.5}
+\contentsline {section}{\numberline {3.2}Terminal devices}{148}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Virtual consoles and the console device}{148}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Serial ports}{149}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Pseudoterminals (PTYs)}{149}{subsection.3.2.3}
+\contentsline {chapter}{\numberline {4}Reporting bugs}{151}{chapter.4}
+\contentsline {section}{\numberline {4.1}Background}{151}{section.4.1}
+\contentsline {section}{\numberline {4.2}How to report Linux kernel bugs}{151}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Identify the problematic subsystem}{151}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Identify who to notify}{151}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Tips for reporting bugs}{152}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Gather information}{152}{subsection.4.2.4}
+\contentsline {section}{\numberline {4.3}Follow up}{153}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Expectations for bug reporters}{153}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Expectations for kernel maintainers}{153}{subsection.4.3.2}
+\contentsline {chapter}{\numberline {5}Security bugs}{155}{chapter.5}
+\contentsline {section}{\numberline {5.1}Contact}{155}{section.5.1}
+\contentsline {section}{\numberline {5.2}Disclosure}{155}{section.5.2}
+\contentsline {section}{\numberline {5.3}Coordination}{155}{section.5.3}
+\contentsline {section}{\numberline {5.4}CVE assignment}{156}{section.5.4}
+\contentsline {section}{\numberline {5.5}Non-disclosure agreements}{156}{section.5.5}
+\contentsline {chapter}{\numberline {6}Bug hunting}{157}{chapter.6}
+\contentsline {section}{\numberline {6.1}Where is the Oops message is located?}{158}{section.6.1}
+\contentsline {section}{\numberline {6.2}Finding the bug's location}{158}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}gdb}{158}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}objdump}{160}{subsection.6.2.2}
+\contentsline {section}{\numberline {6.3}Reporting the bug}{160}{section.6.3}
+\contentsline {section}{\numberline {6.4}Fixing the bug}{161}{section.6.4}
+\contentsline {section}{\numberline {6.5}Notes on Oops tracing with \texttt {klogd}}{161}{section.6.5}
+\contentsline {chapter}{\numberline {7}Bisecting a bug}{163}{chapter.7}
+\contentsline {section}{\numberline {7.1}Introduction}{163}{section.7.1}
+\contentsline {section}{\numberline {7.2}Devices not appearing}{163}{section.7.2}
+\contentsline {section}{\numberline {7.3}Finding patch that caused a bug}{163}{section.7.3}
+\contentsline {chapter}{\numberline {8}Tainted kernels}{165}{chapter.8}
+\contentsline {chapter}{\numberline {9}Ramoops oops/panic logger}{167}{chapter.9}
+\contentsline {section}{\numberline {9.1}Introduction}{167}{section.9.1}
+\contentsline {section}{\numberline {9.2}Ramoops concepts}{167}{section.9.2}
+\contentsline {section}{\numberline {9.3}Setting the parameters}{167}{section.9.3}
+\contentsline {section}{\numberline {9.4}Dump format}{169}{section.9.4}
+\contentsline {section}{\numberline {9.5}Reading the data}{169}{section.9.5}
+\contentsline {section}{\numberline {9.6}Persistent function tracing}{169}{section.9.6}
+\contentsline {chapter}{\numberline {10}Dynamic debug}{171}{chapter.10}
+\contentsline {section}{\numberline {10.1}Introduction}{171}{section.10.1}
+\contentsline {section}{\numberline {10.2}Controlling dynamic debug Behaviour}{171}{section.10.2}
+\contentsline {section}{\numberline {10.3}Viewing Dynamic Debug Behaviour}{172}{section.10.3}
+\contentsline {section}{\numberline {10.4}Command Language Reference}{172}{section.10.4}
+\contentsline {section}{\numberline {10.5}Debug messages during Boot Process}{174}{section.10.5}
+\contentsline {section}{\numberline {10.6}Debug Messages at Module Initialization Time}{174}{section.10.6}
+\contentsline {section}{\numberline {10.7}Examples}{175}{section.10.7}
+\contentsline {chapter}{\numberline {11}Explaining the dreaded ``No init found.'' boot hang message}{177}{chapter.11}
+\contentsline {chapter}{\numberline {12}Rules on how to access information in sysfs}{179}{chapter.12}
+\contentsline {chapter}{\numberline {13}Using the initial RAM disk (initrd)}{183}{chapter.13}
+\contentsline {section}{\numberline {13.1}Operation}{183}{section.13.1}
+\contentsline {section}{\numberline {13.2}Boot command-line options}{183}{section.13.2}
+\contentsline {section}{\numberline {13.3}Compressed cpio images}{184}{section.13.3}
+\contentsline {section}{\numberline {13.4}Installation}{184}{section.13.4}
+\contentsline {section}{\numberline {13.5}Changing the root device}{186}{section.13.5}
+\contentsline {section}{\numberline {13.6}Usage scenarios}{187}{section.13.6}
+\contentsline {section}{\numberline {13.7}Obsolete root change mechanism}{188}{section.13.7}
+\contentsline {section}{\numberline {13.8}Mixed change\_root and pivot\_root mechanism}{188}{section.13.8}
+\contentsline {section}{\numberline {13.9}Resources}{188}{section.13.9}
+\contentsline {chapter}{\numberline {14}Linux Serial Console}{189}{chapter.14}
+\contentsline {chapter}{\numberline {15}Linux Braille Console}{191}{chapter.15}
+\contentsline {chapter}{\numberline {16}Parport}{193}{chapter.16}
+\contentsline {section}{\numberline {16.1}Parport as modules}{193}{section.16.1}
+\contentsline {subsection}{\numberline {16.1.1}modprobe}{193}{subsection.16.1.1}
+\contentsline {subsection}{\numberline {16.1.2}Parport probe {[}optional{]}}{194}{subsection.16.1.2}
+\contentsline {section}{\numberline {16.2}Parport linked into the kernel statically}{194}{section.16.2}
+\contentsline {section}{\numberline {16.3}Files in /proc}{194}{section.16.3}
+\contentsline {section}{\numberline {16.4}Device drivers}{195}{section.16.4}
+\contentsline {section}{\numberline {16.5}Reporting printer problems with parport}{196}{section.16.5}
+\contentsline {chapter}{\numberline {17}RAID arrays}{197}{chapter.17}
+\contentsline {section}{\numberline {17.1}Boot time assembly of RAID arrays}{197}{section.17.1}
+\contentsline {subsection}{\numberline {17.1.1}\texttt {md device no.}}{197}{subsection.17.1.1}
+\contentsline {subsection}{\numberline {17.1.2}\texttt {raid level}}{197}{subsection.17.1.2}
+\contentsline {subsection}{\numberline {17.1.3}\texttt {chunk size factor}}{197}{subsection.17.1.3}
+\contentsline {subsection}{\numberline {17.1.4}\texttt {fault level}}{198}{subsection.17.1.4}
+\contentsline {subsection}{\numberline {17.1.5}\texttt {dev0} to \texttt {devn}}{198}{subsection.17.1.5}
+\contentsline {section}{\numberline {17.2}Boot time autodetection of RAID arrays}{198}{section.17.2}
+\contentsline {section}{\numberline {17.3}Boot time assembly of degraded/dirty arrays}{198}{section.17.3}
+\contentsline {section}{\numberline {17.4}Superblock formats}{198}{section.17.4}
+\contentsline {section}{\numberline {17.5}General Rules - apply for all superblock formats}{198}{section.17.5}
+\contentsline {section}{\numberline {17.6}Specific Rules that apply to format-0 super block arrays, and arrays with no superblock (non-persistent)}{199}{section.17.6}
+\contentsline {section}{\numberline {17.7}MD devices in sysfs}{199}{section.17.7}
+\contentsline {chapter}{\numberline {18}Kernel module signing facility}{207}{chapter.18}
+\contentsline {section}{\numberline {18.1}Overview}{207}{section.18.1}
+\contentsline {section}{\numberline {18.2}Configuring module signing}{207}{section.18.2}
+\contentsline {section}{\numberline {18.3}Generating signing keys}{208}{section.18.3}
+\contentsline {section}{\numberline {18.4}Public keys in the kernel}{209}{section.18.4}
+\contentsline {section}{\numberline {18.5}Manually signing modules}{209}{section.18.5}
+\contentsline {section}{\numberline {18.6}Signed modules and stripping}{210}{section.18.6}
+\contentsline {section}{\numberline {18.7}Loading signed modules}{210}{section.18.7}
+\contentsline {section}{\numberline {18.8}Non-valid signatures and unsigned modules}{210}{section.18.8}
+\contentsline {section}{\numberline {18.9}Administering/protecting the private key}{210}{section.18.9}
+\contentsline {chapter}{\numberline {19}Linux Magic System Request Key Hacks}{211}{chapter.19}
+\contentsline {section}{\numberline {19.1}What is the magic SysRq key?}{211}{section.19.1}
+\contentsline {section}{\numberline {19.2}How do I enable the magic SysRq key?}{211}{section.19.2}
+\contentsline {section}{\numberline {19.3}How do I use the magic SysRq key?}{211}{section.19.3}
+\contentsline {section}{\numberline {19.4}What are the `command' keys?}{213}{section.19.4}
+\contentsline {section}{\numberline {19.5}Okay, so what can I use them for?}{213}{section.19.5}
+\contentsline {section}{\numberline {19.6}Sometimes SysRq seems to get `stuck' after using it, what can I do?}{214}{section.19.6}
+\contentsline {section}{\numberline {19.7}I hit SysRq, but nothing seems to happen, what's wrong?}{214}{section.19.7}
+\contentsline {section}{\numberline {19.8}I want to add SysRQ key events to a module, how does it work?}{214}{section.19.8}
+\contentsline {section}{\numberline {19.9}When I hit a SysRq key combination only the header appears on the console?}{215}{section.19.9}
+\contentsline {section}{\numberline {19.10}I have more questions, who can I ask?}{215}{section.19.10}
+\contentsline {section}{\numberline {19.11}Credits}{215}{section.19.11}
+\contentsline {chapter}{\numberline {20}Unicode support}{217}{chapter.20}
+\contentsline {section}{\numberline {20.1}Introduction}{217}{section.20.1}
+\contentsline {section}{\numberline {20.2}Actual characters assigned in the Linux Zone}{217}{section.20.2}
+\contentsline {section}{\numberline {20.3}Klingon language support}{218}{section.20.3}
+\contentsline {section}{\numberline {20.4}Other Fictional and Artificial Scripts}{219}{section.20.4}
+\contentsline {chapter}{\numberline {21}Software cursor for VGA}{221}{chapter.21}
+\contentsline {section}{\numberline {21.1}Examples}{221}{section.21.1}
+\contentsline {chapter}{\numberline {22}Kernel Support for miscellaneous (your favourite) Binary Formats v1.1}{223}{chapter.22}
+\contentsline {section}{\numberline {22.1}Hints}{225}{section.22.1}
+\contentsline {chapter}{\numberline {23}Mono(tm) Binary Kernel Support for Linux}{227}{chapter.23}
+\contentsline {chapter}{\numberline {24}Java(tm) Binary Kernel Support for Linux v1.03}{229}{chapter.24}
+\contentsline {chapter}{\numberline {25}Reliability, Availability and Serviceability}{237}{chapter.25}
+\contentsline {section}{\numberline {25.1}RAS concepts}{237}{section.25.1}
+\contentsline {subsection}{\numberline {25.1.1}Improving RAS}{237}{subsection.25.1.1}
+\contentsline {subsection}{\numberline {25.1.2}Types of errors}{237}{subsection.25.1.2}
+\contentsline {subsection}{\numberline {25.1.3}Identifying a bad hardware component}{238}{subsection.25.1.3}
+\contentsline {subsection}{\numberline {25.1.4}ECC memory}{239}{subsection.25.1.4}
+\contentsline {section}{\numberline {25.2}EDAC - Error Detection And Correction}{240}{section.25.2}
+\contentsline {subsection}{\numberline {25.2.1}Purpose}{240}{subsection.25.2.1}
+\contentsline {subsection}{\numberline {25.2.2}Memory}{240}{subsection.25.2.2}
+\contentsline {subsection}{\numberline {25.2.3}Other hardware elements}{240}{subsection.25.2.3}
+\contentsline {subsection}{\numberline {25.2.4}PCI bus scanning}{240}{subsection.25.2.4}
+\contentsline {subsection}{\numberline {25.2.5}Versioning}{241}{subsection.25.2.5}
+\contentsline {subsection}{\numberline {25.2.6}Loading}{241}{subsection.25.2.6}
+\contentsline {subsection}{\numberline {25.2.7}Sysfs interface}{241}{subsection.25.2.7}
+\contentsline {subsection}{\numberline {25.2.8}Memory Controller (mc) Model}{241}{subsection.25.2.8}
+\contentsline {subsection}{\numberline {25.2.9}\texttt {mcX} directories}{242}{subsection.25.2.9}
+\contentsline {subsection}{\numberline {25.2.10}\texttt {dimmX} or \texttt {rankX} directories}{242}{subsection.25.2.10}
+\contentsline {subsection}{\numberline {25.2.11}\texttt {csrowX} directories}{244}{subsection.25.2.11}
+\contentsline {subsection}{\numberline {25.2.12}System Logging}{245}{subsection.25.2.12}
+\contentsline {subsection}{\numberline {25.2.13}PCI Bus Parity Detection}{246}{subsection.25.2.13}
+\contentsline {subsection}{\numberline {25.2.14}Sysfs configuration}{246}{subsection.25.2.14}
+\contentsline {subsection}{\numberline {25.2.15}Module parameters}{246}{subsection.25.2.15}
+\contentsline {subsection}{\numberline {25.2.16}EDAC device type}{247}{subsection.25.2.16}
+\contentsline {subsection}{\numberline {25.2.17}Instances}{248}{subsection.25.2.17}
+\contentsline {subsection}{\numberline {25.2.18}Blocks}{248}{subsection.25.2.18}
+\contentsline {subsection}{\numberline {25.2.19}Usage of EDAC APIs on Nehalem and newer Intel CPUs}{249}{subsection.25.2.19}
+\contentsline {subsection}{\numberline {25.2.20}Reference documents used on \texttt {amd64\_edac}}{251}{subsection.25.2.20}
+\contentsline {subsubsection}{Credits}{252}{subsubsection*.3}
+\contentsline {chapter}{\numberline {26}Power Management}{253}{chapter.26}
+\contentsline {section}{\numberline {26.1}Power Management Strategies}{253}{section.26.1}
+\contentsline {section}{\numberline {26.2}System-Wide Power Management}{254}{section.26.2}
+\contentsline {subsection}{\numberline {26.2.1}System Sleep States}{254}{subsection.26.2.1}
+\contentsline {subsubsection}{Sleep States That Can Be Supported}{254}{subsubsection*.4}
+\contentsline {paragraph}{Suspend-to-Idle}{254}{paragraph*.5}
+\contentsline {paragraph}{Standby}{254}{paragraph*.6}
+\contentsline {paragraph}{Suspend-to-RAM}{254}{paragraph*.7}
+\contentsline {paragraph}{Hibernation}{255}{paragraph*.8}
+\contentsline {subsubsection}{Basic \texttt {sysfs} Interfaces for System Suspend and Hibernation}{255}{subsubsection*.9}
+\contentsline {section}{\numberline {26.3}Working-State Power Management}{257}{section.26.3}
+\contentsline {subsection}{\numberline {26.3.1}CPU Performance Scaling}{257}{subsection.26.3.1}
+\contentsline {subsubsection}{The Concept of CPU Performance Scaling}{257}{subsubsection*.10}
+\contentsline {subsubsection}{CPU Performance Scaling in Linux}{257}{subsubsection*.11}
+\contentsline {subsubsection}{\texttt {CPUFreq} Policy Objects}{258}{subsubsection*.12}
+\contentsline {subsubsection}{CPU Initialization}{258}{subsubsection*.13}
+\contentsline {subsubsection}{Policy Interface in \texttt {sysfs}}{259}{subsubsection*.14}
+\contentsline {subsubsection}{Generic Scaling Governors}{260}{subsubsection*.15}
+\contentsline {paragraph}{\texttt {performance}}{261}{paragraph*.16}
+\contentsline {paragraph}{\texttt {powersave}}{261}{paragraph*.17}
+\contentsline {paragraph}{\texttt {userspace}}{261}{paragraph*.18}
+\contentsline {paragraph}{\texttt {schedutil}}{261}{paragraph*.19}
+\contentsline {paragraph}{\texttt {ondemand}}{262}{paragraph*.20}
+\contentsline {paragraph}{\texttt {conservative}}{263}{paragraph*.21}
+\contentsline {subsubsection}{Frequency Boost Support}{264}{subsubsection*.22}
+\contentsline {paragraph}{Background}{264}{paragraph*.23}
+\contentsline {paragraph}{The \texttt {boost} File in \texttt {sysfs}}{264}{paragraph*.24}
+\contentsline {paragraph}{Rationale for Boost Control Knob}{264}{paragraph*.25}
+\contentsline {paragraph}{Legacy AMD \texttt {cpb} Knob}{265}{paragraph*.26}
+\contentsline {subsection}{\numberline {26.3.2}\texttt {intel\_pstate} CPU Performance Scaling Driver}{265}{subsection.26.3.2}
+\contentsline {subsubsection}{General Information}{265}{subsubsection*.27}
+\contentsline {subsubsection}{Operation Modes}{266}{subsubsection*.29}
+\contentsline {paragraph}{Active Mode}{266}{paragraph*.30}
+\contentsline {subparagraph}{Active Mode With HWP}{266}{subparagraph*.31}
+\contentsline {subparagraph}{HWP + \texttt {performance}}{266}{subparagraph*.32}
+\contentsline {subparagraph}{HWP + \texttt {powersave}}{266}{subparagraph*.33}
+\contentsline {subparagraph}{Active Mode Without HWP}{267}{subparagraph*.34}
+\contentsline {subparagraph}{\texttt {performance}}{267}{subparagraph*.35}
+\contentsline {subparagraph}{\texttt {powersave}}{267}{subparagraph*.36}
+\contentsline {paragraph}{Passive Mode}{267}{paragraph*.37}
+\contentsline {subsubsection}{Turbo P-states Support}{268}{subsubsection*.38}
+\contentsline {subsubsection}{Processor Support}{268}{subsubsection*.41}
+\contentsline {subsubsection}{User Space Interface in \texttt {sysfs}}{269}{subsubsection*.45}
+\contentsline {paragraph}{Global Attributes}{269}{paragraph*.46}
+\contentsline {paragraph}{Interpretation of Policy Attributes}{270}{paragraph*.56}
+\contentsline {paragraph}{Coordination of P-State Limits}{270}{paragraph*.63}
+\contentsline {paragraph}{Energy vs Performance Hints}{271}{paragraph*.67}
+\contentsline {subsubsection}{\texttt {intel\_pstate} vs \texttt {acpi-cpufreq}}{271}{subsubsection*.69}
+\contentsline {subsubsection}{Kernel Command Line Options for \texttt {intel\_pstate}}{272}{subsubsection*.73}
+\contentsline {subsubsection}{Diagnostics and Tuning}{272}{subsubsection*.77}
+\contentsline {paragraph}{Trace Events}{273}{paragraph*.78}
+\contentsline {paragraph}{\texttt {ftrace}}{273}{paragraph*.81}
+\contentsline {chapter}{\numberline {27}Thunderbolt}{275}{chapter.27}
+\contentsline {section}{\numberline {27.1}Security levels and how to use them}{275}{section.27.1}
+\contentsline {section}{\numberline {27.2}Authorizing devices when security level is \texttt {user} or \texttt {secure}}{276}{section.27.2}
+\contentsline {section}{\numberline {27.3}Upgrading NVM on Thunderbolt device or host}{276}{section.27.3}
+\contentsline {section}{\numberline {27.4}Upgrading NVM when host controller is in safe mode}{277}{section.27.4}
+\contentsline {section}{\numberline {27.5}Networking over Thunderbolt cable}{277}{section.27.5}
+\contentsline {section}{\numberline {27.6}Forcing power}{278}{section.27.6}
+\contentsline {chapter}{\numberline {28}Linux Security Module Usage}{279}{chapter.28}
+\contentsline {section}{\numberline {28.1}AppArmor}{279}{section.28.1}
+\contentsline {subsection}{\numberline {28.1.1}What is AppArmor?}{279}{subsection.28.1.1}
+\contentsline {subsection}{\numberline {28.1.2}How to enable/disable}{279}{subsection.28.1.2}
+\contentsline {subsection}{\numberline {28.1.3}Documentation}{280}{subsection.28.1.3}
+\contentsline {subsection}{\numberline {28.1.4}Links}{280}{subsection.28.1.4}
+\contentsline {section}{\numberline {28.2}LoadPin}{280}{section.28.2}
+\contentsline {section}{\numberline {28.3}SELinux}{280}{section.28.3}
+\contentsline {section}{\numberline {28.4}Smack}{281}{section.28.4}
+\contentsline {subsection}{\numberline {28.4.1}The Simplified Mandatory Access Control Kernel (Whitepaper)}{284}{subsection.28.4.1}
+\contentsline {subsubsection}{Mandatory Access Control}{284}{subsubsection*.82}
+\contentsline {subsubsection}{Bell \& LaPadula}{284}{subsubsection*.83}
+\contentsline {subsubsection}{Domain Type Enforcement}{285}{subsubsection*.84}
+\contentsline {subsubsection}{Smack}{285}{subsubsection*.85}
+\contentsline {subsubsection}{Smack Terminology}{285}{subsubsection*.86}
+\contentsline {subsubsection}{Smack Basics}{285}{subsubsection*.87}
+\contentsline {paragraph}{Labels}{285}{paragraph*.88}
+\contentsline {paragraph}{Access Rules}{286}{paragraph*.89}
+\contentsline {paragraph}{Smack Access Rules}{286}{paragraph*.90}
+\contentsline {paragraph}{Access Rule Format}{286}{paragraph*.91}
+\contentsline {paragraph}{Applying Access Rules}{287}{paragraph*.92}
+\contentsline {paragraph}{Setting Access Rules}{287}{paragraph*.93}
+\contentsline {paragraph}{Task Attribute}{288}{paragraph*.94}
+\contentsline {paragraph}{File Attribute}{288}{paragraph*.95}
+\contentsline {paragraph}{Privilege}{288}{paragraph*.96}
+\contentsline {paragraph}{Smack Networking}{288}{paragraph*.97}
+\contentsline {paragraph}{CIPSO Configuration}{288}{paragraph*.98}
+\contentsline {paragraph}{Socket Attributes}{289}{paragraph*.99}
+\contentsline {paragraph}{Smack Netlabel Exceptions}{289}{paragraph*.100}
+\contentsline {subsubsection}{Writing Applications for Smack}{289}{subsubsection*.101}
+\contentsline {subsubsection}{Smack Ignorant Applications}{290}{subsubsection*.102}
+\contentsline {subsubsection}{Smack Relevant Applications}{290}{subsubsection*.103}
+\contentsline {subsubsection}{Smack Enforcing Applications}{290}{subsubsection*.104}
+\contentsline {subsubsection}{File System Interfaces}{290}{subsubsection*.105}
+\contentsline {subsubsection}{Socket Interfaces}{290}{subsubsection*.106}
+\contentsline {subsubsection}{Administration}{290}{subsubsection*.107}
+\contentsline {subsubsection}{Smack auditing}{291}{subsubsection*.108}
+\contentsline {subsubsection}{Bringup Mode}{291}{subsubsection*.109}
+\contentsline {section}{\numberline {28.5}TOMOYO}{291}{section.28.5}
+\contentsline {subsection}{\numberline {28.5.1}What is TOMOYO?}{291}{subsection.28.5.1}
+\contentsline {subsection}{\numberline {28.5.2}How to enable TOMOYO?}{291}{subsection.28.5.2}
+\contentsline {subsection}{\numberline {28.5.3}Where is documentation?}{292}{subsection.28.5.3}
+\contentsline {subsection}{\numberline {28.5.4}What is future plan?}{292}{subsection.28.5.4}
+\contentsline {section}{\numberline {28.6}Yama}{292}{section.28.6}
+\contentsline {subsection}{\numberline {28.6.1}ptrace\_scope}{292}{subsection.28.6.1}

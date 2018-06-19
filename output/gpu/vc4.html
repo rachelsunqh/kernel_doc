@@ -1,0 +1,377 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>drm/vc4 Broadcom VC4 Graphics Driver &mdash; The Linux Kernel 4.15.0-rc7 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
+  
+
+  
+    <link rel="top" title="The Linux Kernel 4.15.0-rc7 documentation" href="../index.html"/>
+        <link rel="up" title="Linux GPU Driver Developer’s Guide" href="index.html"/>
+        <link rel="next" title="VGA Switcheroo" href="vga-switcheroo.html"/>
+        <link rel="prev" title="drm/tve200 Faraday TV Encoder 200" href="tve200.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> The Linux Kernel
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                4.15.0-rc9
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul>
+<li class="toctree-l1"><a class="reference internal" href="../admin-guide/index.html">The Linux kernel user&#8217;s and administrator&#8217;s guide</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../userspace-api/index.html">The Linux kernel user-space API guide</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../process/index.html">Working with the kernel development community</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dev-tools/index.html">Development tools for the kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../doc-guide/index.html">How to write kernel documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kernel-hacking/index.html">Kernel Hacking Guides</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../driver-api/index.html">The Linux driver implementer&#8217;s API guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core-api/index.html">Core API Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../media/index.html">Linux Media Subsystem Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../networking/index.html">Linux Networking Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../input/index.html">The Linux Input Documentation</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Linux GPU Driver Developer&#8217;s Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="drm-internals.html">DRM Internals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="drm-mm.html">DRM Memory Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="drm-kms.html">Kernel Mode Setting (KMS)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="drm-kms-helpers.html">Mode Setting Helper Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="drm-uapi.html">Userland interfaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="i915.html">drm/i915 Intel GFX Driver</a></li>
+<li class="toctree-l2"><a class="reference internal" href="meson.html">drm/meson AmLogic Meson Video Processing Unit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pl111.html">drm/pl111 ARM PrimeCell PL111 CLCD Driver</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tegra.html">drm/tegra NVIDIA Tegra GPU and display driver</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tinydrm.html">drm/tinydrm Driver library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tve200.html">drm/tve200 Faraday TV Encoder 200</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">drm/vc4 Broadcom VC4 Graphics Driver</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#display-hardware-handling">Display Hardware Handling</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#pixel-valve-drm-crtc">Pixel Valve (DRM CRTC)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#hvs">HVS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#hvs-planes">HVS planes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#hdmi-encoder">HDMI encoder</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#dsi-encoder">DSI encoder</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#dpi-encoder">DPI encoder</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vec-composite-tv-out-encoder">VEC (Composite TV out) encoder</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#memory-management-and-3d-command-submission">Memory Management and 3D Command Submission</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#gpu-buffer-object-bo-management">GPU buffer object (BO) management</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#v3d-binner-command-list-bcl-validation">V3D binner command list (BCL) validation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#v3d-render-command-list-rcl-generation">V3D render command list (RCL) generation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#shader-validator-for-vc4">Shader validator for VC4</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#v3d-interrupts">V3D Interrupts</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="vga-switcheroo.html">VGA Switcheroo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vgaarbiter.html">VGA Arbiter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bridge/dw-hdmi.html">drm/bridge/dw-hdmi Synopsys DesignWare HDMI Controller</a></li>
+<li class="toctree-l2"><a class="reference internal" href="todo.html">TODO list</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../security/index.html">Security Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sound/index.html">Linux Sound Subsystem Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../crypto/index.html">Linux Kernel Crypto API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../filesystems/index.html">Linux Filesystems API</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../sh/index.html">SuperH Interfaces Guide</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../translations/ko_KR/index.html">Korean translations</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../translations/zh_CN/index.html">Chinese translations</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../translations/ja_JP/index.html">Japanese translations</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">The Linux Kernel</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="index.html">Linux GPU Driver Developer&#8217;s Guide</a> &raquo;</li>
+      
+    <li>drm/vc4 Broadcom VC4 Graphics Driver</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/gpu/vc4.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="drm-vc4-broadcom-vc4-graphics-driver">
+<h1>drm/vc4 Broadcom VC4 Graphics Driver<a class="headerlink" href="#drm-vc4-broadcom-vc4-graphics-driver" title="Permalink to this headline">¶</a></h1>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="section" id="display-hardware-handling">
+<h2>Display Hardware Handling<a class="headerlink" href="#display-hardware-handling" title="Permalink to this headline">¶</a></h2>
+<p>This section covers everything related to the display hardware including
+the mode setting infrastructure, plane, sprite and cursor handling and
+display, output probing and related topics.</p>
+<div class="section" id="pixel-valve-drm-crtc">
+<h3>Pixel Valve (DRM CRTC)<a class="headerlink" href="#pixel-valve-drm-crtc" title="Permalink to this headline">¶</a></h3>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+</div>
+<div class="section" id="hvs">
+<h3>HVS<a class="headerlink" href="#hvs" title="Permalink to this headline">¶</a></h3>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+</div>
+<div class="section" id="hvs-planes">
+<h3>HVS planes<a class="headerlink" href="#hvs-planes" title="Permalink to this headline">¶</a></h3>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+</div>
+<div class="section" id="hdmi-encoder">
+<h3>HDMI encoder<a class="headerlink" href="#hdmi-encoder" title="Permalink to this headline">¶</a></h3>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+</div>
+<div class="section" id="dsi-encoder">
+<h3>DSI encoder<a class="headerlink" href="#dsi-encoder" title="Permalink to this headline">¶</a></h3>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+</div>
+<div class="section" id="dpi-encoder">
+<h3>DPI encoder<a class="headerlink" href="#dpi-encoder" title="Permalink to this headline">¶</a></h3>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+</div>
+<div class="section" id="vec-composite-tv-out-encoder">
+<h3>VEC (Composite TV out) encoder<a class="headerlink" href="#vec-composite-tv-out-encoder" title="Permalink to this headline">¶</a></h3>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+</div>
+</div>
+<div class="section" id="memory-management-and-3d-command-submission">
+<h2>Memory Management and 3D Command Submission<a class="headerlink" href="#memory-management-and-3d-command-submission" title="Permalink to this headline">¶</a></h2>
+<p>This section covers the GEM implementation in the vc4 driver.</p>
+<div class="section" id="gpu-buffer-object-bo-management">
+<h3>GPU buffer object (BO) management<a class="headerlink" href="#gpu-buffer-object-bo-management" title="Permalink to this headline">¶</a></h3>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+</div>
+<div class="section" id="v3d-binner-command-list-bcl-validation">
+<h3>V3D binner command list (BCL) validation<a class="headerlink" href="#v3d-binner-command-list-bcl-validation" title="Permalink to this headline">¶</a></h3>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+</div>
+<div class="section" id="v3d-render-command-list-rcl-generation">
+<h3>V3D render command list (RCL) generation<a class="headerlink" href="#v3d-render-command-list-rcl-generation" title="Permalink to this headline">¶</a></h3>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+</div>
+<div class="section" id="shader-validator-for-vc4">
+<h3>Shader validator for VC4<a class="headerlink" href="#shader-validator-for-vc4" title="Permalink to this headline">¶</a></h3>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+</div>
+<div class="section" id="v3d-interrupts">
+<h3>V3D Interrupts<a class="headerlink" href="#v3d-interrupts" title="Permalink to this headline">¶</a></h3>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="vga-switcheroo.html" class="btn btn-neutral float-right" title="VGA Switcheroo" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="tve200.html" class="btn btn-neutral" title="drm/tve200 Faraday TV Encoder 200" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright The kernel development community.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'4.15.0-rc7',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+\begin{theindex}
+\def\bigletter#1{{\Large\sffamily#1}\nopagebreak\vspace{1mm}}
+
+  \bigletter {Symbols}
+  \item \_\_flush\_tlb\_slot (C function), \hyperpage{5}
+
+  \indexspace
+  \bigletter A
+  \item aica\_rtc\_gettimeofday (C function), \hyperpage{7}
+  \item aica\_rtc\_settimeofday (C function), \hyperpage{7}
+
+  \indexspace
+  \bigletter F
+  \item for\_each\_dtlb\_entry (C function), \hyperpage{4}
+  \item for\_each\_itlb\_entry (C function), \hyperpage{5}
+
+  \indexspace
+  \bigletter I
+  \item ilsel\_disable (C function), \hyperpage{8}
+  \item ilsel\_enable (C function), \hyperpage{7}
+  \item ilsel\_enable\_fixed (C function), \hyperpage{7}
+
+  \indexspace
+  \bigletter M
+  \item maple\_add\_packet (C function), \hyperpage{10}
+  \item maple\_driver\_register (C function), \hyperpage{10}
+  \item maple\_driver\_unregister (C function), \hyperpage{10}
+  \item maple\_getcond\_callback (C function), \hyperpage{10}
+
+  \indexspace
+  \bigletter S
+  \item sh64\_get\_wired\_dtlb\_entry (C function), \hyperpage{4}
+  \item sh64\_next\_free\_dtlb\_entry (C function), \hyperpage{4}
+  \item sh64\_put\_wired\_dtlb\_entry (C function), \hyperpage{4}
+  \item sh64\_setup\_tlb\_slot (C function), \hyperpage{4}
+  \item sh64\_teardown\_tlb\_slot (C function), \hyperpage{4}
+  \item sh64\_tlb\_init (C function), \hyperpage{4}
+  \item sq\_flush\_range (C function), \hyperpage{3}
+  \item sq\_remap (C function), \hyperpage{3}
+  \item sq\_unmap (C function), \hyperpage{3}
+  \item superhyway\_add\_device (C function), \hyperpage{9}
+  \item superhyway\_register\_driver (C function), \hyperpage{9}
+  \item superhyway\_unregister\_driver (C function), \hyperpage{9}
+
+\end{theindex}

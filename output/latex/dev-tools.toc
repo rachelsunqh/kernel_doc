@@ -1,0 +1,109 @@
+\select@language {english}
+\contentsline {chapter}{\numberline {1}Coccinelle}{3}{chapter.1}
+\contentsline {section}{\numberline {1.1}Getting Coccinelle}{3}{section.1.1}
+\contentsline {section}{\numberline {1.2}Supplemental documentation}{3}{section.1.2}
+\contentsline {section}{\numberline {1.3}Using Coccinelle on the Linux kernel}{4}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Examples}{4}{subsection.1.3.1}
+\contentsline {section}{\numberline {1.4}Coccinelle parallelization}{4}{section.1.4}
+\contentsline {section}{\numberline {1.5}Using Coccinelle with a single semantic patch}{5}{section.1.5}
+\contentsline {section}{\numberline {1.6}Controlling Which Files are Processed by Coccinelle}{5}{section.1.6}
+\contentsline {section}{\numberline {1.7}Debugging Coccinelle SmPL patches}{5}{section.1.7}
+\contentsline {section}{\numberline {1.8}.cocciconfig support}{6}{section.1.8}
+\contentsline {section}{\numberline {1.9}Additional flags}{7}{section.1.9}
+\contentsline {section}{\numberline {1.10}SmPL patch specific options}{7}{section.1.10}
+\contentsline {section}{\numberline {1.11}SmPL patch Coccinelle requirements}{7}{section.1.11}
+\contentsline {section}{\numberline {1.12}Proposing new semantic patches}{7}{section.1.12}
+\contentsline {section}{\numberline {1.13}Detailed description of the \texttt {report} mode}{7}{section.1.13}
+\contentsline {subsection}{\numberline {1.13.1}Example}{8}{subsection.1.13.1}
+\contentsline {section}{\numberline {1.14}Detailed description of the \texttt {patch} mode}{8}{section.1.14}
+\contentsline {subsection}{\numberline {1.14.1}Example}{8}{subsection.1.14.1}
+\contentsline {section}{\numberline {1.15}Detailed description of the \texttt {context} mode}{9}{section.1.15}
+\contentsline {subsection}{\numberline {1.15.1}Example}{9}{subsection.1.15.1}
+\contentsline {section}{\numberline {1.16}Detailed description of the \texttt {org} mode}{9}{section.1.16}
+\contentsline {subsection}{\numberline {1.16.1}Example}{9}{subsection.1.16.1}
+\contentsline {chapter}{\numberline {2}Sparse}{11}{chapter.2}
+\contentsline {section}{\numberline {2.1}Using sparse for typechecking}{11}{section.2.1}
+\contentsline {section}{\numberline {2.2}Using sparse for lock checking}{11}{section.2.2}
+\contentsline {section}{\numberline {2.3}Getting sparse}{12}{section.2.3}
+\contentsline {section}{\numberline {2.4}Using sparse}{12}{section.2.4}
+\contentsline {chapter}{\numberline {3}kcov: code coverage for fuzzing}{13}{chapter.3}
+\contentsline {section}{\numberline {3.1}Prerequisites}{13}{section.3.1}
+\contentsline {section}{\numberline {3.2}Coverage collection}{13}{section.3.2}
+\contentsline {section}{\numberline {3.3}Comparison operands collection}{15}{section.3.3}
+\contentsline {chapter}{\numberline {4}Using gcov with the Linux kernel}{17}{chapter.4}
+\contentsline {section}{\numberline {4.1}Preparation}{17}{section.4.1}
+\contentsline {section}{\numberline {4.2}Customization}{17}{section.4.2}
+\contentsline {section}{\numberline {4.3}Files}{18}{section.4.3}
+\contentsline {section}{\numberline {4.4}Modules}{18}{section.4.4}
+\contentsline {section}{\numberline {4.5}Separated build and test machines}{18}{section.4.5}
+\contentsline {section}{\numberline {4.6}Troubleshooting}{19}{section.4.6}
+\contentsline {section}{\numberline {4.7}Appendix A: gather\_on\_build.sh}{19}{section.4.7}
+\contentsline {section}{\numberline {4.8}Appendix B: gather\_on\_test.sh}{20}{section.4.8}
+\contentsline {chapter}{\numberline {5}The Kernel Address Sanitizer (KASAN)}{21}{chapter.5}
+\contentsline {section}{\numberline {5.1}Overview}{21}{section.5.1}
+\contentsline {section}{\numberline {5.2}Usage}{21}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Error reports}{21}{subsection.5.2.1}
+\contentsline {section}{\numberline {5.3}Implementation details}{23}{section.5.3}
+\contentsline {chapter}{\numberline {6}The Undefined Behavior Sanitizer - UBSAN}{25}{chapter.6}
+\contentsline {section}{\numberline {6.1}Report example}{25}{section.6.1}
+\contentsline {section}{\numberline {6.2}Usage}{25}{section.6.2}
+\contentsline {section}{\numberline {6.3}References}{26}{section.6.3}
+\contentsline {chapter}{\numberline {7}Kernel Memory Leak Detector}{27}{chapter.7}
+\contentsline {section}{\numberline {7.1}Usage}{27}{section.7.1}
+\contentsline {section}{\numberline {7.2}Basic Algorithm}{28}{section.7.2}
+\contentsline {section}{\numberline {7.3}Testing specific sections with kmemleak}{28}{section.7.3}
+\contentsline {section}{\numberline {7.4}Freeing kmemleak internal objects}{29}{section.7.4}
+\contentsline {section}{\numberline {7.5}Kmemleak API}{29}{section.7.5}
+\contentsline {section}{\numberline {7.6}Dealing with false positives/negatives}{29}{section.7.6}
+\contentsline {section}{\numberline {7.7}Limitations and Drawbacks}{30}{section.7.7}
+\contentsline {chapter}{\numberline {8}Debugging kernel and modules via gdb}{31}{chapter.8}
+\contentsline {section}{\numberline {8.1}Requirements}{31}{section.8.1}
+\contentsline {section}{\numberline {8.2}Setup}{31}{section.8.2}
+\contentsline {section}{\numberline {8.3}Examples of using the Linux-provided gdb helpers}{32}{section.8.3}
+\contentsline {section}{\numberline {8.4}List of commands and functions}{33}{section.8.4}
+\contentsline {chapter}{\numberline {9}Using kgdb, kdb and the kernel debugger internals}{35}{chapter.9}
+\contentsline {section}{\numberline {9.1}Introduction}{35}{section.9.1}
+\contentsline {section}{\numberline {9.2}Compiling a kernel}{35}{section.9.2}
+\contentsline {subsection}{\numberline {9.2.1}Kernel config options for kgdb}{35}{subsection.9.2.1}
+\contentsline {subsection}{\numberline {9.2.2}Kernel config options for kdb}{36}{subsection.9.2.2}
+\contentsline {section}{\numberline {9.3}Kernel Debugger Boot Arguments}{36}{section.9.3}
+\contentsline {subsection}{\numberline {9.3.1}Kernel parameter: kgdboc}{36}{subsection.9.3.1}
+\contentsline {subsubsection}{kgdboc arguments}{37}{subsubsection*.3}
+\contentsline {paragraph}{Using loadable module or built-in}{37}{paragraph*.4}
+\contentsline {paragraph}{Configure kgdboc at runtime with sysfs}{37}{paragraph*.5}
+\contentsline {paragraph}{More examples}{38}{paragraph*.6}
+\contentsline {subsection}{\numberline {9.3.2}Kernel parameter: \texttt {kgdbwait}}{39}{subsection.9.3.2}
+\contentsline {subsection}{\numberline {9.3.3}Kernel parameter: \texttt {kgdbcon}}{39}{subsection.9.3.3}
+\contentsline {subsection}{\numberline {9.3.4}Run time parameter: \texttt {kgdbreboot}}{39}{subsection.9.3.4}
+\contentsline {subsection}{\numberline {9.3.5}Kernel parameter: \texttt {nokaslr}}{40}{subsection.9.3.5}
+\contentsline {section}{\numberline {9.4}Using kdb}{40}{section.9.4}
+\contentsline {subsection}{\numberline {9.4.1}Quick start for kdb on a serial port}{40}{subsection.9.4.1}
+\contentsline {subsection}{\numberline {9.4.2}Quick start for kdb using a keyboard connected console}{41}{subsection.9.4.2}
+\contentsline {section}{\numberline {9.5}Using kgdb / gdb}{41}{section.9.5}
+\contentsline {subsection}{\numberline {9.5.1}Connecting with gdb to a serial port}{42}{subsection.9.5.1}
+\contentsline {section}{\numberline {9.6}kgdb and kdb interoperability}{42}{section.9.6}
+\contentsline {subsection}{\numberline {9.6.1}Switching between kdb and kgdb}{43}{subsection.9.6.1}
+\contentsline {subsubsection}{Switching from kgdb to kdb}{43}{subsubsection*.7}
+\contentsline {subsubsection}{Change from kdb to kgdb}{43}{subsubsection*.8}
+\contentsline {subsection}{\numberline {9.6.2}Running kdb commands from gdb}{43}{subsection.9.6.2}
+\contentsline {section}{\numberline {9.7}kgdb Test Suite}{44}{section.9.7}
+\contentsline {section}{\numberline {9.8}Kernel Debugger Internals}{44}{section.9.8}
+\contentsline {subsection}{\numberline {9.8.1}Architecture Specifics}{44}{subsection.9.8.1}
+\contentsline {subsection}{\numberline {9.8.2}kgdboc internals}{49}{subsection.9.8.2}
+\contentsline {subsubsection}{kgdboc and uarts}{49}{subsubsection*.22}
+\contentsline {subsubsection}{kgdboc and keyboards}{49}{subsubsection*.23}
+\contentsline {subsubsection}{kgdboc and kms}{49}{subsubsection*.24}
+\contentsline {section}{\numberline {9.9}Credits}{50}{section.9.9}
+\contentsline {chapter}{\numberline {10}Linux Kernel Selftests}{51}{chapter.10}
+\contentsline {section}{\numberline {10.1}Running the selftests (hotplug tests are run in limited mode)}{51}{section.10.1}
+\contentsline {section}{\numberline {10.2}Running a subset of selftests}{51}{section.10.2}
+\contentsline {section}{\numberline {10.3}Running the full range hotplug selftests}{52}{section.10.3}
+\contentsline {section}{\numberline {10.4}Install selftests}{52}{section.10.4}
+\contentsline {section}{\numberline {10.5}Running installed selftests}{52}{section.10.5}
+\contentsline {section}{\numberline {10.6}Contributing new tests}{53}{section.10.6}
+\contentsline {section}{\numberline {10.7}Contributing new tests (details)}{53}{section.10.7}
+\contentsline {section}{\numberline {10.8}Test Harness}{53}{section.10.8}
+\contentsline {subsection}{\numberline {10.8.1}Example}{53}{subsection.10.8.1}
+\contentsline {subsection}{\numberline {10.8.2}Helpers}{54}{subsection.10.8.2}
+\contentsline {subsection}{\numberline {10.8.3}Operators}{56}{subsection.10.8.3}
+\contentsline {chapter}{Index}{61}{section*.56}

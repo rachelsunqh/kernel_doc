@@ -1,0 +1,203 @@
+\select@language {english}
+\contentsline {chapter}{\numberline {1}Core utilities}{3}{chapter.1}
+\contentsline {section}{\numberline {1.1}The Linux Kernel API}{3}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}List Management Functions}{3}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Basic C Library Functions}{10}{subsection.1.1.2}
+\contentsline {subsubsection}{String Conversions}{10}{subsubsection*.46}
+\contentsline {subsubsection}{String Manipulation}{16}{subsubsection*.69}
+\contentsline {subsubsection}{Bit Operations}{23}{subsubsection*.109}
+\contentsline {subsection}{\numberline {1.1.3}Basic Kernel Library Functions}{26}{subsection.1.1.3}
+\contentsline {subsubsection}{Bitmap Operations}{26}{subsubsection*.127}
+\contentsline {subsubsection}{Command-line Parsing}{35}{subsubsection*.151}
+\contentsline {subsubsection}{CRC Functions}{36}{subsubsection*.155}
+\contentsline {subsection}{\numberline {1.1.4}Math Functions in Linux}{38}{subsection.1.1.4}
+\contentsline {subsubsection}{Base 2 log and power Functions}{38}{subsubsection*.168}
+\contentsline {subsubsection}{Division Functions}{39}{subsubsection*.176}
+\contentsline {subsubsection}{Sorting}{42}{subsubsection*.186}
+\contentsline {subsubsection}{UUID/GUID}{42}{subsubsection*.189}
+\contentsline {subsection}{\numberline {1.1.5}Memory Management in Linux}{43}{subsection.1.1.5}
+\contentsline {subsubsection}{The Slab Cache}{43}{subsubsection*.192}
+\contentsline {subsubsection}{User Space Memory Access}{47}{subsubsection*.214}
+\contentsline {subsubsection}{More Memory Management Functions}{50}{subsubsection*.222}
+\contentsline {subsection}{\numberline {1.1.6}Kernel IPC facilities}{74}{subsection.1.1.6}
+\contentsline {subsubsection}{IPC utilities}{74}{subsubsection*.325}
+\contentsline {subsection}{\numberline {1.1.7}FIFO Buffer}{79}{subsection.1.1.7}
+\contentsline {subsubsection}{kfifo interface}{79}{subsubsection*.347}
+\contentsline {subsection}{\numberline {1.1.8}relay interface support}{85}{subsection.1.1.8}
+\contentsline {subsubsection}{relay interface}{85}{subsubsection*.381}
+\contentsline {subsection}{\numberline {1.1.9}Module Support}{90}{subsection.1.1.9}
+\contentsline {subsubsection}{Module Loading}{90}{subsubsection*.407}
+\contentsline {subsubsection}{Inter Module support}{90}{subsubsection*.409}
+\contentsline {subsection}{\numberline {1.1.10}Hardware Interfaces}{90}{subsection.1.1.10}
+\contentsline {subsubsection}{Interrupt Handling}{90}{subsubsection*.410}
+\contentsline {subsubsection}{DMA Channels}{95}{subsubsection*.431}
+\contentsline {subsubsection}{Resources Management}{95}{subsubsection*.434}
+\contentsline {subsubsection}{MTRR Handling}{100}{subsubsection*.453}
+\contentsline {subsection}{\numberline {1.1.11}Security Framework}{100}{subsection.1.1.11}
+\contentsline {subsection}{\numberline {1.1.12}Audit Interfaces}{102}{subsection.1.1.12}
+\contentsline {subsection}{\numberline {1.1.13}Accounting Framework}{107}{subsection.1.1.13}
+\contentsline {subsection}{\numberline {1.1.14}Block Devices}{108}{subsection.1.1.14}
+\contentsline {subsection}{\numberline {1.1.15}Char devices}{138}{subsection.1.1.15}
+\contentsline {subsection}{\numberline {1.1.16}Clock Framework}{141}{subsection.1.1.16}
+\contentsline {subsection}{\numberline {1.1.17}Synchronization Primitives}{150}{subsection.1.1.17}
+\contentsline {subsubsection}{Read-Copy Update (RCU)}{150}{subsubsection*.679}
+\contentsline {section}{\numberline {1.2}Generic Associative Array Implementation}{178}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Overview}{178}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}The Public API}{179}{subsection.1.2.2}
+\contentsline {subsubsection}{Edit Script}{179}{subsubsection*.798}
+\contentsline {subsubsection}{Operations Table}{180}{subsubsection*.799}
+\contentsline {subsubsection}{Manipulation Functions}{181}{subsubsection*.800}
+\contentsline {subsubsection}{Access Functions}{182}{subsubsection*.801}
+\contentsline {subsubsection}{Index Key Form}{183}{subsubsection*.802}
+\contentsline {subsection}{\numberline {1.2.3}Internal Workings}{183}{subsection.1.2.3}
+\contentsline {subsubsection}{Basic Internal Tree Layout}{183}{subsubsection*.803}
+\contentsline {subsubsection}{Shortcuts}{185}{subsubsection*.804}
+\contentsline {subsubsection}{Splitting And Collapsing Nodes}{185}{subsubsection*.805}
+\contentsline {subsubsection}{Non-Recursive Iteration}{185}{subsubsection*.806}
+\contentsline {subsubsection}{Simultaneous Alteration And Iteration}{185}{subsubsection*.807}
+\contentsline {section}{\numberline {1.3}Semantics and Behavior of Atomic and Bitmask Operations}{186}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Atomic Type And Operations}{186}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Atomic Bitmask}{192}{subsection.1.3.2}
+\contentsline {section}{\numberline {1.4}refcount\_t API compared to atomic\_t}{195}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}Introduction}{195}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.4.2}Relevant types of memory ordering}{195}{subsection.1.4.2}
+\contentsline {subsection}{\numberline {1.4.3}Comparison of functions}{196}{subsection.1.4.3}
+\contentsline {subsubsection}{case 1) - non-``Read/Modify/Write'' (RMW) ops}{196}{subsubsection*.817}
+\contentsline {subsubsection}{case 2) - increment-based ops that return no value}{196}{subsubsection*.818}
+\contentsline {subsubsection}{case 3) - decrement-based RMW ops that return no value}{196}{subsubsection*.819}
+\contentsline {subsubsection}{case 4) - increment-based RMW ops that return a value}{197}{subsubsection*.820}
+\contentsline {subsubsection}{case 5) - decrement-based RMW ops that return a value}{197}{subsubsection*.821}
+\contentsline {subsubsection}{case 6) - lock-based RMW}{197}{subsubsection*.822}
+\contentsline {section}{\numberline {1.5}CPU hotplug in the Kernel}{197}{section.1.5}
+\contentsline {subsection}{\numberline {1.5.1}Introduction}{198}{subsection.1.5.1}
+\contentsline {subsection}{\numberline {1.5.2}Command Line Switches}{198}{subsection.1.5.2}
+\contentsline {subsection}{\numberline {1.5.3}CPU maps}{198}{subsection.1.5.3}
+\contentsline {subsection}{\numberline {1.5.4}Using CPU hotplug}{199}{subsection.1.5.4}
+\contentsline {subsection}{\numberline {1.5.5}The CPU hotplug coordination}{199}{subsection.1.5.5}
+\contentsline {subsubsection}{The offline case}{199}{subsubsection*.823}
+\contentsline {subsubsection}{Using the hotplug API}{200}{subsubsection*.824}
+\contentsline {paragraph}{Multiple instances}{200}{paragraph*.825}
+\contentsline {paragraph}{Manual setup}{200}{paragraph*.826}
+\contentsline {subsubsection}{The ordering of the events}{200}{subsubsection*.827}
+\contentsline {subsection}{\numberline {1.5.6}Testing of hotplug states}{201}{subsection.1.5.6}
+\contentsline {subsection}{\numberline {1.5.7}Architecture's requirements}{202}{subsection.1.5.7}
+\contentsline {subsection}{\numberline {1.5.8}User Space Notification}{202}{subsection.1.5.8}
+\contentsline {subsection}{\numberline {1.5.9}Kernel Inline Documentations Reference}{203}{subsection.1.5.9}
+\contentsline {section}{\numberline {1.6}ID Allocation}{205}{section.1.6}
+\contentsline {subsection}{\numberline {1.6.1}Overview}{205}{subsection.1.6.1}
+\contentsline {subsection}{\numberline {1.6.2}IDR usage}{205}{subsection.1.6.2}
+\contentsline {subsection}{\numberline {1.6.3}IDA usage}{206}{subsection.1.6.3}
+\contentsline {subsection}{\numberline {1.6.4}Functions and structures}{206}{subsection.1.6.4}
+\contentsline {section}{\numberline {1.7}Semantics and Behavior of Local Atomic Operations}{212}{section.1.7}
+\contentsline {subsection}{\numberline {1.7.1}Purpose of local atomic operations}{213}{subsection.1.7.1}
+\contentsline {subsection}{\numberline {1.7.2}Implementation for a given architecture}{213}{subsection.1.7.2}
+\contentsline {subsection}{\numberline {1.7.3}Rules to follow when using local atomic operations}{213}{subsection.1.7.3}
+\contentsline {subsection}{\numberline {1.7.4}How to use local atomic operations}{214}{subsection.1.7.4}
+\contentsline {subsection}{\numberline {1.7.5}Counting}{214}{subsection.1.7.5}
+\contentsline {subsection}{\numberline {1.7.6}Reading the counters}{214}{subsection.1.7.6}
+\contentsline {section}{\numberline {1.8}Concurrency Managed Workqueue (cmwq)}{215}{section.1.8}
+\contentsline {subsection}{\numberline {1.8.1}Introduction}{215}{subsection.1.8.1}
+\contentsline {subsection}{\numberline {1.8.2}Why cmwq?}{216}{subsection.1.8.2}
+\contentsline {subsection}{\numberline {1.8.3}The Design}{216}{subsection.1.8.3}
+\contentsline {subsection}{\numberline {1.8.4}Application Programming Interface (API)}{217}{subsection.1.8.4}
+\contentsline {subsubsection}{\texttt {flags}}{217}{subsubsection*.864}
+\contentsline {subsubsection}{\texttt {max\_active}}{218}{subsubsection*.865}
+\contentsline {subsection}{\numberline {1.8.5}Example Execution Scenarios}{218}{subsection.1.8.5}
+\contentsline {subsection}{\numberline {1.8.6}Guidelines}{219}{subsection.1.8.6}
+\contentsline {subsection}{\numberline {1.8.7}Debugging}{220}{subsection.1.8.7}
+\contentsline {subsection}{\numberline {1.8.8}Kernel Inline Documentations Reference}{220}{subsection.1.8.8}
+\contentsline {section}{\numberline {1.9}Linux generic IRQ handling}{223}{section.1.9}
+\contentsline {subsection}{\numberline {1.9.1}Introduction}{223}{subsection.1.9.1}
+\contentsline {subsection}{\numberline {1.9.2}Rationale}{223}{subsection.1.9.2}
+\contentsline {subsection}{\numberline {1.9.3}Known Bugs And Assumptions}{224}{subsection.1.9.3}
+\contentsline {subsection}{\numberline {1.9.4}Abstraction layers}{224}{subsection.1.9.4}
+\contentsline {subsubsection}{Interrupt control flow}{224}{subsubsection*.879}
+\contentsline {subsubsection}{High-level Driver API}{225}{subsubsection*.880}
+\contentsline {subsubsection}{High-level IRQ flow handlers}{225}{subsubsection*.881}
+\contentsline {paragraph}{Default flow implementations}{225}{paragraph*.882}
+\contentsline {subparagraph}{Helper functions}{225}{subparagraph*.883}
+\contentsline {paragraph}{Default flow handler implementations}{226}{paragraph*.884}
+\contentsline {subparagraph}{Default Level IRQ flow handler}{226}{subparagraph*.885}
+\contentsline {subparagraph}{Default Fast EOI IRQ flow handler}{226}{subparagraph*.886}
+\contentsline {subparagraph}{Default Edge IRQ flow handler}{226}{subparagraph*.887}
+\contentsline {subparagraph}{Default simple IRQ flow handler}{227}{subparagraph*.888}
+\contentsline {subparagraph}{Default per CPU flow handler}{227}{subparagraph*.889}
+\contentsline {subparagraph}{EOI Edge IRQ flow handler}{227}{subparagraph*.890}
+\contentsline {subparagraph}{Bad IRQ flow handler}{227}{subparagraph*.891}
+\contentsline {paragraph}{Quirks and optimizations}{227}{paragraph*.892}
+\contentsline {paragraph}{Delayed interrupt disable}{227}{paragraph*.893}
+\contentsline {subsubsection}{Chip-level hardware encapsulation}{227}{subsubsection*.894}
+\contentsline {subsection}{\numberline {1.9.5}\_\_do\_IRQ entry point}{228}{subsection.1.9.5}
+\contentsline {subsection}{\numberline {1.9.6}Locking on SMP}{228}{subsection.1.9.6}
+\contentsline {subsection}{\numberline {1.9.7}Generic interrupt chip}{228}{subsection.1.9.7}
+\contentsline {subsection}{\numberline {1.9.8}Structures}{230}{subsection.1.9.8}
+\contentsline {subsection}{\numberline {1.9.9}Public Functions Provided}{237}{subsection.1.9.9}
+\contentsline {subsection}{\numberline {1.9.10}Internal Functions Provided}{248}{subsection.1.9.10}
+\contentsline {subsection}{\numberline {1.9.11}Credits}{255}{subsection.1.9.11}
+\contentsline {section}{\numberline {1.10}Using flexible arrays in the kernel}{255}{section.1.10}
+\contentsline {subsection}{\numberline {1.10.1}Flexible array functions}{257}{subsection.1.10.1}
+\contentsline {section}{\numberline {1.11}Reed-Solomon Library Programming Interface}{258}{section.1.11}
+\contentsline {subsection}{\numberline {1.11.1}Introduction}{259}{subsection.1.11.1}
+\contentsline {subsection}{\numberline {1.11.2}Known Bugs And Assumptions}{259}{subsection.1.11.2}
+\contentsline {subsection}{\numberline {1.11.3}Usage}{259}{subsection.1.11.3}
+\contentsline {subsubsection}{Initializing}{259}{subsubsection*.993}
+\contentsline {subsubsection}{Encoding}{259}{subsubsection*.994}
+\contentsline {subsubsection}{Decoding}{260}{subsubsection*.995}
+\contentsline {paragraph}{Decoding with syndrome calculation, direct data correction}{260}{paragraph*.996}
+\contentsline {paragraph}{Decoding with syndrome given by hardware decoder, direct data correction}{260}{paragraph*.997}
+\contentsline {paragraph}{Decoding with syndrome given by hardware decoder, no direct data correction.}{260}{paragraph*.998}
+\contentsline {subsubsection}{Cleanup}{261}{subsubsection*.999}
+\contentsline {subsection}{\numberline {1.11.4}Structures}{261}{subsection.1.11.4}
+\contentsline {subsection}{\numberline {1.11.5}Public Functions Provided}{262}{subsection.1.11.5}
+\contentsline {subsection}{\numberline {1.11.6}Credits}{264}{subsection.1.11.6}
+\contentsline {section}{\numberline {1.12}The genalloc/genpool subsystem}{264}{section.1.12}
+\contentsline {section}{\numberline {1.13}The errseq\_t datatype}{269}{section.1.13}
+\contentsline {subsection}{\numberline {1.13.1}API usage}{269}{subsection.1.13.1}
+\contentsline {subsection}{\numberline {1.13.2}Serializing errseq\_t cursor updates}{270}{subsection.1.13.2}
+\contentsline {subsection}{\numberline {1.13.3}Functions}{271}{subsection.1.13.3}
+\contentsline {section}{\numberline {1.14}How to get printk format specifiers right}{272}{section.1.14}
+\contentsline {subsection}{\numberline {1.14.1}Integer types}{272}{subsection.1.14.1}
+\contentsline {subsection}{\numberline {1.14.2}Pointer types}{272}{subsection.1.14.2}
+\contentsline {subsubsection}{Plain Pointers}{273}{subsubsection*.1029}
+\contentsline {subsubsection}{Symbols/Function Pointers}{273}{subsubsection*.1030}
+\contentsline {subsubsection}{Kernel Pointers}{273}{subsubsection*.1031}
+\contentsline {subsubsection}{Unmodified Addresses}{273}{subsubsection*.1032}
+\contentsline {subsubsection}{Struct Resources}{273}{subsubsection*.1033}
+\contentsline {subsubsection}{Physical address types phys\_addr\_t}{274}{subsubsection*.1034}
+\contentsline {subsubsection}{DMA address types dma\_addr\_t}{274}{subsubsection*.1035}
+\contentsline {subsubsection}{Raw buffer as an escaped string}{274}{subsubsection*.1036}
+\contentsline {subsubsection}{Raw buffer as a hex string}{274}{subsubsection*.1037}
+\contentsline {subsubsection}{MAC/FDDI addresses}{275}{subsubsection*.1038}
+\contentsline {subsubsection}{IPv4 addresses}{275}{subsubsection*.1039}
+\contentsline {subsubsection}{IPv6 addresses}{275}{subsubsection*.1040}
+\contentsline {subsubsection}{IPv4/IPv6 addresses (generic, with port, flowinfo, scope)}{275}{subsubsection*.1041}
+\contentsline {subsubsection}{UUID/GUID addresses}{276}{subsubsection*.1042}
+\contentsline {subsubsection}{dentry names}{276}{subsubsection*.1043}
+\contentsline {subsubsection}{block\_device names}{276}{subsubsection*.1044}
+\contentsline {subsubsection}{struct va\_format}{276}{subsubsection*.1045}
+\contentsline {subsubsection}{kobjects}{277}{subsubsection*.1046}
+\contentsline {subsubsection}{struct clk}{277}{subsubsection*.1047}
+\contentsline {subsubsection}{bitmap and its derivatives such as cpumask and nodemask}{277}{subsubsection*.1048}
+\contentsline {subsubsection}{Flags bitfields such as page flags, gfp\_flags}{278}{subsubsection*.1049}
+\contentsline {subsubsection}{Network device features}{278}{subsubsection*.1050}
+\contentsline {subsection}{\numberline {1.14.3}Thanks}{278}{subsection.1.14.3}
+\contentsline {chapter}{\numberline {2}Interfaces for kernel debugging}{279}{chapter.2}
+\contentsline {section}{\numberline {2.1}The object-lifetime debugging infrastructure}{279}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Introduction}{279}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Howto use debugobjects}{279}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Debug functions}{280}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.4}Fixup functions}{282}{subsection.2.1.4}
+\contentsline {subsubsection}{Debug object type description structure}{282}{subsubsection*.1058}
+\contentsline {subsubsection}{fixup\_init}{283}{subsubsection*.1061}
+\contentsline {subsubsection}{fixup\_activate}{283}{subsubsection*.1062}
+\contentsline {subsubsection}{fixup\_destroy}{283}{subsubsection*.1063}
+\contentsline {subsubsection}{fixup\_free}{284}{subsubsection*.1064}
+\contentsline {subsubsection}{fixup\_assert\_init}{284}{subsubsection*.1065}
+\contentsline {subsection}{\numberline {2.1.5}Known Bugs And Assumptions}{284}{subsection.2.1.5}
+\contentsline {section}{\numberline {2.2}The Linux Kernel Tracepoint API}{284}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Introduction}{284}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}IRQ}{285}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}SIGNAL}{286}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Block IO}{286}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.5}Workqueue}{290}{subsection.2.2.5}
+\contentsline {chapter}{Index}{291}{section*.1095}

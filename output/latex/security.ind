@@ -1,0 +1,9 @@
+\begin{theindex}
+\def\bigletter#1{{\Large\sffamily#1}\nopagebreak\vspace{1mm}}
+
+  \bigletter V
+  \item vtpm\_proxy\_flags (C type), \hyperpage{49}
+  \item vtpm\_proxy\_new\_dev (C type), \hyperpage{49}
+  \item vtpmx\_ioc\_new\_dev (C function), \hyperpage{50}
+
+\end{theindex}

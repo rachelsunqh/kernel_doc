@@ -1,0 +1,1018 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>drm/i915 Intel GFX Driver &mdash; The Linux Kernel 4.15.0-rc7 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
+  
+
+  
+    <link rel="top" title="The Linux Kernel 4.15.0-rc7 documentation" href="../index.html"/>
+        <link rel="up" title="Linux GPU Driver Developer’s Guide" href="index.html"/>
+        <link rel="next" title="drm/meson AmLogic Meson Video Processing Unit" href="meson.html"/>
+        <link rel="prev" title="Userland interfaces" href="drm-uapi.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> The Linux Kernel
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                4.15.0-rc9
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul>
+<li class="toctree-l1"><a class="reference internal" href="../admin-guide/index.html">The Linux kernel user&#8217;s and administrator&#8217;s guide</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../userspace-api/index.html">The Linux kernel user-space API guide</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../process/index.html">Working with the kernel development community</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dev-tools/index.html">Development tools for the kernel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../doc-guide/index.html">How to write kernel documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kernel-hacking/index.html">Kernel Hacking Guides</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../driver-api/index.html">The Linux driver implementer&#8217;s API guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core-api/index.html">Core API Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../media/index.html">Linux Media Subsystem Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../networking/index.html">Linux Networking Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../input/index.html">The Linux Input Documentation</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Linux GPU Driver Developer&#8217;s Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="drm-internals.html">DRM Internals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="drm-mm.html">DRM Memory Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="drm-kms.html">Kernel Mode Setting (KMS)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="drm-kms-helpers.html">Mode Setting Helper Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="drm-uapi.html">Userland interfaces</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">drm/i915 Intel GFX Driver</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#core-driver-infrastructure">Core Driver Infrastructure</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#runtime-power-management">Runtime Power Management</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#interrupt-handling">Interrupt Handling</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#intel-gvt-g-guest-support-vgpu">Intel GVT-g Guest Support(vGPU)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#intel-gvt-g-host-support-vgpu-device-model">Intel GVT-g Host Support(vGPU device model)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#display-hardware-handling">Display Hardware Handling</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#mode-setting-infrastructure">Mode Setting Infrastructure</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#frontbuffer-tracking">Frontbuffer Tracking</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#display-fifo-underrun-reporting">Display FIFO Underrun Reporting</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#plane-configuration">Plane Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#atomic-plane-helpers">Atomic Plane Helpers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#output-probing">Output Probing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#hotplug">Hotplug</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#high-definition-audio">High Definition Audio</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#intel-hdmi-lpe-audio-support">Intel HDMI LPE Audio Support</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#panel-self-refresh-psr-psr-srd">Panel Self Refresh PSR (PSR/SRD)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#frame-buffer-compression-fbc">Frame Buffer Compression (FBC)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#display-refresh-rate-switching-drrs">Display Refresh Rate Switching (DRRS)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#dpio">DPIO</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#csr-firmware-support-for-dmc">CSR firmware support for DMC</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#video-bios-table-vbt">Video BIOS Table (VBT)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#display-clocks">Display clocks</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#display-plls">Display PLLs</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#memory-management-and-command-submission">Memory Management and Command Submission</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#batchbuffer-parsing">Batchbuffer Parsing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#batchbuffer-pools">Batchbuffer Pools</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#logical-rings-logical-ring-contexts-and-execlists">Logical Rings, Logical Ring Contexts and Execlists</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#global-gtt-views">Global GTT views</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gtt-fences-and-swizzling">GTT Fences and Swizzling</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#object-tiling-ioctls">Object Tiling IOCTLs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#buffer-object-eviction">Buffer Object Eviction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#buffer-object-memory-shrinking">Buffer Object Memory Shrinking</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#guc">GuC</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#guc-specific-firmware-loader">GuC-specific firmware loader</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#guc-based-command-submission">GuC-based command submission</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#guc-firmware-layout">GuC Firmware Layout</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#tracing">Tracing</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#i915-ppgtt-create-and-i915-ppgtt-release">i915_ppgtt_create and i915_ppgtt_release</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#i915-context-create-and-i915-context-free">i915_context_create and i915_context_free</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#switch-mm">switch_mm</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#perf">Perf</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#comparison-with-core-perf">Comparison with Core Perf</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#i915-driver-entry-points">i915 Driver Entry Points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#i915-perf-stream">i915 Perf Stream</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#i915-perf-observation-architecture-stream">i915 Perf Observation Architecture Stream</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#all-i915-perf-internals">All i915 Perf Internals</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#style">Style</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#register-macro-definition-style">Register macro definition style</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="meson.html">drm/meson AmLogic Meson Video Processing Unit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pl111.html">drm/pl111 ARM PrimeCell PL111 CLCD Driver</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tegra.html">drm/tegra NVIDIA Tegra GPU and display driver</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tinydrm.html">drm/tinydrm Driver library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tve200.html">drm/tve200 Faraday TV Encoder 200</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vc4.html">drm/vc4 Broadcom VC4 Graphics Driver</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vga-switcheroo.html">VGA Switcheroo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vgaarbiter.html">VGA Arbiter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bridge/dw-hdmi.html">drm/bridge/dw-hdmi Synopsys DesignWare HDMI Controller</a></li>
+<li class="toctree-l2"><a class="reference internal" href="todo.html">TODO list</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../security/index.html">Security Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sound/index.html">Linux Sound Subsystem Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../crypto/index.html">Linux Kernel Crypto API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../filesystems/index.html">Linux Filesystems API</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../sh/index.html">SuperH Interfaces Guide</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../translations/ko_KR/index.html">Korean translations</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../translations/zh_CN/index.html">Chinese translations</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../translations/ja_JP/index.html">Japanese translations</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">The Linux Kernel</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="index.html">Linux GPU Driver Developer&#8217;s Guide</a> &raquo;</li>
+      
+    <li>drm/i915 Intel GFX Driver</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/gpu/i915.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="drm-i915-intel-gfx-driver">
+<h1>drm/i915 Intel GFX Driver<a class="headerlink" href="#drm-i915-intel-gfx-driver" title="Permalink to this headline">¶</a></h1>
+<p>The drm/i915 driver supports all (with the exception of some very early
+models) integrated GFX chipsets with both Intel display and rendering
+blocks. This excludes a set of SoC platforms with an SGX rendering unit,
+those have basic support through the gma500 drm driver.</p>
+<div class="section" id="core-driver-infrastructure">
+<h2>Core Driver Infrastructure<a class="headerlink" href="#core-driver-infrastructure" title="Permalink to this headline">¶</a></h2>
+<p>This section covers core driver infrastructure used by both the display
+and the GEM parts of the driver.</p>
+<div class="section" id="runtime-power-management">
+<h3>Runtime Power Management<a class="headerlink" href="#runtime-power-management" title="Permalink to this headline">¶</a></h3>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+</div>
+<div class="section" id="interrupt-handling">
+<h3>Interrupt Handling<a class="headerlink" href="#interrupt-handling" title="Permalink to this headline">¶</a></h3>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+</div>
+<div class="section" id="intel-gvt-g-guest-support-vgpu">
+<h3>Intel GVT-g Guest Support(vGPU)<a class="headerlink" href="#intel-gvt-g-guest-support-vgpu" title="Permalink to this headline">¶</a></h3>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+</div>
+<div class="section" id="intel-gvt-g-host-support-vgpu-device-model">
+<h3>Intel GVT-g Host Support(vGPU device model)<a class="headerlink" href="#intel-gvt-g-host-support-vgpu-device-model" title="Permalink to this headline">¶</a></h3>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+</div>
+</div>
+<div class="section" id="display-hardware-handling">
+<h2>Display Hardware Handling<a class="headerlink" href="#display-hardware-handling" title="Permalink to this headline">¶</a></h2>
+<p>This section covers everything related to the display hardware including
+the mode setting infrastructure, plane, sprite and cursor handling and
+display, output probing and related topics.</p>
+<div class="section" id="mode-setting-infrastructure">
+<h3>Mode Setting Infrastructure<a class="headerlink" href="#mode-setting-infrastructure" title="Permalink to this headline">¶</a></h3>
+<p>The i915 driver is thus far the only DRM driver which doesn&#8217;t use the
+common DRM helper code to implement mode setting sequences. Thus it has
+its own tailor-made infrastructure for executing a display configuration
+change.</p>
+</div>
+<div class="section" id="frontbuffer-tracking">
+<h3>Frontbuffer Tracking<a class="headerlink" href="#frontbuffer-tracking" title="Permalink to this headline">¶</a></h3>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+</div>
+<div class="section" id="display-fifo-underrun-reporting">
+<h3>Display FIFO Underrun Reporting<a class="headerlink" href="#display-fifo-underrun-reporting" title="Permalink to this headline">¶</a></h3>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+</div>
+<div class="section" id="plane-configuration">
+<h3>Plane Configuration<a class="headerlink" href="#plane-configuration" title="Permalink to this headline">¶</a></h3>
+<p>This section covers plane configuration and composition with the primary
+plane, sprites, cursors and overlays. This includes the infrastructure
+to do atomic vsync&#8217;ed updates of all this state and also tightly coupled
+topics like watermark setup and computation, framebuffer compression and
+panel self refresh.</p>
+</div>
+<div class="section" id="atomic-plane-helpers">
+<h3>Atomic Plane Helpers<a class="headerlink" href="#atomic-plane-helpers" title="Permalink to this headline">¶</a></h3>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+</div>
+<div class="section" id="output-probing">
+<h3>Output Probing<a class="headerlink" href="#output-probing" title="Permalink to this headline">¶</a></h3>
+<p>This section covers output probing and related infrastructure like the
+hotplug interrupt storm detection and mitigation code. Note that the
+i915 driver still uses most of the common DRM helper code for output
+probing, so those sections fully apply.</p>
+</div>
+<div class="section" id="hotplug">
+<h3>Hotplug<a class="headerlink" href="#hotplug" title="Permalink to this headline">¶</a></h3>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+</div>
+<div class="section" id="high-definition-audio">
+<h3>High Definition Audio<a class="headerlink" href="#high-definition-audio" title="Permalink to this headline">¶</a></h3>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<dl class="type">
+<dt id="c.i915_audio_component_ops">
+struct <code class="descname">i915_audio_component_ops</code><a class="headerlink" href="#c.i915_audio_component_ops" title="Permalink to this definition">¶</a></dt>
+<dd><p>Ops implemented by i915 driver, called by hda driver</p>
+</dd></dl>
+
+<p><strong>Definition</strong></p>
+<div class="highlight-none"><div class="highlight"><pre>struct i915_audio_component_ops {
+  struct module * owner;
+  void (* get_power) (struct device *);
+  void (* put_power) (struct device *);
+  void (* codec_wake_override) (struct device *, bool enable);
+  int (* get_cdclk_freq) (struct device *);
+  int (* sync_audio_rate) (struct device *, int port, int pipe, int rate);
+  int (* get_eld) (struct device *, int port, int pipe, bool *enabled, unsigned char *buf, int max_bytes);
+};
+</pre></div>
+</div>
+<p><strong>Members</strong></p>
+<dl class="docutils">
+<dt><code class="docutils literal"><span class="pre">owner</span></code></dt>
+<dd>i915 module</dd>
+<dt><code class="docutils literal"><span class="pre">get_power</span></code></dt>
+<dd><p class="first">get the POWER_DOMAIN_AUDIO power well</p>
+<p class="last">Request the power well to be turned on.</p>
+</dd>
+<dt><code class="docutils literal"><span class="pre">put_power</span></code></dt>
+<dd><p class="first">put the POWER_DOMAIN_AUDIO power well</p>
+<p class="last">Allow the power well to be turned off.</p>
+</dd>
+<dt><code class="docutils literal"><span class="pre">codec_wake_override</span></code></dt>
+<dd>Enable/disable codec wake signal</dd>
+<dt><code class="docutils literal"><span class="pre">get_cdclk_freq</span></code></dt>
+<dd>Get the Core Display Clock in kHz</dd>
+<dt><code class="docutils literal"><span class="pre">sync_audio_rate</span></code></dt>
+<dd><p class="first">set n/cts based on the sample rate</p>
+<p class="last">Called from audio driver. After audio driver sets the
+sample rate, it will call this function to set n/cts</p>
+</dd>
+<dt><code class="docutils literal"><span class="pre">get_eld</span></code></dt>
+<dd><p class="first">fill the audio state and ELD bytes for the given port</p>
+<p>Called from audio driver to get the HDMI/DP audio state of the given
+digital port, and also fetch ELD bytes to the given pointer.</p>
+<p>It returns the byte size of the original ELD (not the actually
+copied size), zero for an invalid ELD, or a negative error code.</p>
+<p class="last">Note that the returned size may be over <strong>max_bytes</strong>.  Then it
+implies that only a part of ELD has been copied to the buffer.</p>
+</dd>
+</dl>
+<dl class="type">
+<dt id="c.i915_audio_component_audio_ops">
+struct <code class="descname">i915_audio_component_audio_ops</code><a class="headerlink" href="#c.i915_audio_component_audio_ops" title="Permalink to this definition">¶</a></dt>
+<dd><p>Ops implemented by hda driver, called by i915 driver</p>
+</dd></dl>
+
+<p><strong>Definition</strong></p>
+<div class="highlight-none"><div class="highlight"><pre>struct i915_audio_component_audio_ops {
+  void * audio_ptr;
+  void (* pin_eld_notify) (void *audio_ptr, int port, int pipe);
+};
+</pre></div>
+</div>
+<p><strong>Members</strong></p>
+<dl class="docutils">
+<dt><code class="docutils literal"><span class="pre">audio_ptr</span></code></dt>
+<dd>Pointer to be used in call to pin_eld_notify</dd>
+<dt><code class="docutils literal"><span class="pre">pin_eld_notify</span></code></dt>
+<dd><p class="first">Notify the HDA driver that pin sense and/or ELD information has changed</p>
+<p class="last">Called when the i915 driver has set up audio pipeline or has just
+begun to tear it down. This allows the HDA driver to update its
+status accordingly (even when the HDA controller is in power save
+mode).</p>
+</dd>
+</dl>
+<dl class="type">
+<dt id="c.i915_audio_component">
+struct <code class="descname">i915_audio_component</code><a class="headerlink" href="#c.i915_audio_component" title="Permalink to this definition">¶</a></dt>
+<dd><p>Used for direct communication between i915 and hda drivers</p>
+</dd></dl>
+
+<p><strong>Definition</strong></p>
+<div class="highlight-none"><div class="highlight"><pre>struct i915_audio_component {
+  struct device * dev;
+  int aud_sample_rate;
+  const struct i915_audio_component_ops * ops;
+  const struct i915_audio_component_audio_ops * audio_ops;
+};
+</pre></div>
+</div>
+<p><strong>Members</strong></p>
+<dl class="docutils">
+<dt><code class="docutils literal"><span class="pre">dev</span></code></dt>
+<dd>i915 device, used as parameter for ops</dd>
+<dt><code class="docutils literal"><span class="pre">aud_sample_rate</span></code></dt>
+<dd>the array of audio sample rate per port</dd>
+<dt><code class="docutils literal"><span class="pre">ops</span></code></dt>
+<dd>Ops implemented by i915 driver, called by hda driver</dd>
+<dt><code class="docutils literal"><span class="pre">audio_ops</span></code></dt>
+<dd>Ops implemented by hda driver, called by i915 driver</dd>
+</dl>
+</div>
+<div class="section" id="intel-hdmi-lpe-audio-support">
+<h3>Intel HDMI LPE Audio Support<a class="headerlink" href="#intel-hdmi-lpe-audio-support" title="Permalink to this headline">¶</a></h3>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+</div>
+<div class="section" id="panel-self-refresh-psr-psr-srd">
+<h3>Panel Self Refresh PSR (PSR/SRD)<a class="headerlink" href="#panel-self-refresh-psr-psr-srd" title="Permalink to this headline">¶</a></h3>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+</div>
+<div class="section" id="frame-buffer-compression-fbc">
+<h3>Frame Buffer Compression (FBC)<a class="headerlink" href="#frame-buffer-compression-fbc" title="Permalink to this headline">¶</a></h3>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+</div>
+<div class="section" id="display-refresh-rate-switching-drrs">
+<h3>Display Refresh Rate Switching (DRRS)<a class="headerlink" href="#display-refresh-rate-switching-drrs" title="Permalink to this headline">¶</a></h3>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+</div>
+<div class="section" id="dpio">
+<h3>DPIO<a class="headerlink" href="#dpio" title="Permalink to this headline">¶</a></h3>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+</div>
+<div class="section" id="csr-firmware-support-for-dmc">
+<h3>CSR firmware support for DMC<a class="headerlink" href="#csr-firmware-support-for-dmc" title="Permalink to this headline">¶</a></h3>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+</div>
+<div class="section" id="video-bios-table-vbt">
+<h3>Video BIOS Table (VBT)<a class="headerlink" href="#video-bios-table-vbt" title="Permalink to this headline">¶</a></h3>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+</div>
+<div class="section" id="display-clocks">
+<h3>Display clocks<a class="headerlink" href="#display-clocks" title="Permalink to this headline">¶</a></h3>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+</div>
+<div class="section" id="display-plls">
+<h3>Display PLLs<a class="headerlink" href="#display-plls" title="Permalink to this headline">¶</a></h3>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+</div>
+</div>
+<div class="section" id="memory-management-and-command-submission">
+<h2>Memory Management and Command Submission<a class="headerlink" href="#memory-management-and-command-submission" title="Permalink to this headline">¶</a></h2>
+<p>This sections covers all things related to the GEM implementation in the
+i915 driver.</p>
+<div class="section" id="batchbuffer-parsing">
+<h3>Batchbuffer Parsing<a class="headerlink" href="#batchbuffer-parsing" title="Permalink to this headline">¶</a></h3>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+</div>
+<div class="section" id="batchbuffer-pools">
+<h3>Batchbuffer Pools<a class="headerlink" href="#batchbuffer-pools" title="Permalink to this headline">¶</a></h3>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+</div>
+<div class="section" id="logical-rings-logical-ring-contexts-and-execlists">
+<h3>Logical Rings, Logical Ring Contexts and Execlists<a class="headerlink" href="#logical-rings-logical-ring-contexts-and-execlists" title="Permalink to this headline">¶</a></h3>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+</div>
+<div class="section" id="global-gtt-views">
+<h3>Global GTT views<a class="headerlink" href="#global-gtt-views" title="Permalink to this headline">¶</a></h3>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+</div>
+<div class="section" id="gtt-fences-and-swizzling">
+<h3>GTT Fences and Swizzling<a class="headerlink" href="#gtt-fences-and-swizzling" title="Permalink to this headline">¶</a></h3>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="section" id="global-gtt-fence-handling">
+<h4>Global GTT Fence Handling<a class="headerlink" href="#global-gtt-fence-handling" title="Permalink to this headline">¶</a></h4>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+</div>
+<div class="section" id="hardware-tiling-and-swizzling-details">
+<h4>Hardware Tiling and Swizzling Details<a class="headerlink" href="#hardware-tiling-and-swizzling-details" title="Permalink to this headline">¶</a></h4>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+</div>
+</div>
+<div class="section" id="object-tiling-ioctls">
+<h3>Object Tiling IOCTLs<a class="headerlink" href="#object-tiling-ioctls" title="Permalink to this headline">¶</a></h3>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+</div>
+<div class="section" id="buffer-object-eviction">
+<h3>Buffer Object Eviction<a class="headerlink" href="#buffer-object-eviction" title="Permalink to this headline">¶</a></h3>
+<p>This section documents the interface functions for evicting buffer
+objects to make space available in the virtual gpu address spaces. Note
+that this is mostly orthogonal to shrinking buffer objects caches, which
+has the goal to make main memory (shared with the gpu through the
+unified memory architecture) available.</p>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+</div>
+<div class="section" id="buffer-object-memory-shrinking">
+<h3>Buffer Object Memory Shrinking<a class="headerlink" href="#buffer-object-memory-shrinking" title="Permalink to this headline">¶</a></h3>
+<p>This section documents the interface function for shrinking memory usage
+of buffer object caches. Shrinking is used to make main memory
+available. Note that this is mostly orthogonal to evicting buffer
+objects, which has the goal to make space in gpu virtual address spaces.</p>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+</div>
+</div>
+<div class="section" id="guc">
+<h2>GuC<a class="headerlink" href="#guc" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="guc-specific-firmware-loader">
+<h3>GuC-specific firmware loader<a class="headerlink" href="#guc-specific-firmware-loader" title="Permalink to this headline">¶</a></h3>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+</div>
+<div class="section" id="guc-based-command-submission">
+<h3>GuC-based command submission<a class="headerlink" href="#guc-based-command-submission" title="Permalink to this headline">¶</a></h3>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+</div>
+<div class="section" id="guc-firmware-layout">
+<h3>GuC Firmware Layout<a class="headerlink" href="#guc-firmware-layout" title="Permalink to this headline">¶</a></h3>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+</div>
+</div>
+<div class="section" id="tracing">
+<h2>Tracing<a class="headerlink" href="#tracing" title="Permalink to this headline">¶</a></h2>
+<p>This sections covers all things related to the tracepoints implemented
+in the i915 driver.</p>
+<div class="section" id="i915-ppgtt-create-and-i915-ppgtt-release">
+<h3>i915_ppgtt_create and i915_ppgtt_release<a class="headerlink" href="#i915-ppgtt-create-and-i915-ppgtt-release" title="Permalink to this headline">¶</a></h3>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+</div>
+<div class="section" id="i915-context-create-and-i915-context-free">
+<h3>i915_context_create and i915_context_free<a class="headerlink" href="#i915-context-create-and-i915-context-free" title="Permalink to this headline">¶</a></h3>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+</div>
+<div class="section" id="switch-mm">
+<h3>switch_mm<a class="headerlink" href="#switch-mm" title="Permalink to this headline">¶</a></h3>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+</div>
+</div>
+<div class="section" id="perf">
+<h2>Perf<a class="headerlink" href="#perf" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="overview">
+<h3>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h3>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+</div>
+<div class="section" id="comparison-with-core-perf">
+<h3>Comparison with Core Perf<a class="headerlink" href="#comparison-with-core-perf" title="Permalink to this headline">¶</a></h3>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+</div>
+<div class="section" id="i915-driver-entry-points">
+<h3>i915 Driver Entry Points<a class="headerlink" href="#i915-driver-entry-points" title="Permalink to this headline">¶</a></h3>
+<p>This section covers the entrypoints exported outside of i915_perf.c to
+integrate with drm/i915 and to handle the <cite>DRM_I915_PERF_OPEN</cite> ioctl.</p>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+</div>
+<div class="section" id="i915-perf-stream">
+<h3>i915 Perf Stream<a class="headerlink" href="#i915-perf-stream" title="Permalink to this headline">¶</a></h3>
+<p>This section covers the stream-semantics-agnostic structures and functions
+for representing an i915 perf stream FD and associated file operations.</p>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+</div>
+<div class="section" id="i915-perf-observation-architecture-stream">
+<h3>i915 Perf Observation Architecture Stream<a class="headerlink" href="#i915-perf-observation-architecture-stream" title="Permalink to this headline">¶</a></h3>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+</div>
+<div class="section" id="all-i915-perf-internals">
+<h3>All i915 Perf Internals<a class="headerlink" href="#all-i915-perf-internals" title="Permalink to this headline">¶</a></h3>
+<p>This section simply includes all currently documented i915 perf internals, in
+no particular order, but may include some more minor utilities or platform
+specific details than found in the more high-level sections.</p>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+</div>
+</div>
+<div class="section" id="style">
+<h2>Style<a class="headerlink" href="#style" title="Permalink to this headline">¶</a></h2>
+<p>The drm/i915 driver codebase has some style rules in addition to (and, in some
+cases, deviating from) the kernel coding style.</p>
+<div class="section" id="register-macro-definition-style">
+<h3>Register macro definition style<a class="headerlink" href="#register-macro-definition-style" title="Permalink to this headline">¶</a></h3>
+<p>The style guide for <code class="docutils literal"><span class="pre">i915_reg.h</span></code>.</p>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p class="last">kernel-doc missing</p>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="meson.html" class="btn btn-neutral float-right" title="drm/meson AmLogic Meson Video Processing Unit" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="drm-uapi.html" class="btn btn-neutral" title="Userland interfaces" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright The kernel development community.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'4.15.0-rc7',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

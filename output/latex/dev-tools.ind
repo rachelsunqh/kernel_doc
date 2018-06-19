@@ -1,0 +1,71 @@
+\begin{theindex}
+\def\bigletter#1{{\Large\sffamily#1}\nopagebreak\vspace{1mm}}
+
+  \bigletter A
+  \item ASSERT\_EQ (C function), \hyperpage{56}
+  \item ASSERT\_FALSE (C function), \hyperpage{57}
+  \item ASSERT\_GE (C function), \hyperpage{57}
+  \item ASSERT\_GT (C function), \hyperpage{57}
+  \item ASSERT\_LE (C function), \hyperpage{56}
+  \item ASSERT\_LT (C function), \hyperpage{56}
+  \item ASSERT\_NE (C function), \hyperpage{56}
+  \item ASSERT\_NULL (C function), \hyperpage{57}
+  \item ASSERT\_STREQ (C function), \hyperpage{57}
+  \item ASSERT\_STRNE (C function), \hyperpage{57}
+  \item ASSERT\_TRUE (C function), \hyperpage{57}
+
+  \indexspace
+  \bigletter E
+  \item EXPECT\_EQ (C function), \hyperpage{58}
+  \item EXPECT\_FALSE (C function), \hyperpage{59}
+  \item EXPECT\_GE (C function), \hyperpage{58}
+  \item EXPECT\_GT (C function), \hyperpage{58}
+  \item EXPECT\_LE (C function), \hyperpage{58}
+  \item EXPECT\_LT (C function), \hyperpage{58}
+  \item EXPECT\_NE (C function), \hyperpage{58}
+  \item EXPECT\_NULL (C function), \hyperpage{58}
+  \item EXPECT\_STREQ (C function), \hyperpage{59}
+  \item EXPECT\_STRNE (C function), \hyperpage{59}
+  \item EXPECT\_TRUE (C function), \hyperpage{59}
+
+  \indexspace
+  \bigletter F
+  \item FIXTURE (C function), \hyperpage{55}
+  \item FIXTURE\_DATA (C function), \hyperpage{55}
+  \item FIXTURE\_SETUP (C function), \hyperpage{55}
+  \item FIXTURE\_TEARDOWN (C function), \hyperpage{55}
+
+  \indexspace
+  \bigletter G
+  \item gdb\_regs\_to\_pt\_regs (C function), \hyperpage{47}
+
+  \indexspace
+  \bigletter K
+  \item kgdb\_arch (C type), \hyperpage{48}
+  \item kgdb\_arch\_exit (C function), \hyperpage{46}
+  \item kgdb\_arch\_handle\_exception (C function), \hyperpage{47}
+  \item kgdb\_arch\_init (C function), \hyperpage{46}
+  \item kgdb\_arch\_late (C function), \hyperpage{48}
+  \item kgdb\_arch\_set\_pc (C function), \hyperpage{47}
+  \item kgdb\_breakpoint (C function), \hyperpage{46}
+  \item kgdb\_io (C type), \hyperpage{48}
+  \item kgdb\_roundup\_cpus (C function), \hyperpage{47}
+  \item kgdb\_skipexception (C function), \hyperpage{46}
+
+  \indexspace
+  \bigletter P
+  \item pt\_regs\_to\_gdb\_regs (C function), \hyperpage{46}
+
+  \indexspace
+  \bigletter S
+  \item sleeping\_thread\_to\_gdb\_regs (C function), \hyperpage{46}
+
+  \indexspace
+  \bigletter T
+  \item TEST (C function), \hyperpage{54}
+  \item TEST\_F (C function), \hyperpage{55}
+  \item TEST\_HARNESS\_MAIN (C function), \hyperpage{56}
+  \item TEST\_SIGNAL (C function), \hyperpage{54}
+  \item TH\_LOG (C function), \hyperpage{54}
+
+\end{theindex}

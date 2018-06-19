@@ -1,0 +1,66 @@
+\begin{theindex}
+\def\bigletter#1{{\Large\sffamily#1}\nopagebreak\vspace{1mm}}
+
+  \bigletter {Symbols}
+  \item \_\_unqueue\_futex (C function), \hyperpage{35}
+
+  \indexspace
+  \bigletter A
+  \item atomic\_dec\_and\_mutex\_lock (C function), \hyperpage{33}
+
+  \indexspace
+  \bigletter F
+  \item fault\_in\_user\_writeable (C function), \hyperpage{34}
+  \item fixup\_owner (C function), \hyperpage{37}
+  \item futex\_lock\_pi\_atomic (C function), \hyperpage{35}
+  \item futex\_proxy\_trylock\_atomic (C function), \hyperpage{36}
+  \item futex\_q (C type), \hyperpage{33}
+  \item futex\_requeue (C function), \hyperpage{36}
+  \item futex\_top\_waiter (C function), \hyperpage{35}
+  \item futex\_wait\_queue\_me (C function), \hyperpage{37}
+  \item futex\_wait\_requeue\_pi (C function), \hyperpage{38}
+  \item futex\_wait\_setup (C function), \hyperpage{38}
+
+  \indexspace
+  \bigletter G
+  \item get\_futex\_key (C function), \hyperpage{34}
+
+  \indexspace
+  \bigletter H
+  \item handle\_early\_requeue\_pi\_wakeup (C function), \hyperpage{38}
+  \item hash\_futex (C function), \hyperpage{34}
+
+  \indexspace
+  \bigletter M
+  \item match\_futex (C function), \hyperpage{34}
+  \item mutex\_init (C function), \hyperpage{31}
+  \item mutex\_is\_locked (C function), \hyperpage{31}
+  \item mutex\_lock (C function), \hyperpage{32}
+  \item mutex\_lock\_interruptible (C function), \hyperpage{32}
+  \item mutex\_trylock (C function), \hyperpage{33}
+  \item mutex\_trylock\_recursive (C function), \hyperpage{31}
+  \item mutex\_unlock (C function), \hyperpage{32}
+
+  \indexspace
+  \bigletter Q
+  \item queue\_me (C function), \hyperpage{37}
+
+  \indexspace
+  \bigletter R
+  \item requeue\_futex (C function), \hyperpage{35}
+  \item requeue\_pi\_wake\_futex (C function), \hyperpage{36}
+
+  \indexspace
+  \bigletter S
+  \item sys\_get\_robust\_list (C function), \hyperpage{39}
+  \item sys\_set\_robust\_list (C function), \hyperpage{39}
+
+  \indexspace
+  \bigletter U
+  \item unqueue\_me (C function), \hyperpage{37}
+
+  \indexspace
+  \bigletter W
+  \item ww\_mutex\_unlock (C function), \hyperpage{32}
+
+\end{theindex}
